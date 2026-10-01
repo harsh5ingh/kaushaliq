@@ -1,448 +1,1152 @@
 # KaushalIQ
 
-### AI-Powered Labour Market Intelligence & Skill Demand-Supply Forecasting Platform
+## AI-Enabled Labour Market Intelligence & Skill Demand-Supply Forecasting Engine
 
-KaushalIQ is an AI-enabled labour market intelligence platform designed to analyse **skill demand, workforce supply, regional employment trends, emerging skills, and future skill gaps**.
+> **KaushalIQ** is a futuristic, data-driven Labour Market Intelligence platform designed to continuously understand the relationship between **jobs, skills, workforce supply, industries, regions, training ecosystems, and future demand**.
 
-The platform converts fragmented labour-market signals into actionable intelligence for **students, job seekers, training institutions, employers, policymakers, and skill-development administrators**.
-
----
-
-## 🎯 Problem Statement
-
-**SIH26246 — AI-Enabled Labour Market Intelligence and Skill Demand-Supply Forecasting Engine**
-
-### Organization
-**Ministry of Skill Development and Entrepreneurship (MSDE)**
-
-### Category
-**Software**
-
-### Theme
-**Miscellaneous**
-
-### Problem
-
-Labour-market requirements are continuously changing because of technological advancements, industry growth, regional economic conditions, changing employer requirements, and emerging occupations.
-
-However, labour-market information is distributed across different sources, making it difficult to identify:
-
-- Which skills are currently in demand?
-- Which skills are becoming more important?
-- Where are skill shortages concentrated?
-- Is workforce supply keeping pace with employer demand?
-- Which skills are likely to experience higher demand in the future?
-- Which regions and industries require targeted skill-development interventions?
-
-KaushalIQ addresses this problem through a unified data and intelligence platform combining **labour-demand signals, workforce-supply information, skill normalization, regional analysis, trend detection, and forecasting**.
+KaushalIQ is proposed for **Smart India Hackathon 2026 — SIH26246: AI-Enabled Labour Market Intelligence and Skill Demand-Supply Forecasting Engine** under the **Ministry of Skill Development and Entrepreneurship (MSDE)**.
 
 ---
 
-# 💡 Proposed Solution
+# 1. Vision
 
-KaushalIQ provides a unified Labour Market Intelligence platform that transforms raw labour-market data into actionable skill intelligence.
+India's labour market is dynamic.
+
+Industries evolve, technologies change, new occupations emerge, existing skills become obsolete, and workforce availability varies significantly between regions.
+
+However, labour-market information is often distributed across multiple datasets and information systems.
+
+KaushalIQ aims to create a unified intelligence layer that can answer:
+
+- What skills are demanded today?
+- Which skills are growing fastest?
+- Where is demand concentrated?
+- Where does workforce supply exist?
+- Where are the largest skill gaps?
+- Which occupations are emerging?
+- Which skills may decline?
+- What skills are likely to be demanded in the future?
+- Which regions need additional training capacity?
+- Which training programs can address those gaps?
+- How should policymakers, institutions, employers, and learners respond?
+
+### Vision
 
 ```text
-                 LABOUR MARKET DATA
+              RAW LABOUR-MARKET SIGNALS
                          │
-           ┌─────────────┼─────────────┐
-           ↓             ↓             ↓
-       Job Demand    Workforce      Economic /
-        Signals       Supply        Industry Data
-           │             │             │
-           └─────────────┼─────────────┘
-                         ↓
-                 DATA NORMALIZATION
-                         ↓
-                   SKILL EXTRACTION
-                         ↓
-                  SKILL TAXONOMY
-                         ↓
-               DEMAND ↔ SUPPLY ENGINE
-                         ↓
-                   SKILL GAP INDEX
-                         ↓
-                  TREND ANALYSIS
-                         ↓
-                   FORECASTING
-                         ↓
+                         ▼
+               KAUSHALIQ INTELLIGENCE
+                         │
+       ┌─────────────────┼─────────────────┐
+       ▼                 ▼                 ▼
+    DEMAND             SUPPLY            TRENDS
+       │                 │                 │
+       └─────────────────┼─────────────────┘
+                         ▼
+                  SKILL GAP ENGINE
+                         │
+                         ▼
+                FORECASTING ENGINE
+                         │
+                         ▼
               REGIONAL INTELLIGENCE
-                         ↓
-                    AI INSIGHTS
-                         ↓
-                 KAUSHALIQ DASHBOARD
+                         │
+                         ▼
+                 AI INSIGHT LAYER
+                         │
+                         ▼
+             DECISION SUPPORT SYSTEM
 ```
 
 ---
 
-# 🎯 Objectives
+# 2. Problem Statement
 
-KaushalIQ aims to:
+## SIH26246
 
-1. Collect labour-market data from multiple sources.
-2. Normalize job titles and skills into a common taxonomy.
-3. Measure current skill demand.
-4. Estimate workforce skill supply.
-5. Identify demand-supply gaps.
-6. Detect emerging and declining skills.
-7. Forecast future skill demand.
-8. Provide regional and industry-level intelligence.
-9. Present insights through an interactive dashboard.
-10. Support evidence-based workforce and skill-development planning.
+**AI-Enabled Labour Market Intelligence and Skill Demand-Supply Forecasting Engine**
+
+### Organization
+
+Ministry of Skill Development and Entrepreneurship (MSDE)
+
+### Category
+
+Software
+
+### Theme
+
+Miscellaneous
 
 ---
 
-# 🧠 Core Intelligence Modules
+# 3. Problem Context
 
-## 1. Labour Demand Intelligence
+Labour-market requirements continuously change because of:
 
-KaushalIQ analyses labour-demand signals such as:
+- Technological advancement
+- Digital transformation
+- Industry expansion
+- Automation
+- New occupations
+- Regional economic changes
+- Changing employer requirements
+- Emerging technologies
+- Workforce migration
+- Changes in education and training
+- Changing skill requirements
+
+A fragmented labour-market ecosystem makes it difficult to obtain a unified picture of:
+
+```text
+JOB DEMAND
+     ↕
+SKILLS
+     ↕
+WORKFORCE SUPPLY
+     ↕
+INDUSTRIES
+     ↕
+REGIONS
+     ↕
+TRAINING
+     ↕
+FUTURE DEMAND
+```
+
+KaushalIQ proposes a single intelligence platform connecting these dimensions.
+
+---
+
+# 4. Proposed Solution
+
+KaushalIQ will function as a **Labour Market Intelligence and Skill Forecasting Engine**.
+
+The platform will ingest labour-market signals, standardize them, analyse current demand and supply, identify skill gaps, detect trends, forecast future requirements, and present actionable intelligence.
+
+```text
+                  DATA SOURCES
+                       │
+     ┌─────────────────┼─────────────────┐
+     ▼                 ▼                 ▼
+ Job Market       Workforce Data    Industry Data
+     │                 │                 │
+     ├──────────────┬──┴──────────────┬───┤
+                    ▼
+             DATA INGESTION
+                    │
+                    ▼
+          DATA QUALITY & VALIDATION
+                    │
+                    ▼
+          NORMALIZATION & STANDARDIZATION
+                    │
+                    ▼
+              SKILL INTELLIGENCE
+                    │
+          ┌─────────┼─────────┐
+          ▼         ▼         ▼
+       DEMAND     SUPPLY     TRENDS
+          │         │         │
+          └─────────┼─────────┘
+                    ▼
+              SKILL GAP ENGINE
+                    │
+                    ▼
+            FORECASTING ENGINE
+                    │
+                    ▼
+          REGIONAL INTELLIGENCE
+                    │
+                    ▼
+              AI INSIGHT LAYER
+                    │
+                    ▼
+             DECISION DASHBOARD
+```
+
+---
+
+# 5. Core Platform Capabilities
+
+KaushalIQ is designed around the following major intelligence modules:
+
+1. Labour Demand Intelligence
+2. Workforce Supply Intelligence
+3. Skill Intelligence & Taxonomy
+4. Demand-Supply Gap Analysis
+5. Skill Trend Detection
+6. Emerging Skill Detection
+7. Occupation Intelligence
+8. Regional Labour Intelligence
+9. Industry Intelligence
+10. Future Skill Demand Forecasting
+11. Training Gap Intelligence
+12. AI Insight Generation
+13. Decision-Support Dashboard
+14. Alert & Early-Warning System
+15. Data Quality & Governance Layer
+
+---
+
+# 6. End-to-End Architecture
+
+```text
+┌──────────────────────────────────────────────────────────┐
+│                    DATA ECOSYSTEM                        │
+│                                                          │
+│ Job Data | Workforce | Training | Industry | Economy    │
+│ Regional Data | Occupation Data | Skill Data             │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│                  DATA INGESTION LAYER                    │
+│                                                          │
+│ CSV | JSON | APIs | Scheduled Imports | Connectors      │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│              DATA QUALITY & GOVERNANCE                   │
+│                                                          │
+│ Validation | Deduplication | Missing Values | Versioning │
+│ Source Tracking | Data Freshness | Audit Metadata       │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│             NORMALIZATION & FEATURE ENGINE               │
+│                                                          │
+│ Job Normalization | Skill Mapping | Location Mapping     │
+│ Industry Mapping | Experience Mapping | Time Features   │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│                 SKILL INTELLIGENCE LAYER                 │
+│                                                          │
+│ Skill Extraction | Taxonomy | Synonyms | Relationships   │
+│ Emerging Skills | Skill Clusters | Skill Similarity     │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│               ANALYTICS & ML ENGINE                      │
+│                                                          │
+│ Demand | Supply | Gap | Trends | Forecasting | Anomaly  │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│                  INTELLIGENCE ENGINE                     │
+│                                                          │
+│ Regional | Industry | Occupation | Training | Alerts     │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│                    AI INSIGHT LAYER                      │
+│                                                          │
+│ Natural-Language Explanations | Summaries | Q&A          │
+└─────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────┐
+│                    KAUSHALIQ UI                          │
+│                                                          │
+│ Dashboards | Charts | Maps | Forecasts | Reports | AI    │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 7. Data Sources
+
+The final implementation can support multiple structured and semi-structured labour-market sources.
+
+Potential source categories include:
+
+### Labour Demand
 
 - Job postings
-- Job titles
-- Required skills
-- Industry
-- Location
-- Experience requirements
-- Employment type
+- Job descriptions
+- Employer requirements
+- Occupation demand
 - Salary information where available
-- Posting date
+- Employment type
+- Experience requirements
 
-These signals are used to estimate current demand for occupations and skills.
+### Workforce Supply
 
----
-
-## 2. Workforce Supply Intelligence
-
-The platform analyses workforce-related information such as:
-
-- Trained workers
-- Employed workers
-- Unemployed workers
-- Education level
-- Experience level
+- Workforce statistics
+- Employment information
+- Unemployment information
 - Skill availability
-- Regional workforce distribution
+- Education
+- Experience
+- Training outcomes
 
-This helps estimate the available workforce supply for different skills and regions.
+### Skill Development
+
+- Training programs
+- Courses
+- Certifications
+- Training capacity
+- Completion data
+- Placement information
+
+### Industry
+
+- Industry employment
+- Industry growth
+- Sector-specific skill requirements
+- Emerging occupations
+
+### Regional
+
+- State-level information
+- District-level information where available
+- Workforce distribution
+- Industry clusters
+- Employment trends
+
+### Economic Signals
+
+Where appropriate and available:
+
+- Economic indicators
+- Industry growth indicators
+- Regional economic activity
+- Sector growth trends
+
+The architecture is source-agnostic so that datasets can be added without redesigning the complete platform.
 
 ---
 
-## 3. Skill Normalization
+# 8. Data Pipeline
 
-Different employers can describe the same skill using different terms.
+```text
+SOURCE DATA
+    ↓
+INGESTION
+    ↓
+SCHEMA VALIDATION
+    ↓
+DATA CLEANING
+    ↓
+DEDUPLICATION
+    ↓
+MISSING-VALUE HANDLING
+    ↓
+NORMALIZATION
+    ↓
+ENTITY MAPPING
+    ↓
+SKILL EXTRACTION
+    ↓
+FEATURE ENGINEERING
+    ↓
+ANALYTICS DATASET
+    ↓
+ML / FORECASTING
+    ↓
+INTELLIGENCE APIs
+    ↓
+DASHBOARD
+```
+
+---
+
+# 9. Skill Intelligence Engine
+
+Skills are the central intelligence unit of KaushalIQ.
+
+The system will maintain a canonical skill representation.
 
 Example:
 
 ```text
+Raw Skills
+
 Python
-Python Programming
 Python3
+Python Programming
 Python Developer
-Python Programming Skills
-```
+Python Programming Language
 
-can be mapped to:
+                ↓
 
-```text
-Canonical Skill:
+Canonical Skill
+
 Python
 ```
 
-KaushalIQ uses a standardized skill taxonomy to reduce duplication and improve demand-supply analysis.
-
----
-
-# 📊 Skill Demand Intelligence
-
-The demand engine combines multiple signals:
+The engine can maintain:
 
 ```text
-Job Frequency
-      +
-Demand Growth
-      +
-Industry Relevance
-      +
-Regional Demand
-      +
-Recency
-      ↓
-Skill Demand Index
+Skill
+├── Category
+├── Sub-category
+├── Synonyms
+├── Related Skills
+├── Prerequisite Skills
+├── Occupations
+├── Industries
+├── Regions
+└── Demand Trend
 ```
-
-The exact weighting can be refined after evaluating the available datasets and validation results.
 
 ---
 
-# 📉 Skill Supply Intelligence
+# 10. Skill Taxonomy
 
-The supply engine estimates skill availability using workforce and training-related indicators.
+The platform will support hierarchical skill classification.
+
+```text
+Technology
+│
+├── Software Development
+│   ├── Programming
+│   │   ├── Python
+│   │   ├── Java
+│   │   └── JavaScript
+│   │
+│   ├── Web Development
+│   └── Mobile Development
+│
+├── Data & AI
+│   ├── Data Analytics
+│   ├── Machine Learning
+│   ├── Artificial Intelligence
+│   └── Data Engineering
+│
+└── Cybersecurity
+    ├── Network Security
+    ├── SOC
+    ├── Cloud Security
+    └── Digital Forensics
+```
+
+The taxonomy can evolve as new skills are detected.
+
+---
+
+# 11. Labour Demand Intelligence
+
+The demand engine will calculate demand signals from available labour-market data.
+
+Possible signals:
+
+```text
+Job Posting Frequency
+        +
+Skill Mention Frequency
+        +
+Demand Growth
+        +
+Industry Relevance
+        +
+Regional Demand
+        +
+Recency
+        +
+Occupation Coverage
+        ↓
+SKILL DEMAND INDEX
+```
+
+The scoring methodology can be calibrated against the selected datasets.
+
+---
+
+# 12. Workforce Supply Intelligence
+
+The supply engine estimates workforce availability.
+
+Possible signals:
 
 ```text
 Trained Workforce
-        +
-Employment Data
-        +
-Regional Availability
-        +
-Experience Distribution
+       +
+Employed Workforce
+       +
+Skill Availability
+       +
+Regional Workforce
+       +
+Experience
+       +
+Education
+       ↓
+SKILL SUPPLY INDEX
+```
+
+Supply should be treated as a measurable estimate derived from available data rather than an absolute representation of every worker.
+
+---
+
+# 13. Demand-Supply Gap Engine
+
+The core analytical layer compares demand and supply.
+
+```text
+                 DEMAND
+                   │
+                   ▼
+          ┌─────────────────┐
+          │  SKILL GAP      │
+          │    ENGINE       │
+          └─────────────────┘
+                   ▲
+                   │
+                 SUPPLY
+```
+
+A basic normalized formulation can be:
+
+```text
+Skill Gap = Normalized Demand - Normalized Supply
+```
+
+Additional metrics can include:
+
+- Demand/Supply Ratio
+- Gap Magnitude
+- Gap Growth
+- Regional Gap
+- Industry Gap
+- Occupation Gap
+
+---
+
+# 14. Skill Gap Classification
+
+The platform can classify skills into analytical categories such as:
+
+```text
+High Demand + Low Supply
         ↓
-Skill Supply Index
+Critical Skill Gap
+
+High Demand + High Supply
+        ↓
+Competitive Skill
+
+Low Demand + High Supply
+        ↓
+Potential Oversupply
+
+Low Demand + Low Supply
+        ↓
+Low-Activity Skill
 ```
+
+These are analytical categories, not fixed judgments; thresholds can be configured according to validated data.
 
 ---
 
-# ⚠️ Skill Gap Intelligence
+# 15. Trend Detection Engine
 
-The platform compares labour demand with workforce supply.
-
-```text
-              DEMAND
-                 │
-                 ▼
-          ┌─────────────┐
-          │  SKILL GAP  │
-          └─────────────┘
-                 ▲
-                 │
-              SUPPLY
-```
-
-For the initial prototype, the gap can be represented as:
+KaushalIQ will continuously analyse historical observations.
 
 ```text
-Skill Gap = Demand Index - Supply Index
-```
-
-The production implementation can use normalized demand/supply ratios and additional statistical factors.
-
----
-
-# 🔮 Skill Demand Forecasting
-
-Historical labour-market observations can be used to identify future trends.
-
-```text
-Historical Labour Data
-          ↓
-Feature Engineering
-          ↓
+Historical Data
+      ↓
+Time-Series Aggregation
+      ↓
+Growth Calculation
+      ↓
 Trend Detection
-          ↓
-Forecasting Model
-          ↓
-Future Skill Demand
+      ↓
+Emerging / Stable / Declining Patterns
 ```
 
-Potential approaches include:
+Possible trend signals:
 
-- Statistical time-series models
-- Regression models
-- Gradient boosting
-- Machine-learning ensembles
-- Other forecasting approaches selected according to dataset size and quality
-
-The final model will be selected based on validation performance.
+- Month-over-month change
+- Quarter-over-quarter change
+- Year-over-year change
+- Growth velocity
+- Acceleration
+- Persistence
+- Regional spread
 
 ---
 
-# 🗺️ Regional Intelligence
+# 16. Emerging Skill Detection
 
-KaushalIQ is designed to provide location-aware labour-market analysis.
+A skill can be identified as emerging when multiple signals indicate increasing relevance.
+
+Example pipeline:
 
 ```text
-India
-  ↓
-State
-  ↓
-District / Region
-  ↓
-Industry
-  ↓
-Occupation
-  ↓
-Skill
+Increasing Job Mentions
+          +
+Increasing Employer Adoption
+          +
+Increasing Industry Coverage
+          +
+Increasing Regional Spread
+          +
+Historical Growth
+          ↓
+EMERGING SKILL SIGNAL
 ```
 
-This can help identify:
-
-- Regional skill shortages
-- Emerging employment clusters
-- Regional demand trends
-- Workforce availability
-- Industry-specific regional requirements
+The system should use configurable thresholds and validation rather than relying on a single metric.
 
 ---
 
-# 🏭 Industry Intelligence
+# 17. Declining Skill Detection
 
-KaushalIQ can analyse skill demand across industries such as:
+Similarly, the platform can detect sustained reductions in demand.
 
-- Information Technology
+```text
+Historical Demand
+       ↓
+Trend Analysis
+       ↓
+Sustained Decline
+       ↓
+Declining Skill Signal
+```
+
+This can help identify areas requiring reskilling or transition analysis.
+
+---
+
+# 18. Occupation Intelligence
+
+Skills will be connected to occupations.
+
+```text
+Occupation
+   │
+   ├── Required Skills
+   ├── Emerging Skills
+   ├── Salary Signals
+   ├── Experience
+   ├── Industry
+   ├── Region
+   └── Demand Forecast
+```
+
+This enables occupation-level analysis rather than only isolated skill analysis.
+
+---
+
+# 19. Industry Intelligence
+
+KaushalIQ will analyse changing skill requirements across industries.
+
+Example:
+
+```text
+Industry
+   ↓
+Occupations
+   ↓
+Skills
+   ↓
+Current Demand
+   ↓
+Growth
+   ↓
+Future Demand
+```
+
+Potential industries include:
+
+- IT & Software
 - Manufacturing
 - Healthcare
 - Finance
 - Construction
-- Transportation & Logistics
+- Logistics
 - Retail
-- Renewable Energy
 - Telecommunications
-- Other sectors represented in the available data
-
-Industry-level analysis can reveal changing workforce requirements.
+- Renewable Energy
+- Other sectors represented in the datasets
 
 ---
 
-# 🤖 AI / ML Layer
+# 20. Regional Labour Intelligence
 
-The AI/ML layer is designed to support:
+Regional intelligence will connect labour demand and supply geographically.
 
-### Skill Extraction
+```text
+India
+ ↓
+State
+ ↓
+District / Region
+ ↓
+Industry
+ ↓
+Occupation
+ ↓
+Skill
+```
 
-Extract relevant skills from job descriptions and labour-market text.
+Potential outputs:
 
-### Skill Classification
+- Regional skill demand
+- Regional skill supply
+- Regional skill gaps
+- Industry clusters
+- Emerging regional occupations
+- Training demand
 
-Map extracted skills into standardized categories.
+---
 
-### Trend Detection
+# 21. India Skill Heatmap
 
-Identify rapidly increasing or decreasing demand.
+A future dashboard component can provide an interactive map.
 
-### Demand Forecasting
+```text
+              INDIA
+                │
+       ┌────────┼────────┐
+       ▼        ▼        ▼
+    North     West      South
+       │        │         │
+       ▼        ▼         ▼
+    Skill     Skill      Skill
+    Demand    Demand     Demand
+       │        │         │
+       └────────┼─────────┘
+                ▼
+          NATIONAL VIEW
+```
 
-Estimate future skill-demand patterns using historical observations.
+Users can drill down from national → state → district where data granularity permits.
 
-### Anomaly Detection
+---
 
-Detect unusual changes in regional, industry, or skill demand.
+# 22. Training Intelligence
 
-### AI Insights
+KaushalIQ can connect identified skill gaps with training ecosystems.
 
-Convert analytical results into human-readable explanations.
+```text
+Skill Gap
+    ↓
+Required Skill
+    ↓
+Relevant Course / Training
+    ↓
+Training Capacity
+    ↓
+Training Availability
+    ↓
+Potential Intervention
+```
+
+This creates a bridge between:
+
+```text
+LABOUR DEMAND
+      ↕
+SKILL GAP
+      ↕
+TRAINING
+      ↕
+WORKFORCE SUPPLY
+```
+
+---
+
+# 23. Training Capacity Gap
+
+A future module can identify whether available training capacity is aligned with labour demand.
 
 Example:
 
 ```text
-Cybersecurity
-
-Current Demand: High
-Supply Availability: Moderate
-Skill Gap: Significant
-
-Observed Signal:
-Demand has increased across multiple technology-related
-job categories.
-
-Forecast:
-Demand is expected to continue increasing based on the
-available historical trend.
+Labour Demand for Skill X
+             ↓
+       10,000 workers
+             │
+             ▼
+Available Training Capacity
+             ↓
+        4,000 seats
+             │
+             ▼
+Training Capacity Gap
 ```
 
----
-
-# 📈 Dashboard
-
-KaushalIQ provides an intelligence dashboard containing:
-
-### Overview
-High-level labour-market KPIs.
-
-### Skill Demand
-Current demand for skills and occupations.
-
-### Skill Gaps
-Demand versus workforce supply.
-
-### Forecasts
-Expected future demand.
-
-### Regional Intelligence
-Geographic distribution of demand and skill gaps.
-
-### Industry Intelligence
-Industry-specific skill trends.
-
-### AI Insights
-Automatically generated explanations from analytical results.
+This can support skill-development planning.
 
 ---
 
-# 🖥️ Current Dashboard
+# 24. Forecasting Engine
 
-The initial frontend MVP includes:
-
-- KaushalIQ branding
-- Navigation sidebar
-- Workforce overview
-- KPI cards
-- Skill-demand visualization
-- Skill-gap panel
-- Regional intelligence section
-- AI insights section
-
-The dashboard will progressively be connected to the backend analytics engine.
-
----
-
-# 🏗️ System Architecture
+Forecasting is a core component of KaushalIQ.
 
 ```text
-┌──────────────────────────────────────────────┐
-│                DATA SOURCES                  │
-│ Jobs | Workforce | Industry | Regional Data  │
-└───────────────────────┬──────────────────────┘
-                        │
-                        ▼
-┌──────────────────────────────────────────────┐
-│               DATA INGESTION                 │
-│        CSV | APIs | Structured Data          │
-└───────────────────────┬──────────────────────┘
-                        │
-                        ▼
-┌──────────────────────────────────────────────┐
-│             DATA PROCESSING                  │
-│ Cleaning | Validation | Normalization        │
-└───────────────────────┬──────────────────────┘
-                        │
-                        ▼
-┌──────────────────────────────────────────────┐
-│                SKILL ENGINE                  │
-│ Extraction | Mapping | Taxonomy              │
-└───────────────────────┬──────────────────────┘
-                        │
-                        ▼
-┌──────────────────────────────────────────────┐
-│             ANALYTICS & ML ENGINE            │
-│ Demand | Supply | Gap | Trends | Forecasting │
-└───────────────────────┬──────────────────────┘
-                        │
-                        ▼
-┌──────────────────────────────────────────────┐
-│                FASTAPI BACKEND               │
-│      REST APIs | Business Logic | AI        │
-└───────────────────────┬──────────────────────┘
-                        │
-                        ▼
-┌──────────────────────────────────────────────┐
-│               REACT FRONTEND                 │
-│ Dashboard | Charts | Maps | Insights         │
-└──────────────────────────────────────────────┘
+Historical Demand
+        ↓
+Feature Engineering
+        ↓
+Trend & Seasonality
+        ↓
+Forecasting Model
+        ↓
+Future Demand
+        ↓
+Confidence / Uncertainty
+```
+
+Potential approaches can include:
+
+- Statistical time-series models
+- Regression
+- Gradient boosting
+- Machine-learning forecasting
+- Ensemble approaches
+
+The final model will depend on data volume, quality, temporal resolution, and validation performance.
+
+---
+
+# 25. Multi-Horizon Forecasting
+
+The system can support multiple forecasting horizons.
+
+```text
+Current
+  ↓
+Short-Term
+  ↓
+Medium-Term
+  ↓
+Long-Term
+```
+
+For example:
+
+- Near-term demand
+- Medium-term demand
+- Long-term strategic demand
+
+Exact forecast windows can be configured based on available historical data.
+
+---
+
+# 26. Forecast Confidence
+
+Predictions should not be presented as certainty.
+
+The forecasting layer can expose:
+
+```text
+Forecast
+Confidence / Uncertainty
+Historical Trend
+Data Coverage
+Last Updated
+```
+
+Example:
+
+```text
+Skill: Data Engineering
+
+Forecast Direction: Increasing
+Forecast Confidence: Medium
+Data Coverage: 36 Months
+Last Updated: Recent Data Refresh
 ```
 
 ---
 
-# 🛠️ Technology Stack
+# 27. Anomaly Detection
+
+KaushalIQ can identify unusual changes.
+
+```text
+Normal Demand
+      │
+      ▼
+Unexpected Spike
+      │
+      ▼
+Anomaly Detector
+      │
+      ▼
+Alert / Investigation
+```
+
+Potential anomalies:
+
+- Sudden demand spike
+- Sudden regional decline
+- Unexpected skill emergence
+- Abnormal occupation movement
+
+---
+
+# 28. AI Insight Layer
+
+The AI layer will convert analytical results into understandable explanations.
+
+Instead of only showing:
+
+```text
+Skill Gap = 0.73
+```
+
+the system can provide:
+
+```text
+The available data indicates a substantial gap between
+labour demand and estimated workforce supply for this skill.
+Demand has increased across the observed period while
+available supply has not increased at the same rate.
+```
+
+AI explanations must remain grounded in the underlying analytical data.
+
+---
+
+# 29. Natural Language Query Interface
+
+A future KaushalIQ assistant can allow users to ask:
+
+```text
+"What are the fastest-growing skills in Madhya Pradesh?"
+```
+
+```text
+"Which cybersecurity skills have the largest supply gap?"
+```
+
+```text
+"Show emerging skills in manufacturing."
+```
+
+```text
+"Which regions have high demand but low training capacity?"
+```
+
+The assistant will translate natural-language questions into analytical queries and return data-backed results.
+
+---
+
+# 30. Decision-Support Dashboard
+
+The main dashboard can provide:
+
+### National Overview
+
+- Total analysed jobs
+- Skills tracked
+- Occupations tracked
+- Industries tracked
+- Regions covered
+- Skill gaps detected
+
+### Demand Intelligence
+
+- Top demanded skills
+- Fastest-growing skills
+- Emerging skills
+- Industry demand
+
+### Supply Intelligence
+
+- Workforce availability
+- Regional supply
+- Training capacity
+
+### Gap Intelligence
+
+- Highest demand-supply gaps
+- Regional gaps
+- Industry gaps
+
+### Forecasting
+
+- Future demand
+- Emerging occupations
+- Forecast uncertainty
+
+### AI Insights
+
+- Automated summaries
+- Explanations
+- Alerts
+
+---
+
+# 31. Role-Based Dashboards
+
+The platform can support multiple user roles.
+
+## Government / Policymaker
+
+Focus:
+
+- Regional gaps
+- Training capacity
+- Industry demand
+- Forecasts
+- Strategic planning
+
+## Training Institution
+
+Focus:
+
+- High-demand skills
+- Course demand
+- Regional demand
+- Placement-aligned skills
+
+## Employer
+
+Focus:
+
+- Skill availability
+- Regional talent
+- Emerging skills
+- Hiring trends
+
+## Student / Job Seeker
+
+Focus:
+
+- Skill demand
+- Emerging occupations
+- Skill pathways
+- Relevant training
+
+---
+
+# 32. Alert & Early-Warning System
+
+KaushalIQ can provide alerts when significant changes occur.
+
+Examples:
+
+```text
+⚠ Skill Gap Alert
+
+Demand for Skill X increased significantly while
+estimated supply remained comparatively stable.
+```
+
+```text
+⚠ Emerging Skill Alert
+
+Skill Y has shown sustained growth across multiple
+industries and regions.
+```
+
+```text
+⚠ Regional Training Alert
+
+A region shows high demand but comparatively limited
+training capacity for the required skill.
+```
+
+---
+
+# 33. Reporting Engine
+
+The platform can generate structured reports.
+
+Potential reports:
+
+- National Skill Gap Report
+- State Skill Intelligence Report
+- Industry Skill Report
+- Emerging Skills Report
+- Forecast Report
+- Training Capacity Report
+- Occupation Intelligence Report
+
+Reports can support:
+
+- Charts
+- Tables
+- Maps
+- AI-generated summaries
+- Methodology
+- Data freshness
+- Source information
+
+---
+
+# 34. API Architecture
+
+The FastAPI backend can expose modular APIs.
+
+Possible API groups:
+
+```text
+/api/health
+
+/api/skills
+/api/skills/{skill_id}
+
+/api/jobs
+/api/occupations
+
+/api/demand
+/api/supply
+/api/gaps
+
+/api/trends
+/api/forecast
+
+/api/regions
+/api/industries
+
+/api/training
+
+/api/insights
+/api/alerts
+```
+
+---
+
+# 35. Suggested API Flow
+
+```text
+React Frontend
+      │
+      ▼
+FastAPI REST API
+      │
+      ├── Authentication
+      │
+      ├── Validation
+      │
+      ├── Business Logic
+      │
+      ├── Analytics Services
+      │
+      └── ML Services
+              │
+              ▼
+         Data Layer
+```
+
+---
+
+# 36. Technology Stack
 
 ## Frontend
 
 - React
 - TypeScript
 - Vite
-- Lucide React
 - Recharts
-- CSS
+- Lucide React
+- CSS / modern UI system
+- Interactive maps
 
 ## Backend
 
@@ -452,467 +1156,587 @@ The dashboard will progressively be connected to the backend analytics engine.
 - Pydantic
 - python-dotenv
 
-## Data & Analytics
-
-Planned components:
+## Data Engineering
 
 - Pandas
 - NumPy
+- Data validation
+- ETL pipelines
+- Feature engineering
+
+## Machine Learning
+
 - Scikit-learn
-- Statistical analysis
-- Time-series forecasting
-- NLP
-- Geospatial processing where required
+- NLP libraries
+- Forecasting models
+- Classification
+- Clustering
+- Anomaly detection
 
 ## Database
 
-The final database will be selected according to the data architecture.
-
-Potential options include:
+Planned architecture:
 
 - PostgreSQL
-- PostgreSQL + PostGIS
-- SQLite for lightweight prototyping
+- PostGIS for spatial intelligence where required
+- Redis or equivalent caching layer where required
 
-## AI / ML
+## Infrastructure
 
-Potential components:
+Potential production components:
 
-- NLP-based skill extraction
-- Skill classification
-- Demand forecasting
-- Trend analysis
-- Anomaly detection
-- AI-generated analytical explanations
+- Docker
+- CI/CD
+- Cloud deployment
+- Object storage
+- Scheduled data pipelines
+- Monitoring and logging
 
 ---
 
-# 📂 Project Structure
+# 37. Proposed Repository Architecture
 
 ```text
 kaushaliq/
 │
-├── backend/
-│   ├── .venv/
+├── frontend/
 │   ├── src/
-│   │   ├── __init__.py
-│   │   ├── config.py
-│   │   ├── main.py
-│   │   └── routes/
-│   │       ├── __init__.py
-│   │       └── health.py
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── charts/
+│   │   ├── maps/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   ├── types/
+│   │   └── utils/
 │   │
-│   ├── .env.example
-│   ├── .gitignore
+│   └── public/
+│
+├── backend/
+│   ├── src/
+│   │   ├── api/
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   ├── analytics/
+│   │   ├── forecasting/
+│   │   ├── nlp/
+│   │   ├── data/
+│   │   └── main.py
+│   │
 │   └── requirements.txt
 │
 ├── data/
 │   ├── raw/
+│   ├── interim/
 │   ├── processed/
+│   ├── features/
 │   └── sample/
 │
-├── docs/
+├── ml/
+│   ├── notebooks/
+│   ├── experiments/
+│   ├── models/
+│   └── evaluation/
 │
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── App.tsx
-│   │   ├── App.css
-│   │   ├── index.css
-│   │   └── main.tsx
-│   ├── package.json
-│   └── vite.config.ts
+├── pipelines/
+│   ├── ingestion/
+│   ├── transformation/
+│   └── scheduled/
+│
+├── docs/
+│   ├── architecture/
+│   ├── api/
+│   ├── methodology/
+│   └── datasets/
+│
+├── tests/
+│   ├── frontend/
+│   ├── backend/
+│   ├── analytics/
+│   └── ml/
 │
 ├── .gitignore
-├── package-lock.json
-└── README.md
+├── README.md
+└── docker-compose.yml
 ```
 
 ---
 
-# 📦 Data Architecture
+# 38. Database Concept
 
-KaushalIQ separates raw data from processed analytical data.
-
-```text
-data/
-│
-├── raw/
-│   └── Original source datasets
-│
-├── processed/
-│   └── Cleaned and normalized datasets
-│
-└── sample/
-    └── Small development/demo datasets
-```
-
-## Labour Demand Data
-
-Expected fields:
+A future production database can represent relationships between:
 
 ```text
-job_id
-job_title
-company
-industry
-location
-posted_date
-required_skills
-experience_level
-employment_type
-salary_min
-salary_max
+Region
+  │
+  ├── Industry
+  │      │
+  │      └── Occupation
+  │              │
+  │              └── Skill
+  │
+  └── Workforce
+          │
+          └── Training
 ```
 
-## Workforce Supply Data
+This allows multidimensional analysis.
 
-Expected fields:
+Example query:
 
 ```text
-region
-skill
-trained_workers
-employed_workers
-unemployed_workers
-education_level
-experience_level
-year
-```
-
-## Skill Taxonomy
-
-Expected fields:
-
-```text
-skill_id
-canonical_skill
-aliases
-category
-sub_category
-```
-
-## Regional Data
-
-Expected fields:
-
-```text
-state
-district
-latitude
-longitude
-population
-labour_force
-employment
-```
-
-## Industry Data
-
-Expected fields:
-
-```text
-industry
-region
-year
-employment
-growth_rate
-```
-
-The exact fields will depend on the final datasets used.
-
----
-
-# 🔌 Backend API
-
-KaushalIQ uses FastAPI for backend services.
-
-## Current API
-
-```text
-GET /api/health
-```
-
-Example response:
-
-```json
-{
-  "status": "ok",
-  "app": "KaushalIQ",
-  "version": "0.1.0"
-}
-```
-
-FastAPI automatically provides interactive API documentation:
-
-```text
-/docs
+Region
+  → Industry
+    → Occupation
+      → Skill
+        → Demand
+        → Supply
+        → Gap
+        → Forecast
 ```
 
 ---
 
-# 🔐 Security
+# 39. Data Freshness
 
-Sensitive configuration is not committed to Git.
-
-Ignored files include:
+Every analytical result should ideally maintain metadata such as:
 
 ```text
-.env
-.venv/
-node_modules/
-dist/
+Source
+Last Updated
+Data Period
+Coverage
+Data Quality
+Confidence
 ```
 
-A safe environment template is provided through:
+This helps prevent stale information from being interpreted as current labour-market reality.
+
+---
+
+# 40. Data Quality Layer
+
+The platform will include validation mechanisms for:
+
+- Missing values
+- Duplicate records
+- Invalid locations
+- Invalid dates
+- Duplicate skills
+- Inconsistent occupation names
+- Inconsistent industry labels
+- Outlier values
+- Source freshness
+
+---
+
+# 41. Explainability
+
+KaushalIQ should make analytical outputs understandable.
+
+For important insights, the system can expose:
 
 ```text
-backend/.env.example
+WHY?
+↓
+Which signals contributed?
+
+WHAT?
+↓
+What changed?
+
+WHERE?
+↓
+Which regions / industries?
+
+WHEN?
+↓
+What time period?
+
+CONFIDENCE?
+↓
+How strong is the evidence?
 ```
+
+This is especially important for policy and planning use cases.
 
 ---
 
-# ⚙️ Local Development
+# 42. Security & Privacy
 
-## Prerequisites
+The production architecture should include:
 
-Install:
+- Environment-based secrets
+- Authentication
+- Role-based access control
+- API validation
+- Rate limiting
+- Secure database access
+- Audit logging
+- Encrypted transport
+- Data access controls
+- Separation of public and sensitive datasets
 
-- Node.js
-- npm
-- Python 3.x
-- Git
+Personal data should not be collected unless explicitly required and legally appropriate.
 
 ---
 
-## Frontend Setup
+# 43. Scalability
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+KaushalIQ is designed to evolve from a hackathon prototype into a larger analytical platform.
 
-Frontend:
+### Prototype
 
 ```text
-http://localhost:5173
+CSV / Sample Data
+       ↓
+Python Analytics
+       ↓
+FastAPI
+       ↓
+React
 ```
 
-Production build:
-
-```powershell
-npm run build
-```
-
----
-
-## Backend Setup
-
-Create the virtual environment:
-
-```powershell
-cd backend
-python -m venv .venv
-```
-
-Activate:
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-Install dependencies:
-
-```powershell
-pip install -r requirements.txt
-```
-
-Run backend:
-
-```powershell
-python -m uvicorn src.main:app --reload
-```
-
-Backend:
+### Production
 
 ```text
-http://127.0.0.1:8000
+Multiple Data Sources
+       ↓
+Data Ingestion
+       ↓
+Data Lake / Storage
+       ↓
+Processing Pipelines
+       ↓
+Analytics Platform
+       ↓
+ML / Forecasting
+       ↓
+API Layer
+       ↓
+Dashboard / Applications
 ```
 
-API documentation:
+---
+
+# 44. Future Evolution
+
+The long-term architecture can evolve toward a continuously updated labour-market intelligence ecosystem.
 
 ```text
-http://127.0.0.1:8000/docs
+             REAL-WORLD LABOUR MARKET
+                       │
+                       ▼
+               CONTINUOUS DATA FLOW
+                       │
+                       ▼
+             KAUSHALIQ DATA PLATFORM
+                       │
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+      DEMAND         SUPPLY         TRAINING
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+                  SKILL GRAPH
+                       │
+                       ▼
+                FORECAST ENGINE
+                       │
+                       ▼
+              REGIONAL INTELLIGENCE
+                       │
+                       ▼
+                AI DECISION LAYER
+                       │
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+    GOVERNMENT       TRAINERS       EMPLOYERS
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+                  WORKFORCE
+                       │
+                       ▼
+              FUTURE LABOUR MARKET
 ```
 
 ---
 
-# 🔄 Development Workflow
+# 45. Advanced Future Scope
+
+Possible future capabilities include:
+
+### Skill Graph
+
+Represent relationships between:
 
 ```text
-1. Collect Labour-Market Data
-              ↓
-2. Validate Data
-              ↓
-3. Clean & Normalize
-              ↓
-4. Extract Skills
-              ↓
-5. Map Skills to Taxonomy
-              ↓
-6. Calculate Demand
-              ↓
-7. Calculate Supply
-              ↓
-8. Identify Skill Gaps
-              ↓
-9. Detect Trends
-              ↓
-10. Forecast Future Demand
-              ↓
-11. Expose Results through API
-              ↓
-12. Visualize in Dashboard
+Skills ↔ Occupations ↔ Industries ↔ Regions ↔ Training
 ```
 
----
+### Skill Transition Engine
 
-# 🎯 MVP Scope
+Identify adjacent skills that allow workers to move from declining occupations into emerging ones.
 
-The initial SIH prototype will focus on:
+### Workforce Scenario Simulation
 
-- Labour-demand dataset ingestion
-- Skill extraction and normalization
-- Skill-demand analysis
-- Workforce supply representation
-- Demand-supply comparison
-- Skill-gap identification
-- Trend analysis
-- Basic forecasting
-- Regional visualization
-- Interactive dashboard
-- FastAPI integration
-- AI-generated insights
-
-The architecture is designed to support additional datasets and more advanced ML models in future versions.
-
----
-
-# 🚀 Future Scope
-
-## 1. Real-Time Labour Signals
-
-Continuous ingestion of new labour-market signals.
-
-## 2. Personalized Career Intelligence
-
-Potential recommendations based on:
-
-- Current skills
-- Location
-- Education
-- Experience
-- Emerging labour demand
-
-## 3. Training Recommendation Engine
-
-Connect identified skill gaps with relevant training programs.
-
-## 4. Employer Intelligence
-
-Provide insights into:
-
-- Skill availability
-- Regional talent pools
-- Emerging skills
-- Hiring trends
-
-## 5. Government Skill Planning
-
-Support evidence-based planning for:
-
-- Skill-development programs
-- Training capacity
-- Regional interventions
-- Emerging occupations
-
-## 6. Skill-Gap Early Warning System
-
-Detect rapidly growing skill shortages before they become critical.
-
-## 7. Digital Labour-Market Intelligence Model
-
-Build a continuously updated representation connecting:
+Simulate:
 
 ```text
-Skills
-  ↕
-Workers
-  ↕
-Jobs
-  ↕
-Industries
-  ↕
-Regions
-  ↕
-Training
+"What happens if demand for Skill X grows by 30%?"
+```
+
+### Training Capacity Simulation
+
+Estimate the impact of increasing training seats for specific skills.
+
+### Regional Scenario Planning
+
+Analyse potential workforce outcomes under different economic or industry-growth scenarios.
+
+### Automated Policy Briefs
+
+Generate data-backed summaries for administrative decision-making.
+
+### Continuous Intelligence
+
+Move from periodic reports toward continuously refreshed labour-market intelligence.
+
+---
+
+# 46. Example End-to-End Scenario
+
+Consider a hypothetical skill:
+
+```text
+Cybersecurity
+```
+
+The pipeline could operate as:
+
+```text
+Job Data
+   ↓
+Cybersecurity skill mentions
+   ↓
+Skill normalization
+   ↓
+Demand measurement
+   ↓
+Workforce supply measurement
+   ↓
+Demand-Supply comparison
+   ↓
+Regional analysis
+   ↓
+Industry analysis
+   ↓
+Historical trend
+   ↓
+Forecast
+   ↓
+Training capacity comparison
+   ↓
+AI-generated explanation
+   ↓
+Dashboard + Alert
+```
+
+The result is not merely a list of jobs.
+
+It becomes a complete intelligence chain:
+
+```text
+DEMAND
+  ↓
+SUPPLY
+  ↓
+GAP
+  ↓
+TREND
+  ↓
+FORECAST
+  ↓
+TRAINING
+  ↓
+DECISION
 ```
 
 ---
 
-# 📊 Current Development Status
+# 47. MVP → Full Platform Roadmap
 
-| Component | Status |
-|---|---|
-| Repository | ✅ Initialized |
-| Frontend | ✅ MVP Dashboard |
-| React + TypeScript | ✅ |
-| FastAPI Backend | ✅ |
-| API Health Endpoint | ✅ |
-| Configuration System | ✅ |
-| Git Security | ✅ |
-| Data Directory | ✅ |
-| Data Ingestion | 🔄 In Progress |
-| Skill Taxonomy | 🔄 Planned |
-| Demand Engine | 🔄 Planned |
-| Supply Engine | 🔄 Planned |
-| Skill-Gap Engine | 🔄 Planned |
-| Forecasting | 🔄 Planned |
-| Regional Intelligence | 🔄 Planned |
-| AI Insights | 🔄 Planned |
-| Production Deployment | ⏳ Future |
+## Phase 1 — Foundation
+
+- Repository
+- Frontend
+- Backend
+- Data architecture
+- Sample datasets
+- Basic dashboard
+
+## Phase 2 — Intelligence
+
+- Data ingestion
+- Cleaning
+- Skill normalization
+- Demand analysis
+- Supply analysis
+- Skill-gap engine
+
+## Phase 3 — ML
+
+- Trend detection
+- Emerging skill detection
+- Forecasting
+- Anomaly detection
+
+## Phase 4 — Regional & Industry Intelligence
+
+- Regional analysis
+- Maps
+- Industry intelligence
+- Occupation intelligence
+
+## Phase 5 — AI Layer
+
+- Natural-language queries
+- AI explanations
+- Automated summaries
+- Insight generation
+
+## Phase 6 — Training Intelligence
+
+- Training mapping
+- Capacity analysis
+- Skill-to-course relationships
+- Training gap detection
+
+## Phase 7 — Production Platform
+
+- Authentication
+- RBAC
+- Database
+- Scheduled pipelines
+- Monitoring
+- Cloud deployment
+- Scalable infrastructure
 
 ---
 
-# 👥 Intended Users
+# 48. Success Metrics
 
-KaushalIQ is designed to support:
+The platform can eventually be evaluated using measurable technical and product metrics.
 
-- Government skill-development administrators
-- Policymakers
-- Training institutions
-- Workforce planners
-- Employers
-- Students
-- Job seekers
-- Researchers
+## Data
+
+- Data coverage
+- Data freshness
+- Data quality
+- Duplicate reduction
+
+## Skill Intelligence
+
+- Skill extraction precision/recall
+- Skill normalization accuracy
+- Taxonomy coverage
+
+## Forecasting
+
+- MAE
+- RMSE
+- MAPE where appropriate
+- Forecast stability
+
+## Platform
+
+- API response time
+- Dashboard load time
+- Pipeline reliability
+- System uptime
+
+## Intelligence
+
+- Regional coverage
+- Industry coverage
+- Forecast horizon
+- Number of tracked skills
+- Number of tracked occupations
 
 ---
 
-# 🌱 Vision
+# 49. Project Philosophy
 
-> **Turn fragmented labour-market data into actionable skill intelligence.**
+KaushalIQ follows five principles:
 
-KaushalIQ aims to make labour-market trends **measurable, understandable, and forecastable**, enabling more data-driven workforce planning and skill-development decisions.
+### 1. Data First
+
+Insights should originate from measurable data.
+
+### 2. Explainable Intelligence
+
+Users should understand why an insight exists.
+
+### 3. Forecast, Don't Assume
+
+Future demand should be presented as a forecast with uncertainty, not certainty.
+
+### 4. Regional Context
+
+National-level averages should not hide regional differences.
+
+### 5. Actionable Intelligence
+
+The system should move beyond dashboards toward decision support.
 
 ---
 
-# 📌 Smart India Hackathon
+# 50. Final Product Vision
+
+KaushalIQ is envisioned as more than a job-market dashboard.
+
+It is a **national-scale labour-market intelligence architecture** connecting:
+
+```text
+                JOBS
+                 │
+                 ▼
+               SKILLS
+                 │
+        ┌────────┼────────┐
+        ▼        ▼        ▼
+    WORKERS   INDUSTRY  REGIONS
+        │        │        │
+        └────────┼────────┘
+                 ▼
+              TRAINING
+                 │
+                 ▼
+             SKILL GAPS
+                 │
+                 ▼
+             FORECASTS
+                 │
+                 ▼
+          AI-POWERED INSIGHTS
+                 │
+                 ▼
+          DECISION SUPPORT
+```
+
+The ultimate objective is to help stakeholders understand **what the labour market needs, what the workforce currently has, where the gaps exist, and how those requirements may evolve in the future**.
+
+---
+
+# 51. Smart India Hackathon
 
 **Problem Statement ID:** SIH26246
 
-**Problem Statement:** AI-Enabled Labour Market Intelligence and Skill Demand-Supply Forecasting Engine
+**Title:** AI-Enabled Labour Market Intelligence and Skill Demand-Supply Forecasting Engine
 
 **Organization:** Ministry of Skill Development and Entrepreneurship (MSDE)
 
@@ -924,8 +1748,16 @@ KaushalIQ aims to make labour-market trends **measurable, understandable, and fo
 
 ---
 
-# 📜 License
+# 52. Project Status
 
-This project is currently being developed as a prototype for **Smart India Hackathon 2026**.
+The repository currently contains the foundational frontend, backend, project structure, and data directories required to incrementally implement the architecture described above.
+
+The architecture in this README represents the **target product design and development roadmap**, not a claim that every listed capability has already been implemented.
+
+---
+
+# 53. License
+
+This project is being developed as a prototype for **Smart India Hackathon 2026**.
 
 License and open-source terms can be finalized after the hackathon.
