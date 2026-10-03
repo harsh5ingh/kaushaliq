@@ -194,6 +194,7 @@ def google_identity(code: str, flow) -> Identity:
         key = jwks.get_signing_key_from_jwt(tokens['id_token']).key
         claims = jwt.decode(tokens['id_token'], key, algorithms=['RS256'], audience=client,
                             issuer=['https://accounts.google.com', 'accounts.google.com'],
+                            leeway=60,
                             options={'require': ['sub', 'iss', 'aud', 'exp', 'iat', 'nonce']})
         if (not hmac.compare_digest(str(claims['nonce']), flow['nonce'])
                 or claims.get('azp', client) != client or claims.get('email_verified') is not True
