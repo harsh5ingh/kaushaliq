@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Protected private account routes send unauthenticated visitors to sign-in with the original route retained",
+    "Signup applies server-side validation, BCrypt-12 stores only a password hash, and an HttpOnly session cookie authenticates the user",
+    "All existing intelligence routes and new account routes render through the top application shell",
+    "Profile menu supports Escape/focus restoration and Profile/Settings/Help; theme and Hindi preference persist through refresh",
+    "Workspace shell is usable without a permanent sidebar at 1440, 1280, 1024, 768 and 390px; mobile drawer closes with Escape",
+    "Login rejects invalid credentials; eight-hour session timeout UX redirects with an explicit expiry message",
+    "Server-side expiry rejects a still-signed JWT when its tracked session has expired",
+    "Logout revokes backend session, clears cookie, and protected routes require sign-in; auth modal keeps header visible without nested scrolling"
+  ],
+  "errors": []
+}

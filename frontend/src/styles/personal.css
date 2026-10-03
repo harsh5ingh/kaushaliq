@@ -1,0 +1,48 @@
+/* Private account surfaces share semantic tokens, never public statistics. */
+.personal-page { max-width:1100px; margin:0 auto; min-width:0; }
+.personal-context { padding:24px 0 32px; border-bottom:1px solid var(--border-subtle); display:grid; gap:12px; }
+.personal-context progress,.onboarding-surface progress { accent-color:var(--accent-fill); width:min(100%,400px); height:6px; }
+.personal-section { padding:32px 0; min-width:0; border-bottom:1px solid var(--border-subtle); }
+.personal-section h2,.personal-editor h2 { font-size:1.25rem; margin:0 0 20px; }
+.personal-section p,.onboarding-surface p { color:var(--text-secondary); line-height:1.7; }
+.personal-section form,.personal-editor,.resume-manager { display:grid; gap:16px; }
+.personal-page label,.onboarding-surface label,.verification-surface label { display:grid; gap:8px; min-width:0; font-size:14px; color:var(--text-primary); }
+.personal-page input:not([type=checkbox]),.personal-page select,.personal-page textarea,.onboarding-surface input:not([type=checkbox]),.onboarding-surface select,.onboarding-surface textarea,.verification-surface input { width:100%; min-width:0; min-height:44px; border:1px solid var(--border-control); border-radius:var(--radius-sm); background:var(--bg-surface); color:var(--text-primary); padding:10px 12px; font:inherit; }
+.personal-page input[type=checkbox],.onboarding-surface input[type=checkbox] { width:18px; height:18px; accent-color:var(--accent-fill); flex:0 0 auto; }
+.personal-page select,.onboarding-surface select { text-overflow:ellipsis; }
+.personal-page textarea { min-height:100px; resize:vertical; }
+.profile-sections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:48px; align-items:start; }
+.personal-inline { display:flex; align-items:end; gap:12px; flex-wrap:wrap; }
+.personal-inline label { flex:1 1 180px; }
+.personal-actions { display:flex; align-items:center; flex-wrap:wrap; gap:12px 24px; margin-top:8px; }
+.personal-actions a,.personal-section a,.personal-context a { color:var(--accent-text); min-height:44px; display:inline-flex; align-items:center; }
+.personal-note,.personal-page small { font-size:13px; line-height:1.6; color:var(--text-secondary); }
+.choice-list { display:grid; gap:4px; border:0; padding:0; margin:0; min-width:0; }
+.choice-list label,.personal-check { display:flex!important; align-items:center; gap:12px; padding:8px 0; min-height:44px; }
+.bounded-choices { max-height:260px; overflow:auto; padding:4px; }
+.user-skills,.session-list { list-style:none; padding:0; margin:0; display:grid; }
+.user-skills li,.session-list li { display:flex; gap:12px; align-items:center; justify-content:space-between; padding:16px 0; border-bottom:1px solid var(--border-subtle); min-width:0; }
+.user-skills li>div,.session-list li>div { display:grid; gap:4px; min-width:0; overflow-wrap:anywhere; }
+.user-skills select { max-width:170px; }
+.personal-page dl { display:grid; gap:16px; }
+.personal-page dl div { display:grid; grid-template-columns:minmax(100px,.35fr) minmax(0,1fr); gap:16px; }
+.personal-page dt { color:var(--text-secondary); }
+.personal-page dd { margin:0; overflow-wrap:anywhere; }
+.resume-summary { display:flex; flex-wrap:wrap; gap:12px 24px; align-items:center; overflow-wrap:anywhere; }
+.file-label { border:1px dashed var(--border-control); padding:16px; border-radius:var(--radius-sm); }
+.candidate-row { display:grid; grid-template-columns:24px minmax(0,1fr) 44px; align-items:center; gap:8px; }
+.onboarding-surface { max-width:660px; margin:0 auto; padding:24px 0; }
+.onboarding-surface h2 { font-size:1.75rem; margin:24px 0 12px; }
+.verification-surface { max-width:480px; margin:48px auto; padding:24px; }
+.verification-surface h1 { font-size:2rem; }
+.verification-surface form { display:grid; gap:16px; margin:24px 0 12px; }
+.verification-surface p { line-height:1.7; }
+.verification-surface .otp-input { letter-spacing:.45em; font-size:26px; font-variant-numeric:tabular-nums; }
+.password-strength { font-size:13px; color:var(--text-secondary); }
+.password-strength p { margin:0 0 8px; }
+.strength-track { height:4px; background:var(--bg-subtle); }
+.strength-track span { height:100%; display:block; background:var(--accent-fill); transition:width var(--motion-page) ease; }
+.password-strength ul { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:8px 16px; margin:12px 0; }
+.password-strength li { min-width:120px; }
+@media(max-width:767px) { .profile-sections { grid-template-columns:1fr; } .personal-section { padding:24px 0; } .personal-page input:not([type=checkbox]),.personal-page select,.onboarding-surface input:not([type=checkbox]),.onboarding-surface select { font-size:16px; } .user-skills li { flex-wrap:wrap; } .user-skills li>div { flex:1 1 100%; } .personal-page dl div { grid-template-columns:1fr; gap:4px; } .verification-surface { margin:16px auto; padding:20px; } .personal-actions .button { flex:1 1 auto; } }
+@media(prefers-reduced-motion:reduce) { .strength-track span { transition:none; } }

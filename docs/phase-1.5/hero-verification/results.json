@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "heroOverflow": false
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "heroOverflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "heroOverflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "heroOverflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "heroOverflow": false
+    }
+  ],
+  "ctaNavigation": "passed",
+  "reducedMotion": "none",
+  "errors": []
+}

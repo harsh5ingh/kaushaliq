@@ -1,0 +1,15 @@
+ .gitignore                  |   4 +-
+ README.md                   |   4 +-
+ frontend/README.md          |  85 +++++--
+ frontend/index.html         |  12 +-
+ frontend/package-lock.json  |  72 +++++-
+ frontend/package.json       |   7 +-
+ frontend/public/favicon.svg |   2 +-
+ frontend/src/App.css        | 551 --------------------------------------------
+ frontend/src/App.tsx        | 258 ---------------------
+ frontend/src/index.css      |   7 -
+ frontend/src/main.tsx       |  19 +-
+ frontend/tsconfig.app.json  |   1 +
+ frontend/tsconfig.node.json |   1 +
+ frontend/vite.config.ts     |   8 +-
+ 14 files changed, 170 insertions(+), 861 deletions(-)

@@ -1,0 +1,47 @@
+/* Product chrome only. Content composition remains Phase 2.1. */
+.product-preferences { display: flex; align-items: center; gap: var(--space-1); }
+.preference-menu { position: relative; }
+.preference-trigger { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-width: 44px; min-height: 44px; padding: var(--space-2); border: 1px solid transparent; border-radius: var(--radius-sm); background: transparent; color: var(--text-secondary); font-size: var(--text-control); }
+.preference-trigger:hover, .preference-trigger[aria-expanded="true"] { background: var(--bg-hover); color: var(--text-primary); }
+.preference-popover { position: absolute; inset-block-start: calc(100% + var(--space-2)); inset-inline-end: 0; width: 240px; padding: var(--space-2); background: var(--bg-surface); border: 1px solid var(--border-control); border-radius: var(--radius-md); z-index: 40; }
+.preference-popover [role="menuitemradio"] { display: flex; align-items: center; gap: var(--space-3); width: 100%; min-height: 44px; border: 0; border-radius: var(--radius-sm); padding: var(--space-3); background: transparent; color: var(--text-primary); font-size: var(--text-control); text-align: start; }
+.preference-popover [role="menuitemradio"] > span { flex: 1; }
+.preference-popover [role="menuitemradio"]:hover { background: var(--bg-hover); }
+.preference-popover [aria-checked="true"] { background: var(--accent-subtle); color: var(--accent-text); }
+.preference-popover p { font-size: var(--text-meta); line-height: 1.6; padding: var(--space-3); border-top: 1px solid var(--border-subtle); margin-top: var(--space-2); }
+.preference-popover :focus-visible { outline-offset: -2px; }
+.public-nav-actions { gap: var(--space-3); }
+.public-desktop-links { gap: var(--space-5); }
+.public-desktop-links a, .public-signin { font-size: var(--text-control); }
+.workspace-header .header-actions { gap: var(--space-3); }
+.workspace-preview { color: var(--text-secondary); font-size: var(--text-meta); padding-inline-start: var(--space-3); border-inline-start: 1px solid var(--border-subtle); }
+.workspace-utilities { border-top: 1px solid var(--border-subtle); margin-top: var(--space-5); padding-top: var(--space-3); }
+.workspace-utilities > a { display: flex; align-items: center; gap: var(--space-3); min-height: 44px; color: var(--text-secondary); font-size: var(--text-control); padding-inline: var(--space-2); }
+.workspace-utilities > a:hover { color: var(--text-primary); text-decoration: underline; text-underline-offset: 4px; }
+.workspace-utilities.compact { margin-top: 0; margin-bottom: var(--space-3); }
+.nav-link { font-size: var(--text-control); }
+.nav-planned { margin-inline-start: auto; font-size: var(--text-meta); color: var(--text-secondary); }
+.sidebar .nav-link { gap: var(--space-2); }
+.mobile-preferences { padding-block: var(--space-4); border-bottom: 1px solid var(--border-subtle); }
+.mobile-preferences .preference-popover, .mobile-drawer .preference-popover { position: static; width: 100%; margin-top: var(--space-2); }
+.mobile-preferences .product-preferences, .mobile-drawer .product-preferences { align-items: stretch; flex-direction: column; }
+.mobile-preferences .preference-trigger, .mobile-drawer .preference-trigger { width: 100%; justify-content: flex-start; }
+@media (max-width: 1279px) {
+  .workspace-preview { display: none; }
+  .workspace-header .preference-trigger > span { display: none; }
+  .public-nav-actions .preference-trigger > span { display: none; }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sidebar .nav-planned { display: none; }
+  .sidebar .workspace-utilities > a > span { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+  .sidebar .workspace-utilities > a { justify-content: center; }
+  .sidebar .workspace-utilities { margin-top: auto; width: 100%; }
+}
+@media (max-width: 959px) { .public-nav-actions .desktop-preferences { display: none; } }
+@media (max-width: 767px) {
+  .workspace-header .desktop-preferences { display: none; }
+  .workspace-header { padding-inline: var(--page-gutter); }
+}
+
+/* Do not interpolate foreground/background through an unreadable intermediate palette. */
+.public-navbar { transition: none; }

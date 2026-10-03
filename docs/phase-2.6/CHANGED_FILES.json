@@ -1,0 +1,56 @@
+{
+  "phase": "2.6",
+  "modified_this_phase": [
+    "frontend/src/main.tsx",
+    "frontend/src/app/routes/AppRoutes.tsx",
+    "frontend/src/app/i18n/locales/en-IN.ts",
+    "frontend/src/app/i18n/locales/hi-IN.ts",
+    "frontend/src/app/i18n/locales/real-data.ts",
+    "frontend/src/components/navigation/CommandPalette.tsx",
+    "frontend/src/components/ui/StatusBadge.tsx",
+    "frontend/src/components/workspace/WorkspaceDataBanner.tsx",
+    "frontend/src/features/real-intelligence/DataProvider.tsx",
+    "frontend/src/features/real-intelligence/dataContext.ts",
+    "frontend/src/features/real-intelligence/contracts.ts",
+    "frontend/src/features/real-intelligence/ObservedLabour.tsx",
+    "frontend/src/features/real-intelligence/RealIntelligencePage.tsx",
+    "frontend/src/styles/phase25.css",
+    "frontend/tests/phase25.browser.cjs"
+  ],
+  "added_this_phase": [
+    "frontend/src/app/i18n/locales/visualization.ts",
+    "frontend/src/components/visualization/VisualizationFrame.tsx",
+    "frontend/src/components/visualization/UnavailableIntelligence.tsx",
+    "frontend/src/components/visualization/RelationshipGraph.tsx",
+    "frontend/src/features/real-intelligence/ObservedTrend.tsx",
+    "frontend/src/features/real-intelligence/RegionalComparison.tsx",
+    "frontend/src/features/real-intelligence/SpatialCoverage.tsx",
+    "frontend/src/styles/visualization.css",
+    "frontend/tests/phase26.browser.cjs",
+    "docs/phase-2.6/DATA_VISUALIZATION_RULES.md",
+    "docs/phase-2.6/PHASE_2_6_AUDIT.md",
+    "docs/phase-2.6/PHASE_2_6_IMPLEMENTATION.md",
+    "docs/phase-2.6/SPATIAL_INTELLIGENCE.md",
+    "docs/phase-2.6/VERIFICATION.md",
+    "docs/phase-2.6/VISUALIZATION_RESEARCH.md",
+    "docs/phase-2.6/VISUALIZATION_SYSTEM.md",
+    "frontend/public/visualization-license.txt"
+  ],
+  "generated": [
+    "docs/phase-2.6/verification/*",
+    "docs/phase-2.6/CHANGED_FILES.json"
+  ],
+  "untouched": [
+    "backend source and API contracts",
+    "data/raw",
+    "data/canonical",
+    "data/metadata/source_registry.json",
+    "public page components/navbar/footer",
+    "auth implementation",
+    "theme and locale providers",
+    "official logo bytes",
+    "package dependencies",
+    "legacy simulated model and renderer source"
+  ],
+  "note": "Full Git status includes broader pre-existing uncommitted work, not this phase alone."
+}

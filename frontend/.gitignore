@@ -1,24 +1,80 @@
+# ============================================================
+# KaushalIQ Frontend - Git Ignore
+# ============================================================
+
+# -------------------------
+# Dependencies
+# -------------------------
+node_modules/
+
+.npm/
+.pnpm-store/
+
+.yarn/
+.yarn-cache/
+.yarn-integrity
+
+# -------------------------
+# Environment / Secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+
+# -------------------------
+# Build output
+# -------------------------
+dist/
+build/
+coverage/
+
+.vite/
+
+# -------------------------
 # Logs
-logs
+# -------------------------
 *.log
+logs/
+
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# -------------------------
+# Testing / Reports
+# -------------------------
+playwright-report/
+test-results/
+blob-report/
 
-# Editor directories and files
+# -------------------------
+# Cache
+# -------------------------
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# -------------------------
+# Editor / OS
+# -------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+!.vscode/settings.json
+
+.idea/
+
+*.swp
+*.swo
+*~
+
+# -------------------------
+# Temporary
+# -------------------------
+tmp/
+temp/

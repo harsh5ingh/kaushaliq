@@ -1,27 +1,113 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
+# ============================================================
+# KaushalIQ Backend - Git Ignore
+# ============================================================
 
-# Virtual environment
+# -------------------------
+# Python virtual environment
+# -------------------------
 .venv/
 venv/
 env/
+ENV/
 
-# Environment variables / secrets
+# -------------------------
+# Python cache
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+
+# -------------------------
+# Coverage
+# -------------------------
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# -------------------------
+# Environment / Secrets
+# -------------------------
 .env
 .env.*
 !.env.example
+!.env.template
 
-# Testing / tooling
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+log/
+
+# -------------------------
+# Local databases
+# -------------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# -------------------------
+# User / Resume uploads
+# -------------------------
+uploads/
+storage/
+media/
+
+user_uploads/
+private_uploads/
+
+resumes/
+resume_uploads/
+
+# -------------------------
+# Generated / Runtime data
+# -------------------------
+generated/
+generated-data/
+runtime/
+runtime-data/
+
+tmp/
+temp/
+
+# -------------------------
+# Python tooling
+# -------------------------
+.pyre/
+.pytype/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 
+# -------------------------
 # IDE
-.vscode/
+# -------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
 .idea/
 
+# -------------------------
 # OS
+# -------------------------
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# -------------------------
+# Temporary files
+# -------------------------
+*.swp
+*.swo
+*~

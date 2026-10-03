@@ -1,25 +1,132 @@
-# Dependencies
-node_modules/
-frontend/node_modules/
+# ============================================================
+# KaushalIQ - Root Git Ignore
+# ============================================================
 
-# Build output
-frontend/dist/
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-# Environment files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+.idea/
+*.swp
+*.swo
+*~
+
+# -------------------------
+# Environment / Secrets
+# -------------------------
 .env
 .env.*
 !.env.example
-backend/.env
+!.env.template
 
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+log/
+
+# -------------------------
+# Temporary files
+# -------------------------
+tmp/
+temp/
+.cache/
+.cache-loader/
+
+# -------------------------
 # Python
-backend/.venv/
+# -------------------------
 __pycache__/
 *.py[cod]
+*$py.class
+*.pyo
 
-# IDE
-.vscode/
-.idea/
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
 
-# OS
-.DS_Store
-Thumbs.db
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# -------------------------
+# Node / Frontend
+# -------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+.yarn-integrity
+
+# Build output
+dist/
+build/
+coverage/
+
+# Vite
+.vite/
+
+# -------------------------
+# Runtime / Local data
+# -------------------------
+*.pid
+*.pid.lock
+
+# SQLite / local databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# -------------------------
+# User-generated / private data
+# -------------------------
+uploads/
+storage/
+media/
+user_uploads/
+private_uploads/
+resumes/
+resume_uploads/
+
+# -------------------------
+# Generated application data
+# -------------------------
+generated/
+generated-data/
+runtime/
+runtime-data/
+
+# -------------------------
+# OS generated
+# -------------------------
+.Trashes/
+ehthumbs.db
+# Phase 2.7 private account documents; never source-controlled
+private-resumes/

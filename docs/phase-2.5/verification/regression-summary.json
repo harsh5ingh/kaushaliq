@@ -1,0 +1,32 @@
+[
+  {
+    "path": "docs/phase-1.5/workspace-regression/browser-results.json",
+    "checks": 29,
+    "errors": 0
+  },
+  {
+    "path": "docs/phase-1.5/verification/results.json",
+    "checks": 6,
+    "errors": 0
+  },
+  {
+    "path": "docs/phase-2/implementation/phase-2.2-fixes-verification/preferences/results.json",
+    "checks": 11,
+    "errors": 0
+  },
+  {
+    "path": "docs/phase-2/implementation/phase-2.2-fixes-verification/localization/results.json",
+    "checks": 8,
+    "errors": 0
+  },
+  {
+    "path": "docs/phase-2/implementation/phase-2.4-verification/workspace/results.json",
+    "checks": 9,
+    "errors": 0
+  },
+  {
+    "path": "docs/phase-2.3.1-verification/results.json",
+    "checks": 8,
+    "errors": 0
+  }
+]

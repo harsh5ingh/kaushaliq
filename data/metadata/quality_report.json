@@ -1,0 +1,52 @@
+{
+  "errors": [],
+  "limitations": [
+    "State/UT history limited to 2023-24 US ages15+",
+    "Chandigarh rural rates absent",
+    "Lakshadweep training row absent",
+    "No official geography codes or geometry",
+    "NIC2008 Sixth Economic Census reference is partial: 19 sections, 82 divisions, 231 groups; no class/subclass",
+    "PMKVY counts are not a certification conversion rate"
+  ],
+  "missing": [
+    {
+      "indicator": "LFPR",
+      "reason": "Blank in source table",
+      "region_id": "in-chandigarh",
+      "sector": "rural"
+    },
+    {
+      "indicator": "WPR",
+      "reason": "Blank in source table",
+      "region_id": "in-chandigarh",
+      "sector": "rural"
+    },
+    {
+      "indicator": "UR",
+      "reason": "Blank in source table",
+      "region_id": "in-chandigarh",
+      "sector": "rural"
+    }
+  ],
+  "quarantined": [
+    {
+      "difference": 120,
+      "indicator": "trained",
+      "period": "2024-25",
+      "published_total": 2038319,
+      "reason": "Published total does not reconcile; omitted from canonical observations, raw retained",
+      "region_id": "in",
+      "source_id": "pmkvy-pib-2026",
+      "state_sum": 2038199
+    }
+  ],
+  "records": {
+    "industries": 332,
+    "labour": 1341,
+    "occupations": 0,
+    "regions": 37,
+    "skills": 0,
+    "training": 287
+  },
+  "status": "VALIDATED_WITH_QUARANTINE"
+}

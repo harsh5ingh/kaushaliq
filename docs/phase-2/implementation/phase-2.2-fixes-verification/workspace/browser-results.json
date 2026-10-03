@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "name": "Backend GET / returns 200",
+      "passed": true
+    },
+    {
+      "name": "Backend GET /api/health returns 200",
+      "passed": true
+    },
+    {
+      "name": "Backend GET /openapi.json returns 200",
+      "passed": true
+    },
+    {
+      "name": "Overview viewport 1440px",
+      "passed": true,
+      "horizontalOverflow": false,
+      "localFontLoaded": true
+    },
+    {
+      "name": "Overview viewport 1280px",
+      "passed": true,
+      "horizontalOverflow": false,
+      "localFontLoaded": true
+    },
+    {
+      "name": "Overview viewport 1024px",
+      "passed": true,
+      "horizontalOverflow": false,
+      "localFontLoaded": true
+    },
+    {
+      "name": "Overview viewport 768px",
+      "passed": true,
+      "horizontalOverflow": false,
+      "localFontLoaded": true
+    },
+    {
+      "name": "Overview viewport 390px",
+      "passed": true,
+      "horizontalOverflow": false,
+      "localFontLoaded": true
+    },
+    {
+      "name": "Direct route and refresh /skills",
+      "passed": true
+    },
+    {
+      "name": "Direct route and refresh /regions",
+      "passed": true
+    },
+    {
+      "name": "Direct route and refresh /occupations",
+      "passed": true
+    },
+    {
+      "name": "Direct route and refresh /industries",
+      "passed": true
+    },
+    {
+      "name": "Direct route and refresh /forecast",
+      "passed": true
+    },
+    {
+      "name": "Unknown route recovery",
+      "passed": true
+    },
+    {
+      "name": "Palette empty results, arrows, Enter and route focus",
+      "passed": true
+    },
+    {
+      "name": "Palette Escape restores trigger focus",
+      "passed": true
+    },
+    {
+      "name": "Ctrl/Cmd+K shortcuts and filtered navigation",
+      "passed": true
+    },
+    {
+      "name": "Browser back and forward navigation",
+      "passed": true
+    },
+    {
+      "name": "Mobile drawer focus containment, Escape, focus return and navigation",
+      "passed": true
+    },
+    {
+      "name": "Sample disclosure dialog and focus containment",
+      "passed": true
+    },
+    {
+      "name": "Loading skeleton during actual health request",
+      "passed": true
+    },
+    {
+      "name": "Real backend health via frontend proxy",
+      "passed": true
+    },
+    {
+      "name": "Real unavailable-backend error and retry",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion disables entrance animation",
+      "passed": true
+    },
+    {
+      "name": "Unsupported accuracy claim absent",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser exceptions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,17 @@
+# Security model
+
+Preserved: bcrypt cost 12; exactly eight-hour signed JWT expiry; tracked/revocable session JTI; HttpOnly session cookie, Secure and __Host prefix in production, configured SameSite; signed double-submit CSRF with exact-Origin validation; hashed auth-attempt fingerprints and rate limits; logout revokes server session before cookie/state removal. Production rejects missing/short JWT secret and non-HTTPS frontend URL. No JWT, OTP or password is stored in localStorage/sessionStorage. Preference persistence remains limited to theme/language.
+
+Added: email ownership verification before private account access; cryptographic six-digit OTP/HMAC storage; expiry/one-use/cooldown/attempt limits; account reauthentication for contact/password changes; other-session revocation after those changes; authenticated no-store responses; per-operation mutation budgets; input/section/upload bounds; explicit owner predicates for all private records and file access. Passwords require 8+ characters including uppercase, lowercase, decimal number and non-whitespace special character; bcrypt UTF-8 input is capped at 72 bytes. Existing earlier passwords can still log in, then must verify email; new signup/change policy is strict.
+
+Private session listing shows only actual current/other session and expiry. Browser fingerprint, precise location and last-activity information are not collected or fabricated. Individual revoke endpoints reject another user's JTI; current session uses the established sign-out flow. A private route expiry redirects with translated explanation; public views continue without a session.
+
+User origin cannot become VERIFIED through a browser payload. Canonical geography/follow identifiers are validated against the public snapshot. Resume candidate confirmation requires both authenticated owner and current private resume ID. All SQL values are parameterized; user ID is derived only from authenticated server context.
+
+## Tested controls
+
+Backend tests exercise public/private boundaries; cross-user profile/section/preferences/watchlist/report/session/resume isolation; IDOR; missing/wrong-Origin CSRF; invalid origin metadata; password policy/rehash/current-password checks; session revocation/expiry/logout; OTP digest, one-use, expiry, exhaustion, resend replacement, cooldown and failure invalidation; missing providers; generic duplicate signup; file validation, size/expanded-archive limits, replacement, confirmation and deletion. Normal app has no test mailbox route. Provider adapters are unit-tested without external delivery.
+
+## Limits and production follow-up
+
+This is not a security certification. OAuth/OIDC linking callbacks/state/PKCE are not implemented and remain honestly unavailable. No password reset, account recovery/delete/export, durable delivery queue or security-notification retry, malware scanner, OS memory cap, global distributed limiter, reverse-proxy payload policy, automated retention/reconciliation or encryption-at-rest layer is claimed. Current SQLite limiter is suitable for this deployment prototype; high-concurrency deployments need a measured transactional/shared budget and maintenance. Provider API keys/production secrets and filesystem/backup access controls must be configured externally. No external provider credentials were configured or modified by this task. Provider request bodies/errors never serialize credentials to application responses. Test delivery is isolated from locally configured email settings.

@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "kaushaliq-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,20 +7,29 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:browser": "node tests/phase1.browser.cjs",
+    "check:browser:phase231": "node tests/phase231.browser.cjs"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
     "lucide-react": "^1.49.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "recharts": "^3.10.1"
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^3.10.1",
+    "simplebar-react": "^3.3.2",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.186.0",
     "@vitejs/plugin-react": "^6.1.1",
     "oxlint": "^1.81.0",
+    "playwright": "^1.63.0",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
   }

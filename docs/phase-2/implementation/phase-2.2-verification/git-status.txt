@@ -1,0 +1,28 @@
+ M .gitignore
+ M README.md
+ M frontend/README.md
+ M frontend/index.html
+ M frontend/package-lock.json
+ M frontend/package.json
+ M frontend/public/favicon.svg
+ D frontend/src/App.css
+ D frontend/src/App.tsx
+ D frontend/src/index.css
+ M frontend/src/main.tsx
+ M frontend/tsconfig.app.json
+ M frontend/tsconfig.node.json
+ M frontend/vite.config.ts
+?? docs/
+?? frontend/.env.example
+?? frontend/public/theme-init.js
+?? frontend/src/app/
+?? frontend/src/assets/kaushaliq-logo.png
+?? frontend/src/assets/kaushaliq-mark.png
+?? frontend/src/components/
+?? frontend/src/features/
+?? frontend/src/hooks/
+?? frontend/src/pages/
+?? frontend/src/services/
+?? frontend/src/styles/
+?? frontend/src/types/
+?? frontend/tests/

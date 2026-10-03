@@ -1,0 +1,38 @@
+const net = require("node:net");
+const path = require("node:path");
+const fs = require("node:fs");
+const os = require("node:os");
+const { spawn } = require("node:child_process");
+
+function reservePort() {
+  return new Promise((resolve, reject) => { const socket = net.createServer(); socket.once("error", reject); socket.listen(0, "127.0.0.1", () => { const port = socket.address().port; socket.close(() => resolve(port)); }); });
+}
+
+async function startStack(frontend, { emailDelivery = true } = {}) {
+  const backendDir = path.resolve(frontend, "../backend");
+  const [frontPort, apiPort] = await Promise.all([reservePort(), reservePort()]);
+  const base = `http://127.0.0.1:${frontPort}`;
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), "kaushaliq-auth-test-"));
+  const backend = spawn(process.env.PYTHON || "python", emailDelivery ? ["tests/provider_server.py", String(apiPort)] : ["-m", "uvicorn", "src.main:app", "--host", "127.0.0.1", "--port", String(apiPort)], {
+    cwd: backendDir,
+    env: { ...process.env, EMAIL_PROVIDER: "", EMAIL_API_KEY: "", EMAIL_FROM: "", SMS_PROVIDER: "", SMS_API_KEY: "", SMS_SENDER_ID: "", ENVIRONMENT: "development", FRONTEND_URL: base, AUTH_SESSION_TTL: "8h", JWT_SECRET: "test-secret-with-more-than-32-characters", AUTH_DATABASE_PATH: path.join(temporary, "auth.sqlite3"), AUTH_COOKIE_SAMESITE: "lax" },
+    stdio: "ignore", windowsHide: true,
+  });
+  let front;
+  for (let i = 0; i < 100; i++) { try { if ((await fetch(`http://127.0.0.1:${apiPort}/api/health`)).ok) break; } catch {} await new Promise(resolve => setTimeout(resolve, 100)); }
+  front = spawn(process.execPath, ["node_modules/vite/bin/vite.js", "--host", "127.0.0.1", "--port", String(frontPort), "--strictPort"], {
+    cwd: frontend, env: { ...process.env, API_PROXY_TARGET: `http://127.0.0.1:${apiPort}` }, stdio: "ignore", windowsHide: true,
+  });
+  for (let i = 0; i < 100; i++) { try { if ((await fetch(base)).ok) break; } catch {} await new Promise(resolve => setTimeout(resolve, 100)); }
+  return {
+    base, apiPort, database: path.join(temporary, "auth.sqlite3"), processes: [front, backend],
+    async stop() {
+      const children = [front, backend].filter(Boolean);
+      for (const child of children) if (child.exitCode === null) child.kill();
+      await Promise.all(children.map(child => new Promise(resolve => { if (child.exitCode !== null) resolve(); else { child.once("exit", resolve); setTimeout(resolve, 3000).unref(); } })));
+      try { fs.rmSync(temporary, { recursive: true, force: true }); } catch {}
+    },
+  };
+}
+
+module.exports = { startStack };

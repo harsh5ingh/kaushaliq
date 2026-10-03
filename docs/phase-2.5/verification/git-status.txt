@@ -1,0 +1,40 @@
+ M .gitignore
+ M README.md
+ M backend/.env.example
+ M backend/requirements.txt
+ M backend/src/config.py
+ M backend/src/main.py
+ M frontend/README.md
+ M frontend/index.html
+ M frontend/package-lock.json
+ M frontend/package.json
+ M frontend/public/favicon.svg
+ D frontend/src/App.css
+ D frontend/src/App.tsx
+ D frontend/src/index.css
+ M frontend/src/main.tsx
+ M frontend/tsconfig.app.json
+ M frontend/tsconfig.node.json
+ M frontend/vite.config.ts
+?? backend/src/data_pipeline/
+?? backend/src/routes/auth.py
+?? backend/src/routes/intelligence.py
+?? backend/tests/
+?? data/
+?? docs/
+?? frontend/.env.example
+?? frontend/public/theme-init.js
+?? frontend/src/analytics/
+?? frontend/src/app/
+?? frontend/src/assets/kaushaliq-logo.png
+?? frontend/src/assets/kaushaliq-mark.png
+?? frontend/src/assets/social/
+?? frontend/src/components/
+?? frontend/src/data/
+?? frontend/src/features/
+?? frontend/src/hooks/
+?? frontend/src/pages/
+?? frontend/src/services/
+?? frontend/src/styles/
+?? frontend/src/types/
+?? frontend/tests/

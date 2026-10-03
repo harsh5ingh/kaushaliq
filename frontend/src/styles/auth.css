@@ -1,0 +1,43 @@
+/* Account forms are explicitly local previews, not an authentication client. */
+.auth-modal { width: min(480px, calc(100% - 24px)); padding: var(--space-6); border-radius: var(--radius-md); }
+.auth-modal .modal-heading { margin-bottom: 16px; }
+.auth-modal .modal-heading h2 { font-size: 23px; letter-spacing: -.02em; font-weight: 500; }
+.auth-modal .modal-heading .icon-button { flex-shrink: 0; }
+.auth-intro { margin-bottom: 24px; }
+.auth-intro .eyebrow { font-size: var(--text-meta); color: var(--accent-text); }
+.auth-intro p { font-size: var(--text-meta); line-height: 1.85; margin-top: 10px; }
+.social-auth { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.social-auth .button { min-height: 44px; font-size: var(--text-meta); padding-inline: 8px; }
+.google-mark { font-weight: 500; font-size: 17px; }
+.auth-divider { display: flex; align-items: center; gap: 14px; margin: 20px 0; color: var(--text-secondary); font-size: var(--text-meta); }
+.auth-divider::before, .auth-divider::after { content: ""; height: 1px; background: var(--border-subtle); flex: 1; }
+.auth-field { margin-bottom: 15px; }
+.auth-field label { display: block; font-size: var(--text-meta); color: var(--text-secondary); margin-bottom: 7px; }
+.auth-field input { display: block; width: 100%; height: 45px; border: 1px solid var(--border-control); border-radius: var(--radius-sm); background: var(--bg-canvas); padding: 10px 12px; color: var(--text-primary); font-size: 14px; }
+.auth-field input[aria-invalid="true"] { border-color: var(--danger-text); }
+.auth-field input:focus { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.field-hint, .field-error { display: block; margin-top: 7px; font-size: var(--text-meta); line-height: 1.7; }
+.field-hint { color: var(--text-secondary); }
+.field-error { color: var(--danger-text); }
+.auth-text-button { border: 0; background: transparent; padding: 4px 0; color: var(--accent-text); font-size: var(--text-meta); min-height: 44px; }
+.auth-text-button:hover { text-decoration: underline; text-underline-offset: 3px; }
+.forgot-password { display: block; margin: -5px 0 10px auto; }
+.auth-submit { width: 100%; min-height: 46px; justify-content: space-between; margin-top: 6px; }
+.auth-preview-note { display: flex; align-items: flex-start; gap: 9px; padding: 14px 0; margin-top: 10px; border-bottom: 1px solid var(--border-subtle); color: var(--warning-text); }
+.auth-preview-note svg { margin-top: 3px; }
+.auth-preview-note p { font-size: var(--text-meta); line-height: 1.8; }
+.auth-switch { text-align: center; font-size: var(--text-meta); margin-top: 14px; }
+.auth-notice { padding: 12px; margin-top: 14px; font-size: var(--text-meta); background: var(--bg-canvas); border-left: 2px solid var(--warning-text); }
+.auth-checked { padding: 10px 0; }
+.auth-checked > svg { color: var(--success-text); margin-bottom: 18px; }
+.auth-checked h3 { font-size: 21px; margin-bottom: 16px; }
+.auth-checked p { margin-bottom: 16px; font-size: 13px; line-height: 1.85; }
+.auth-checked .button { width: 100%; margin-top: 12px; min-height: 44px; }
+@media (max-width: 599px) {
+  .auth-modal { padding: var(--space-5) var(--space-4); max-height: calc(100dvh - 24px); }
+  .auth-modal .modal-heading h2 { font-size: 20px; }
+  .auth-field input { font-size: 16px; }
+  .social-auth { grid-template-columns: 1fr; }
+  .social-auth .button { font-size: var(--text-meta); }
+  .auth-text-button { min-height: 44px; }
+}

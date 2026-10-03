@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Homepage, original logo variants, no overflow and screenshots at 1440",
+    "Homepage, original logo variants, no overflow and screenshots at 1280",
+    "Homepage, original logo variants, no overflow and screenshots at 1024",
+    "Homepage, original logo variants, no overflow and screenshots at 768",
+    "Homepage, original logo variants, no overflow and screenshots at 390",
+    "All public and workspace routes load and refresh",
+    "CTA navigation and browser back/forward",
+    "Keyboard opening, forward/reverse focus containment, Escape and restoration",
+    "Auth history, mode switching, validation, field clearing and no network/storage writes",
+    "OAuth disclosure and honest recovery result",
+    "Direct auth URL closes without leaving the site",
+    "Mobile menu navigation, containment, dismissal and auth handoff",
+    "Reduced motion",
+    "No uncaught browser exceptions or auth requests"
+  ],
+  "errors": []
+}

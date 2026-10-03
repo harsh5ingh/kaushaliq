@@ -1,0 +1,42 @@
+git diff --stat
+ .gitignore                  |   4 +-
+ README.md                   |   4 +-
+ frontend/README.md          |  85 +++++--
+ frontend/index.html         |   9 +-
+ frontend/package-lock.json  |  72 +++++-
+ frontend/package.json       |   7 +-
+ frontend/public/favicon.svg |   2 +-
+ frontend/src/App.css        | 551 --------------------------------------------
+ frontend/src/App.tsx        | 258 ---------------------
+ frontend/src/index.css      |   7 -
+ frontend/src/main.tsx       |  17 +-
+ frontend/tsconfig.app.json  |   1 +
+ frontend/tsconfig.node.json |   1 +
+ frontend/vite.config.ts     |   8 +-
+ 14 files changed, 163 insertions(+), 863 deletions(-)
+
+git status --short
+ M .gitignore
+ M README.md
+ M frontend/README.md
+ M frontend/index.html
+ M frontend/package-lock.json
+ M frontend/package.json
+ M frontend/public/favicon.svg
+ D frontend/src/App.css
+ D frontend/src/App.tsx
+ D frontend/src/index.css
+ M frontend/src/main.tsx
+ M frontend/tsconfig.app.json
+ M frontend/tsconfig.node.json
+ M frontend/vite.config.ts
+?? docs/
+?? frontend/src/app/
+?? frontend/src/components/
+?? frontend/src/features/
+?? frontend/src/hooks/
+?? frontend/src/pages/
+?? frontend/src/services/
+?? frontend/src/styles/
+?? frontend/src/types/
+?? frontend/tests/
