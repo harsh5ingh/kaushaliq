@@ -15,7 +15,7 @@ const navigation = getNavigation(t);
     {navigation.map(({ path, label, icon: Icon, availability }) => <NavLink
       key={path} to={path + (mode === "sample" ? "?data=sample" : "")} aria-describedby={id + path} end onClick={onNavigate} title={label}
       className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-      <Icon size={19} aria-hidden="true" /><span>{label}</span><small id={id + path} className="nav-planned" aria-hidden="true">{mode === "sample" ? availability === "sample" ? t("workspace.demoTag") : t("common.planned") : t(catalog?.coverage.find(c => c.dimension === (path === "/intelligence" ? "labour" : path.slice(1)))?.status === "OBSERVED" ? "real.connected" : "real.notConnected")}</small>
+      <Icon size={19} aria-hidden="true" /><span>{label}</span><small id={id + path} className="nav-planned" aria-hidden="true">{mode === "sample" ? availability === "sample" ? t("workspace.demoTag") : t("common.planned") : t(catalog?.coverage.find(c => c.dimension === (path === "/intelligence" ? "labour" : path === "/skill-gaps" ? "gaps" : path === "/supply" ? "training" : path.slice(1)))?.status === "OBSERVED" ? "real.connected" : "real.notConnected")}</small>
     </NavLink>)}
   </nav>;
 }

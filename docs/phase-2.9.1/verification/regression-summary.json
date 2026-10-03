@@ -1,0 +1,74 @@
+[
+  {
+    "suite": "phase1",
+    "log": "phase1.txt",
+    "passed": 29,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase15",
+    "log": "phase15.txt",
+    "passed": 6,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase22",
+    "log": "phase22.txt",
+    "passed": 11,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase22-localization",
+    "log": "phase22-localization-final.txt",
+    "passed": 8,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase231",
+    "log": "phase231.txt",
+    "passed": 8,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase24",
+    "log": "phase24.txt",
+    "passed": 9,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase25",
+    "log": "phase25.txt",
+    "passed": 11,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase26",
+    "log": "phase26.txt",
+    "passed": 10,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase27",
+    "log": "phase27.txt",
+    "passed": 11,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase271",
+    "log": "phase271.txt",
+    "passed": 7,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase28",
+    "log": "phase28.txt",
+    "passed": 11,
+    "status": "PASS"
+  },
+  {
+    "suite": "phase29",
+    "log": "phase29.txt",
+    "passed": 11,
+    "status": "PASS"
+  }
+]

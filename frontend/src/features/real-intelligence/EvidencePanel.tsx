@@ -1,11 +1,13 @@
 import { Modal } from "../../components/ui/Modal";
 import { useLocale } from "../../hooks/usePreferences";
-import { useIntelligenceData } from "./dataContext";
-import type { Evidence } from "./contracts";
+import { useContext } from "react";
+import { DataContext } from "./dataContext";
+import type { Evidence, Source } from "./contracts";
 
-export function EvidencePanel({ evidence, period, onClose }: { evidence: Evidence; period: string; onClose: () => void }) {
-  const { t, locale } = useLocale(); const { catalog } = useIntelligenceData();
-  const source = catalog?.sources.find(s => s.source_id === evidence.source_id);
+export function EvidencePanel({ evidence, period, source: suppliedSource, onClose }: { evidence: Evidence; period: string; source?: Source; onClose: () => void }) {
+  const { t, locale } = useLocale(); const data = useContext(DataContext);
+  // Public source-backed views can supply metadata without mounting the workspace data provider.
+  const source = suppliedSource ?? data?.catalog?.sources.find(s => s.source_id === evidence.source_id);
   return <Modal title={t("real.evidence")} id="evidence-heading" onClose={onClose} className="evidence-dialog">
     {source && <><p className="real-note">{t("real.sourceLanguage")}</p><dl className="evidence-details">
       <dt>{t("real.source")}</dt><dd lang="en"><a href={source.url} target="_blank" rel="noreferrer">{source.dataset_name}</a></dd>

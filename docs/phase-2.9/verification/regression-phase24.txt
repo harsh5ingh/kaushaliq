@@ -1,0 +1,9 @@
+PASS All nine workspace routes render, refresh and disclose simulated data in both themes
+PASS Overview region/period filters update calculations and incompatible dimensions produce an honest empty state
+PASS Skill profile responds to a category filter from the shared simulated model
+PASS Regional profile responds to experience-level filters from the shared simulated model
+PASS Command search finds a simulated skill, opens its profile, and relationship links drill into an occupation
+PASS Report briefs expand in-page and keep simulated evidence disclosure visible
+PASS Spatial scene layer and accessible region selector work with graceful WebGL fallback support
+PASS All workspace routes have no horizontal overflow at 1440, 1280, 1024, 768 and 390px
+PASS New workspace routes and navigation are translated into Hindi without replacing the locale provider

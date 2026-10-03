@@ -1,0 +1,9 @@
+PASS English/Hindi key and interpolation parity
+PASS English → Hindi → English updates content without reload; Hindi survives refresh
+PASS Hero verified evidence is keyboard accessible and restores focus
+SAFE_REGISTER_STATUS {"http":201}
+PASS All public and workspace routes have Hindi content, direct loads and refresh
+PASS Auth fields/errors react to language without resetting values; Hindi command search and history
+PASS Compact footer and public layout in both languages/themes at 1440, 768, 390; no overflow
+PASS Only configured GitHub shown, official icon rendered, keyboard opens safe external destination
+PASS Hindi workspace five widths, mobile language keyboard, focus trap/restoration, System OS updates and reduced motion

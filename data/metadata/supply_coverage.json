@@ -1,0 +1,83 @@
+[
+  {
+    "dimension": "TRAINED",
+    "district": 0,
+    "national": 3,
+    "periods": [
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ],
+    "source_ids": [
+      "pmkvy-pib-2026"
+    ],
+    "state_ut": 140,
+    "status": "PARTIAL"
+  },
+  {
+    "dimension": "CERTIFIED",
+    "district": 0,
+    "national": 4,
+    "periods": [
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ],
+    "source_ids": [
+      "pmkvy-pib-2026"
+    ],
+    "state_ut": 140,
+    "status": "VERIFIED"
+  },
+  {
+    "dimension": "TRAINING_CENTRES",
+    "district": 0,
+    "national": 0,
+    "periods": [
+      "2026-06-30"
+    ],
+    "source_ids": [
+      "pmkvy-centres-pib-2026"
+    ],
+    "state_ut": 36,
+    "status": "VERIFIED"
+  },
+  {
+    "dimension": "SEATS",
+    "district": 0,
+    "national": 0,
+    "periods": [],
+    "source_ids": [],
+    "state_ut": 0,
+    "status": "UNAVAILABLE"
+  },
+  {
+    "dimension": "CAPACITY",
+    "district": 0,
+    "national": 0,
+    "periods": [],
+    "source_ids": [],
+    "state_ut": 0,
+    "status": "UNAVAILABLE"
+  },
+  {
+    "dimension": "OCCUPATION_MAPPING",
+    "district": 0,
+    "national": 0,
+    "periods": [],
+    "source_ids": [],
+    "state_ut": 0,
+    "status": "UNAVAILABLE"
+  },
+  {
+    "dimension": "SKILL_MAPPING",
+    "district": 0,
+    "national": 0,
+    "periods": [],
+    "source_ids": [],
+    "state_ut": 0,
+    "status": "UNAVAILABLE"
+  }
+]

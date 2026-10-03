@@ -10,6 +10,10 @@ import { PrimaryButton, SecondaryButton } from "../ui/Buttons";
 import { useAuth } from "../../app/providers/authContext";
 import { PasswordStrength } from './PasswordStrength';
 import { validPassword } from '../../features/account/passwordPolicy';
+import { useLocation } from 'react-router-dom';
+import { accountRequest, AccountError } from '../../features/account/api';
+import type { OAuthAvailability, OAuthProvider } from '../../features/account/oauth';
+import { Loader } from '../ui/Loader';
 
 type FieldName = "name" | "email" | "password" | "confirm";
 type FieldErrors = Partial<Record<FieldName, MessageKey>>;
@@ -26,12 +30,29 @@ export function AuthForm({ mode, onMode }: { mode: AuthMode; onMode: (mode: Auth
   const [status, setStatus] = useState<FormStatus>("idle");
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
-  const [provider, setProvider] = useState<string | null>(null);
+  const location = useLocation();
+  const [providers, setProviders] = useState<OAuthAvailability | null>(null);
+  const [provider, setProvider] = useState<OAuthProvider | null>(null);
+  const [providerError, setProviderError] = useState<MessageKey | null>(null);
+  const providerInFlight = useRef(false);
+  useEffect(() => { let active=true; accountRequest<OAuthAvailability>('/auth/providers','').then(result=>{if(active)setProviders(result);}).catch(()=>{if(active)setProviderError('oauth.failed');}); return()=>{active=false;}; }, []);
   useEffect(() => { if (mode === "reset") resetPanel.current?.querySelector<HTMLButtonElement>("button")?.focus(); else form.current?.querySelector<HTMLInputElement>(`[name="${firstField[mode]}"]`)?.focus(); clearError(); }, [mode, clearError]);
+
+  async function openProvider(next: OAuthProvider) {
+    if (providerInFlight.current || status==='pending') return;
+    providerInFlight.current=true;setProvider(next);setProviderError(null);
+    try {
+      const state=location.state as {returnTo?:unknown}|null;
+      const returnTo=typeof state?.returnTo==='string'?state.returnTo:'/intelligence';
+      const challenge=auth.csrf || (await accountRequest<{csrfToken:string}>('/auth/csrf','')).csrfToken;
+      const result=await accountRequest<{authorizationUrl:string}>('/auth/oauth/'+next+'/start',challenge,'POST',{return_to:returnTo});
+      window.location.assign(result.authorizationUrl);
+    } catch (error) {setProviderError(error instanceof AccountError?error.key:'oauth.failed');setProvider(null);providerInFlight.current=false;}
+  }
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (status === "pending" || mode === "reset") return;
+    if (status === "pending" || providerInFlight.current || mode === "reset") return;
     auth.clearError();
     const data = new FormData(event.currentTarget);
     const email = String(data.get("email") ?? "").trim();
@@ -55,11 +76,13 @@ export function AuthForm({ mode, onMode }: { mode: AuthMode; onMode: (mode: Auth
   const authError = normalizedError.includes("incorrect") ? t("auth.loginError") : normalizedError.includes("already exist") ? t("auth.registerError") : normalizedError.includes("too many attempts") ? t("auth.rateLimit") : normalizedError.includes("at least 8 characters") || normalizedError.includes("too long") ? t("auth.passwordLength") : auth.error ? t("auth.serviceError") : null;
   return <>
     <div className="social-auth" aria-describedby="oauth-availability">
-      <SecondaryButton type="button" disabled onClick={() => setProvider("Google")}><FcGoogle size={18} aria-hidden="true" />{t("auth.google")}</SecondaryButton>
-      <SecondaryButton type="button" disabled onClick={() => setProvider("GitHub")}><FaGithub size={17} aria-hidden="true" />{t("auth.github")}</SecondaryButton>
-      <SecondaryButton type="button" disabled onClick={() => setProvider("Facebook")}><FaFacebook size={17} aria-hidden="true" />{t("auth.facebook")}</SecondaryButton>
+      <SecondaryButton type="button" disabled={!providers?.oauth.google || auth.loading || status==='pending' || provider!==null} aria-busy={provider==='google'} onClick={() => void openProvider('google')}><FcGoogle size={18} aria-hidden="true" />{t("auth.google")}</SecondaryButton>
+      <SecondaryButton type="button" disabled={!providers?.oauth.github || auth.loading || status==='pending' || provider!==null} aria-busy={provider==='github'} onClick={() => void openProvider('github')}><FaGithub size={17} aria-hidden="true" />{t("auth.github")}</SecondaryButton>
+      <SecondaryButton type="button" disabled><FaFacebook size={17} aria-hidden="true" />{t("auth.facebook")}</SecondaryButton>
     </div>
-    <p id="oauth-availability" className="provider-availability">{provider ? t("auth.oauthUnavailable") : t("auth.providerStatus")}</p>
+    <p id="oauth-availability" className="provider-availability">{t(providers?.oauth.google || providers?.oauth.github?'oauth.available':'auth.providerStatus')}</p>
+    {provider&&<p className="progress-label" role="status"><Loader/>{t('oauth.pending')}</p>}
+    {providerError&&<p className="field-error" role="alert">{t(providerError)}</p>}
     <div className="auth-divider"><span>{t("auth.emailAlternative")}</span></div>
     <form ref={form} noValidate onSubmit={submit} aria-label={mode === "signup" ? t("auth.createPreview") : t("auth.signinPreview")} onInput={() => { setErrors({}); auth.clearError(); }}>
       {mode === "signup" && <AuthField name="name" label={t("auth.name")} autoComplete="name" required error={errors.name ? t(errors.name) : undefined} />}
@@ -70,12 +93,12 @@ export function AuthForm({ mode, onMode }: { mode: AuthMode; onMode: (mode: Auth
       {mode === "login" && <button type="button" className="auth-text-button forgot-password" onClick={() => onMode("reset")}>{t("auth.forgot")}</button>}
       {authError && <p className="field-error auth-server-error" role="alert">{authError}</p>}
       {Object.keys(errors).length > 0 && <p className="field-error" role="alert">{t("auth.review")}</p>}
-      <PrimaryButton type="submit" className="auth-submit" disabled={status === "pending"} aria-busy={status === "pending"}>
+      <PrimaryButton type="submit" className="auth-submit" disabled={status === "pending" || provider!==null} aria-busy={status === "pending"}>
         {status === "pending" ? t("auth.checking") : mode === "signup" ? t("auth.create") : t("common.signIn")}<ArrowRight size={16} aria-hidden="true" />
       </PrimaryButton>
       {status === "pending" && <p role="status" className="field-hint">{t("auth.validating")}</p>}
     </form>
-    <div className="auth-preview-note"><p>{t("auth.disclaimer")}</p></div>
+    {!(providers?.oauth.google || providers?.oauth.github) && <div className="auth-preview-note"><p>{t('auth.disclaimer')}</p></div>}
     <p className="auth-switch">{mode === "signup" ? t("auth.already") : t("auth.new")} {" "}
       <button type="button" className="auth-text-button" onClick={() => onMode(mode === "login" ? "signup" : "login")}>{mode === "login" ? t("auth.createAccount") : t("common.signIn")}</button>
     </p>

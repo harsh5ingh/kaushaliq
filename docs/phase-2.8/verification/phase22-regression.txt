@@ -1,0 +1,11 @@
+PASS First visit defaults to System and English without writing storage
+PASS Light/Dark/System selection, persistence, refresh, explicit override and live OS updates
+PASS Preference keyboard arrows/Home/Enter, Tab exit, Escape, outside dismissal and focus
+PASS Hindi persists and updates html language, native names and translated disclosure
+PASS Cross-tab theme/locale synchronization and theme deletion fallback
+PASS Public and workspace chrome screenshots, collision and overflow checks at five widths in both themes
+PASS Mobile preferences, nested Escape, focus containment/restoration and stable header geometry
+PASS Active links, Website utility, history, auth field/focus preservation across themes and reduced motion
+PASS Early theme bootstrap resolves stored/default/invalid preferences before React loads
+PASS Blocked storage retains working in-memory theme and language preferences
+PASS Only named preference keys stored; no session writes or uncaught exceptions

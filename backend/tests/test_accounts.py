@@ -57,6 +57,8 @@ class AccountTests(unittest.TestCase):
                 text=args[-1];match=re.search(r'\b\d{6}\b',text)
                 if match:outer.codes[target]=match[0]
                 outer.deliveries.append(target)
+                from src.accounts.providers import ProviderResult
+                return ProviderResult('accepted')
         self.patches=[patch.object(verification,'email_provider',return_value=Capture()),patch.object(accounts,'email_provider',return_value=Capture()),patch.object(accounts,'sms_provider',return_value=Capture())]
         for p in self.patches:p.start()
         self.a=self.register('a@example.in');self.b=self.register('b@example.in')

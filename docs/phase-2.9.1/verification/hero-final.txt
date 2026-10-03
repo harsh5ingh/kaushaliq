@@ -1,0 +1,11 @@
+PASS Skeleton loading is theme-aware, accessible and contains no substituted metric
+PASS National vacancy stock, matched geographies and record count match the verified APIs with both dates and historical context
+PASS Shared evidence, provenance hash, keyboard containment, Escape and focus restoration work on the public hero
+PASS CTA destinations and browser history reuse existing public intelligence routes; source marquee can be paused
+PASS English-Hindi-English updates the hero immediately and persists on refresh
+PASS 20 screenshots cover five widths, both themes/languages; images load, metrics and CTAs fit without page overflow
+PASS System appearance selects the matching image; reduced motion uses a static wrapped source row
+PASS Provider/API and network failures are explicit, remove numbers and source claims, and support retry without simulation
+PASS Unavailable observations, inconsistent coverage, mixed publication versions and unbound provenance fail closed, never zero/sample
+PASS Only API-confirmed connected sources appear; production hero contains no hardcoded measurements or sample import; no browser exceptions
+PASS Light mobile loading uses the existing warm-paper skeleton tokens and recovers to verified observations

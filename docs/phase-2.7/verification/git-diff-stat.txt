@@ -1,0 +1,34 @@
+ docs/phase-2.7/PHASE_2_7_AUDIT.md                  |   3 ++-
+ docs/phase-2.7/PHASE_2_7_IMPLEMENTATION.md         |   5 +++--
+ docs/phase-2.7/RESUME_PRIVACY.md                   |   2 ++
+ .../phase-2.7/verification/otp-dark-hi-IN-1024.png | Bin 33157 -> 33282 bytes
+ .../phase-2.7/verification/otp-dark-hi-IN-1280.png | Bin 35373 -> 35445 bytes
+ docs/phase-2.7/verification/otp-dark-hi-IN-390.png | Bin 29009 -> 29170 bytes
+ .../verification/otp-light-en-IN-1024.png          | Bin 43054 -> 42813 bytes
+ .../phase-2.7/verification/otp-light-en-IN-768.png | Bin 38901 -> 41954 bytes
+ .../verification/otp-light-hi-IN-1280.png          | Bin 35358 -> 35264 bytes
+ .../verification/otp-light-hi-IN-1440.png          | Bin 36245 -> 36162 bytes
+ .../verification/profile-dark-en-IN-1024.png       | Bin 232946 -> 208474 bytes
+ docs/phase-2.7/verification/results.json           |   7 +++----
+ .../verification/settings-dark-en-IN-1024.png      | Bin 150587 -> 150717 bytes
+ .../verification/settings-dark-en-IN-1280.png      | Bin 159351 -> 159482 bytes
+ .../verification/settings-dark-en-IN-1440.png      | Bin 161647 -> 161772 bytes
+ .../verification/settings-dark-en-IN-390.png       | Bin 143367 -> 143521 bytes
+ .../verification/settings-dark-en-IN-768.png       | Bin 151407 -> 151536 bytes
+ .../verification/settings-dark-hi-IN-1024.png      | Bin 98190 -> 98131 bytes
+ .../verification/settings-dark-hi-IN-1280.png      | Bin 105343 -> 105278 bytes
+ .../verification/settings-dark-hi-IN-1440.png      | Bin 107393 -> 107342 bytes
+ .../verification/settings-dark-hi-IN-390.png       | Bin 91305 -> 91255 bytes
+ .../verification/settings-dark-hi-IN-768.png       | Bin 95897 -> 95837 bytes
+ .../verification/settings-light-en-IN-1024.png     | Bin 150220 -> 150344 bytes
+ .../verification/settings-light-en-IN-1280.png     | Bin 159128 -> 159253 bytes
+ .../verification/settings-light-en-IN-1440.png     | Bin 161489 -> 161605 bytes
+ .../verification/settings-light-en-IN-390.png      | Bin 142496 -> 142611 bytes
+ .../verification/settings-light-en-IN-768.png      | Bin 150860 -> 150994 bytes
+ .../verification/settings-light-hi-IN-1024.png     | Bin 97863 -> 97795 bytes
+ .../verification/settings-light-hi-IN-1280.png     | Bin 104913 -> 104972 bytes
+ .../verification/settings-light-hi-IN-1440.png     | Bin 106884 -> 106955 bytes
+ .../verification/settings-light-hi-IN-390.png      | Bin 90570 -> 90502 bytes
+ .../verification/settings-light-hi-IN-768.png      | Bin 95547 -> 95477 bytes
+ docs/phase-2.7/verification/synthetic-resume.docx  | Bin 292 -> 292 bytes
+ 33 files changed, 10 insertions(+), 7 deletions(-)

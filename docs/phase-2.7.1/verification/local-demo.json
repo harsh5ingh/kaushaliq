@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Actual ignored local configuration login",
+    "Persisted local demo profile",
+    "Canonical watchlist and verified saved analysis",
+    "Normal logout/session cleared"
+  ],
+  "credentials_disclosed": false
+}

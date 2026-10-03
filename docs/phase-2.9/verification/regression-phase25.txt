@@ -1,0 +1,11 @@
+PASS Canonical APIs, known rates, evidence, invalid query rejection and quarantined/missing observations
+PASS Real provider is default after authentication and refresh; no fabricated KPIs
+PASS Evidence exposes source, period, methodology, transformations, terms and raw hash; keyboard/focus restore
+PASS Sex, state, period and activity filters change observed results; absent coverage never becomes zero
+PASS Training renders observed counts, partial-period/cohort cautions and quarantine, with missing states unavailable
+PASS Search uses connected canonical entities, with no simulated skill search in real mode
+PASS Legacy simulation is explicit and labelled; back/forward restores the correct provider
+PASS API failure is explicit; retry recovers without sample fallback
+PASS Chronological historical chart, source/period tooltip and paginated searchable NIC reference
+PASS Nine real-data routes plus training/evidence: five widths, both themes and languages, no page overflow (220 screenshots)
+PASS Language switching and refresh persistence, reduced motion, no uncaught browser exceptions

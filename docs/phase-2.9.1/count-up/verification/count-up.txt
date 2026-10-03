@@ -1,0 +1,7 @@
+PASS Skeleton transitions to zero only after valid API data; final accessible values are exposed without tick announcements
+PASS All three values finish exactly; shorter secondary timing, easing, stable layout and uninterrupted theme/language/parent updates verified
+PASS StrictMode, recreated formatter/parent JSX, increasing/decreasing/interrupted/zero targets and unmount RAF cancellation work in isolated tests
+PASS Mobile Hindi/light count-up has unchanged metric/card geometry and no horizontal overflow
+PASS Reduced motion shows final values immediately, cancels in-flight animation and does not restart when preference is restored
+PASS API failure/retry, missing observation and null measurement retain truthful states with no fabricated counters
+PASS No production target literals, random values, API mutation or uncaught browser exceptions

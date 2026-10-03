@@ -10,6 +10,7 @@ from fastapi.responses import FileResponse
 from pydantic import TypeAdapter, ValidationError
 import bcrypt
 from src.routes.auth import connect, now, current_session, validate_csrf, rate_limit, safe_user, EMAIL_PATTERN
+from src.config import settings
 from src.accounts import store, otp, resumes
 from src.accounts.models import Education, Skill, Experience, Career, Geography, Onboarding, Alerts, Name, PasswordChange, TargetChange, Watch, Analysis, ResumeConfirmation
 from src.accounts.passwords import validate_password
@@ -32,6 +33,7 @@ def public_snapshot():
 
 
 def require_password(user, supplied):
+    if not user['password_enabled']: raise HTTPException(400,'credentials_invalid')
     raw = supplied.encode()
     if len(raw)>72 or not bcrypt.checkpw(raw,user['password_hash']): raise HTTPException(400,'credentials_invalid')
 
@@ -116,8 +118,19 @@ def sessions(session=Depends(current_session)):
 @router.post('/sessions/revoke-others')
 def revoke_others(request: Request,session=Depends(current_session)):
     user,_=session; mutate(request,user,'sessions')
-    with connect() as db: db.execute('UPDATE sessions SET revoked_at=? WHERE user_id=? AND jti<>? AND revoked_at IS NULL',(now().isoformat(),user['id'],user['jti']))
-    return {'saved':True}
+    from src.accounts.sessions import revoke_account_sessions
+    return {'saved':True, 'revoked':revoke_account_sessions(user, keep_current=True)}
+
+
+@router.post('/sessions/revoke-all')
+def revoke_all(request: Request,response: Response,session=Depends(current_session)):
+    user,_=session; mutate(request,user,'sessions')
+    from src.accounts.sessions import revoke_account_sessions
+    from src.routes.auth import clear_session_cookie
+    count = revoke_account_sessions(user, keep_current=False)
+    clear_session_cookie(response)
+    response.delete_cookie('kaushaliq_csrf', path='/', secure=settings.environment.lower() == 'production', samesite='lax')
+    return {'signedOut':True, 'revoked':count}
 
 
 @router.delete('/sessions/{identifier}')
@@ -148,7 +161,7 @@ def change_target(purpose:str,body:TargetChange,request:Request,session=Depends(
     target=body.target.strip().casefold() if purpose=='email' else body.target.strip()
     if not (EMAIL_PATTERN.fullmatch(target) if purpose=='email' else re.fullmatch(r'\+[1-9]\d{7,14}',target)): raise HTTPException(422,'target_invalid')
     try: return otp.issue(user['id'],purpose,target,email_provider() if purpose=='email' else sms_provider())
-    except ProviderUnavailable as exc: raise HTTPException(503,purpose+'_'+exc.state.lower()) from None
+    except ProviderUnavailable as exc: raise HTTPException(503,exc.code if purpose=='email' else purpose+'_'+exc.state.lower()) from None
 
 
 @router.post('/verify-{purpose}')
@@ -173,16 +186,25 @@ def verify_target(purpose:str,body:Code,request:Request,session=Depends(current_
 
 
 @router.get('/connected-accounts')
-def connections():
-    return {'items':[{'provider':p,'state':'NOT_CONFIGURED','connected':False} for p in ['google','github']]}
+def connections(session=Depends(current_session)):
+    from src.accounts.oauth import availability
+    user,_=session
+    with connect() as db: linked={r['provider'] for r in db.execute('SELECT provider FROM oauth_identities WHERE user_id=?',(user['id'],))}
+    return {'items':[{'provider':p,'state':availability(p),'connected':p in linked} for p in ['google','github']]}
 
 
-@router.post('/connected-accounts/{provider}')
 @router.delete('/connected-accounts/{provider}')
 def connect_provider(provider:str,request:Request,session=Depends(current_session)):
     user,_=session; mutate(request,user,'provider')
     if provider not in {'google','github'}: raise HTTPException(404,'not_found')
     raise HTTPException(503,'oauth_not_configured')
+
+
+@router.post('/connected-accounts/{provider}')
+def link_provider(provider:str,request:Request,response:Response,session=Depends(current_session)):
+    from src.accounts.oauth import begin_flow
+    user,_=session; mutate(request,user,'provider')
+    return begin_flow(provider,response,'/settings',user)
 
 
 @router.get('/watchlist')

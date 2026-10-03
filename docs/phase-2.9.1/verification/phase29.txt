@@ -1,0 +1,11 @@
+PASS Public supply route consumes323 verified activity/infrastructure records and preserves the quarantined total
+PASS Shared evidence exposes source, period, original-cell transformation and hash; Escape restores focus
+PASS Metric-aware filters keep centres separate, retain527$ and distinguish absent Lakshadweep activity from its observed centre
+PASS District, quarantined and incompatible-period queries stay unavailable through refresh/history, never zero
+PASS Ten deterministic compatibility dimensions explain stock/flow, unit and mapping blockers without a gap number
+PASS Reference explorer reuses partial NIC codes/evidence and keeps unconnected occupation/skill/qualification rows unavailable
+PASS Immediate English-Hindi-English updates and language persistence apply to training, readiness and reference labels
+PASS 20 supply screenshots cover all five widths, both themes and languages with no horizontal page overflow
+PASS System appearance, reduced motion, visible focus and mobile navigation/Escape remain functional
+PASS API failure and mixed publication versions fail closed with retry, no sample fallback
+PASS Supply never exposes simulation; historical NCS value preserved; no uncaught browser errors

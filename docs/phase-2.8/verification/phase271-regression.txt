@@ -1,0 +1,7 @@
+PASS Seeded demo uses normal login, eight-hour HttpOnly cookie and unchanged verified observations
+PASS Synthetic profile, optional onboarding, canonical watchlist and saved verified query are functional
+PASS Security/settings/session and unavailable provider states are inspectable
+PASS Six demo screenshots cover all five widths, both themes and languages without overflow
+PASS Signout revokes server session; private redirect, Escape/reduced motion and no production test mailbox
+PASS OTP expiry, resend/cooldown and attempt exhaustion work; screenshots contain no OTP values
+PASS Provider rejection and network failure are honest, reload-safe, bilingual and never grant a session

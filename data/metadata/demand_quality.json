@@ -1,0 +1,102 @@
+{
+  "historical_snapshot": true,
+  "identical_responsive_copies": 2,
+  "mapping_counts": {
+    "geography": {
+      "AMBIGUOUS": 0,
+      "DOCUMENTED": 1,
+      "EXACT": 33,
+      "REQUIRES_REVIEW": 0,
+      "UNAVAILABLE": 0,
+      "UNMAPPED": 3
+    },
+    "occupation": {
+      "AMBIGUOUS": 0,
+      "DOCUMENTED": 0,
+      "EXACT": 0,
+      "REQUIRES_REVIEW": 0,
+      "UNAVAILABLE": 37,
+      "UNMAPPED": 0
+    },
+    "sector": {
+      "AMBIGUOUS": 0,
+      "DOCUMENTED": 0,
+      "EXACT": 0,
+      "REQUIRES_REVIEW": 0,
+      "UNAVAILABLE": 37,
+      "UNMAPPED": 0
+    },
+    "skill": {
+      "AMBIGUOUS": 0,
+      "DOCUMENTED": 0,
+      "EXACT": 0,
+      "REQUIRES_REVIEW": 0,
+      "UNAVAILABLE": 37,
+      "UNMAPPED": 0
+    }
+  },
+  "published_records": 37,
+  "quarantined": [
+    {
+      "evidence": {
+        "locator": "Annexure row 1.",
+        "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+        "source_id": "ncs-active-pib-2025",
+        "transformations": [
+          "Extract Active Vacancies column; employer column is not demand",
+          "Parse Indian digit grouping; preserve original value/unit",
+          "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+          "Exact geography label/explicit Total→India alias only; no downscaling",
+          "ncs-active-stock-1.0"
+        ]
+      },
+      "label": "Andaman and Nicobar Islands",
+      "reason": "SOURCE_DASH_NOT_ZERO",
+      "source_record_id": "Annexure row 1.",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "evidence": {
+        "locator": "Annexure row 8.",
+        "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+        "source_id": "ncs-active-pib-2025",
+        "transformations": [
+          "Extract Active Vacancies column; employer column is not demand",
+          "Parse Indian digit grouping; preserve original value/unit",
+          "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+          "Exact geography label/explicit Total→India alias only; no downscaling",
+          "ncs-active-stock-1.0"
+        ]
+      },
+      "label": "Dadra and Nagar Haveli",
+      "reason": "SOURCE_DASH_NOT_ZERO",
+      "source_record_id": "Annexure row 8.",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "evidence": {
+        "locator": "Annexure row 19.",
+        "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+        "source_id": "ncs-active-pib-2025",
+        "transformations": [
+          "Extract Active Vacancies column; employer column is not demand",
+          "Parse Indian digit grouping; preserve original value/unit",
+          "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+          "Exact geography label/explicit Total→India alias only; no downscaling",
+          "ncs-active-stock-1.0"
+        ]
+      },
+      "label": "Ladakh",
+      "reason": "SOURCE_DASH_NOT_ZERO",
+      "source_record_id": "Annexure row 19.",
+      "status": "UNAVAILABLE"
+    }
+  ],
+  "reconciliation": "Published numeric buckets sum to published TOTAL; source dashes remain unavailable, not zeros",
+  "retrieved_at": "2026-10-03T10:00:43.247567+00:00",
+  "snapshot_observation_date": "2025-07-14",
+  "source_records": 40,
+  "status": "WARNING",
+  "valid_records": 34,
+  "warning_records": 3
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "exit_code": 0,
+    "checks": 29,
+    "suite": "phase1"
+  },
+  {
+    "exit_code": 0,
+    "checks": 6,
+    "suite": "phase15"
+  },
+  {
+    "exit_code": 0,
+    "checks": 11,
+    "suite": "phase22"
+  },
+  {
+    "exit_code": 0,
+    "checks": 8,
+    "suite": "phase22-localization"
+  },
+  {
+    "exit_code": 0,
+    "checks": 8,
+    "suite": "phase231"
+  },
+  {
+    "exit_code": 0,
+    "checks": 9,
+    "suite": "phase24"
+  },
+  {
+    "exit_code": 0,
+    "checks": 11,
+    "suite": "phase25"
+  },
+  {
+    "exit_code": 0,
+    "checks": 10,
+    "suite": "phase26"
+  },
+  {
+    "exit_code": 0,
+    "checks": 11,
+    "suite": "phase27"
+  },
+  {
+    "exit_code": 0,
+    "checks": 7,
+    "suite": "phase271"
+  },
+  {
+    "exit_code": 0,
+    "checks": 11,
+    "suite": "phase28"
+  }
+]

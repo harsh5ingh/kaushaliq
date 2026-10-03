@@ -1,0 +1,1818 @@
+{
+  "version": "0637c927262d52a8f44007797b86f7ae39954dcf12cc65999d0a7146ab255f8a",
+  "engine_version": "gap-engine-1.0",
+  "demand_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+  "supply_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+  "base_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+  "data_mode": "verified",
+  "sources": [
+    {
+      "source_id": "ncs-active-pib-2025",
+      "publisher": "Ministry of Labour & Employment / National Career Service, disseminated by PIB",
+      "dataset_name": "NCS active vacancies: State/UT Annexure, as of 14 July 2025",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147927&reg=48&lang=2",
+      "license": "PIB attribution/reproduction policy; not a blanket GODL/CC licence",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "PIB-2147927 / 2025-07-24",
+      "geography": "India; published State/UT, multiple-state and unspecified buckets",
+      "granularity": "Administrative active-vacancy stock as of 14 July 2025; no occupation/skill/industry breakdown",
+      "methodology": "Published NCS portal active vacancies; stock at a point in time, not annual vacancies mobilised, final hiring, unique jobs or a national census of demand",
+      "notes": "Portal/partner coverage and duplicate/repost treatment not quantified. Historical DNH/Daman&Diu labels remain unassigned; dash is unavailable; multiple states and unspecified location are not distributed. No district or occupation/skill/sector observations. Historical snapshot, not real-time.",
+      "access_method": "Explicit HTTPS download of public PIB Annexure HTML",
+      "update_frequency": "Ad-hoc parliamentary release; no guaranteed feed",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-03T10:00:43.247567+00:00",
+      "sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+      "connected": true,
+      "publication_date": "2025-07-24",
+      "observation_period": "2025-07-14",
+      "classification_system": null,
+      "source_kind": "demand_publication"
+    },
+    {
+      "source_id": "nic-2008",
+      "publisher": "MoSPI",
+      "dataset_name": "NIC2008 Codes & Descriptions, Sixth Economic Census reference",
+      "url": "https://mospi.gov.in/sites/default/files/6ec_dirEst/ec6_nic_2008_code.html",
+      "license": "Public official classification, MoSPI open-access terms with attribution; no blanket CC/GODL",
+      "license_url": "https://mospi.gov.in/faq",
+      "version": "NIC-2008",
+      "geography": "India",
+      "granularity": "Section/division/group",
+      "methodology": "Preserve official codes as strings and source hierarchy",
+      "notes": "Partial Sixth Economic Census listing: 19 sections, 82 divisions, 231 groups; Division02 absent; no classes/subclasses. Historical PLFS alignment; NIC2025 exists. Taxonomy is not demand. No invented crosswalk.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-02T20:13:04.394526+00:00",
+      "sha256": "ad419dcbc3dc5ee4695a92827e688d3566227ae858765982dea6df8ea2bb619a",
+      "connected": true,
+      "publication_date": null,
+      "observation_period": null,
+      "classification_system": null,
+      "source_kind": null
+    },
+    {
+      "source_id": "pmkvy-pib-2026",
+      "publisher": "MSDE, disseminated by PIB",
+      "dataset_name": "Redesigning PMKVY Courses — Annexure I",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297203&lang=1&reg=3",
+      "license": "PIB attribution/reproduction policy",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "10 August2026",
+      "geography": "Published State/UT rows",
+      "granularity": "State × FY × trained/certified",
+      "methodology": "Administrative counts; certification cohorts/lag differ",
+      "notes": "FY2026-27 partial to30June2026; certifications may concern prior cohorts, not a conversion rate. Lakshadweep absent. FY2024-25 national trained total quarantined: published2038319 versus state sum2038199 (difference120). No seats/capacity/placement/demand measures.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-02T20:13:05.578370+00:00",
+      "sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+      "connected": true,
+      "publication_date": "2026-08-10",
+      "observation_period": "FY2023-24–FY2026-27 to30June2026",
+      "classification_system": null,
+      "source_kind": null
+    },
+    {
+      "source_id": "pmkvy-centres-pib-2026",
+      "publisher": "MSDE, disseminated by PIB",
+      "dataset_name": "Skilling for Space and Geospatial Sectors — Annexure II PMKVY training centres",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289890&lang=1&reg=3",
+      "license": "PIB attribution/reproduction policy",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "27 July 2026",
+      "geography": "36 published State/UT rows; no national total",
+      "granularity": "State/UT × PMKVY training centres",
+      "methodology": "Published administrative training-centre stock as of 30 June 2026; no seats or throughput inferred",
+      "notes": "Infrastructure count, not current capacity or available workers. Andhra Pradesh 527 includes 6 in Konaseema per source footnote. NAPS establishments and sector trainees not ingested. No district allocation or national total.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-03T12:04:39.713825+00:00",
+      "sha256": "d6063f7a3075ec43c0e4350b158684d3dfd157b4fe4a7b8c03929d0987a471d2",
+      "connected": true,
+      "publication_date": "2026-07-27",
+      "observation_period": "2026-06-30",
+      "classification_system": null,
+      "source_kind": "training_infrastructure"
+    }
+  ],
+  "status": "NOT_READY",
+  "gap_status": "UNAVAILABLE",
+  "readiness": "NOT_READY",
+  "reason_code": "NO_COMPATIBLE_OBSERVATIONS",
+  "dimension": "skill",
+  "filters": {
+    "geography_id": "in"
+  },
+  "total": 7,
+  "calculated_total": 0,
+  "items": [
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-100afd0bf06b5155408f4822",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "2f818afd00b5fd01f94b83a84bdaef66",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2023-24; TRAINED",
+        "provenance_id": "b8b63ea2d15dc6dcc5d7c95c498fedf7",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2023-24",
+        "period_start": "2023-04-01",
+        "period_end": "2024-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "TRAINED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 539992.0,
+        "normalized_value": 539992.0,
+        "unit": "persons",
+        "original_value": "5,39,992",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2023-24; TRAINED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2023-24; TRAINED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    },
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-76fafc1527e7e54a8faf1f78",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "79c241a3e61503b4f23d7d199a965117",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2023-24; CERTIFIED",
+        "provenance_id": "56551c79fb9685f872e6fd6484e1cc30",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2023-24",
+        "period_start": "2023-04-01",
+        "period_end": "2024-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "CERTIFIED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 278115.0,
+        "normalized_value": 278115.0,
+        "unit": "persons",
+        "original_value": "2,78,115",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2023-24; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2023-24; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    },
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-7059f56bcfec14c33aa57ba6",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "01ac8c1d5a325319031cd2c10d90278e",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2024-25; CERTIFIED",
+        "provenance_id": "dde688751155cf2c741180d339f507ac",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2024-25",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "CERTIFIED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 1330778.0,
+        "normalized_value": 1330778.0,
+        "unit": "persons",
+        "original_value": "13,30,778",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2024-25; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2024-25; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    },
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-f789b9851606305be0872b9b",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "90b02ac5e45836875dd97e649a285596",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2025-26; TRAINED",
+        "provenance_id": "6b17b1fe40b02a9cc31cd91f1b0c9545",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2025-26",
+        "period_start": "2025-04-01",
+        "period_end": "2026-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "TRAINED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 153388.0,
+        "normalized_value": 153388.0,
+        "unit": "persons",
+        "original_value": "1,53,388",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2025-26; TRAINED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2025-26; TRAINED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    },
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-cb5fc8cfdf094c481d0c7fe1",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "1ebbaf8da5ee1f77f2a24646d4cfbaa9",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2025-26; CERTIFIED",
+        "provenance_id": "b6168b91281e89222f6f2dacbacacd35",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2025-26",
+        "period_start": "2025-04-01",
+        "period_end": "2026-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "CERTIFIED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 304680.0,
+        "normalized_value": 304680.0,
+        "unit": "persons",
+        "original_value": "3,04,680",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2025-26; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2025-26; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    },
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-15553431da08b00552a166be",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "0221e4581bbb1f6925e377b1864a7be2",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2026-27; TRAINED",
+        "provenance_id": "b6f6a6489fa346b414a6d4cf3b319fa9",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2026-27",
+        "period_start": "2026-04-01",
+        "period_end": "2027-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": true,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "TRAINED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 85754.0,
+        "normalized_value": 85754.0,
+        "unit": "persons",
+        "original_value": "85,754",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2026-27; TRAINED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2026-27; TRAINED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    },
+    {
+      "schema_version": "gap-1.0",
+      "result_id": "gap-b5866c30bc80947c9fb87ded",
+      "dimension_type": "skill",
+      "dimension_id": null,
+      "readiness": "NOT_READY",
+      "compatibility_status": "INCOMPATIBLE",
+      "gap_status": "UNAVAILABLE",
+      "demand": {
+        "signal_id": "3b3ceffd89fe7cad6c1e9ddf1d9ecad1",
+        "source_id": "ncs-active-pib-2025",
+        "source_record_id": "Annexure TOTAL",
+        "provenance_id": "dc115fbe6c733d64363efdfecedfe537",
+        "source_version": "PIB-2147927 / 2025-07-24",
+        "publication_version": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+        "reference_period": "2025-07-14",
+        "period_start": "2025-07-14",
+        "period_end": "2025-07-14",
+        "period_type": "POINT",
+        "publication_date": "2025-07-24",
+        "partial": false,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": "2025-07-14",
+        "as_of": null,
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "active_vacancies",
+        "semantic_category": "VACANCY_STOCK",
+        "population": null,
+        "value": 4005028.0,
+        "normalized_value": 4005028.0,
+        "unit": "vacancies",
+        "original_value": "40,05,028",
+        "original_unit": "vacancies",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "ncs-active-stock-1.0",
+        "evidence": {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      },
+      "supply": {
+        "signal_id": "930ab20c5fb580f1f480bb800e34f2aa",
+        "source_id": "pmkvy-pib-2026",
+        "source_record_id": "Annexure I; Total; 2026-27; CERTIFIED",
+        "provenance_id": "f6edfb46f3f971a3fcbce3fbaaa80a23",
+        "source_version": "10 August2026",
+        "publication_version": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4",
+        "reference_period": "2026-27",
+        "period_start": "2026-04-01",
+        "period_end": "2027-03-31",
+        "period_type": "FISCAL_YEAR",
+        "publication_date": "2026-08-10",
+        "partial": true,
+        "geography_id": "in",
+        "geography_level": "country",
+        "source_geography_label": "Total",
+        "source_geography_code": null,
+        "observation_date": null,
+        "as_of": "2026-06-30",
+        "geography_mapping_status": "DOCUMENTED",
+        "geography_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+        "metric": "CERTIFIED",
+        "semantic_category": "TRAINING_OUTPUT",
+        "population": "PMKVY reported trained/certified persons; availability and employment unknown",
+        "value": 30247.0,
+        "normalized_value": 30247.0,
+        "unit": "persons",
+        "original_value": "30,247",
+        "original_unit": "reported persons",
+        "status": "OBSERVED",
+        "quality_status": "VALID",
+        "quality_flags": [],
+        "classifications": {},
+        "coverage_fraction": null,
+        "coverage_population": null,
+        "coverage_evidence": null,
+        "methodology_version": "pmkvy-output-infrastructure-1.0",
+        "evidence": {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2026-27; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      },
+      "gap_value": null,
+      "uncovered_amount": null,
+      "coverage_ratio": null,
+      "gap_direction": null,
+      "quality_status": "WARNING",
+      "quality_flags": [],
+      "checks": [
+        {
+          "dimension": "metric",
+          "status": "INCOMPATIBLE",
+          "reason_code": "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+          "explanation": "A versioned reviewed metric/population method is required; vacancy stock is not training output or centre capacity."
+        },
+        {
+          "dimension": "unit",
+          "status": "INCOMPATIBLE",
+          "reason_code": "UNIT_SEMANTICS_DIFFER",
+          "explanation": "Units must agree under the reviewed method; vacancies, persons, centres and seats are not silently converted."
+        },
+        {
+          "dimension": "time",
+          "status": "INCOMPATIBLE",
+          "reason_code": "TIME_SEMANTICS_DIFFER",
+          "explanation": "Exact observation boundaries and temporal semantics must agree; publication dates and partial intervals are not substitutes."
+        },
+        {
+          "dimension": "geography",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GEOGRAPHY",
+          "explanation": "Both inputs must map to the same canonical geography, level and base version; no district allocation."
+        },
+        {
+          "dimension": "occupation",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_OCCUPATION_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "skill",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SKILL_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "sector",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "NO_SECTOR_MAPPING",
+          "explanation": "Required classifications need versioned approved equal codes or an evidence-backed exact/documented crosswalk; title similarity, partial and related edges do not suffice."
+        },
+        {
+          "dimension": "taxonomy",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "TAXONOMY_VERSION_UNAVAILABLE",
+          "explanation": "Required taxonomy versions must be explicit and their relationship must be reviewed."
+        },
+        {
+          "dimension": "mapping",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "MAPPING_NOT_VERIFIED",
+          "explanation": "Every required mapping must be approved and traceable; unresolved mappings remain unresolved."
+        },
+        {
+          "dimension": "granularity",
+          "status": "COMPATIBLE",
+          "reason_code": "SAME_GRANULARITY",
+          "explanation": "The observation strata must agree; aggregate data cannot populate finer dimensions."
+        },
+        {
+          "dimension": "coverage",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "COVERAGE_INSUFFICIENT",
+          "explanation": "Full compatible measured population coverage needs source evidence. Publication record counts are not population coverage."
+        },
+        {
+          "dimension": "quality",
+          "status": "COMPATIBLE",
+          "reason_code": "VALIDATED_RECORDS",
+          "explanation": "Only validated observed/explicitly derived inputs are eligible; warnings, quarantine, estimates and scenarios cannot open the gate."
+        },
+        {
+          "dimension": "source",
+          "status": "COMPATIBLE",
+          "reason_code": "VERIFIED_SOURCES",
+          "explanation": "Both source versions, checksums, immutable publication identities and evidence must agree."
+        }
+      ],
+      "reason_codes": [
+        "VACANCY_STOCK_NOT_TRAINING_ACTIVITY",
+        "UNIT_SEMANTICS_DIFFER",
+        "TIME_SEMANTICS_DIFFER",
+        "NO_OCCUPATION_MAPPING",
+        "NO_SKILL_MAPPING",
+        "NO_SECTOR_MAPPING",
+        "TAXONOMY_VERSION_UNAVAILABLE",
+        "MAPPING_NOT_VERIFIED",
+        "COVERAGE_INSUFFICIENT"
+      ],
+      "method_id": null,
+      "method_version": null,
+      "engine_version": "gap-engine-1.0",
+      "methodology": null,
+      "transformations": [
+        "Extract Active Vacancies column; employer column is not demand",
+        "Parse Indian digit grouping; preserve original value/unit",
+        "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+        "Exact geography label/explicit Total→India alias only; no downscaling",
+        "ncs-active-stock-1.0",
+        "Published fiscal-year activity counts; original cell retained",
+        "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+      ],
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure TOTAL",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Total; 2026-27; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ],
+      "mapping_references": [],
+      "limitations": [
+        "No approved comparable demand/current-supply metric and population pairing is connected."
+      ]
+    }
+  ],
+  "limitations": [
+    "Assessment pairs are source context, not comparable measurements. Only READY records contain arithmetic."
+  ]
+}

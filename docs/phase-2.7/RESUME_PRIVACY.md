@@ -11,3 +11,5 @@ Candidates remain proposals until the user selects/edits/removes and confirms th
 SQLite and private local files are not encrypted by this application. Deployment must secure filesystem permissions, volumes and backups. Files persist until replace/delete; timed retention and full account deletion/export are future work. A crash or filesystem failure between DB commit and unlink may leave an inaccessible orphan requiring reconciliation. There is no claim of complete compliance certification or production malware protection.
 
 Tests use a synthetic DOCX and a generated blank PDF, not personal documents. No resume text, credentials or OTP are captured in browser result logs.
+
+Confirmation reads the current resume and profile sections inside the same write transaction. Duplicate selected skills are normalized by stripped, case-folded name. Existing experience is merged/preserved when no new experience is selected; explicit experience editing/removal is available in Profile. Section provenance is checked against the same transactional snapshot to prevent stale resume origins from being reintroduced after deletion.

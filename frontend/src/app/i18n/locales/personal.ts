@@ -1,4 +1,12 @@
 export const personalEn = {
+  'personal.emailAuthFailed':'Email provider credentials were rejected. Contact the local administrator.',
+  'personal.emailSenderFailed':'The email sender configuration needs attention. Contact the local administrator.',
+  'personal.emailTestRestricted':'The email provider restricts this test sender to its account owner. Use the configured test inbox or a verified sender domain.',
+  'personal.emailRejected':'The email provider rejected this request. Please try again later.',
+  'personal.networkError':'The verification service could not be reached. Check your connection and try again.',
+  'personal.codeExpired':'This code has expired. Request a new code when the countdown ends.',
+  'personal.codeExhausted':'This code has reached its attempt limit. Request a new code when the countdown ends.',
+
   'personal.title':'My Intelligence', 'personal.intro':'Your private context and saved areas of interest. Public intelligence stays the same for everyone.',
   'personal.public':'Explore public intelligence', 'personal.profile':'Build your personal context', 'personal.empty':'Personalized intelligence will appear here as you save areas of interest.',
   'personal.onboard':'Complete your profile', 'personal.private':'Private account information', 'personal.origin':'Self-reported', 'personal.resumeOrigin':'Resume-derived · confirmed by you',
@@ -26,6 +34,14 @@ export const personalEn = {
 } as const;
 
 export const personalHi: Record<keyof typeof personalEn,string> = {
+  'personal.emailAuthFailed':'ईमेल प्रदाता ने क्रेडेंशियल स्वीकार नहीं किए। स्थानीय प्रशासक से संपर्क करें।',
+  'personal.emailSenderFailed':'ईमेल प्रेषक का कॉन्फ़िगरेशन ठीक करना ज़रूरी है। स्थानीय प्रशासक से संपर्क करें।',
+  'personal.emailTestRestricted':'इस परीक्षण प्रेषक से केवल प्रदाता के खाता मालिक को ईमेल भेजा जा सकता है। निर्धारित परीक्षण इनबॉक्स या सत्यापित प्रेषक डोमेन उपयोग करें।',
+  'personal.emailRejected':'ईमेल प्रदाता ने अनुरोध स्वीकार नहीं किया। बाद में फिर कोशिश करें।',
+  'personal.networkError':'सत्यापन सेवा से संपर्क नहीं हुआ। कनेक्शन जाँचें और फिर कोशिश करें।',
+  'personal.codeExpired':'इस कोड की अवधि समाप्त हो गई है। उलटी गिनती के बाद नया कोड माँगें।',
+  'personal.codeExhausted':'इस कोड की प्रयास सीमा पूरी हो गई है। उलटी गिनती के बाद नया कोड माँगें।',
+
   'personal.title':'मेरा विश्लेषण', 'personal.intro':'आपकी निजी जानकारी और सहेजी गई रुचियाँ। सार्वजनिक विश्लेषण सभी के लिए एक जैसा है।',
   'personal.public':'सार्वजनिक विश्लेषण देखें', 'personal.profile':'अपनी निजी जानकारी जोड़ें', 'personal.empty':'रुचि के क्षेत्र सहेजने पर व्यक्तिगत विश्लेषण यहाँ उपलब्ध होगा।',
   'personal.onboard':'प्रोफ़ाइल पूरी करें', 'personal.private':'निजी खाता जानकारी', 'personal.origin':'स्वयं दी गई जानकारी', 'personal.resumeOrigin':'रेज़्यूमे से प्राप्त · आपके द्वारा पुष्टि की गई',

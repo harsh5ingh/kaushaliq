@@ -1,0 +1,11 @@
+PASS Verified public intelligence is anonymous; private profile remains protected
+PASS Strong signup, actual backend OTP confirmation, masked address, invalid code, countdown and refresh; no session before verification
+PASS Optional seven-step onboarding persists all sections, self-reported origin and resume skip; My Intelligence contains actual user context
+PASS Canonical watchlist and saved query persist; reopening uses unchanged current verified observations
+PASS Profile name editing persists; resume candidates require explicit selection/edit/confirmation; authenticated download and real deletion work
+PASS Password strength/change, sessions, honest provider states and persisted alert preferences without invented events
+PASS Onboarding can be exited; public intelligence is never completion-gated
+PASS 80 account/onboarding captures: five widths, both themes and English/Hindi; no horizontal overflow
+PASS Keyboard/Escape, reduced motion, actual logout, public access after logout and private route protection
+PASS Revoked sessions clear private UI on the next API request; anonymous public knowledge remains available
+PASS Normal application with unconfigured delivery never grants a session or exposes a test OTP; anonymous verified data still works

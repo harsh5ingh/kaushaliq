@@ -3,6 +3,8 @@ import { AlertCircle, Database } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 import { SecondaryButton } from "./Buttons";
+import { Skeleton } from './Skeleton';
+import { Loader } from './Loader';
 
 export function EmptyState({ title, description, icon: Icon = Database, action, compact = false }: {
   title: string; description: string; icon?: LucideIcon; action?: ReactNode; compact?: boolean;
@@ -15,7 +17,7 @@ export function EmptyState({ title, description, icon: Icon = Database, action, 
 export function LoadingState({ label }: { label?: string }) {
   const { t } = useLocale();
   return <div className="loading-state" role="status" aria-live="polite">
-    <span>{label ?? t("states.loading")}</span><div className="skeleton" aria-hidden="true" /><div className="skeleton skeleton-short" aria-hidden="true" />
+    <span className="progress-label"><Loader />{label ?? t("states.loading")}</span><Skeleton /><Skeleton className="skeleton-short" />
   </div>;
 }
 export function ErrorState({ title, description, onRetry }: {

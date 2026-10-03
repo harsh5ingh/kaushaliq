@@ -1,0 +1,38 @@
+
+> kaushaliq-frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 2619 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                       0.84 kB │ gzip:   0.47 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2   48.25 kB
+dist/assets/india-workforce-dark-CPU_0a7w.webp      129.69 kB
+dist/assets/india-workforce-light-DPSytvo5.webp     134.85 kB
+dist/assets/kaushaliq-logo-CNBUfQ_h.png             564.46 kB
+dist/assets/kaushaliq-mark-DxAi6WTp.png             908.29 kB
+dist/assets/index-QzV5_ik9.css                      115.44 kB │ gzip:  21.06 kB
+dist/assets/config-CMP8f1FS.js                        0.22 kB │ gzip:   0.20 kB
+dist/assets/usePersonalProfile-Cx_6Mn26.js            0.44 kB │ gzip:   0.30 kB
+dist/assets/OnboardingPage-DM66B0Sr.js                2.13 kB │ gzip:   0.90 kB
+dist/assets/PersonalProfilePage-Yr9oCguJ.js           2.64 kB │ gzip:   1.02 kB
+dist/assets/MyIntelligencePage-rg-yxlMh.js            5.47 kB │ gzip:   1.78 kB
+dist/assets/PersonalSettingsPage-C5ZO_ksB.js          6.80 kB │ gzip:   2.15 kB
+dist/assets/ResumeManager-CEPQ56Dm.js                11.35 kB │ gzip:   2.91 kB
+dist/assets/Buttons-eSGi9c9l.js                      50.09 kB │ gzip:  17.82 kB
+dist/assets/RealIntelligencePage-BAIWDMDq.js        405.06 kB │ gzip: 114.27 kB
+dist/assets/index-DT_h4UpJ.js                       517.99 kB │ gzip: 143.62 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 565ms
+npm notice
+npm notice New major version of npm available! 11.19.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

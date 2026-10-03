@@ -5,8 +5,12 @@ from src.config import settings
 from src.routes.health import router as health_router
 from src.routes.auth import router as auth_router
 from src.routes.intelligence import router as intelligence_router
+from src.routes.demand import router as demand_router
+from src.routes.supply import router as supply_router
+from src.routes.gaps import router as gaps_router
 from src.routes.accounts import router as accounts_router
 from src.accounts.verification import router as verification_router
+from src.routes.oauth import router as oauth_router
 
 app = FastAPI(
     title=settings.app_name,
@@ -25,8 +29,12 @@ app.add_middleware(
 app.include_router(health_router)
 app.include_router(auth_router)
 app.include_router(intelligence_router)
+app.include_router(demand_router)
+app.include_router(supply_router)
+app.include_router(gaps_router)
 app.include_router(accounts_router)
 app.include_router(verification_router)
+app.include_router(oauth_router)
 
 
 @app.middleware('http')
@@ -45,3 +53,16 @@ def root():
         "message": "Labour Market Intelligence API is running.",
         "docs": "/docs",
     }
+
+
+# Account validation must never echo submitted password/OTP/file payloads.
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
+
+@app.exception_handler(RequestValidationError)
+async def private_validation_error(request, exc):
+    if request.url.path.startswith(('/api/auth/', '/api/v1/me')):
+        detail = 'verification_invalid' if '/verification/confirm' in request.url.path or '/verify-' in request.url.path else 'request_invalid'
+        return JSONResponse(status_code=422,content={'detail':detail})
+    from fastapi.exception_handlers import request_validation_exception_handler
+    return await request_validation_exception_handler(request,exc)

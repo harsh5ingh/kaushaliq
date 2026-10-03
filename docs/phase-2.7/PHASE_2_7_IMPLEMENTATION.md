@@ -6,7 +6,7 @@ Implemented the revised email-OTP/optional-phone scope on the existing applicati
 
 - Pending signup and unverified existing-account login; provider-backed email OTP adapters with honest absent/failure states, masked target, countdown, reload-safe verification and actual session issuance only after confirmation.
 - Optional SMS phone OTP and verified email-change flows with current-password confirmation, private masking and other-session revocation.
-- Optional persisted seven-step onboarding; editable education/interests/user skills/proficiency/goals/geography and name; five-section optional completion indicator.
+- Optional persisted seven-step onboarding; editable education/interests/user skills/proficiency/experience/goals/geography and name; five-section optional completion indicator.
 - Private local PDF/DOCX upload, isolated bounded extraction, editable/selectable candidate confirmation, authenticated download, replacement/deletion and origin cleanup.
 - My Intelligence uses saved user context; persistent canonical region/NIC follows and saved verified analysis configurations/publication-version checks; alert category preferences without fabricated events.
 - Strong bcrypt-backed password policy/live strength; actual current/other sessions and revocation controls.
@@ -31,4 +31,5 @@ Earlier tests assumed instant signup, protected public intelligence and weaker p
 
 ## Verification / manifest
 
-See VERIFICATION.md, verification/results.json and CHANGE_MANIFEST.md for exact execution, screenshots and changed files. No new dependency/package version was added. All account implementation lives inside D:/SIH part 2/KaushalIQ.
+Passed: npm install/build/lint, 29 backend tests, all eight existing browser suites (92 groups), and new Phase2.7 browser suite (11 groups, zero errors). Captured 102 screenshots across five widths, both themes and English/Hindi; representative screenshots manually reviewed. See VERIFICATION.md, verification/results.json and CHANGE_MANIFEST.md for exact execution, screenshots and changed files. No new dependency/package version was added. All account implementation lives inside D:/SIH part 2/KaushalIQ.
+

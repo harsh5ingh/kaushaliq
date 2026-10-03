@@ -1,0 +1,17 @@
+# Phase 2.8 verification
+
+Baseline before source edits: backend compile and 39 tests PASS; frontend strict build and lint PASS. Existing Phase2.7.1 browser results inspected. Final checks are recorded below and in `verification/` artifacts.
+
+Executed: `npm install` (up to date, 88 audited packages, no vulnerabilities), `npm run build` PASS, `npm run lint` PASS; `python -m compileall -q src` PASS; `python -m unittest discover -s tests -v` **54 tests PASS** (39 preserved + 15 demand).
+
+New browser suite `node tests/phase28.browser.cjs`: checks source counts/region comparisons, shared evidence, keyboard focus restoration, functional/incompatible filters, refresh/history, honest missing dimensions, quality, UI language/theme switching, 20 theme/language/width screenshots, reduced motion, accessible table, API failure/retry without fallback, preserved PLFS and no browser exceptions. Final result: **11 checks PASS**, zero uncaught browser exceptions, recorded in results.json. Publication-version mismatch and evidence/source-hash mismatch are also rejected before rendering.
+
+All existing browser suites are rerun: phase1, phase15, phase22, phase22-localization, phase231, phase24, phase25, phase26, phase27, phase271. No expectations weakened. Initial parallel Edge runs stopped in Phase15/24 with `ERR_NETWORK_IO_SUSPENDED`; all sequential reruns passed without changing any existing test expectation. Existing suites passed **110 checks**, and the final new suite passed 11, for **121 browser checks across 11 suites**. Per-suite logs and regression-summary.json retain the results.
+
+Screenshots: demand page at 1440/1280/1024/768/390, both dark/light and English/Hindi; additional evidence, invalid district and API error states. 23 new screenshots captured. Manually inspected representative dark English desktop, light English 1280, dark Hindi 1024/768, light Hindi 390, evidence desktop and API-error mobile captures. Layouts, labels, caveats and controls remain readable; no clipping or page-wide overflow found in these inspected captures. The complete 20-image page matrix has automated overflow/value checks. No user/password/OTP information is captured in new demand screenshots.
+
+Performance baseline: initial JS 477.07KB / 133.93KB gzip; lazy real view 381.16KB / 109.60KB gzip; CSS 102.42KB / 18.98KB gzip. Final build: initial JS 489.26KB / 136.65KB gzip; real view 392.72KB / 112.17KB gzip; CSS 105.31KB / 19.37KB gzip. Bilingual resources account for initial growth; demand logic is in the existing lazy real-view boundary. 37 aggregate rows use existing lightweight HTML/CSS bars, not a new visualization dependency. No raw HTML is shipped to browsers.
+
+Known limits: public browser tests use local static publication/API and isolated account databases. No live NCS API, publisher account or real-time update tested/claimed. Source authenticity follows official publication URL and preserved raw artifact, not signed data. No accessibility certification claimed.
+
+Final artifacts: backend-tests.txt records 54 tests/OK; build.txt and lint.txt record successful final checks. git-status-after.txt, git-diff-stat.txt and git-diff-name-only.txt capture the full inherited working tree, while changed-files.json lists this phase separately. Source-only diff whitespace checks pass; earlier Phase2.7 report EOF whitespace remains outside this phase. Git ignores local environment/private databases; no .env is tracked, no package dependency/version change, no commit or push.

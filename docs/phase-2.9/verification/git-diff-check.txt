@@ -1,0 +1,2 @@
+docs/phase-2.7/PHASE_2_7_AUDIT.md:22: new blank line at EOF.
+docs/phase-2.7/PHASE_2_7_IMPLEMENTATION.md:35: new blank line at EOF.

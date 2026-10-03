@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-10-03T07:00:47.971056+00:00",
+  "frontend_build": "PASS",
+  "frontend_lint": "PASS",
+  "backend_compile": "PASS",
+  "backend_tests": 39,
+  "existing_browser_groups": 103,
+  "new_browser_groups": 7,
+  "suites": [
+    {
+      "suite": "Phase 1",
+      "groups": 29,
+      "errors": 0,
+      "artifact": "docs/phase-1.5/workspace-regression/browser-results.json",
+      "screenshots": null
+    },
+    {
+      "suite": "Phase 1.5/public",
+      "groups": 6,
+      "errors": 0,
+      "artifact": "docs/phase-1.5/verification/results.json",
+      "screenshots": null
+    },
+    {
+      "suite": "Phase 2.2",
+      "groups": 11,
+      "errors": 0,
+      "artifact": "docs/phase-2/implementation/phase-2.2-fixes-verification/preferences/results.json",
+      "screenshots": null
+    },
+    {
+      "suite": "Localization",
+      "groups": 8,
+      "errors": 0,
+      "artifact": "docs/phase-2/implementation/phase-2.2-fixes-verification/localization/results.json",
+      "screenshots": null
+    },
+    {
+      "suite": "Phase 2.3.1",
+      "groups": 8,
+      "errors": 0,
+      "artifact": "docs/phase-2.3.1-verification/results.json",
+      "screenshots": null
+    },
+    {
+      "suite": "Phase 2.4",
+      "groups": 9,
+      "errors": 0,
+      "artifact": "docs/phase-2/implementation/phase-2.4-verification/workspace/results.json",
+      "screenshots": null
+    },
+    {
+      "suite": "Phase 2.5",
+      "groups": 11,
+      "errors": 0,
+      "artifact": "docs/phase-2.5/verification/results.json",
+      "screenshots": 220
+    },
+    {
+      "suite": "Phase 2.6",
+      "groups": 10,
+      "errors": 0,
+      "artifact": "docs/phase-2.6/verification/results.json",
+      "screenshots": 120
+    },
+    {
+      "suite": "Phase 2.7",
+      "groups": 11,
+      "errors": 0,
+      "artifact": "docs/phase-2.7/verification/results.json",
+      "screenshots": 100
+    },
+    {
+      "suite": "Phase 2.7.1",
+      "groups": 7,
+      "errors": 0,
+      "artifact": "docs/phase-2.7.1/verification/results.json",
+      "screenshots": 10
+    }
+  ],
+  "local_demo": "PASS",
+  "live_inbox_delivery": "USER_CONFIRMED",
+  "live_otp_verification": "USER_CONFIRMED",
+  "live_provider_message_id_independently_recorded": false,
+  "new_screenshot_count": 10,
+  "viewports": [
+    1440,
+    1280,
+    1024,
+    768,
+    390
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "locales": [
+    "en-IN",
+    "hi-IN"
+  ],
+  "initial_failures": [
+    "Phase2.3.1 aggregate reauthentication wait timeout; isolated reruns passed unchanged",
+    "Phase2.7 onboarding redirect race in new verification-page check; fixed, full rerun passed"
+  ],
+  "no_commit_push": true
+}

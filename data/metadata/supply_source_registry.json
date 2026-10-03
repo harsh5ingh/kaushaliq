@@ -1,0 +1,23 @@
+[
+  {
+    "source_id": "pmkvy-centres-pib-2026",
+    "publisher": "MSDE, disseminated by PIB",
+    "dataset_name": "Skilling for Space and Geospatial Sectors \u2014 Annexure II PMKVY training centres",
+    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289890&lang=1&reg=3",
+    "license": "PIB attribution/reproduction policy",
+    "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+    "version": "27 July 2026",
+    "observation_period": "2026-06-30",
+    "geography": "36 published State/UT rows; no national total",
+    "granularity": "State/UT \u00d7 PMKVY training centres",
+    "format": "html",
+    "raw_path": "raw/training/pib-centres-2289890.html",
+    "access_status": "approved_public_download",
+    "methodology": "Published administrative training-centre stock as of 30 June 2026; no seats or throughput inferred",
+    "notes": "Infrastructure count, not current capacity or available workers. Andhra Pradesh 527 includes 6 in Konaseema per source footnote. NAPS establishments and sector trainees not ingested. No district allocation or national total.",
+    "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+    "access_method": "Explicit HTTPS snapshot download; offline parsing",
+    "publication_date": "2026-07-27",
+    "source_kind": "training_infrastructure"
+  }
+]

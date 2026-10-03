@@ -46,3 +46,18 @@
 .password-strength li { min-width:120px; }
 @media(max-width:767px) { .profile-sections { grid-template-columns:1fr; } .personal-section { padding:24px 0; } .personal-page input:not([type=checkbox]),.personal-page select,.onboarding-surface input:not([type=checkbox]),.onboarding-surface select { font-size:16px; } .user-skills li { flex-wrap:wrap; } .user-skills li>div { flex:1 1 100%; } .personal-page dl div { grid-template-columns:1fr; gap:4px; } .verification-surface { margin:16px auto; padding:20px; } .personal-actions .button { flex:1 1 auto; } }
 @media(prefers-reduced-motion:reduce) { .strength-track span { transition:none; } }
+/* Shared, bounded progress and account confirmation; existing theme tokens remain authoritative. */
+.progress-label { display:flex; align-items:center; gap:var(--space-2, 8px); }
+.progress-loader { flex-shrink:0; animation:progress-turn 1s linear infinite; }
+@keyframes progress-turn { to { transform:rotate(360deg); } }
+.session-confirmation { width:min(100% - 40px, 540px); padding:var(--space-5, 24px); }
+.session-confirmation>p { color:var(--text-secondary); }
+.session-confirm-actions { display:flex; flex-direction:column; align-items:stretch; gap:var(--space-2, 8px); margin-block-start:var(--space-5, 24px); }
+.session-confirm-actions button { white-space:normal; text-align:center; }
+.connected-provider-list { display:grid; gap:var(--space-4, 16px); }
+.connected-provider { display:flex; align-items:center; gap:var(--space-3, 12px); padding-block:var(--space-4, 16px); border-block-end:1px solid var(--border-subtle); }
+.connected-provider>svg { flex-shrink:0; }
+.connected-provider>div { flex:1; min-width:0; }
+.connected-provider p { margin:4px 0; color:var(--text-secondary); }
+@media(max-width:600px) { .connected-provider { flex-wrap:wrap; } .connected-provider>div { flex-basis:calc(100% - 40px); } .connected-provider button { width:100%; } }
+@media(prefers-reduced-motion:reduce) { .progress-loader { animation:none; } }

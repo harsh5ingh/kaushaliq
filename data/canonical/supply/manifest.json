@@ -1,0 +1,10 @@
+{
+  "base_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+  "raw_sha256": {
+    "nic-2008": "ad419dcbc3dc5ee4695a92827e688d3566227ae858765982dea6df8ea2bb619a",
+    "pmkvy-centres-pib-2026": "d6063f7a3075ec43c0e4350b158684d3dfd157b4fe4a7b8c03929d0987a471d2",
+    "pmkvy-pib-2026": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719"
+  },
+  "schema_version": "supply-1.0",
+  "sha256": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4"
+}

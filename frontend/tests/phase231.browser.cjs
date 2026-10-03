@@ -94,7 +94,9 @@ const noOverflow = async (page, width) => { const ok = await page.evaluate(() =>
       if (width < 1200) {
         const menu = page.locator(".workspace-header .mobile-menu");
         await menu.click(); const drawer = page.getByRole("dialog", { name: "कार्यक्षेत्र नेविगेशन" }); await drawer.waitFor();
-        assert.equal(await drawer.locator(".nav-link").count(), 9);
+        // Phase 3 adds a gap-readiness destination; preserve all ten earlier modules.
+        assert.equal(await drawer.locator(".nav-link").count(), 11);
+        assert.equal(await drawer.locator('.nav-link[href="/supply?data=sample"]').count(), 1);
         await page.keyboard.press("Escape"); await drawer.waitFor({ state: "hidden" });
         assert.equal(await menu.evaluate(element => element === document.activeElement), true);
       }

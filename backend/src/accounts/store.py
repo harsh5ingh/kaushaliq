@@ -8,8 +8,15 @@ def migrate():
         if 'email_verified' not in columns:
             # Earlier accounts had no proof of ownership. Never mark them verified retroactively.
             db.execute('ALTER TABLE users ADD COLUMN email_verified INTEGER NOT NULL DEFAULT 0')
+        if 'is_demo' not in columns:
+            db.execute('ALTER TABLE users ADD COLUMN is_demo INTEGER NOT NULL DEFAULT 0')
         if 'phone' not in columns:
             db.execute('ALTER TABLE users ADD COLUMN phone TEXT')
+        if 'password_enabled' not in columns:
+            db.execute('ALTER TABLE users ADD COLUMN password_enabled INTEGER NOT NULL DEFAULT 1')
+        session_columns = {row[1] for row in db.execute('PRAGMA table_info(sessions)')}
+        if 'provider' not in session_columns:
+            db.execute("ALTER TABLE sessions ADD COLUMN provider TEXT NOT NULL DEFAULT 'email'")
         db.executescript('''
         CREATE TABLE IF NOT EXISTS profile_sections (
           user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
@@ -39,7 +46,17 @@ def migrate():
         CREATE INDEX IF NOT EXISTS idx_analyses_owner ON saved_analyses(user_id);
         CREATE INDEX IF NOT EXISTS idx_sessions_owner ON sessions(user_id);
         CREATE INDEX IF NOT EXISTS idx_verification_expiry ON verification_flows(expires_at);
+        CREATE TABLE IF NOT EXISTS oauth_identities (
+          provider TEXT NOT NULL, subject TEXT NOT NULL, user_id TEXT NOT NULL REFERENCES users(id),
+          linked_at TEXT NOT NULL, PRIMARY KEY(provider,subject), UNIQUE(user_id,provider));
+        CREATE TABLE IF NOT EXISTS oauth_flows (
+          digest TEXT PRIMARY KEY, provider TEXT NOT NULL, browser_digest TEXT NOT NULL,
+          verifier TEXT NOT NULL, nonce TEXT NOT NULL, return_to TEXT NOT NULL,
+          user_id TEXT, session_jti TEXT, expires_at TEXT NOT NULL, consumed_at TEXT);
+        CREATE INDEX IF NOT EXISTS idx_oauth_flow_expiry ON oauth_flows(expires_at);
         ''')
+        otp_columns={row[1] for row in db.execute('PRAGMA table_info(account_otps)')}
+        if 'delivery_error' not in otp_columns: db.execute("ALTER TABLE account_otps ADD COLUMN delivery_error TEXT NOT NULL DEFAULT ''")
         flow_columns={row[1] for row in db.execute('PRAGMA table_info(verification_flows)')}
         if 'target' not in flow_columns: db.execute("ALTER TABLE verification_flows ADD COLUMN target TEXT NOT NULL DEFAULT ''")
         if 'sent_at' not in flow_columns: db.execute("ALTER TABLE verification_flows ADD COLUMN sent_at TEXT NOT NULL DEFAULT ''")

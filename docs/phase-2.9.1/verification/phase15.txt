@@ -1,0 +1,6 @@
+PASS Public homepage and official responsive logo variants fit all required viewport widths
+PASS Existing public pages render directly and survive refresh
+PASS Public intelligence is open; private profile keeps authentication and requested destination
+PASS Auth dialog keyboard trap, Escape and focus restoration work
+PASS Real email account creation enters the workspace without exposing session tokens or persisting passwords in browser storage
+PASS Responsive navigation, account menu routes, reduced motion, sign-out and protected-route behavior work without uncaught browser errors

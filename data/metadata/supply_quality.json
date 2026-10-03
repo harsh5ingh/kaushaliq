@@ -1,0 +1,29 @@
+{
+  "capacity_status": "UNAVAILABLE",
+  "errors": [],
+  "infrastructure_records": 36,
+  "mapping_status": "UNAVAILABLE",
+  "missing": [
+    {
+      "geography_id": "in-lakshadweep",
+      "metric": "TRAINED/CERTIFIED",
+      "reason": "Absent from activity source; infrastructure source is separate",
+      "status": "UNAVAILABLE"
+    }
+  ],
+  "output_records": 287,
+  "published_records": 323,
+  "quarantined": [
+    {
+      "difference": 120,
+      "indicator": "trained",
+      "period": "2024-25",
+      "published_total": 2038319,
+      "reason": "Published total does not reconcile; omitted from canonical observations, raw retained",
+      "region_id": "in",
+      "source_id": "pmkvy-pib-2026",
+      "state_sum": 2038199
+    }
+  ],
+  "status": "VALIDATED_WITH_QUARANTINE"
+}

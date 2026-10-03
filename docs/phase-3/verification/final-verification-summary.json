@@ -1,0 +1,114 @@
+{
+  "backend": {
+    "passed": 102,
+    "new_test_methods": 15
+  },
+  "build": "PASS",
+  "lint": "PASS",
+  "canonical_hashes_unchanged": true,
+  "historical_browser": [
+    {
+      "suite": "phase1",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase15",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase22-localization",
+      "exitCode": 0,
+      "initialExitCode": 1,
+      "retry_evidence": "regressions/phase22-localization/results.json"
+    },
+    {
+      "suite": "phase22",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase231",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase24",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase26",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase25",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase271",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase28",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase29",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase27",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "hero-countup",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    },
+    {
+      "suite": "phase291",
+      "exitCode": 0,
+      "initialExitCode": 0,
+      "retry_evidence": null
+    }
+  ],
+  "phase3_browser": {
+    "status": "PASS",
+    "check_groups": 10,
+    "screenshots": 26,
+    "result": "browser/results.json"
+  },
+  "auth_regression": {
+    "status": "PASS",
+    "check_groups": 7,
+    "screenshots": 9,
+    "result": "auth-regression/results.json"
+  },
+  "type_compile_checks": "PASS",
+  "git": {
+    "modified_tracked_paths": 498,
+    "untracked_entries": 73,
+    "whole_tree_diff": "498 files changed, 658 insertions(+), 205 deletions(-)",
+    "note": "Includes broad inherited work; 29 Phase 3 source/test files are listed separately. No commit/push."
+  }
+}

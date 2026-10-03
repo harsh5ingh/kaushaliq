@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "First visit defaults to System and English without writing storage",
+    "Light/Dark/System selection, persistence, refresh, explicit override and live OS updates",
+    "Preference keyboard arrows/Home/Enter, Tab exit, Escape, outside dismissal and focus",
+    "Hindi persists and updates html language, native names and translated disclosure",
+    "Cross-tab theme/locale synchronization and theme deletion fallback",
+    "Public and workspace chrome screenshots, collision and overflow checks at five widths in both themes",
+    "Mobile preferences, nested Escape, focus containment/restoration and stable header geometry",
+    "Active links, Website utility, history, auth field/focus preservation across themes and reduced motion",
+    "Early theme bootstrap resolves stored/default/invalid preferences before React loads",
+    "Blocked storage retains working in-memory theme and language preferences",
+    "Only named preference keys stored; no session writes or uncaught exceptions"
+  ],
+  "errors": []
+}

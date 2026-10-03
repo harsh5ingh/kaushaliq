@@ -1,0 +1,426 @@
+{
+  "checks": [
+    "All nine workspace routes render, refresh and disclose simulated data in both themes",
+    "Overview region/period filters update calculations and incompatible dimensions produce an honest empty state",
+    "Skill profile responds to a category filter from the shared simulated model",
+    "Regional profile responds to experience-level filters from the shared simulated model",
+    "Command search finds a simulated skill, opens its profile, and relationship links drill into an occupation",
+    "Report briefs expand in-page and keep simulated evidence disclosure visible",
+    "Spatial scene layer and accessible region selector work with graceful WebGL fallback support",
+    "All workspace routes have no horizontal overflow at 1440, 1280, 1024, 768 and 390px",
+    "New workspace routes and navigation are translated into Hindi without replacing the locale provider"
+  ],
+  "errors": [],
+  "dimensions": [
+    {
+      "route": "/intelligence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/intelligence",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/skills",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/regions",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/industries",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/occupations",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/demand",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/forecast",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/spatial",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/reports",
+      "width": 390,
+      "overflow": false
+    }
+  ]
+}

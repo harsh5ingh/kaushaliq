@@ -1,0 +1,24 @@
+test_active_vacancies_not_certified_persons_no_gap (test_supply.SupplyTests.test_active_vacancies_not_certified_persons_no_gap) ... ok
+test_api_compatibility_gap_and_missing_identifiers (test_supply.SupplyTests.test_api_compatibility_gap_and_missing_identifiers) ... ok
+test_api_filter_pagination_and_honest_missing (test_supply.SupplyTests.test_api_filter_pagination_and_honest_missing) ... ok
+test_api_provenance_quality_coverage_and_taxonomy (test_supply.SupplyTests.test_api_provenance_quality_coverage_and_taxonomy) ... ok
+test_broken_publication_no_fallback (test_supply.SupplyTests.test_broken_publication_no_fallback) ... ok
+test_centres_are_infrastructure_not_capacity_or_district (test_supply.SupplyTests.test_centres_are_infrastructure_not_capacity_or_district) ... ok
+test_coverage_and_quarantine_metadata_cannot_drift (test_supply.SupplyTests.test_coverage_and_quarantine_metadata_cannot_drift) ... ok
+test_duplicate_geography_and_source_drift_fail_closed (test_supply.SupplyTests.test_duplicate_geography_and_source_drift_fail_closed) ... ok
+test_exact_output_values_and_raw_cells_preserved (test_supply.SupplyTests.test_exact_output_values_and_raw_cells_preserved) ... ok
+test_immutable_source_receipt_and_reproduction (test_supply.SupplyTests.test_immutable_source_receipt_and_reproduction) ... ok
+test_mapping_statuses_no_related_or_ambiguous_equivalence (test_supply.SupplyTests.test_mapping_statuses_no_related_or_ambiguous_equivalence) ... ok
+test_multi_system_references_keep_distinct_entity_types (test_supply.SupplyTests.test_multi_system_references_keep_distinct_entity_types) ... ok
+test_partial_related_relationships_never_make_gap_ready (test_supply.SupplyTests.test_partial_related_relationships_never_make_gap_ready) ... ok
+test_quarantined_total_cannot_enter_supply (test_supply.SupplyTests.test_quarantined_total_cannot_enter_supply) ... ok
+test_schema_values_units_time_and_classification (test_supply.SupplyTests.test_schema_values_units_time_and_classification) ... ok
+test_taxonomy_source_status_requires_acquisition_evidence (test_supply.SupplyTests.test_taxonomy_source_status_requires_acquisition_evidence) ... ok
+test_time_geography_source_and_partial_checks (test_supply.SupplyTests.test_time_geography_source_and_partial_checks) ... ok
+test_unreviewed_reference_cannot_publish_under_training_evidence (test_supply.SupplyTests.test_unreviewed_reference_cannot_publish_under_training_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 6.035s
+
+OK
+{"status": "VALIDATED_WITH_QUARANTINE", "records": 323, "capacity_status": "UNAVAILABLE"}

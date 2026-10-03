@@ -1,0 +1,84 @@
+[
+  {
+    "dimension": "active_vacancies",
+    "district": "UNAVAILABLE",
+    "district_records": 0,
+    "national": "OBSERVED",
+    "national_records": 1,
+    "reason": "NCS portal snapshot only; no occupation, skill, sector or district breakdown",
+    "role": "demand",
+    "source_id": "ncs-active-pib-2025",
+    "state": "OBSERVED",
+    "state_records": 33
+  },
+  {
+    "dimension": "labour_indicators",
+    "district": "UNAVAILABLE",
+    "national": "OBSERVED",
+    "reason": "LFPR/WPR/UR are supply context, not vacancies",
+    "records": 1341,
+    "role": "supply_context",
+    "source_id": "PLFS",
+    "state": "OBSERVED"
+  },
+  {
+    "dimension": "training_counts",
+    "district": "UNAVAILABLE",
+    "national": "OBSERVED",
+    "reason": "Reported training counts are not current supply or seat capacity",
+    "records": 287,
+    "role": "administrative_training",
+    "source_id": "PMKVY",
+    "state": "OBSERVED"
+  },
+  {
+    "dimension": "industry_reference",
+    "district": "UNAVAILABLE",
+    "national": "REFERENCE_ONLY",
+    "reason": "Partial taxonomy; no demand linkage",
+    "records": 332,
+    "role": "reference",
+    "source_id": "NIC-2008",
+    "state": "REFERENCE_ONLY"
+  },
+  {
+    "dimension": "occupation",
+    "district": "UNAVAILABLE",
+    "national": "UNAVAILABLE",
+    "reason": "Permission-reviewed bulk reference/crosswalk not ingested",
+    "records": 0,
+    "role": "reference",
+    "source_id": "NCO-2015",
+    "state": "UNAVAILABLE"
+  },
+  {
+    "dimension": "skills",
+    "district": "UNAVAILABLE",
+    "national": "UNAVAILABLE",
+    "reason": "Versioned authoritative taxonomy and demand crosswalk not ingested",
+    "records": 0,
+    "role": "reference",
+    "source_id": "NSQF/NOS",
+    "state": "UNAVAILABLE"
+  },
+  {
+    "dimension": "worker_registry",
+    "district": "UNAVAILABLE",
+    "national": "UNAVAILABLE",
+    "reason": "Worker registrations are not demand; source not ingested",
+    "records": 0,
+    "role": "unavailable",
+    "source_id": "e-Shram",
+    "state": "UNAVAILABLE"
+  },
+  {
+    "dimension": "current_vacancies",
+    "district": "UNAVAILABLE",
+    "national": "UNAVAILABLE",
+    "reason": "No approved documented current vacancy API or record-level feed ingested",
+    "records": 0,
+    "role": "unavailable",
+    "source_id": "NCS-feed",
+    "state": "UNAVAILABLE"
+  }
+]

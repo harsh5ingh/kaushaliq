@@ -1,0 +1,101 @@
+ backend/.env.example                               |  11 ++-
+ backend/src/accounts/otp.py                        |  35 ++++++--
+ backend/src/accounts/providers.py                  |  97 +++++++++++++++++----
+ backend/src/accounts/store.py                      |   4 +
+ backend/src/accounts/verification.py               |  17 ++--
+ backend/src/config.py                              |   3 +
+ backend/src/main.py                                |  13 +++
+ backend/src/routes/accounts.py                     |   2 +-
+ backend/src/routes/auth.py                         |   8 +-
+ backend/tests/provider_server.py                   |   2 +
+ backend/tests/test_accounts.py                     |   2 +
+ .../workspace-regression/command-palette.png       | Bin 120364 -> 119882 bytes
+ .../workspace-regression/mobile-drawer.png         | Bin 40334 -> 37846 bytes
+ .../workspace-regression/sample-disclosure.png     | Bin 185349 -> 185350 bytes
+ .../settings-hindi-light.png                       | Bin 31871 -> 34231 bytes
+ .../workspace-1024-light-hi.png                    | Bin 122612 -> 123094 bytes
+ .../workspace-1280-light-hi.png                    | Bin 132170 -> 131347 bytes
+ .../workspace-1440-light-hi.png                    | Bin 130081 -> 130398 bytes
+ .../workspace-390-light-hi.png                     | Bin 122088 -> 122100 bytes
+ .../workspace-768-light-hi.png                     | Bin 126982 -> 127023 bytes
+ .../verification/intelligence-dark-en-IN-1440.png  | Bin 205022 -> 228799 bytes
+ .../verification/regions-dark-hi-IN-390.png        | Bin 117247 -> 144805 bytes
+ .../verification/regions-light-hi-IN-1024.png      | Bin 115128 -> 145939 bytes
+ .../verification/regions-light-hi-IN-1280.png      | Bin 115710 -> 143787 bytes
+ .../verification/regions-light-hi-IN-768.png       | Bin 145667 -> 116479 bytes
+ docs/phase-2.7/PHASE_2_7_AUDIT.md                  |   3 +-
+ docs/phase-2.7/PHASE_2_7_IMPLEMENTATION.md         |   5 +-
+ docs/phase-2.7/RESUME_PRIVACY.md                   |   2 +
+ .../phase-2.7/verification/otp-dark-en-IN-1024.png | Bin 42912 -> 42914 bytes
+ .../phase-2.7/verification/otp-dark-en-IN-1280.png | Bin 45584 -> 45442 bytes
+ .../phase-2.7/verification/otp-dark-en-IN-1440.png | Bin 46664 -> 46531 bytes
+ docs/phase-2.7/verification/otp-dark-en-IN-390.png | Bin 39797 -> 39759 bytes
+ docs/phase-2.7/verification/otp-dark-en-IN-768.png | Bin 42055 -> 42153 bytes
+ .../phase-2.7/verification/otp-dark-hi-IN-1024.png | Bin 33157 -> 33235 bytes
+ .../phase-2.7/verification/otp-dark-hi-IN-1280.png | Bin 35373 -> 35411 bytes
+ .../phase-2.7/verification/otp-dark-hi-IN-1440.png | Bin 36196 -> 36152 bytes
+ docs/phase-2.7/verification/otp-dark-hi-IN-390.png | Bin 29009 -> 29134 bytes
+ docs/phase-2.7/verification/otp-dark-hi-IN-768.png | Bin 31522 -> 31482 bytes
+ .../phase-2.7/verification/otp-invalid-desktop.png | Bin 50887 -> 51032 bytes
+ .../verification/otp-light-en-IN-1024.png          | Bin 43054 -> 43052 bytes
+ .../verification/otp-light-en-IN-1280.png          | Bin 45733 -> 45729 bytes
+ .../verification/otp-light-en-IN-1440.png          | Bin 46799 -> 46673 bytes
+ .../phase-2.7/verification/otp-light-en-IN-390.png | Bin 39799 -> 39805 bytes
+ .../phase-2.7/verification/otp-light-en-IN-768.png | Bin 38901 -> 42212 bytes
+ .../verification/otp-light-hi-IN-1024.png          | Bin 32827 -> 32672 bytes
+ .../verification/otp-light-hi-IN-1280.png          | Bin 35358 -> 35118 bytes
+ .../verification/otp-light-hi-IN-1440.png          | Bin 36245 -> 35928 bytes
+ .../phase-2.7/verification/otp-light-hi-IN-390.png | Bin 29008 -> 29109 bytes
+ .../phase-2.7/verification/otp-light-hi-IN-768.png | Bin 31316 -> 31422 bytes
+ .../verification/profile-dark-en-IN-1024.png       | Bin 232946 -> 208474 bytes
+ docs/phase-2.7/verification/results.json           |   7 +-
+ .../verification/settings-dark-en-IN-1024.png      | Bin 150587 -> 150672 bytes
+ .../verification/settings-dark-en-IN-1280.png      | Bin 159351 -> 159438 bytes
+ .../verification/settings-dark-en-IN-1440.png      | Bin 161647 -> 161727 bytes
+ .../verification/settings-dark-en-IN-390.png       | Bin 143367 -> 143465 bytes
+ .../verification/settings-dark-en-IN-768.png       | Bin 151407 -> 151489 bytes
+ .../verification/settings-dark-hi-IN-1024.png      | Bin 98190 -> 98237 bytes
+ .../verification/settings-dark-hi-IN-1280.png      | Bin 105343 -> 105389 bytes
+ .../verification/settings-dark-hi-IN-1440.png      | Bin 107393 -> 107441 bytes
+ .../verification/settings-dark-hi-IN-390.png       | Bin 91305 -> 91316 bytes
+ .../verification/settings-dark-hi-IN-768.png       | Bin 95897 -> 95942 bytes
+ .../verification/settings-light-en-IN-1024.png     | Bin 150220 -> 150305 bytes
+ .../verification/settings-light-en-IN-1280.png     | Bin 159128 -> 159210 bytes
+ .../verification/settings-light-en-IN-1440.png     | Bin 161489 -> 161568 bytes
+ .../verification/settings-light-en-IN-390.png      | Bin 142496 -> 142571 bytes
+ .../verification/settings-light-en-IN-768.png      | Bin 150860 -> 150957 bytes
+ .../verification/settings-light-hi-IN-1024.png     | Bin 97863 -> 97906 bytes
+ .../verification/settings-light-hi-IN-1280.png     | Bin 104913 -> 105081 bytes
+ .../verification/settings-light-hi-IN-1440.png     | Bin 106884 -> 107074 bytes
+ .../verification/settings-light-hi-IN-390.png      | Bin 90570 -> 90590 bytes
+ .../verification/settings-light-hi-IN-768.png      | Bin 95547 -> 95589 bytes
+ docs/phase-2.7/verification/synthetic-resume.docx  | Bin 292 -> 292 bytes
+ .../localization/en-dark-public-390.png            | Bin 73401 -> 73371 bytes
+ .../localization/en-dark-public-768.png            | Bin 85868 -> 85820 bytes
+ .../localization/en-light-public-1024.png          | Bin 98097 -> 98130 bytes
+ .../localization/en-light-public-1280.png          | Bin 122938 -> 122937 bytes
+ .../localization/en-light-public-1440.png          | Bin 120835 -> 120836 bytes
+ .../localization/en-light-public-390.png           | Bin 73349 -> 73349 bytes
+ .../localization/hi-dark-public-1440.png           | Bin 88807 -> 88902 bytes
+ .../localization/hindi-auth-errors.png             | Bin 126800 -> 126687 bytes
+ .../workspace/dark-demand-1440.png                 | Bin 155004 -> 154420 bytes
+ .../workspace/dark-industries-1440.png             | Bin 154721 -> 155204 bytes
+ .../workspace/dark-intelligence-1440.png           | Bin 175143 -> 175404 bytes
+ .../workspace/dark-occupations-1440.png            | Bin 151998 -> 151324 bytes
+ .../workspace/dark-regions-1440.png                | Bin 153053 -> 152822 bytes
+ .../workspace/dark-skills-1440.png                 | Bin 149634 -> 149640 bytes
+ .../workspace/light-demand-1440.png                | Bin 153547 -> 153523 bytes
+ .../workspace/light-industries-1440.png            | Bin 153699 -> 153661 bytes
+ .../workspace/light-intelligence-1440.png          | Bin 173726 -> 173892 bytes
+ .../workspace/light-occupations-1440.png           | Bin 150788 -> 151436 bytes
+ .../workspace/light-regions-1440.png               | Bin 151569 -> 151930 bytes
+ .../workspace/light-skills-1440.png                | Bin 147607 -> 148403 bytes
+ .../workspace/mobile-overview-390.png              | Bin 174198 -> 174560 bytes
+ .../workspace/overview-filtered.png                | Bin 158354 -> 158778 bytes
+ frontend/src/app/i18n/locales/personal.ts          |  16 ++++
+ frontend/src/features/account/api.ts               |   6 +-
+ frontend/src/features/account/contracts.ts         |   2 +-
+ frontend/src/pages/VerifyEmailPage.tsx             |  15 ++--
+ frontend/tests/phase27.browser.cjs                 |   2 +-
+ frontend/tests/test-stack.cjs                      |  12 ++-
+ 100 files changed, 207 insertions(+), 57 deletions(-)

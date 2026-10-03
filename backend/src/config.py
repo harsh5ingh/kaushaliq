@@ -9,10 +9,15 @@ class Settings(BaseSettings):
     frontend_url: str = "http://localhost:5173"
     api_url: str = ""
     canonical_data_path: str = str(Path(__file__).resolve().parents[2] / "data" / "canonical" / "labour-market.json")
+    demand_data_path: str = str(Path(__file__).resolve().parents[2] / "data" / "canonical" / "demand" / "snapshot.json")
+    supply_data_path: str = str(Path(__file__).resolve().parents[2] / "data" / "canonical" / "supply" / "snapshot.json")
     auth_session_ttl: str = "8h"
     jwt_secret: str = ""
     auth_database_path: str = "data/auth.sqlite3"
     auth_cookie_samesite: str = "lax"
+    demo_account_enabled: bool = False
+    demo_account_email: str = "demo@kaushaliq.local"
+    demo_account_password: str = ""
     email_provider: str = ""
     email_api_key: str = ""
     email_from: str = ""
@@ -25,6 +30,12 @@ class Settings(BaseSettings):
     otp_max_attempts: int = 5
     resume_storage_path: str = "data/private-resumes"
     resume_max_bytes: int = 5 * 1024 * 1024
+    google_client_id: str = ""
+    google_client_secret: str = ""
+    google_callback_url: str = ""
+    github_client_id: str = ""
+    github_client_secret: str = ""
+    github_callback_url: str = ""
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -44,6 +55,8 @@ if settings.environment.lower() != "production" and not settings.jwt_secret:
 if settings.auth_cookie_samesite.lower() not in {"lax", "strict", "none"}:
     raise ValueError("AUTH_COOKIE_SAMESITE must be lax, strict, or none.")
 settings.auth_cookie_samesite = settings.auth_cookie_samesite.lower()
+if settings.auth_cookie_samesite == "none" and settings.environment.lower() != "production":
+    raise ValueError("SameSite=None requires the Secure production cookie strategy.")
 if settings.environment.lower() == "production" and not settings.frontend_url.startswith("https://"):
     raise ValueError("FRONTEND_URL must use HTTPS in production.")
 

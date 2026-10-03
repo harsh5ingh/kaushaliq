@@ -1,0 +1,14 @@
+PASS Public homepage and official responsive logo variants fit all required viewport widths
+PASS Existing public pages render directly and survive refresh
+PASS Public intelligence is open; private profile keeps authentication and requested destination
+PASS Auth dialog keyboard trap, Escape and focus restoration work
+PASS Real email account creation enters the workspace without exposing session tokens or persisting passwords in browser storage
+page.waitForURL: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================
+    at page.waitForURL (D:\SIH part 2\KaushalIQ\frontend\tests\legacy-sample.cjs:10:26)
+    at D:\SIH part 2\KaushalIQ\frontend\tests\phase15.browser.cjs:71:91 {
+  log: [],
+  name: 'TimeoutError'
+}

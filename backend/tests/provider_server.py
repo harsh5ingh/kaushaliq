@@ -5,6 +5,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from src.main import app
 from src.accounts import verification
+from src.accounts.providers import ProviderResult
 from src.routes import accounts
 from src.config import settings
 from fastapi import HTTPException
@@ -18,6 +19,7 @@ class CapturingEmail:
     def send(self,target,subject,text):
         codes=re.findall(r'\b\d{6}\b',text)
         if codes: mailbox[target]=codes[0]
+        return ProviderResult('accepted')
 
 
 verification.email_provider=lambda:CapturingEmail()

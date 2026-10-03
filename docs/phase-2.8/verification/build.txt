@@ -1,0 +1,26 @@
+
+> kaushaliq-frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 2607 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                       0.84 kB │ gzip:   0.46 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2   48.25 kB
+dist/assets/kaushaliq-logo-CNBUfQ_h.png             564.46 kB
+dist/assets/kaushaliq-mark-DxAi6WTp.png             908.29 kB
+dist/assets/index-CtBHDdBs.css                      105.31 kB │ gzip:  19.37 kB
+dist/assets/config-DeQITmsT.js                        0.22 kB │ gzip:   0.20 kB
+dist/assets/usePersonalProfile-BZdDzmMR.js            0.44 kB │ gzip:   0.30 kB
+dist/assets/OnboardingPage-c-DCVrCx.js                2.13 kB │ gzip:   0.90 kB
+dist/assets/PersonalProfilePage-D0gmU-tY.js           2.64 kB │ gzip:   1.01 kB
+dist/assets/MyIntelligencePage-D8BbUBFU.js            5.47 kB │ gzip:   1.78 kB
+dist/assets/PersonalSettingsPage-suegSAsX.js          6.80 kB │ gzip:   2.14 kB
+dist/assets/ResumeManager-LhjeaVtg.js                11.35 kB │ gzip:   2.91 kB
+dist/assets/Buttons-eSGi9c9l.js                      50.09 kB │ gzip:  17.82 kB
+dist/assets/RealIntelligencePage-DgrmYkFh.js        392.72 kB │ gzip: 112.17 kB
+dist/assets/index-Dk9fs8YV.js                       489.26 kB │ gzip: 136.65 kB
+
+✓ built in 730ms

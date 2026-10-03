@@ -1,0 +1,342 @@
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"error_code": "provider_error", "event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "provider_error"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "email"}
+{"event": "otp_persisted", "purpose": "email"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "email", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "email", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "email"}
+{"event": "otp_verification_result", "purpose": "email", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "phone"}
+{"event": "otp_persisted", "purpose": "phone"}
+{"event": "email_verification_send_started", "purpose": "phone", "recipient_domain": "private_phone"}
+{"event": "email_verification_send", "purpose": "phone", "recipient_domain": "private_phone", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "phone"}
+{"event": "otp_verification_result", "purpose": "phone", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "failed"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+{"event": "otp_generated", "purpose": "signup"}
+{"event": "otp_persisted", "purpose": "signup"}
+{"event": "email_verification_send_started", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in"}
+{"event": "email_verification_send", "provider": "resend", "purpose": "signup", "recipient_domain": "example.in", "status": "accepted"}
+{"event": "otp_verification_attempt", "purpose": "signup"}
+{"event": "otp_verification_result", "purpose": "signup", "status": "succeeded"}
+----------------------------------------------------------------------
+Ran 87 tests in 48.483s
+
+OK
+{
+  "status": "VALIDATED_WITH_QUARANTINE",
+  "errors": [],
+  "missing": [
+    {
+      "indicator": "LFPR",
+      "region_id": "in-chandigarh",
+      "sector": "rural",
+      "reason": "Blank in source table"
+    },
+    {
+      "indicator": "WPR",
+      "region_id": "in-chandigarh",
+      "sector": "rural",
+      "reason": "Blank in source table"
+    },
+    {
+      "indicator": "UR",
+      "region_id": "in-chandigarh",
+      "sector": "rural",
+      "reason": "Blank in source table"
+    }
+  ],
+  "quarantined": [
+    {
+      "source_id": "pmkvy-pib-2026",
+      "indicator": "trained",
+      "region_id": "in",
+      "period": "2024-25",
+      "published_total": 2038319,
+      "state_sum": 2038199,
+      "difference": 120,
+      "reason": "Published total does not reconcile; omitted from canonical observations, raw retained"
+    }
+  ],
+  "limitations": [
+    "State/UT history limited to 2023-24 US ages15+",
+    "Chandigarh rural rates absent",
+    "Lakshadweep training row absent",
+    "No official geography codes or geometry",
+    "NIC2008 Sixth Economic Census reference is partial: 19 sections, 82 divisions, 231 groups; no class/subclass",
+    "PMKVY counts are not a certification conversion rate"
+  ],
+  "records": {
+    "regions": 37,
+    "industries": 332,
+    "labour": 1341,
+    "training": 287,
+    "skills": 0,
+    "occupations": 0
+  }
+}
+{"status": "VALIDATED_WITH_QUARANTINE", "records": 323, "capacity_status": "UNAVAILABLE"}

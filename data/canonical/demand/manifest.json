@@ -1,0 +1,10 @@
+{
+  "base_version": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+  "methodology_version": "ncs-active-stock-1.0",
+  "raw_sha256": {
+    "ncs-active-pib-2025": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+    "pib-terms-demand-2026": "7d7e940673f59fc4da266d9d61b166a81e241913155f840f8cc9f49454bae853"
+  },
+  "schema_version": "demand-1.0",
+  "sha256": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45"
+}

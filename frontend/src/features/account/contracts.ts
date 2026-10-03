@@ -13,4 +13,4 @@ export interface PersonalProfile {user:{id:string; name:string; email:string; pr
 export interface WatchItem {id:string; kind:string; entity_id:string; name:string; available:boolean}
 export interface SavedAnalysis {id:string; title:string; route:string; query:Record<string,string>; updated_data:boolean}
 export interface AccountSession {id:string; current:boolean; expires_at:string}
-export interface Verification {verification_required:true; masked_target:string; state:'CONFIGURED'|'NOT_CONFIGURED'|'TEMPORARILY_UNAVAILABLE'; cooldown_seconds:number; csrfToken?:string}
+export interface Verification {verification_required:true; masked_target:string; state:'CONFIGURED'|'NOT_CONFIGURED'|'TEMPORARILY_UNAVAILABLE'; cooldown_seconds:number; csrfToken?:string; error_code?:string; provider_status?:string}

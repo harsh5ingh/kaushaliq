@@ -5,7 +5,8 @@ from datetime import datetime, timedelta
 from fastapi import HTTPException, Response, Request
 from src.config import settings
 from src.routes.auth import connect, now
-from src.accounts.providers import email_provider, sms_provider, ProviderUnavailable
+from src.accounts.providers import ProviderUnavailable, ProviderResult
+from src.accounts.diagnostics import event
 
 PENDING_COOKIE = '__Host-kaushaliq_pending' if settings.environment.lower() == 'production' else 'kaushaliq_pending'
 
@@ -47,29 +48,49 @@ def issue(user_id, purpose, target, provider):
     # Reserve cooldown before network work. Provider failures invalidate this code.
     stamp = now()
     code = f'{secrets.randbelow(1000000):06d}'
+    event('otp_generated', purpose=purpose)
     with connect() as db:
         db.execute('BEGIN IMMEDIATE')
         old = db.execute('SELECT * FROM account_otps WHERE user_id=? AND purpose=?', (user_id,purpose)).fetchone()
         if old and (stamp-datetime.fromisoformat(old['sent_at'])).total_seconds() < settings.otp_resend_cooldown_seconds:
             raise HTTPException(429, 'verification_cooldown')
-        db.execute('INSERT OR REPLACE INTO account_otps VALUES(?,?,?,?,?,?,0,0)', (user_id,purpose,target,digest(f'{user_id}:{purpose}:{target}:{code}'), (stamp+timedelta(minutes=settings.otp_expiry_minutes)).isoformat(), stamp.isoformat()))
+        db.execute("INSERT OR REPLACE INTO account_otps(user_id,purpose,target,digest,expires_at,sent_at,attempts,consumed,delivery_error) VALUES(?,?,?,?,?,?,0,0,'')", (user_id,purpose,target,digest(f'{user_id}:{purpose}:{target}:{code}'), (stamp+timedelta(minutes=settings.otp_expiry_minutes)).isoformat(), stamp.isoformat()))
+    event('otp_persisted', purpose=purpose)
+    provider_name = settings.sms_provider.lower() if purpose == 'phone' else settings.email_provider.lower()
+    domain = target.rsplit('@',1)[-1] if '@' in target else 'private_phone'
+    event('email_verification_send_started', provider=provider_name, recipient_domain=domain, purpose=purpose)
     try:
-        if purpose == 'phone': provider.send(target, f'KaushalIQ verification code: {code}. Expires in {settings.otp_expiry_minutes} minutes. Never share this code.')
-        else: provider.send(target, 'KaushalIQ verification code', f'Your verification code is {code}. It expires in {settings.otp_expiry_minutes} minutes. Never share this code.\n\nआपका सत्यापन कोड {code} है। इसे किसी से साझा न करें।')
-    except ProviderUnavailable:
+        if purpose == 'phone': result = provider.send(target, f'KaushalIQ verification code: {code}. Expires in {settings.otp_expiry_minutes} minutes. Never share this code.')
+        else: result = provider.send(target, 'KaushalIQ verification code', f'Your verification code is {code}. It expires in {settings.otp_expiry_minutes} minutes. Never share this code.\n\nआपका सत्यापन कोड {code} है। इसे किसी से साझा न करें।')
+        if not isinstance(result, ProviderResult) or result.status != 'accepted':
+            raise ProviderUnavailable(result=result if isinstance(result, ProviderResult) else None)
+        event('email_verification_send', provider=provider_name, recipient_domain=domain, purpose=purpose, status=result.status, provider_message_id=result.message_id)
+    except ProviderUnavailable as exc:
+        event('email_verification_send', provider=provider_name, recipient_domain=domain, purpose=purpose, status=exc.result.status, error_code=exc.result.error_code)
         with connect() as db:
-            db.execute('UPDATE account_otps SET consumed=1 WHERE user_id=? AND purpose=? AND digest=?', (user_id,purpose,digest(f'{user_id}:{purpose}:{target}:{code}')))
+            db.execute('UPDATE account_otps SET consumed=1,delivery_error=? WHERE user_id=? AND purpose=? AND digest=?', (exc.code,user_id,purpose,digest(f'{user_id}:{purpose}:{target}:{code}')))
         raise
-    return {'state':'CONFIGURED','masked_target':mask(target), 'cooldown_seconds':settings.otp_resend_cooldown_seconds}
+    return {'state':'CONFIGURED','provider_status':'accepted','masked_target':mask(target), 'cooldown_seconds':settings.otp_resend_cooldown_seconds}
 
 
 def verify(db, user_id, purpose, code):
     """Caller holds BEGIN IMMEDIATE; consumption and account update commit together."""
+    event('otp_verification_attempt', purpose=purpose)
     row = db.execute('SELECT * FROM account_otps WHERE user_id=? AND purpose=?', (user_id,purpose)).fetchone()
     if not row or row['consumed'] or datetime.fromisoformat(row['expires_at']) <= now() or row['attempts'] >= settings.otp_max_attempts:
+        event('otp_verification_result', purpose=purpose, status='failed')
         return None
     db.execute('UPDATE account_otps SET attempts=attempts+1 WHERE user_id=? AND purpose=?', (user_id,purpose))
     if not hmac.compare_digest(row['digest'], digest(f"{user_id}:{purpose}:{row['target']}:{code}")):
+        event('otp_verification_result', purpose=purpose, status='failed')
         return None
     db.execute('UPDATE account_otps SET consumed=1 WHERE user_id=? AND purpose=?', (user_id,purpose))
+    event('otp_verification_result', purpose=purpose, status='succeeded')
     return row['target']
+
+
+def failure_reason(db, user_id, purpose):
+    row=db.execute('SELECT * FROM account_otps WHERE user_id=? AND purpose=?',(user_id,purpose)).fetchone()
+    if row and row['attempts'] >= settings.otp_max_attempts: return 'verification_max_attempts'
+    if row and datetime.fromisoformat(row['expires_at']) <= now(): return 'verification_expired'
+    return 'verification_invalid'

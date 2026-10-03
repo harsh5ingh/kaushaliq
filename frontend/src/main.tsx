@@ -23,3 +23,6 @@ import "./styles/phase24.css";
 import "./styles/phase25.css";
 import "./styles/visualization.css";
 import './styles/personal.css';
+import './styles/demand.css';
+import './styles/supply.css';
+import './styles/gaps.css';

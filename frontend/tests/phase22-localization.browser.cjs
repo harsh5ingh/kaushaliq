@@ -42,7 +42,8 @@ const pass = name => {checks.push(name); console.log("PASS "+name);};
   assert.ok((await page.locator("h1").innerText()).includes(en["hero.title"]));
   assert.equal(await page.evaluate(()=>localStorage.getItem("kaushaliq.locale.v1")),"en-IN");
   pass("English → Hindi → English updates content without reload; Hindi survives refresh");
-  const regionLayer=page.getByRole("button",{name:en["hero.region"],exact:true});await regionLayer.click();assert.equal(await regionLayer.getAttribute("aria-pressed"),"true");await page.keyboard.press("Tab");pass("Hero relationship dimensions respond to click and remain keyboard accessible");
+  // Phase 2.9.1 replaces the conceptual hero graph with verified NCS evidence.
+  const heroEvidence=page.locator(".hero-evidence-button");await heroEvidence.focus();await page.keyboard.press("Enter");await page.locator(".evidence-dialog").waitFor();await page.keyboard.press("Escape");assert.equal(await heroEvidence.evaluate(el=>el===document.activeElement),true);pass("Hero verified evidence is keyboard accessible and restores focus");
   await selectLanguage("हिन्दी");
   for(const route of ["/","/product","/how-it-works","/about","/contact","/documentation","/privacy","/terms"]){
    await page.goto(base+route);await page.locator("h1").waitFor();await page.reload();await page.locator("h1").waitFor();

@@ -17,7 +17,7 @@ const pass = text => { checks.push(text); console.log("PASS " + text); };
     page.on("pageerror", error => errors.push(error.message));
     for (const width of [1440, 1280, 1024, 768, 390]) {
       await page.setViewportSize({ width, height: 960 }); await page.goto(stack.base);
-      await page.getByRole("heading", { name: "Read the shape of work. See what connects next." }).waitFor();
+      await page.getByRole("heading", { name: "India’s Labour Market Intelligence Layer" }).waitFor();
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
       const logo = page.locator(".public-navbar .brand-image"); assert.equal(await logo.evaluate(element => element.complete && element.naturalWidth > 0), true);
       await page.screenshot({ path: path.join(output, `homepage-${width}.png`), fullPage: true, animations: "disabled" });

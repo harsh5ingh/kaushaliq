@@ -3,8 +3,8 @@ import { useLayoutEffect, useRef, type ReactNode } from "react";
 import { X } from "lucide-react";
 import { IconButton } from "./Buttons";
 
-export function Modal({ title, id, children, onClose, className = "" }: {
-  title: string; id: string; children: ReactNode; onClose: () => void; className?: string;
+export function Modal({ title, id, children, onClose, className = "", descriptionId }: {
+  title: string; id: string; children: ReactNode; onClose: () => void; className?: string; descriptionId?: string;
 }) {
   const { t } = useLocale();
 
@@ -22,7 +22,7 @@ export function Modal({ title, id, children, onClose, className = "" }: {
       if (opener?.isConnected) opener.focus({ preventScroll: true });
     };
   }, []);
-  return <dialog ref={ref} aria-labelledby={id} className={`modal ${className}`}
+  return <dialog ref={ref} aria-labelledby={id} aria-describedby={descriptionId} className={`modal ${className}`}
     onKeyDown={(event) => {
       if (event.key !== "Tab") return;
       const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>(

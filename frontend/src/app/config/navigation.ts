@@ -9,6 +9,8 @@ export function getNavigation(t: Translator): readonly PageMetadata[] { return [
   { path: "/occupations", label: t("common.occupations"), title: t("navigation.occupationsTitle"), description: t("navigation.occupationsDescription"), icon: BriefcaseBusiness, availability: "sample" },
   { path: "/industries", label: t("common.industries"), title: t("navigation.industriesTitle"), description: t("navigation.industriesDescription"), icon: Factory, availability: "sample" },
   { path: "/demand", label: t("common.demand"), title: t("navigation.demandTitle"), description: t("navigation.demandDescription"), icon: ChartNoAxesCombined, availability: "sample" },
+  { path: "/supply", label: t("supply.nav"), title: t("supply.title"), description: t("supply.intro"), icon: FileText, availability: "planned" },
+  { path: "/skill-gaps", label: t("gap.nav"), title: t("gap.kicker"), description: t("gap.intro"), icon: ChartNoAxesCombined, availability: "planned" },
   { path: "/forecast", label: t("common.forecast"), title: t("workspace.forecastTitle"), description: t("workspace.forecastIntro"), icon: ChartNoAxesCombined, availability: "sample" },
   { path: "/spatial", label: t("workspace.spatialTitle"), title: t("navigation.spatialTitle"), description: t("navigation.spatialDescription"), icon: Boxes, availability: "sample" },
   { path: "/reports", label: t("common.reports"), title: t("navigation.reportsTitle"), description: t("navigation.reportsDescription"), icon: FileText, availability: "sample" },

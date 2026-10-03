@@ -1,0 +1,571 @@
+ M backend/.env.example
+ M backend/requirements.txt
+ M backend/src/accounts/otp.py
+ M backend/src/accounts/providers.py
+ M backend/src/accounts/store.py
+ M backend/src/accounts/verification.py
+ M backend/src/config.py
+ M backend/src/data_pipeline/acquire.py
+ M backend/src/data_pipeline/build.py
+ M backend/src/main.py
+ M backend/src/routes/accounts.py
+ M backend/src/routes/auth.py
+ M backend/tests/provider_server.py
+ M backend/tests/test_accounts.py
+ M docs/phase-1.5/verification/auth-login.png
+ M docs/phase-1.5/verification/homepage-1024.png
+ M docs/phase-1.5/verification/homepage-1280.png
+ M docs/phase-1.5/verification/homepage-1440.png
+ M docs/phase-1.5/verification/homepage-390.png
+ M docs/phase-1.5/verification/homepage-768.png
+ M docs/phase-1.5/workspace-regression/command-palette.png
+ M docs/phase-1.5/workspace-regression/mobile-drawer.png
+ M docs/phase-1.5/workspace-regression/sample-disclosure.png
+ M docs/phase-2.3.1-verification/auth-modal-desktop.png
+ M docs/phase-2.3.1-verification/auth-modal-mobile.png
+ M docs/phase-2.3.1-verification/settings-hindi-light.png
+ M docs/phase-2.3.1-verification/signup-validation.png
+ M docs/phase-2.3.1-verification/workspace-1024-light-hi.png
+ M docs/phase-2.3.1-verification/workspace-1280-light-hi.png
+ M docs/phase-2.3.1-verification/workspace-1440-light-hi.png
+ M docs/phase-2.3.1-verification/workspace-390-light-hi.png
+ M docs/phase-2.3.1-verification/workspace-768-light-hi.png
+ M docs/phase-2.5/verification/demand-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/demand-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/demand-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/demand-dark-en-IN-390.png
+ M docs/phase-2.5/verification/demand-dark-en-IN-768.png
+ M docs/phase-2.5/verification/demand-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/demand-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/demand-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/demand-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/demand-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/demand-light-en-IN-1024.png
+ M docs/phase-2.5/verification/demand-light-en-IN-1280.png
+ M docs/phase-2.5/verification/demand-light-en-IN-1440.png
+ M docs/phase-2.5/verification/demand-light-en-IN-390.png
+ M docs/phase-2.5/verification/demand-light-en-IN-768.png
+ M docs/phase-2.5/verification/demand-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/demand-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/demand-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/demand-light-hi-IN-390.png
+ M docs/phase-2.5/verification/demand-light-hi-IN-768.png
+ M docs/phase-2.5/verification/evidence-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/evidence-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/evidence-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/evidence-dark-en-IN-390.png
+ M docs/phase-2.5/verification/evidence-dark-en-IN-768.png
+ M docs/phase-2.5/verification/evidence-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/evidence-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/evidence-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/evidence-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/evidence-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/evidence-desktop.png
+ M docs/phase-2.5/verification/evidence-light-en-IN-1024.png
+ M docs/phase-2.5/verification/evidence-light-en-IN-1280.png
+ M docs/phase-2.5/verification/evidence-light-en-IN-1440.png
+ M docs/phase-2.5/verification/evidence-light-en-IN-390.png
+ M docs/phase-2.5/verification/evidence-light-en-IN-768.png
+ M docs/phase-2.5/verification/evidence-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/evidence-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/evidence-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/evidence-light-hi-IN-390.png
+ M docs/phase-2.5/verification/evidence-light-hi-IN-768.png
+ M docs/phase-2.5/verification/forecast-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/forecast-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/forecast-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/forecast-dark-en-IN-390.png
+ M docs/phase-2.5/verification/forecast-dark-en-IN-768.png
+ M docs/phase-2.5/verification/forecast-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/forecast-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/forecast-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/forecast-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/forecast-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/forecast-light-en-IN-1024.png
+ M docs/phase-2.5/verification/forecast-light-en-IN-1280.png
+ M docs/phase-2.5/verification/forecast-light-en-IN-1440.png
+ M docs/phase-2.5/verification/forecast-light-en-IN-390.png
+ M docs/phase-2.5/verification/forecast-light-en-IN-768.png
+ M docs/phase-2.5/verification/forecast-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/forecast-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/forecast-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/forecast-light-hi-IN-390.png
+ M docs/phase-2.5/verification/forecast-light-hi-IN-768.png
+ M docs/phase-2.5/verification/industries-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/industries-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/industries-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/industries-dark-en-IN-390.png
+ M docs/phase-2.5/verification/industries-dark-en-IN-768.png
+ M docs/phase-2.5/verification/industries-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/industries-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/industries-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/industries-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/industries-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/industries-light-en-IN-1024.png
+ M docs/phase-2.5/verification/industries-light-en-IN-1280.png
+ M docs/phase-2.5/verification/industries-light-en-IN-1440.png
+ M docs/phase-2.5/verification/industries-light-en-IN-390.png
+ M docs/phase-2.5/verification/industries-light-en-IN-768.png
+ M docs/phase-2.5/verification/industries-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/industries-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/industries-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/industries-light-hi-IN-390.png
+ M docs/phase-2.5/verification/industries-light-hi-IN-768.png
+ M docs/phase-2.5/verification/intelligence-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/intelligence-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/intelligence-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/intelligence-dark-en-IN-390.png
+ M docs/phase-2.5/verification/intelligence-dark-en-IN-768.png
+ M docs/phase-2.5/verification/intelligence-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/intelligence-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/intelligence-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/intelligence-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/intelligence-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/intelligence-light-en-IN-1024.png
+ M docs/phase-2.5/verification/intelligence-light-en-IN-1280.png
+ M docs/phase-2.5/verification/intelligence-light-en-IN-1440.png
+ M docs/phase-2.5/verification/intelligence-light-en-IN-390.png
+ M docs/phase-2.5/verification/intelligence-light-en-IN-768.png
+ M docs/phase-2.5/verification/intelligence-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/intelligence-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/intelligence-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/intelligence-light-hi-IN-390.png
+ M docs/phase-2.5/verification/intelligence-light-hi-IN-768.png
+ M docs/phase-2.5/verification/occupations-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/occupations-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/occupations-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/occupations-dark-en-IN-390.png
+ M docs/phase-2.5/verification/occupations-dark-en-IN-768.png
+ M docs/phase-2.5/verification/occupations-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/occupations-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/occupations-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/occupations-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/occupations-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/occupations-light-en-IN-1024.png
+ M docs/phase-2.5/verification/occupations-light-en-IN-1280.png
+ M docs/phase-2.5/verification/occupations-light-en-IN-1440.png
+ M docs/phase-2.5/verification/occupations-light-en-IN-390.png
+ M docs/phase-2.5/verification/occupations-light-en-IN-768.png
+ M docs/phase-2.5/verification/occupations-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/occupations-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/occupations-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/occupations-light-hi-IN-390.png
+ M docs/phase-2.5/verification/occupations-light-hi-IN-768.png
+ M docs/phase-2.5/verification/regions-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/regions-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/regions-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/regions-dark-en-IN-390.png
+ M docs/phase-2.5/verification/regions-dark-en-IN-768.png
+ M docs/phase-2.5/verification/regions-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/regions-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/regions-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/regions-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/regions-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/regions-light-en-IN-1024.png
+ M docs/phase-2.5/verification/regions-light-en-IN-1280.png
+ M docs/phase-2.5/verification/regions-light-en-IN-1440.png
+ M docs/phase-2.5/verification/regions-light-en-IN-390.png
+ M docs/phase-2.5/verification/regions-light-en-IN-768.png
+ M docs/phase-2.5/verification/regions-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/regions-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/regions-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/regions-light-hi-IN-390.png
+ M docs/phase-2.5/verification/regions-light-hi-IN-768.png
+ M docs/phase-2.5/verification/reports-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/reports-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/reports-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/reports-dark-en-IN-390.png
+ M docs/phase-2.5/verification/reports-dark-en-IN-768.png
+ M docs/phase-2.5/verification/reports-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/reports-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/reports-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/reports-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/reports-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/reports-light-en-IN-1024.png
+ M docs/phase-2.5/verification/reports-light-en-IN-1280.png
+ M docs/phase-2.5/verification/reports-light-en-IN-1440.png
+ M docs/phase-2.5/verification/reports-light-en-IN-390.png
+ M docs/phase-2.5/verification/reports-light-en-IN-768.png
+ M docs/phase-2.5/verification/reports-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/reports-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/reports-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/reports-light-hi-IN-390.png
+ M docs/phase-2.5/verification/reports-light-hi-IN-768.png
+ M docs/phase-2.5/verification/skills-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/skills-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/skills-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/skills-dark-en-IN-390.png
+ M docs/phase-2.5/verification/skills-dark-en-IN-768.png
+ M docs/phase-2.5/verification/skills-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/skills-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/skills-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/skills-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/skills-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/skills-light-en-IN-1024.png
+ M docs/phase-2.5/verification/skills-light-en-IN-1280.png
+ M docs/phase-2.5/verification/skills-light-en-IN-1440.png
+ M docs/phase-2.5/verification/skills-light-en-IN-390.png
+ M docs/phase-2.5/verification/skills-light-en-IN-768.png
+ M docs/phase-2.5/verification/skills-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/skills-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/skills-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/skills-light-hi-IN-390.png
+ M docs/phase-2.5/verification/skills-light-hi-IN-768.png
+ M docs/phase-2.5/verification/spatial-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/spatial-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/spatial-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/spatial-dark-en-IN-390.png
+ M docs/phase-2.5/verification/spatial-dark-en-IN-768.png
+ M docs/phase-2.5/verification/spatial-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/spatial-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/spatial-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/spatial-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/spatial-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/spatial-light-en-IN-1024.png
+ M docs/phase-2.5/verification/spatial-light-en-IN-1280.png
+ M docs/phase-2.5/verification/spatial-light-en-IN-1440.png
+ M docs/phase-2.5/verification/spatial-light-en-IN-390.png
+ M docs/phase-2.5/verification/spatial-light-en-IN-768.png
+ M docs/phase-2.5/verification/spatial-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/spatial-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/spatial-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/spatial-light-hi-IN-390.png
+ M docs/phase-2.5/verification/spatial-light-hi-IN-768.png
+ M docs/phase-2.5/verification/training-dark-en-IN-1024.png
+ M docs/phase-2.5/verification/training-dark-en-IN-1280.png
+ M docs/phase-2.5/verification/training-dark-en-IN-1440.png
+ M docs/phase-2.5/verification/training-dark-en-IN-390.png
+ M docs/phase-2.5/verification/training-dark-en-IN-768.png
+ M docs/phase-2.5/verification/training-dark-hi-IN-1024.png
+ M docs/phase-2.5/verification/training-dark-hi-IN-1280.png
+ M docs/phase-2.5/verification/training-dark-hi-IN-1440.png
+ M docs/phase-2.5/verification/training-dark-hi-IN-390.png
+ M docs/phase-2.5/verification/training-dark-hi-IN-768.png
+ M docs/phase-2.5/verification/training-light-en-IN-1024.png
+ M docs/phase-2.5/verification/training-light-en-IN-1280.png
+ M docs/phase-2.5/verification/training-light-en-IN-1440.png
+ M docs/phase-2.5/verification/training-light-en-IN-390.png
+ M docs/phase-2.5/verification/training-light-en-IN-768.png
+ M docs/phase-2.5/verification/training-light-hi-IN-1024.png
+ M docs/phase-2.5/verification/training-light-hi-IN-1280.png
+ M docs/phase-2.5/verification/training-light-hi-IN-1440.png
+ M docs/phase-2.5/verification/training-light-hi-IN-390.png
+ M docs/phase-2.5/verification/training-light-hi-IN-768.png
+ M docs/phase-2.5/verification/training-observed.png
+ M docs/phase-2.6/verification/demand-dark-en-IN-1024.png
+ M docs/phase-2.6/verification/demand-dark-en-IN-1280.png
+ M docs/phase-2.6/verification/demand-dark-en-IN-1440.png
+ M docs/phase-2.6/verification/demand-dark-en-IN-390.png
+ M docs/phase-2.6/verification/demand-dark-en-IN-768.png
+ M docs/phase-2.6/verification/demand-dark-hi-IN-1024.png
+ M docs/phase-2.6/verification/demand-dark-hi-IN-1280.png
+ M docs/phase-2.6/verification/demand-dark-hi-IN-1440.png
+ M docs/phase-2.6/verification/demand-dark-hi-IN-390.png
+ M docs/phase-2.6/verification/demand-dark-hi-IN-768.png
+ M docs/phase-2.6/verification/demand-light-en-IN-1024.png
+ M docs/phase-2.6/verification/demand-light-en-IN-1280.png
+ M docs/phase-2.6/verification/demand-light-en-IN-1440.png
+ M docs/phase-2.6/verification/demand-light-en-IN-390.png
+ M docs/phase-2.6/verification/demand-light-en-IN-768.png
+ M docs/phase-2.6/verification/demand-light-hi-IN-1024.png
+ M docs/phase-2.6/verification/demand-light-hi-IN-1280.png
+ M docs/phase-2.6/verification/demand-light-hi-IN-1440.png
+ M docs/phase-2.6/verification/demand-light-hi-IN-390.png
+ M docs/phase-2.6/verification/demand-light-hi-IN-768.png
+ M docs/phase-2.6/verification/forecast-dark-en-IN-1024.png
+ M docs/phase-2.6/verification/forecast-dark-en-IN-1280.png
+ M docs/phase-2.6/verification/forecast-dark-en-IN-1440.png
+ M docs/phase-2.6/verification/forecast-dark-en-IN-390.png
+ M docs/phase-2.6/verification/forecast-dark-en-IN-768.png
+ M docs/phase-2.6/verification/forecast-dark-hi-IN-1024.png
+ M docs/phase-2.6/verification/forecast-dark-hi-IN-1280.png
+ M docs/phase-2.6/verification/forecast-dark-hi-IN-1440.png
+ M docs/phase-2.6/verification/forecast-dark-hi-IN-390.png
+ M docs/phase-2.6/verification/forecast-dark-hi-IN-768.png
+ M docs/phase-2.6/verification/forecast-light-en-IN-1024.png
+ M docs/phase-2.6/verification/forecast-light-en-IN-1280.png
+ M docs/phase-2.6/verification/forecast-light-en-IN-1440.png
+ M docs/phase-2.6/verification/forecast-light-en-IN-390.png
+ M docs/phase-2.6/verification/forecast-light-en-IN-768.png
+ M docs/phase-2.6/verification/forecast-light-hi-IN-1024.png
+ M docs/phase-2.6/verification/forecast-light-hi-IN-1280.png
+ M docs/phase-2.6/verification/forecast-light-hi-IN-1440.png
+ M docs/phase-2.6/verification/forecast-light-hi-IN-390.png
+ M docs/phase-2.6/verification/forecast-light-hi-IN-768.png
+ M docs/phase-2.6/verification/intelligence-dark-en-IN-1024.png
+ M docs/phase-2.6/verification/intelligence-dark-en-IN-1280.png
+ M docs/phase-2.6/verification/intelligence-dark-en-IN-1440.png
+ M docs/phase-2.6/verification/intelligence-dark-en-IN-390.png
+ M docs/phase-2.6/verification/intelligence-dark-en-IN-768.png
+ M docs/phase-2.6/verification/intelligence-dark-hi-IN-1024.png
+ M docs/phase-2.6/verification/intelligence-dark-hi-IN-1280.png
+ M docs/phase-2.6/verification/intelligence-dark-hi-IN-1440.png
+ M docs/phase-2.6/verification/intelligence-dark-hi-IN-390.png
+ M docs/phase-2.6/verification/intelligence-dark-hi-IN-768.png
+ M docs/phase-2.6/verification/intelligence-light-en-IN-1024.png
+ M docs/phase-2.6/verification/intelligence-light-en-IN-1280.png
+ M docs/phase-2.6/verification/intelligence-light-en-IN-1440.png
+ M docs/phase-2.6/verification/intelligence-light-en-IN-390.png
+ M docs/phase-2.6/verification/intelligence-light-en-IN-768.png
+ M docs/phase-2.6/verification/intelligence-light-hi-IN-1024.png
+ M docs/phase-2.6/verification/intelligence-light-hi-IN-1280.png
+ M docs/phase-2.6/verification/intelligence-light-hi-IN-1440.png
+ M docs/phase-2.6/verification/intelligence-light-hi-IN-390.png
+ M docs/phase-2.6/verification/intelligence-light-hi-IN-768.png
+ M docs/phase-2.6/verification/regions-dark-en-IN-1024.png
+ M docs/phase-2.6/verification/regions-dark-en-IN-1280.png
+ M docs/phase-2.6/verification/regions-dark-en-IN-1440.png
+ M docs/phase-2.6/verification/regions-dark-en-IN-390.png
+ M docs/phase-2.6/verification/regions-dark-en-IN-768.png
+ M docs/phase-2.6/verification/regions-dark-hi-IN-1024.png
+ M docs/phase-2.6/verification/regions-dark-hi-IN-1280.png
+ M docs/phase-2.6/verification/regions-dark-hi-IN-1440.png
+ M docs/phase-2.6/verification/regions-dark-hi-IN-390.png
+ M docs/phase-2.6/verification/regions-dark-hi-IN-768.png
+ M docs/phase-2.6/verification/regions-light-en-IN-1024.png
+ M docs/phase-2.6/verification/regions-light-en-IN-1280.png
+ M docs/phase-2.6/verification/regions-light-en-IN-1440.png
+ M docs/phase-2.6/verification/regions-light-en-IN-390.png
+ M docs/phase-2.6/verification/regions-light-en-IN-768.png
+ M docs/phase-2.6/verification/regions-light-hi-IN-1024.png
+ M docs/phase-2.6/verification/regions-light-hi-IN-1280.png
+ M docs/phase-2.6/verification/regions-light-hi-IN-1440.png
+ M docs/phase-2.6/verification/regions-light-hi-IN-390.png
+ M docs/phase-2.6/verification/regions-light-hi-IN-768.png
+ M docs/phase-2.6/verification/skills-dark-en-IN-1024.png
+ M docs/phase-2.6/verification/skills-dark-en-IN-1280.png
+ M docs/phase-2.6/verification/skills-dark-en-IN-1440.png
+ M docs/phase-2.6/verification/skills-dark-en-IN-390.png
+ M docs/phase-2.6/verification/skills-dark-en-IN-768.png
+ M docs/phase-2.6/verification/skills-dark-hi-IN-1024.png
+ M docs/phase-2.6/verification/skills-dark-hi-IN-1280.png
+ M docs/phase-2.6/verification/skills-dark-hi-IN-1440.png
+ M docs/phase-2.6/verification/skills-dark-hi-IN-390.png
+ M docs/phase-2.6/verification/skills-dark-hi-IN-768.png
+ M docs/phase-2.6/verification/skills-light-en-IN-1024.png
+ M docs/phase-2.6/verification/skills-light-en-IN-1280.png
+ M docs/phase-2.6/verification/skills-light-en-IN-1440.png
+ M docs/phase-2.6/verification/skills-light-en-IN-390.png
+ M docs/phase-2.6/verification/skills-light-en-IN-768.png
+ M docs/phase-2.6/verification/skills-light-hi-IN-1024.png
+ M docs/phase-2.6/verification/skills-light-hi-IN-1280.png
+ M docs/phase-2.6/verification/skills-light-hi-IN-1440.png
+ M docs/phase-2.6/verification/skills-light-hi-IN-390.png
+ M docs/phase-2.6/verification/skills-light-hi-IN-768.png
+ M docs/phase-2.6/verification/spatial-dark-en-IN-1024.png
+ M docs/phase-2.6/verification/spatial-dark-en-IN-1280.png
+ M docs/phase-2.6/verification/spatial-dark-en-IN-1440.png
+ M docs/phase-2.6/verification/spatial-dark-en-IN-390.png
+ M docs/phase-2.6/verification/spatial-dark-en-IN-768.png
+ M docs/phase-2.6/verification/spatial-dark-hi-IN-1024.png
+ M docs/phase-2.6/verification/spatial-dark-hi-IN-1280.png
+ M docs/phase-2.6/verification/spatial-dark-hi-IN-1440.png
+ M docs/phase-2.6/verification/spatial-dark-hi-IN-390.png
+ M docs/phase-2.6/verification/spatial-dark-hi-IN-768.png
+ M docs/phase-2.6/verification/spatial-light-en-IN-1024.png
+ M docs/phase-2.6/verification/spatial-light-en-IN-1280.png
+ M docs/phase-2.6/verification/spatial-light-en-IN-1440.png
+ M docs/phase-2.6/verification/spatial-light-en-IN-390.png
+ M docs/phase-2.6/verification/spatial-light-en-IN-768.png
+ M docs/phase-2.6/verification/spatial-light-hi-IN-1024.png
+ M docs/phase-2.6/verification/spatial-light-hi-IN-1280.png
+ M docs/phase-2.6/verification/spatial-light-hi-IN-1440.png
+ M docs/phase-2.6/verification/spatial-light-hi-IN-390.png
+ M docs/phase-2.6/verification/spatial-light-hi-IN-768.png
+ M docs/phase-2.7/PHASE_2_7_AUDIT.md
+ M docs/phase-2.7/PHASE_2_7_IMPLEMENTATION.md
+ M docs/phase-2.7/RESUME_PRIVACY.md
+ M docs/phase-2.7/verification/otp-dark-en-IN-1024.png
+ M docs/phase-2.7/verification/otp-dark-en-IN-1280.png
+ M docs/phase-2.7/verification/otp-dark-en-IN-1440.png
+ M docs/phase-2.7/verification/otp-dark-en-IN-390.png
+ M docs/phase-2.7/verification/otp-dark-en-IN-768.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-1024.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-1280.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-1440.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-390.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-768.png
+ M docs/phase-2.7/verification/otp-invalid-desktop.png
+ M docs/phase-2.7/verification/otp-light-en-IN-1024.png
+ M docs/phase-2.7/verification/otp-light-en-IN-1280.png
+ M docs/phase-2.7/verification/otp-light-en-IN-1440.png
+ M docs/phase-2.7/verification/otp-light-en-IN-390.png
+ M docs/phase-2.7/verification/otp-light-en-IN-768.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-1024.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-1280.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-1440.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-390.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-768.png
+ M docs/phase-2.7/verification/profile-dark-en-IN-1024.png
+ M docs/phase-2.7/verification/results.json
+ M docs/phase-2.7/verification/settings-dark-en-IN-1024.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-1280.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-1440.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-390.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-768.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-1024.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-1280.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-1440.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-390.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-768.png
+ M docs/phase-2.7/verification/settings-light-en-IN-1024.png
+ M docs/phase-2.7/verification/settings-light-en-IN-1280.png
+ M docs/phase-2.7/verification/settings-light-en-IN-1440.png
+ M docs/phase-2.7/verification/settings-light-en-IN-390.png
+ M docs/phase-2.7/verification/settings-light-en-IN-768.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-1024.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-1280.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-1440.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-390.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-768.png
+ M docs/phase-2.7/verification/synthetic-resume.docx
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-footer-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-footer-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-footer-1440.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-footer-768.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-public-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-public-390.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-dark-public-768.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-footer-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-footer-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-footer-1440.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-footer-768.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-public-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-public-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/en-light-public-1440.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-footer-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-footer-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-footer-1440.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-footer-390.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-footer-768.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-public-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-public-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-public-390.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-dark-public-768.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-footer-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-footer-1280.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-footer-1440.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-footer-390.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-footer-768.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-public-1024.png
+ M docs/phase-2/implementation/phase-2.2-fixes-verification/localization/hi-light-public-1280.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-demand-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-forecast-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-industries-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-intelligence-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-occupations-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-regions-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/dark-skills-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/light-demand-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/light-industries-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/light-intelligence-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/light-regions-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/light-skills-1440.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/mobile-overview-390.png
+ M docs/phase-2/implementation/phase-2.4-verification/workspace/overview-filtered.png
+ M frontend/src/app/config/navigation.ts
+ M frontend/src/app/i18n/locales/en-IN.ts
+ M frontend/src/app/i18n/locales/hi-IN.ts
+ M frontend/src/app/i18n/locales/personal.ts
+ M frontend/src/app/i18n/locales/real-data.ts
+ M frontend/src/app/providers/AuthProvider.tsx
+ M frontend/src/app/providers/authContext.ts
+ M frontend/src/app/routes/AppRoutes.tsx
+ M frontend/src/components/auth/AuthForm.tsx
+ M frontend/src/components/layout/Header.tsx
+ M frontend/src/components/navigation/NavigationLinks.tsx
+ M frontend/src/components/ui/Modal.tsx
+ M frontend/src/components/ui/States.tsx
+ M frontend/src/features/account/SecuritySettings.tsx
+ M frontend/src/features/account/api.ts
+ M frontend/src/features/account/contracts.ts
+ M frontend/src/features/real-intelligence/DataProvider.tsx
+ M frontend/src/features/real-intelligence/EvidencePanel.tsx
+ M frontend/src/features/real-intelligence/ObservedTraining.tsx
+ M frontend/src/features/real-intelligence/RealIntelligencePage.tsx
+ M frontend/src/main.tsx
+ M frontend/src/pages/AuthPage.tsx
+ M frontend/src/pages/HomePage.tsx
+ M frontend/src/pages/PersonalSettingsPage.tsx
+ M frontend/src/pages/VerifyEmailPage.tsx
+ M frontend/src/styles/chrome.css
+ M frontend/src/styles/home-hero.css
+ M frontend/src/styles/personal.css
+ M frontend/tests/phase15.browser.cjs
+ M frontend/tests/phase22-localization.browser.cjs
+ M frontend/tests/phase231.browser.cjs
+ M frontend/tests/phase27.browser.cjs
+ M frontend/tests/test-stack.cjs
+?? backend/src/accounts/demo.py
+?? backend/src/accounts/diagnostics.py
+?? backend/src/accounts/oauth.py
+?? backend/src/accounts/sessions.py
+?? backend/src/demand/
+?? backend/src/gaps/
+?? backend/src/routes/demand.py
+?? backend/src/routes/gaps.py
+?? backend/src/routes/oauth.py
+?? backend/src/routes/supply.py
+?? backend/src/scripts/
+?? backend/src/supply/
+?? backend/tests/oauth_server.py
+?? backend/tests/test_auth_verification.py
+?? backend/tests/test_demand.py
+?? backend/tests/test_gaps.py
+?? backend/tests/test_oauth_sessions.py
+?? backend/tests/test_supply.py
+?? data/canonical/demand/
+?? data/canonical/supply/
+?? data/metadata/demand_coverage.json
+?? data/metadata/demand_quality.json
+?? data/metadata/demand_source_registry.json
+?? data/metadata/supply_coverage.json
+?? data/metadata/supply_quality.json
+?? data/metadata/supply_source_registry.json
+?? data/metadata/taxonomy_source_registry.json
+?? data/processed/demand/
+?? data/processed/supply/
+?? data/raw/ncs/
+?? data/raw/terms/
+?? data/raw/training/pib-centres-2289890.html
+?? data/raw/training/pib-centres-2289890.html.receipt.json
+?? data/staging/demand/
+?? data/staging/supply/
+?? docs/phase-2.7.1/
+?? docs/phase-2.7/CHANGE_MANIFEST.md
+?? docs/phase-2.7/VERIFICATION.md
+?? docs/phase-2.7/verification/git-diff-stat.txt
+?? docs/phase-2.7/verification/git-status.txt
+?? docs/phase-2.8/
+?? docs/phase-2.9.1.1/
+?? docs/phase-2.9.1/
+?? docs/phase-2.9/
+?? docs/phase-3/
+?? frontend/src/app/i18n/locales/auth-security.ts
+?? frontend/src/app/i18n/locales/demand.ts
+?? frontend/src/app/i18n/locales/gaps.ts
+?? frontend/src/app/i18n/locales/supply.ts
+?? frontend/src/assets/india-workforce-dark.webp
+?? frontend/src/assets/india-workforce-light.webp
+?? frontend/src/components/landing/HeroSection.tsx
+?? frontend/src/components/ui/CountUp.tsx
+?? frontend/src/components/ui/Loader.tsx
+?? frontend/src/components/ui/Skeleton.tsx
+?? frontend/src/features/account/ConnectedAccounts.tsx
+?? frontend/src/features/account/oauth.ts
+?? frontend/src/features/demand/
+?? frontend/src/features/skill-gap/
+?? frontend/src/features/supply/
+?? frontend/src/styles/demand.css
+?? frontend/src/styles/gaps.css
+?? frontend/src/styles/supply.css
+?? frontend/tests/auth-hardening.browser.cjs
+?? frontend/tests/countup.fixture.tsx
+?? frontend/tests/hero-countup.browser.cjs
+?? frontend/tests/phase271.browser.cjs
+?? frontend/tests/phase28.browser.cjs
+?? frontend/tests/phase29.browser.cjs
+?? frontend/tests/phase291.browser.cjs
+?? frontend/tests/phase3.browser.cjs
+?? frontend/tests/run-auth-regressions.cjs
+?? frontend/tests/verify-local-demo.cjs

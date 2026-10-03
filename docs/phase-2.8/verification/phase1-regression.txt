@@ -1,0 +1,29 @@
+PASS Backend GET / returns 200
+PASS Backend GET /api/health returns 200
+PASS Backend GET /openapi.json returns 200
+PASS Overview viewport 1440px
+PASS Overview viewport 1280px
+PASS Overview viewport 1024px
+PASS Overview viewport 768px
+PASS Overview viewport 390px
+PASS Direct route and refresh /skills
+PASS Direct route and refresh /regions
+PASS Direct route and refresh /occupations
+PASS Direct route and refresh /industries
+PASS Direct route and refresh /demand
+PASS Direct route and refresh /forecast
+PASS Direct route and refresh /spatial
+PASS Direct route and refresh /reports
+PASS Unknown route recovery
+PASS Palette empty results, arrows, Enter and route focus
+PASS Palette Escape restores trigger focus
+PASS Ctrl/Cmd+K shortcuts and filtered navigation
+PASS Browser back and forward navigation
+PASS Mobile drawer focus containment, Escape, focus return and navigation
+PASS Sample disclosure dialog and focus containment
+PASS Loading skeleton during actual health request
+PASS Real backend health via frontend proxy
+PASS Real unavailable-backend error and retry
+PASS Reduced motion disables entrance animation
+PASS Unsupported accuracy claim absent
+PASS No uncaught browser exceptions

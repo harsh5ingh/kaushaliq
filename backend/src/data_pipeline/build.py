@@ -38,8 +38,8 @@ class Tables(HTMLParser):
 def digest(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def read_sources():
-    sources = json.loads(REGISTRY.read_text(encoding="utf-8"))
+def read_sources(registry_path=REGISTRY):
+    sources = json.loads(registry_path.read_text(encoding="utf-8"))
     if len({s["source_id"] for s in sources}) != len(sources): raise ValueError("Duplicate registered source")
     for source in sources:
         required = ["source_id", "publisher", "dataset_name", "url", "license", "geography", "granularity", "methodology", "notes", "access_method", "update_frequency"]

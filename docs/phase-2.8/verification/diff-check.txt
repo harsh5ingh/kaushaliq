@@ -1,0 +1,5 @@
+Exit code: 0
+warning: in the working copy of 'backend/src/data_pipeline/acquire.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/src/data_pipeline/build.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/features/real-intelligence/EvidencePanel.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/main.tsx', LF will be replaced by CRLF the next time Git touches it

@@ -37,7 +37,11 @@
   .sidebar .workspace-utilities > a { justify-content: center; }
   .sidebar .workspace-utilities { margin-top: auto; width: 100%; }
 }
-@media (max-width: 959px) { .public-nav-actions .desktop-preferences { display: none; } }
+@media (max-width: 959px) {
+  .public-nav-actions .desktop-preferences { display: none; }
+  /* The compact menu already includes workspace access; keep the header height stable. */
+  .public-nav-actions .public-workspace-link { display: none; }
+}
 @media (max-width: 767px) {
   .workspace-header .desktop-preferences { display: none; }
   .workspace-header { padding-inline: var(--page-gutter); }

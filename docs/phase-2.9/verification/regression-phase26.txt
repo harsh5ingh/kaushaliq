@@ -1,0 +1,10 @@
+PASS Research/source licences documented, verified components contain no simulation generator and Phase2.5 canonical hash unchanged
+PASS Real observations are default, verified banner has no sample selector and published values unchanged
+PASS Chronological published series, keyboard point inspector, source tooltip, evidence Escape/focus restoration and methodology boundary
+PASS All regional marks match API records; ordering, keyboard evidence and unsupported combinations never invent or zero-fill values
+PASS Invalid filters fail honestly and incompatible methodology responses are rejected before charting
+PASS Spatial and relationships disclose missing inputs without fake coordinates, cylinders or edges; regional evidence remains reachable
+PASS API failure and retry keep evidence boundary and never fall back to simulation
+PASS 120 real-mode captures: six views, five widths, both themes/languages, no overflow or legacy visuals
+PASS Immediate English/Hindi switching, persistence and reduced-motion chart presentation
+PASS Production ignores sample URLs and excludes legacy chunks/Three.js; spatial disclosure works with WebGL unavailable

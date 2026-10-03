@@ -1,0 +1,5 @@
+warning: in the working copy of 'frontend/src/app/config/navigation.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/app/routes/AppRoutes.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/navigation/NavigationLinks.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/features/real-intelligence/ObservedTraining.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/main.tsx', LF will be replaced by CRLF the next time Git touches it

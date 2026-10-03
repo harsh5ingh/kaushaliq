@@ -1,0 +1,16 @@
+PASS Protected private account routes send unauthenticated visitors to sign-in with the original route retained
+PASS Signup applies server-side validation, BCrypt-12 stores only a password hash, and an HttpOnly session cookie authenticates the user
+PASS All existing intelligence routes and new account routes render through the top application shell
+PASS Profile menu supports Escape/focus restoration and Profile/Settings/Help; theme and Hindi preference persist through refresh
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+11 !== 9
+
+    at D:\SIH part 2\KaushalIQ\frontend\tests\phase231.browser.cjs:97:16 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 11,
+  expected: 9,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

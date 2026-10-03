@@ -1,0 +1,11 @@
+PASS Canonical demand API publishes 37 actual source rows with 34 mapped geographies and one observation date
+PASS Public demand view shows verified native vacancy counts; every regional bar matches the API, no sample mode
+PASS Shared evidence modal exposes source, raw hash, source row, period and transformations; Escape restores focus
+PASS Functional geography filters, incompatible combinations, refresh and browser back/forward preserve honest unavailable states
+PASS District, occupation and unresolved-geography selections never manufacture zeroes, relationships or assigned UT values
+PASS Immediate English/Hindi/English switching, persisted locale, light selection and operating-system theme behavior
+PASS 20 demand screenshots cover five widths, both themes and both languages with no horizontal page overflow
+PASS Keyboard bar selection, visible focus, evidence restoration and accessible data table under reduced motion
+PASS Demand API failure shows retry without any simulated fallback; retry restores canonical data
+PASS Mismatched publication versions and unbound source evidence fail closed before displaying any count
+PASS Existing PLFS intelligence values preserved and no uncaught browser exceptions

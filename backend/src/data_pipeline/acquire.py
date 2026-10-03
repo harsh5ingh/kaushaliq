@@ -10,8 +10,8 @@ ROOT = Path(__file__).resolve().parents[3]
 DATA = ROOT / "data"
 REGISTRY = DATA / "metadata" / "source_registry.json"
 
-def acquire(source_id: str) -> dict:
-    source = next(s for s in json.loads(REGISTRY.read_text(encoding="utf-8")) if s["source_id"] == source_id)
+def acquire(source_id: str, registry_path: Path = REGISTRY) -> dict:
+    source = next(s for s in json.loads(registry_path.read_text(encoding="utf-8")) if s["source_id"] == source_id)
     if source["access_status"] != "approved_public_download":
         raise ValueError("Source is research-only; download/redistribution is not approved.")
     target = DATA / source["raw_path"]
@@ -45,9 +45,10 @@ def acquire(source_id: str) -> dict:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source_ids", nargs="*")
+    parser.add_argument("--registry", type=Path, default=REGISTRY, help="Reviewed source registry; default preserves the existing labour pipeline")
     args = parser.parse_args()
-    sources = json.loads(REGISTRY.read_text(encoding="utf-8"))
+    sources = json.loads(args.registry.read_text(encoding="utf-8"))
     ids = args.source_ids or [s["source_id"] for s in sources if s["access_status"] == "approved_public_download"]
     for identifier in ids:
-        record = acquire(identifier)
+        record = acquire(identifier, args.registry)
         print(f"{identifier}: {record['bytes']} bytes, SHA256 {record['sha256']}")

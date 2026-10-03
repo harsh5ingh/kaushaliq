@@ -1,0 +1,242 @@
+[
+  {
+    "label": "Andaman and Nicobar Islands",
+    "original_unit": "vacancies",
+    "original_value": "-",
+    "source_record_id": "Annexure row 1."
+  },
+  {
+    "label": "Andhra Pradesh",
+    "original_unit": "vacancies",
+    "original_value": "4,681",
+    "source_record_id": "Annexure row 2."
+  },
+  {
+    "label": "Arunachal Pradesh",
+    "original_unit": "vacancies",
+    "original_value": "1,100",
+    "source_record_id": "Annexure row 3."
+  },
+  {
+    "label": "Assam",
+    "original_unit": "vacancies",
+    "original_value": "10,113",
+    "source_record_id": "Annexure row 4."
+  },
+  {
+    "label": "Bihar",
+    "original_unit": "vacancies",
+    "original_value": "26,911",
+    "source_record_id": "Annexure row 5."
+  },
+  {
+    "label": "Chandigarh",
+    "original_unit": "vacancies",
+    "original_value": "4,950",
+    "source_record_id": "Annexure row 6."
+  },
+  {
+    "label": "Chhattisgarh",
+    "original_unit": "vacancies",
+    "original_value": "5,619",
+    "source_record_id": "Annexure row 7."
+  },
+  {
+    "label": "Dadra and Nagar Haveli",
+    "original_unit": "vacancies",
+    "original_value": "-",
+    "source_record_id": "Annexure row 8."
+  },
+  {
+    "label": "Daman and Diu",
+    "original_unit": "vacancies",
+    "original_value": "6",
+    "source_record_id": "Annexure row 9."
+  },
+  {
+    "label": "Delhi",
+    "original_unit": "vacancies",
+    "original_value": "13,748",
+    "source_record_id": "Annexure row 10."
+  },
+  {
+    "label": "Goa",
+    "original_unit": "vacancies",
+    "original_value": "165",
+    "source_record_id": "Annexure row 11."
+  },
+  {
+    "label": "Gujarat",
+    "original_unit": "vacancies",
+    "original_value": "20,099",
+    "source_record_id": "Annexure row 12."
+  },
+  {
+    "label": "Haryana",
+    "original_unit": "vacancies",
+    "original_value": "13,811",
+    "source_record_id": "Annexure row 13."
+  },
+  {
+    "label": "Himachal Pradesh",
+    "original_unit": "vacancies",
+    "original_value": "2,229",
+    "source_record_id": "Annexure row 14."
+  },
+  {
+    "label": "Jammu and Kashmir",
+    "original_unit": "vacancies",
+    "original_value": "4,540",
+    "source_record_id": "Annexure row 15."
+  },
+  {
+    "label": "Jharkhand",
+    "original_unit": "vacancies",
+    "original_value": "6,176",
+    "source_record_id": "Annexure row 16."
+  },
+  {
+    "label": "Karnataka",
+    "original_unit": "vacancies",
+    "original_value": "22,361",
+    "source_record_id": "Annexure row 17."
+  },
+  {
+    "label": "Kerala",
+    "original_unit": "vacancies",
+    "original_value": "8,700",
+    "source_record_id": "Annexure row 18."
+  },
+  {
+    "label": "Ladakh",
+    "original_unit": "vacancies",
+    "original_value": "-",
+    "source_record_id": "Annexure row 19."
+  },
+  {
+    "label": "Lakshadweep",
+    "original_unit": "vacancies",
+    "original_value": "19",
+    "source_record_id": "Annexure row 20."
+  },
+  {
+    "label": "Madhya Pradesh",
+    "original_unit": "vacancies",
+    "original_value": "7,339",
+    "source_record_id": "Annexure row 21."
+  },
+  {
+    "label": "Maharashtra",
+    "original_unit": "vacancies",
+    "original_value": "26,075",
+    "source_record_id": "Annexure row 22."
+  },
+  {
+    "label": "Manipur",
+    "original_unit": "vacancies",
+    "original_value": "888",
+    "source_record_id": "Annexure row 23."
+  },
+  {
+    "label": "Meghalaya",
+    "original_unit": "vacancies",
+    "original_value": "585",
+    "source_record_id": "Annexure row 24."
+  },
+  {
+    "label": "Mizoram",
+    "original_unit": "vacancies",
+    "original_value": "693",
+    "source_record_id": "Annexure row 25."
+  },
+  {
+    "label": "Nagaland",
+    "original_unit": "vacancies",
+    "original_value": "649",
+    "source_record_id": "Annexure row 26."
+  },
+  {
+    "label": "Odisha",
+    "original_unit": "vacancies",
+    "original_value": "10,711",
+    "source_record_id": "Annexure row 27."
+  },
+  {
+    "label": "Puducherry",
+    "original_unit": "vacancies",
+    "original_value": "178",
+    "source_record_id": "Annexure row 28."
+  },
+  {
+    "label": "Punjab",
+    "original_unit": "vacancies",
+    "original_value": "6,796",
+    "source_record_id": "Annexure row 29."
+  },
+  {
+    "label": "Rajasthan",
+    "original_unit": "vacancies",
+    "original_value": "10,953",
+    "source_record_id": "Annexure row 30."
+  },
+  {
+    "label": "Sikkim",
+    "original_unit": "vacancies",
+    "original_value": "502",
+    "source_record_id": "Annexure row 31."
+  },
+  {
+    "label": "Tamil Nadu",
+    "original_unit": "vacancies",
+    "original_value": "14,676",
+    "source_record_id": "Annexure row 32."
+  },
+  {
+    "label": "Telangana",
+    "original_unit": "vacancies",
+    "original_value": "9,125",
+    "source_record_id": "Annexure row 33."
+  },
+  {
+    "label": "Tripura",
+    "original_unit": "vacancies",
+    "original_value": "1,539",
+    "source_record_id": "Annexure row 34."
+  },
+  {
+    "label": "Uttar Pradesh",
+    "original_unit": "vacancies",
+    "original_value": "34,320",
+    "source_record_id": "Annexure row 35."
+  },
+  {
+    "label": "Uttarakhand",
+    "original_unit": "vacancies",
+    "original_value": "1,946",
+    "source_record_id": "Annexure row 36."
+  },
+  {
+    "label": "West Bengal",
+    "original_unit": "vacancies",
+    "original_value": "62,855",
+    "source_record_id": "Annexure row 37."
+  },
+  {
+    "label": "Multiple States",
+    "original_unit": "vacancies",
+    "original_value": "16,13,586",
+    "source_record_id": "Annexure row 38."
+  },
+  {
+    "label": "State not specified",
+    "original_unit": "vacancies",
+    "original_value": "20,56,384",
+    "source_record_id": "Annexure row 39."
+  },
+  {
+    "label": "Total",
+    "original_unit": "vacancies",
+    "original_value": "40,05,028",
+    "source_record_id": "Annexure TOTAL"
+  }
+]

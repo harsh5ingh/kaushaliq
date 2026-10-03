@@ -1,0 +1,58 @@
+[
+  {
+    "taxonomy_source_id": "nco-2015",
+    "publisher": "Directorate General of Employment",
+    "name": "National Classification of Occupations 2015",
+    "version": "2015",
+    "source_url": "https://dge.gov.in/website-policy",
+    "coverage": "Indian occupations; not ingested",
+    "classification_purpose": "Occupation reference",
+    "license_access_notes": "DGE requires due permission for full or partial reproduction. No permission obtained.",
+    "status": "REQUIRES_PERMISSION",
+    "accessed_at": "2026-10-03",
+    "snapshot_sha256": null,
+    "raw_artifact_reference": null
+  },
+  {
+    "taxonomy_source_id": "nqr-qualification",
+    "publisher": "NCVET / National Qualification Register",
+    "name": "NSQF aligned qualifications and files",
+    "version": null,
+    "source_url": "https://www.nqr.gov.in/qualifications-search",
+    "coverage": "Qualifications, levels, awarding bodies; not ingested",
+    "classification_purpose": "Qualification reference, not skills demand",
+    "license_access_notes": "NQR copyright-policy permits attributed accurate reproduction of own material, excludes third-party copyrighted files. Current migration to Kaushalverse; version, document rights, expiry/archive and crosswalk review pending.",
+    "status": "REFERENCE_ONLY",
+    "accessed_at": "2026-10-03",
+    "snapshot_sha256": null,
+    "raw_artifact_reference": null
+  },
+  {
+    "taxonomy_source_id": "nsdc-nos",
+    "publisher": "NSDC / Sector Skill Councils",
+    "name": "NOS / Qualification Packs",
+    "version": null,
+    "source_url": "https://nsdcindia.org/nos",
+    "coverage": "NOS/QP standards; not ingested",
+    "classification_purpose": "Competency standards, QP and NOS kept separate",
+    "license_access_notes": "Official fetch failed; per-file rights and version review not established. No mirror acquired.",
+    "status": "UNAVAILABLE",
+    "accessed_at": "2026-10-03",
+    "snapshot_sha256": null,
+    "raw_artifact_reference": null
+  },
+  {
+    "taxonomy_source_id": "nic-2008",
+    "publisher": "MoSPI",
+    "name": "Partial NIC 2008 Sixth Economic Census reference",
+    "version": "NIC-2008",
+    "source_url": "https://mospi.gov.in/sites/default/files/6ec_dirEst/ec6_nic_2008_code.html",
+    "coverage": "19 sections, 82 divisions, 231 groups",
+    "classification_purpose": "Industrial reference only; no training or demand crosswalk",
+    "license_access_notes": "Public official classification, MoSPI open-access terms with attribution; no blanket CC/GODL",
+    "status": "PARTIALLY_VERIFIED",
+    "accessed_at": "2026-10-03",
+    "snapshot_sha256": null,
+    "raw_artifact_reference": null
+  }
+]

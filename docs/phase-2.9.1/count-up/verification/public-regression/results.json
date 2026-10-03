@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Public homepage and official responsive logo variants fit all required viewport widths",
+    "Existing public pages render directly and survive refresh",
+    "Public intelligence is open; private profile keeps authentication and requested destination",
+    "Auth dialog keyboard trap, Escape and focus restoration work",
+    "Real email account creation enters the workspace without exposing session tokens or persisting passwords in browser storage",
+    "Responsive navigation, account menu routes, reduced motion, sign-out and protected-route behavior work without uncaught browser errors"
+  ],
+  "errors": []
+}

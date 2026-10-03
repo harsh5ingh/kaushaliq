@@ -2,7 +2,7 @@ export const realEn = {
   "real.view": "Observation type",
   "real.previous": "Previous", "real.next": "Next", "real.page": "Page {page} of {total}", "real.results": "{count} reference entries",
   "real.mode": "Data source", "real.verified": "Verified public observations", "real.legacy": "Legacy sample simulation",
-  "real.banner": "Verified public data", "real.bannerDetail": "PLFS labour indicators, NIC reference codes and PMKVY counts. No real demand, skill-gap or forecast metrics are connected.",
+  "real.banner": "Verified public data", "real.bannerDetail": "PLFS labour indicators, NIC reference codes, PMKVY counts and a dated NCS portal-vacancy snapshot. Skill gaps, district demand and forecasts remain unavailable.",
   "real.loading": "Loading validated public data…", "real.error": "Verified data could not be loaded. No simulated values have been substituted.",
   "real.unavailable": "Data not currently available for this dimension", "real.unavailableDetail": "No defensible observations have been connected for these filters. Missing data is not zero.",
   "real.overview": "Observed labour-force indicators", "real.intro": "Rates for people aged 15 and above. These describe labour participation and employment, not job vacancies or skill demand.",
@@ -26,13 +26,13 @@ export const realEn = {
   "real.trained": "Trained", "real.certified": "Certified", "real.partial": "Partial year · to 30 June 2026", "real.quarantine": "Quality exception: national FY2024-25 trained total differs from the sum of published state rows by 120. That total is quarantined and unavailable; source values are not silently corrected.",
   "real.trainingMissing": "Lakshadweep is not listed in the training annexure. Missing observations remain unavailable.",
   "real.count": "Reported persons", "real.coverage": "Dataset coverage and quality", "real.quality": "Validated with quarantine", "real.reference": "Reference only", "real.connected": "Connected", "real.notConnected": "Not connected", "real.records": "Canonical records", "real.noGap": "Demand and supply cannot be subtracted without compatible units, populations, taxonomy, geography and time periods.",
-  "real.searchNote": "Search connected state/UT and NIC references. Skills, occupations and demand are not yet connected.", "real.footer": "Evidence-backed aggregate observations · coverage varies by dataset", "real.phase": "Verified publications · historical coverage",
+  "real.searchNote": "Search connected state/UT and NIC references. Skills and occupations are not connected. Dated vacancy observations are available in Demand.", "real.footer": "Evidence-backed aggregate observations · coverage varies by dataset", "real.phase": "Verified publications · historical coverage",
 } as const;
 export const realHi: Record<keyof typeof realEn, string> = {
   "real.view": "अवलोकन प्रकार",
   "real.previous": "पिछला", "real.next": "अगला", "real.page": "पृष्ठ {page} / {total}", "real.results": "{count} संदर्भ प्रविष्टियाँ",
   "real.mode": "डेटा स्रोत", "real.verified": "सत्यापित सार्वजनिक अवलोकन", "real.legacy": "पुराना नमूना अनुकरण",
-  "real.banner": "सत्यापित सार्वजनिक डेटा", "real.bannerDetail": "PLFS श्रम संकेतक, NIC संदर्भ कोड और PMKVY आँकड़े। वास्तविक मांग, कौशल-अंतर या पूर्वानुमान मेट्रिक जुड़े नहीं हैं।",
+  "real.banner": "सत्यापित सार्वजनिक डेटा", "real.bannerDetail": "PLFS श्रम संकेतक, NIC संदर्भ कोड, PMKVY आँकड़े और NCS पोर्टल रिक्तियों का तिथिबद्ध स्नैपशॉट। कौशल-अंतर, जिला मांग और पूर्वानुमान अनुपलब्ध हैं।",
   "real.loading": "सत्यापित सार्वजनिक डेटा लोड हो रहा है…", "real.error": "सत्यापित डेटा लोड नहीं हो सका। उसकी जगह अनुकरणीय मान नहीं लगाए गए हैं।",
   "real.unavailable": "इस आयाम के लिए डेटा अभी उपलब्ध नहीं है", "real.unavailableDetail": "इन फ़िल्टरों के लिए विश्वसनीय अवलोकन जुड़े नहीं हैं। अनुपलब्ध डेटा शून्य नहीं है।",
   "real.overview": "अवलोकित श्रम-बल संकेतक", "real.intro": "15 वर्ष और उससे अधिक आयु के लोगों की दरें। ये श्रम भागीदारी और रोजगार दर्शाती हैं, नौकरी की रिक्तियाँ या कौशल मांग नहीं।",
@@ -56,5 +56,5 @@ export const realHi: Record<keyof typeof realEn, string> = {
   "real.trained": "प्रशिक्षित", "real.certified": "प्रमाणित", "real.partial": "आंशिक वर्ष · 30 जून 2026 तक", "real.quarantine": "गुणवत्ता अपवाद: राष्ट्रीय वित्त वर्ष 2024-25 प्रशिक्षित कुल, प्रकाशित राज्य पंक्तियों के योग से 120 अधिक है। वह कुल अलग रखा गया है और अनुपलब्ध है; स्रोत मान चुपचाप सुधारे नहीं गए।",
   "real.trainingMissing": "प्रशिक्षण परिशिष्ट में लक्षद्वीप सूचीबद्ध नहीं है। अनुपस्थित अवलोकन अनुपलब्ध रहते हैं।",
   "real.count": "प्रकाशित व्यक्ति संख्या", "real.coverage": "डेटासेट कवरेज और गुणवत्ता", "real.quality": "अपवाद अलग रखकर सत्यापित", "real.reference": "केवल संदर्भ", "real.connected": "जुड़ा है", "real.notConnected": "नहीं जुड़ा", "real.records": "मानकीकृत रिकॉर्ड", "real.noGap": "संगत इकाई, जनसंख्या, वर्गीकरण, भूगोल और अवधि के बिना मांग और आपूर्ति घटाई नहीं जा सकती।",
-  "real.searchNote": "जुड़े राज्य/केंद्रशासित प्रदेश और NIC संदर्भ खोजें। कौशल, व्यवसाय और मांग अभी नहीं जुड़े हैं।", "real.footer": "साक्ष्य आधारित समेकित अवलोकन · कवरेज डेटासेट पर निर्भर", "real.phase": "सत्यापित प्रकाशन · ऐतिहासिक कवरेज",
+  "real.searchNote": "जुड़े राज्य/केंद्रशासित प्रदेश और NIC संदर्भ खोजें। कौशल और व्यवसाय अभी नहीं जुड़े हैं। तिथिबद्ध रिक्ति अवलोकन मांग में उपलब्ध हैं।", "real.footer": "साक्ष्य आधारित समेकित अवलोकन · कवरेज डेटासेट पर निर्भर", "real.phase": "सत्यापित प्रकाशन · ऐतिहासिक कवरेज",
 };

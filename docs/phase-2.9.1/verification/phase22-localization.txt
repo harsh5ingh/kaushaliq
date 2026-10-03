@@ -1,0 +1,12 @@
+PASS English/Hindi key and interpolation parity
+PASS English → Hindi → English updates content without reload; Hindi survives refresh
+PASS Hero verified evidence is keyboard accessible and restores focus
+page.waitForURL: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================
+    at page.waitForURL (D:\SIH part 2\KaushalIQ\frontend\tests\legacy-sample.cjs:10:26)
+    at D:\SIH part 2\KaushalIQ\frontend\tests\phase22-localization.browser.cjs:57:459 {
+  log: [],
+  name: 'TimeoutError'
+}

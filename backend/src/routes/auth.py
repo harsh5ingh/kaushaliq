@@ -107,18 +107,22 @@ def clear_session_cookie(response: Response) -> None:
     response.delete_cookie(COOKIE_NAME, path="/", httponly=True, secure=settings.environment.lower() == "production", samesite=settings.auth_cookie_samesite)
 
 
-def safe_user(row: sqlite3.Row) -> dict[str, str]:
-    return {"id": row["id"], "name": row["name"], "email": row["email"], "provider": "email"}
+def safe_user(row: sqlite3.Row) -> dict[str, object]:
+    return {"id": row["id"], "name": row["name"], "email": row["email"],
+            "provider": row["provider"] if "provider" in row.keys() else "email",
+            "passwordEnabled": bool(row["password_enabled"]) if "password_enabled" in row.keys() else True}
 
 
-def issue_session(response: Response, user: sqlite3.Row) -> tuple[str, str]:
+def issue_session(response: Response, user: sqlite3.Row, provider: str = "email") -> tuple[str, str]:
+    from src.accounts.demo import user_allowed
+    if not user_allowed(user): raise HTTPException(401, "Email or password is incorrect.")
     issued = now()
     expiry = issued + timedelta(seconds=SESSION_SECONDS)
     jti = secrets.token_urlsafe(32)
     payload = {"sub": user["id"], "jti": jti, "iat": issued.timestamp(), "exp": expiry.timestamp()}
     token = jwt.encode(payload, settings.jwt_secret, algorithm="HS256")
     with connect() as db:
-        db.execute("INSERT INTO sessions(jti,user_id,expires_at) VALUES(?,?,?)", (jti, user["id"], expiry.isoformat()))
+        db.execute("INSERT INTO sessions(jti,user_id,expires_at,provider) VALUES(?,?,?,?)", (jti, user["id"], expiry.isoformat(), provider))
     set_session_cookie(response, token)
     csrf = set_csrf(response)
     return csrf, expiry.isoformat()
@@ -128,13 +132,14 @@ def session_user(token: str | None) -> tuple[sqlite3.Row, str] | None:
     if not token:
         return None
     try:
-        payload = jwt.decode(token, settings.jwt_secret, algorithms=["HS256"])
+        payload = jwt.decode(token, settings.jwt_secret, algorithms=["HS256"], options={"require": ["sub", "jti", "iat", "exp"]})
     except jwt.PyJWTError:
         return None
     with connect() as db:
-        row = db.execute("""SELECT users.*, sessions.jti, sessions.expires_at, sessions.revoked_at
+        row = db.execute("""SELECT users.*, sessions.jti, sessions.expires_at, sessions.revoked_at, sessions.provider
           FROM sessions JOIN users ON users.id=sessions.user_id WHERE sessions.jti=? AND users.id=?""", (payload.get("jti"), payload.get("sub"))).fetchone()
-    if not row or not row["email_verified"] or row["revoked_at"] or datetime.fromisoformat(row["expires_at"]) <= now():
+    from src.accounts.demo import user_allowed
+    if not row or not user_allowed(row) or not row["email_verified"] or row["revoked_at"] or datetime.fromisoformat(row["expires_at"]) <= now():
         return None
     return row, row["expires_at"]
 
@@ -180,8 +185,9 @@ def get_csrf(response: Response):
 
 @router.get("/providers")
 def providers():
-    # OAuth credentials alone do not enable a provider: callback/state/PKCE routes are not implemented.
-    return {"email": True, "oauth": {"google": False, "github": False, "facebook": False}}
+    from src.accounts.oauth import availability
+    states = {provider: availability(provider) for provider in ("google", "github")}
+    return {"email": True, "oauth": {**{p: state == "CONFIGURED" for p, state in states.items()}, "facebook": False}, "states": states}
 
 
 @router.post("/register", status_code=201)
@@ -218,11 +224,12 @@ def login(body: Credentials, request: Request, response: Response):
     valid = False
     try:
         supplied = body.password.encode("utf-8")
-        encoded = user["password_hash"] if user else DUMMY_PASSWORD_HASH
-        valid = len(supplied) <= 72 and bcrypt.checkpw(supplied[:72], encoded) and user is not None
+        encoded = user["password_hash"] if user and user["password_enabled"] else DUMMY_PASSWORD_HASH
+        valid = len(supplied) <= 72 and bcrypt.checkpw(supplied[:72], encoded) and user is not None and bool(user["password_enabled"])
     except (ValueError, TypeError):
         valid = False
-    if not valid:
+    from src.accounts.demo import user_allowed
+    if not valid or not user_allowed(user):
         raise HTTPException(status_code=401, detail="Email or password is incorrect.")
     if not user["email_verified"]:
         from src.accounts.verification import begin_registration

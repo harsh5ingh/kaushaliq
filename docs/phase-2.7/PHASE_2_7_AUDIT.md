@@ -18,4 +18,5 @@ Audit completed before application edits. Read Phase2.3/2.3.1/2.4 implementation
 
 1. Preserve baseline build/lint/backend/browser evidence. 2. Add migrations and provider/OTP boundaries. 3. Upgrade password and verified account/session flow. 4. Private account APIs/resume/preferences/watchlists/saved queries. 5. Public/private routing, OTP UI and optional onboarding/profile/settings/personal entry. 6. Bilingual responsive/accessibility pass. 7. Security, regression and screenshot verification; record exact unavailable integrations.
 
-Baseline: build/lint and ten backend tests pass; Phase2.6 ten browser groups pass. Phase2.3.1/2.5 and earlier suites started before source changes; final baseline results recorded separately. Provider credentials remain withheld and no external message is sent during implementation tests.
+Baseline build/lint, ten canonical backend tests and all eight existing browser suites passed before implementation. Final verification includes those regressions plus account/security coverage. Initial audit found no enabled delivery integration; final local configuration inspection found Resend settings, with no verified live delivery. Tests now explicitly isolate local email/SMS settings; see OTP_ARCHITECTURE.md and VERIFICATION.md for the earlier absent-provider test issue. No local credentials were added or edited by this task.
+

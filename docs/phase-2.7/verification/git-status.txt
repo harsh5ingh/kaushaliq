@@ -1,0 +1,37 @@
+ M docs/phase-2.7/PHASE_2_7_AUDIT.md
+ M docs/phase-2.7/PHASE_2_7_IMPLEMENTATION.md
+ M docs/phase-2.7/RESUME_PRIVACY.md
+ M docs/phase-2.7/verification/otp-dark-hi-IN-1024.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-1280.png
+ M docs/phase-2.7/verification/otp-dark-hi-IN-390.png
+ M docs/phase-2.7/verification/otp-light-en-IN-1024.png
+ M docs/phase-2.7/verification/otp-light-en-IN-768.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-1280.png
+ M docs/phase-2.7/verification/otp-light-hi-IN-1440.png
+ M docs/phase-2.7/verification/profile-dark-en-IN-1024.png
+ M docs/phase-2.7/verification/results.json
+ M docs/phase-2.7/verification/settings-dark-en-IN-1024.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-1280.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-1440.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-390.png
+ M docs/phase-2.7/verification/settings-dark-en-IN-768.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-1024.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-1280.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-1440.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-390.png
+ M docs/phase-2.7/verification/settings-dark-hi-IN-768.png
+ M docs/phase-2.7/verification/settings-light-en-IN-1024.png
+ M docs/phase-2.7/verification/settings-light-en-IN-1280.png
+ M docs/phase-2.7/verification/settings-light-en-IN-1440.png
+ M docs/phase-2.7/verification/settings-light-en-IN-390.png
+ M docs/phase-2.7/verification/settings-light-en-IN-768.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-1024.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-1280.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-1440.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-390.png
+ M docs/phase-2.7/verification/settings-light-hi-IN-768.png
+ M docs/phase-2.7/verification/synthetic-resume.docx
+?? docs/phase-2.7/CHANGE_MANIFEST.md
+?? docs/phase-2.7/VERIFICATION.md
+?? docs/phase-2.7/verification/git-diff-stat.txt
+?? docs/phase-2.7/verification/git-status.txt
