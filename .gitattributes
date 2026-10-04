@@ -1,0 +1,3 @@
+/data/canonical/labour-market.json -text
+/data/canonical/demand/snapshot.json -text
+/data/canonical/supply/snapshot.json -text
