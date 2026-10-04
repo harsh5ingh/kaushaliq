@@ -1,0 +1,293 @@
+{
+  "checks": [
+    "Skeleton transitions to zero only after valid API data; final accessible values are exposed without tick announcements",
+    "All three values finish exactly; shorter secondary timing, easing, stable layout and uninterrupted theme/language/parent updates verified",
+    "StrictMode, recreated formatter/parent JSX, increasing/decreasing/interrupted/zero targets and unmount RAF cancellation work in isolated tests",
+    "Mobile Hindi/light count-up has unchanged metric/card geometry and no horizontal overflow",
+    "Reduced motion shows final values immediately, cancels in-flight animation and does not restart when preference is restored",
+    "API failure/retry, missing observation and null measurement retain truthful states with no fabricated counters",
+    "No production target literals, random values, API mutation or uncaught browser exceptions"
+  ],
+  "screenshots": [
+    "desktop-dark-en-start.png",
+    "desktop-dark-en-midpoint.png",
+    "desktop-light-en-final.png",
+    "mobile-light-hi-start.png",
+    "mobile-light-hi-midpoint.png",
+    "mobile-light-hi-final.png",
+    "mobile-light-hi-reduced-motion.png"
+  ],
+  "timeline": [
+    {
+      "stage": "desktop: API ready, before first frame",
+      "values": [
+        "0",
+        "0",
+        "0"
+      ],
+      "states": [
+        "animating",
+        "animating",
+        "animating"
+      ],
+      "geometry": [
+        {
+          "x": 839,
+          "y": 281,
+          "width": 500,
+          "height": 526.546875
+        },
+        {
+          "x": 872,
+          "y": 394.1875,
+          "width": 237.53125,
+          "height": 60.484375
+        },
+        {
+          "x": 872,
+          "y": 530.0625,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 1101,
+          "y": 530.0625,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 872,
+          "y": 640.15625,
+          "width": 434,
+          "height": 74.390625
+        }
+      ]
+    },
+    {
+      "stage": "desktop: 400ms",
+      "values": [
+        "2,421,252",
+        "26",
+        "29"
+      ],
+      "states": [
+        "animating",
+        "animating",
+        "animating"
+      ],
+      "geometry": [
+        {
+          "x": 839,
+          "y": 281,
+          "width": 500,
+          "height": 526.546875
+        },
+        {
+          "x": 872,
+          "y": 394.1875,
+          "width": 237.53125,
+          "height": 60.484375
+        },
+        {
+          "x": 872,
+          "y": 530.0625,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 1101,
+          "y": 530.0625,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 872,
+          "y": 640.15625,
+          "width": 434,
+          "height": 74.390625
+        }
+      ]
+    },
+    {
+      "stage": "desktop: settled after theme, locale and parent changes",
+      "values": [
+        "4,005,028",
+        "33",
+        "37"
+      ],
+      "states": [
+        "settled",
+        "settled",
+        "settled"
+      ],
+      "geometry": [
+        {
+          "x": 839,
+          "y": 281,
+          "width": 500,
+          "height": 526.546875
+        },
+        {
+          "x": 872,
+          "y": 394.1875,
+          "width": 237.53125,
+          "height": 60.484375
+        },
+        {
+          "x": 872,
+          "y": 530.0625,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 1101,
+          "y": 530.0625,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 872,
+          "y": 640.15625,
+          "width": 434,
+          "height": 74.390625
+        }
+      ]
+    },
+    {
+      "stage": "mobile: API ready",
+      "values": [
+        "0",
+        "0",
+        "0"
+      ],
+      "states": [
+        "animating",
+        "animating",
+        "animating"
+      ],
+      "geometry": [
+        {
+          "x": 20,
+          "y": 644.453125,
+          "width": 340,
+          "height": 545.1875
+        },
+        {
+          "x": 45,
+          "y": 748.9375,
+          "width": 207.734375,
+          "height": 49.140625
+        },
+        {
+          "x": 45,
+          "y": 873.46875,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 202,
+          "y": 873.46875,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 45,
+          "y": 1003.0625,
+          "width": 290,
+          "height": 74.390625
+        }
+      ]
+    },
+    {
+      "stage": "mobile: 500ms",
+      "values": [
+        "27,78,760",
+        "29",
+        "32"
+      ],
+      "states": [
+        "animating",
+        "animating",
+        "animating"
+      ],
+      "geometry": [
+        {
+          "x": 20,
+          "y": 644.453125,
+          "width": 340,
+          "height": 545.1875
+        },
+        {
+          "x": 45,
+          "y": 748.9375,
+          "width": 207.734375,
+          "height": 49.140625
+        },
+        {
+          "x": 45,
+          "y": 873.46875,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 202,
+          "y": 873.46875,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 45,
+          "y": 1003.0625,
+          "width": 290,
+          "height": 74.390625
+        }
+      ]
+    },
+    {
+      "stage": "mobile: final",
+      "values": [
+        "40,05,028",
+        "33",
+        "37"
+      ],
+      "states": [
+        "settled",
+        "settled",
+        "settled"
+      ],
+      "geometry": [
+        {
+          "x": 20,
+          "y": 644.453125,
+          "width": 340,
+          "height": 545.1875
+        },
+        {
+          "x": 45,
+          "y": 748.9375,
+          "width": 207.734375,
+          "height": 49.140625
+        },
+        {
+          "x": 45,
+          "y": 873.46875,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 202,
+          "y": 873.46875,
+          "width": 36.296875,
+          "height": 33.59375
+        },
+        {
+          "x": 45,
+          "y": 1003.0625,
+          "width": 290,
+          "height": 74.390625
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

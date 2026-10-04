@@ -1,0 +1,622 @@
+{
+  "observations": 1701,
+  "series": 1162,
+  "series_by_family": {
+    "demand": 37,
+    "labour": 1017,
+    "supply": 108
+  },
+  "warning_count": 26,
+  "warning_types": {
+    "LABOUR_INDICATOR_CHANGE": 18,
+    "DATA_COVERAGE_WARNING": 8
+  },
+  "warning_periods": [
+    "2023-24"
+  ],
+  "national_baseline_options": 57,
+  "scenario_capabilities": [
+    {
+      "scenario_type": "DIRECT_METRIC_SENSITIVITY",
+      "status": "READY",
+      "reason_codes": [],
+      "required_data": []
+    },
+    {
+      "scenario_type": "SKILL_SHOCK",
+      "status": "NOT_READY",
+      "reason_codes": [
+        "MISSING_REVIEWED_IMPACT_RULE",
+        "MISSING_EVIDENCED_RELATIONSHIPS"
+      ],
+      "required_data": [
+        "REVIEWED_ADOPTION_IMPACT_MODEL",
+        "EVIDENCED_SKILL_OCCUPATION_INDUSTRY_RELATIONSHIPS",
+        "CALIBRATED_UNCERTAINTY"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "plfs-pib-2024",
+      "publisher": "MoSPI / NSO, disseminated by PIB",
+      "version": "23 September 2024",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2057970&lang=2&reg=48",
+      "sha256": "023ec02a2b8b383584d536e87dab723424cf39193d720792a38f72ba1fa1f9d8"
+    },
+    {
+      "source_id": "plfs-annual-2023-24",
+      "publisher": "MoSPI / NSO",
+      "version": "July2023–June2024",
+      "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf",
+      "sha256": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39"
+    },
+    {
+      "source_id": "nic-2008",
+      "publisher": "MoSPI",
+      "version": "NIC-2008",
+      "url": "https://mospi.gov.in/sites/default/files/6ec_dirEst/ec6_nic_2008_code.html",
+      "sha256": "ad419dcbc3dc5ee4695a92827e688d3566227ae858765982dea6df8ea2bb619a"
+    },
+    {
+      "source_id": "pmkvy-pib-2026",
+      "publisher": "MSDE, disseminated by PIB",
+      "version": "10 August2026",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297203&lang=1&reg=3",
+      "sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719"
+    },
+    {
+      "source_id": "ncs-active-pib-2025",
+      "publisher": "Ministry of Labour & Employment / National Career Service, disseminated by PIB",
+      "version": "PIB-2147927 / 2025-07-24",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147927&reg=48&lang=2",
+      "sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3"
+    },
+    {
+      "source_id": "pmkvy-centres-pib-2026",
+      "publisher": "MSDE, disseminated by PIB",
+      "version": "27 July 2026",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289890&lang=1&reg=3",
+      "sha256": "d6063f7a3075ec43c0e4350b158684d3dfd157b4fe4a7b8c03929d0987a471d2"
+    }
+  ],
+  "readiness": [
+    {
+      "signal_type": "DEMAND_ACCELERATION",
+      "status": "NOT_READY",
+      "reason": "Connected NCS demand is a single historical vacancy-stock snapshot; no compatible repeated demand history is connected.",
+      "reason_codes": [
+        "NO_REPEATED_DEMAND_OBSERVATIONS"
+      ],
+      "required_data": [
+        "Repeated verified demand observations with matched metric, unit, geography, population and classification",
+        "A reviewed historical-change threshold and sufficient comparable periods"
+      ],
+      "checks": [
+        {
+          "code": "NO_REPEATED_DEMAND_OBSERVATIONS",
+          "passed": false,
+          "explanation": "Connected NCS demand is a single historical vacancy-stock snapshot; no compatible repeated demand history is connected."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "SUPPLY_ACCELERATION",
+      "status": "NOT_READY",
+      "reason": "No repeated observations of available qualified workers are connected. PMKVY training activity and PLFS rates do not measure available workforce supply.",
+      "reason_codes": [
+        "NO_AVAILABLE_WORKFORCE_SUPPLY"
+      ],
+      "required_data": [
+        "Repeated verified available-workforce observations and a defined population",
+        "Reviewed compatible occupation/skill classifications and source coverage"
+      ],
+      "checks": [
+        {
+          "code": "NO_AVAILABLE_WORKFORCE_SUPPLY",
+          "passed": false,
+          "explanation": "No repeated observations of available qualified workers are connected. PMKVY training activity and PLFS rates do not measure available workforce supply."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "DEMAND_SUPPLY_DIVERGENCE",
+      "status": "NOT_READY",
+      "reason": "Vacancy stocks and reported training counts have incompatible semantics and intervals; no approved demand/available-supply comparison exists.",
+      "reason_codes": [
+        "NO_COMPARABLE_DEMAND_SUPPLY"
+      ],
+      "required_data": [
+        "Compatible repeated demand and available-supply observations",
+        "An approved metric/population/period comparison and evidence-backed coverage"
+      ],
+      "checks": [
+        {
+          "code": "NO_COMPARABLE_DEMAND_SUPPLY",
+          "passed": false,
+          "explanation": "Vacancy stocks and reported training counts have incompatible semantics and intervals; no approved demand/available-supply comparison exists."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "REGIONAL_DEMAND_ANOMALY",
+      "status": "NOT_READY",
+      "reason": "Regional NCS records have a single observation date and incomplete geography mapping; no reviewed regional temporal baseline exists.",
+      "reason_codes": [
+        "NO_REGIONAL_DEMAND_HISTORY"
+      ],
+      "required_data": [
+        "Repeated mapped regional demand observations",
+        "A reviewed comparable regional baseline and anomaly policy"
+      ],
+      "checks": [
+        {
+          "code": "NO_REGIONAL_DEMAND_HISTORY",
+          "passed": false,
+          "explanation": "Regional NCS records have a single observation date and incomplete geography mapping; no reviewed regional temporal baseline exists."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "EMERGING_SKILL_SIGNAL",
+      "status": "NOT_READY",
+      "reason": "Verified skill-coded demand observations and an authoritative reviewed skill crosswalk are not connected.",
+      "reason_codes": [
+        "NO_SKILL_HISTORY"
+      ],
+      "required_data": [
+        "Repeated verified skill-level observations",
+        "Versioned skill taxonomy and approved source-to-skill crosswalk"
+      ],
+      "checks": [
+        {
+          "code": "NO_SKILL_HISTORY",
+          "passed": false,
+          "explanation": "Verified skill-coded demand observations and an authoritative reviewed skill crosswalk are not connected."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "DECLINING_SKILL_SIGNAL",
+      "status": "NOT_READY",
+      "reason": "Verified skill-coded demand observations and an authoritative reviewed skill crosswalk are not connected.",
+      "reason_codes": [
+        "NO_SKILL_HISTORY"
+      ],
+      "required_data": [
+        "Repeated verified skill-level observations",
+        "Versioned skill taxonomy and approved source-to-skill crosswalk"
+      ],
+      "checks": [
+        {
+          "code": "NO_SKILL_HISTORY",
+          "passed": false,
+          "explanation": "Verified skill-coded demand observations and an authoritative reviewed skill crosswalk are not connected."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "TRAINING_PRESSURE",
+      "status": "NOT_READY",
+      "reason": "Training output and centre stock do not measure seats, throughput capacity or training demand. No evidenced pressure relationship is connected.",
+      "reason_codes": [
+        "NO_TRAINING_CAPACITY_RELATIONSHIP"
+      ],
+      "required_data": [
+        "Verified training demand and compatible seat/throughput capacity",
+        "A reviewed evidenced relationship and compatible intervals"
+      ],
+      "checks": [
+        {
+          "code": "NO_TRAINING_CAPACITY_RELATIONSHIP",
+          "passed": false,
+          "explanation": "Training output and centre stock do not measure seats, throughput capacity or training demand. No evidenced pressure relationship is connected."
+        }
+      ],
+      "eligible_series": 0,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 2.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 3.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        },
+        {
+          "source_id": "ncs-active-pib-2025",
+          "locator": "Annexure row 4.",
+          "raw_sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+          "transformations": [
+            "Extract Active Vacancies column; employer column is not demand",
+            "Parse Indian digit grouping; preserve original value/unit",
+            "Point-in-time stock: 2025-07-14; publication: 2025-07-24",
+            "Exact geography label/explicit Total→India alias only; no downscaling",
+            "ncs-active-stock-1.0"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "DATA_COVERAGE_WARNING",
+      "status": "READY",
+      "reason": "Verified source coverage limitations are documented as informational readiness notices.",
+      "reason_codes": [],
+      "required_data": [],
+      "checks": [
+        {
+          "code": "SOURCE_COVERAGE_EVIDENCE",
+          "passed": true,
+          "explanation": "Coverage notices require preserved source observations and metadata."
+        }
+      ],
+      "eligible_series": 8,
+      "minimum_history": 0,
+      "evidence": [
+        {
+          "source_id": "plfs-annual-2023-24",
+          "locator": "PDF page 130; printed A-67; Table 17; row Andaman & N. Island; rural/persons",
+          "raw_sha256": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39",
+          "transformations": [
+            "Published percentage retained; no reweighting"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "LABOUR_INDICATOR_CHANGE",
+      "status": "READY",
+      "reason": "54 observed series pass the historical review gates. Thresholds apply only to their stated complete intervals; other series may remain restricted.",
+      "reason_codes": [],
+      "required_data": [],
+      "checks": [
+        {
+          "code": "ELIGIBLE_OBSERVED_SERIES",
+          "passed": true,
+          "explanation": "At least one verified series satisfies all rule checks; readiness does not imply a threshold-triggered warning."
+        }
+      ],
+      "eligible_series": 54,
+      "minimum_history": 2,
+      "evidence": [
+        {
+          "source_id": "plfs-pib-2024",
+          "locator": "Table 4; row 2022-23; urban/female",
+          "raw_sha256": "023ec02a2b8b383584d536e87dab723424cf39193d720792a38f72ba1fa1f9d8",
+          "transformations": [
+            "Published percentage retained; no reweighting"
+          ]
+        },
+        {
+          "source_id": "plfs-pib-2024",
+          "locator": "Table 4; row 2023-24; urban/female",
+          "raw_sha256": "023ec02a2b8b383584d536e87dab723424cf39193d720792a38f72ba1fa1f9d8",
+          "transformations": [
+            "Published percentage retained; no reweighting"
+          ]
+        }
+      ]
+    },
+    {
+      "signal_type": "TRAINING_OUTPUT_ACCELERATION",
+      "status": "READY",
+      "reason": "71 observed series pass the historical review gates. Thresholds apply only to their stated complete intervals; other series may remain restricted.",
+      "reason_codes": [],
+      "required_data": [],
+      "checks": [
+        {
+          "code": "ELIGIBLE_OBSERVED_SERIES",
+          "passed": true,
+          "explanation": "At least one verified series satisfies all rule checks; readiness does not imply a threshold-triggered warning."
+        }
+      ],
+      "eligible_series": 71,
+      "minimum_history": 3,
+      "evidence": [
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Andaman and Nicobar Islands; 2023-24; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Andaman and Nicobar Islands; 2024-25; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        },
+        {
+          "source_id": "pmkvy-pib-2026",
+          "locator": "Annexure I; Andaman and Nicobar Islands; 2025-26; CERTIFIED",
+          "raw_sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+          "transformations": [
+            "Published fiscal-year activity counts; original cell retained",
+            "Certified cohorts may differ from trained cohorts; no conversion, availability or capacity inferred"
+          ]
+        }
+      ]
+    }
+  ],
+  "partial_exclusions": 72,
+  "quarantine": [
+    {
+      "difference": 120,
+      "indicator": "trained",
+      "period": "2024-25",
+      "published_total": 2038319,
+      "reason": "Published total does not reconcile; omitted from canonical observations, raw retained",
+      "region_id": "in",
+      "source_id": "pmkvy-pib-2026",
+      "state_sum": 2038199
+    }
+  ],
+  "publications": {
+    "base": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+    "demand": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+    "supply": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4"
+  },
+  "engine_version": "early-warning-1.0"
+}

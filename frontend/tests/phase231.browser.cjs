@@ -94,8 +94,10 @@ const noOverflow = async (page, width) => { const ok = await page.evaluate(() =>
       if (width < 1200) {
         const menu = page.locator(".workspace-header .mobile-menu");
         await menu.click(); const drawer = page.getByRole("dialog", { name: "कार्यक्षेत्र नेविगेशन" }); await drawer.waitFor();
-        // Phase 3 adds a gap-readiness destination; preserve all ten earlier modules.
-        assert.equal(await drawer.locator(".nav-link").count(), 11);
+        // Phase 5 adds two public intelligence destinations; all eleven Phase 3 destinations remain.
+        assert.equal(await drawer.locator(".nav-link").count(), 13);
+        assert.equal(await drawer.locator('.nav-link[href^="/early-warning"]').count(), 1);
+        assert.equal(await drawer.locator('.nav-link[href^="/scenarios"]').count(), 1);
         assert.equal(await drawer.locator('.nav-link[href="/supply?data=sample"]').count(), 1);
         await page.keyboard.press("Escape"); await drawer.waitFor({ state: "hidden" });
         assert.equal(await menu.evaluate(element => element === document.activeElement), true);

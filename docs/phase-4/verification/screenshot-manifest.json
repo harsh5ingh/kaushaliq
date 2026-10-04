@@ -1,0 +1,141 @@
+{
+  "real_canonical_captures": 20,
+  "total_captures": 22,
+  "widths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "languages": [
+    "en-IN",
+    "hi-IN"
+  ],
+  "manually_inspected": [
+    "forecast-dark-en-IN-1440.png",
+    "forecast-light-hi-IN-390.png",
+    "forecast-light-en-IN-1280.png",
+    "forecast-dark-hi-IN-1024.png",
+    "forecast-light-en-IN-768.png",
+    "forecast-dark-hi-IN-390.png",
+    "error-light-en-1440.png",
+    "test-only-model-output-1440.png"
+  ],
+  "screenshots": [
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-en-IN-1440.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-hi-IN-1440.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-en-IN-1440.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-hi-IN-1440.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-en-IN-1280.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-hi-IN-1280.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-en-IN-1280.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-hi-IN-1280.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-en-IN-1024.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-hi-IN-1024.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-en-IN-1024.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-hi-IN-1024.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-en-IN-768.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-hi-IN-768.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-en-IN-768.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-hi-IN-768.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-en-IN-390.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-dark-hi-IN-390.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-en-IN-390.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/forecast-light-hi-IN-390.png",
+      "category": "REAL_CANONICAL_DATA",
+      "automated_overflow_check": true
+    },
+    {
+      "path": "docs/phase-4/verification/browser/error-light-en-1440.png",
+      "category": "API_ERROR_STATE",
+      "automated_overflow_check": false
+    },
+    {
+      "path": "docs/phase-4/verification/browser/test-only-model-output-1440.png",
+      "category": "ISOLATED_TEST_ONLY_MODEL_FIXTURE",
+      "automated_overflow_check": false
+    }
+  ]
+}

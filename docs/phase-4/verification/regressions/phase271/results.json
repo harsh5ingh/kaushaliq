@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "Seeded demo uses normal login, eight-hour HttpOnly cookie and unchanged verified observations",
+    "Synthetic profile, optional onboarding, canonical watchlist and saved verified query are functional",
+    "Security/settings/session and unavailable provider states are inspectable",
+    "Six demo screenshots cover all five widths, both themes and languages without overflow",
+    "Signout revokes server session; private redirect, Escape/reduced motion and no production test mailbox",
+    "OTP expiry, resend/cooldown and attempt exhaustion work; screenshots contain no OTP values",
+    "Provider rejection and network failure are honest, reload-safe, bilingual and never grant a session"
+  ],
+  "screenshots": [
+    "demo-my-intelligence-dark-en-IN-1440.png",
+    "demo-profile-light-hi-IN-1280.png",
+    "demo-settings-dark-hi-IN-1024.png",
+    "demo-onboarding-light-en-IN-768.png",
+    "demo-my-intelligence-dark-hi-IN-390.png",
+    "demo-profile-light-en-IN-390.png",
+    "otp-expired-light-en-390.png",
+    "otp-attempt-limit-light-en-390.png",
+    "otp-provider-error-light-hi-390.png",
+    "otp-network-error-light-en-390.png"
+  ],
+  "errors": []
+}

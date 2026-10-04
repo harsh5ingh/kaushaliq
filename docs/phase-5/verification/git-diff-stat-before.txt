@@ -1,0 +1,12 @@
+ backend/src/main.py                                |    2 +
+ frontend/package-lock.json                         | 1851 +++++++++++++++-----
+ frontend/package.json                              |    4 +-
+ frontend/src/app/i18n/locales/en-IN.ts             |    2 +
+ frontend/src/app/i18n/locales/hi-IN.ts             |    2 +
+ frontend/src/components/layout/AppShell.tsx        |    5 +-
+ .../features/real-intelligence/DataProvider.tsx    |    2 +-
+ .../real-intelligence/RealIntelligencePage.tsx     |   10 +-
+ frontend/src/main.tsx                              |    1 +
+ frontend/src/styles/home-hero.css                  |    2 +-
+ frontend/tests/run-auth-regressions.cjs            |    2 +-
+ 11 files changed, 1421 insertions(+), 462 deletions(-)

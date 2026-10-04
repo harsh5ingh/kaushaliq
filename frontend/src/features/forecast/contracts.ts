@@ -1,0 +1,37 @@
+import type { Evidence, Source } from '../real-intelligence/contracts';
+export type Family = 'labour'|'demand'|'supply';
+export interface Point { observation_id:string; period:string; period_start:string; period_end:string; value:number; original_value:string; original_unit:string; unit:string; status:'OBSERVED'; source_id:string; source_version:string; publication_version:string; identity:Record<string,string|null>; quality_status:string; partial:boolean; as_of:string|null; evidence:Evidence }
+export interface Series { series_id:string; family:Family; metric:string; unit:string; geography_id:string|null; geography_name:string; geography_level:string; classification:Record<string,string|null>; frequency:string; methodology_version:string; applicability_end:string|null; applicability_evidence_url:string|null; observations:Point[]; source_ids:string[]; missing_periods:string[]; limitations:string[] }
+export interface Change { status:'DERIVED'|'UNAVAILABLE'; from_id:string; to_id:string; from_period:string; to_period:string; absolute_change:number|null; growth_percent:number|null; direction:string|null; change_unit:string; reason_codes:string[]; evidence:Evidence[] }
+export interface Readiness { status:string; horizon:number; complete_observations:number; reason_codes:string[]; checks:{code:string;passed:boolean;explanation:string}[]; minimum_training:number; minimum_backtest_origins:number; policy_version:string }
+export interface Trend { series:Series; changes:Change[]; trend_status:'DERIVED'|'UNAVAILABLE'; readiness:Readiness }
+export interface Projection {status:'FORECAST';period:string;period_start:string;period_end:string;value:number;lower:number;upper:number;interval_level:number}
+export interface Backtest { status:'AVAILABLE'|'UNAVAILABLE'; model_name:string;model_version:string;methodology:string;mae:number|null;rmse:number|null;bias:number|null;unit:string;reason_codes:string[];folds:{training_ids:string[];target_id:string;target_period:string;horizon:number;observed:number;predicted:number;error:number}[] }
+export interface Forecast {series:Series;status:'FORECAST'|'UNAVAILABLE';readiness:Readiness;forecasts:Projection[];backtest:Backtest;horizon:number;generated_at:string|null;model_name:string;model_version:string;training_start:string|null;training_end:string|null;methodology:string;uncertainty_methodology:string;historical_observation_ids:string[];evidence:Evidence[];quality_status:string;limitations:string[]}
+export interface Response<T> {version:string;status:string;total:number;items:T[];sources:Source[]}
+export interface Coverage {version:string;series_count:number;historical_series_count:number;forecast_ready_count:number;observations:number;families:{family:Family;metrics:string[];geographies:{id:string;name:string;metrics:string[]}[];observations:number}[];sources:Source[]}
+
+function obj(x:unknown):Record<string,unknown>{if(!x||typeof x!=='object'||Array.isArray(x))throw Error('Invalid contract');return x as Record<string,unknown>;}
+function arr(x:unknown):unknown[]{if(!Array.isArray(x))throw Error('Invalid collection');return x;}
+function num(x:unknown):number{if(typeof x!=='number'||!Number.isFinite(x))throw Error('Invalid number');return x;}
+function text(x:unknown){if(typeof x!=='string'||!x)throw Error('Invalid metadata');return x;}
+function ev(x:unknown){const e=obj(x);text(e.source_id);text(e.locator);if(!/^[a-f0-9]{64}$/.test(text(e.raw_sha256)))throw Error('Invalid evidence');arr(e.transformations).forEach(text);}
+function nullable(x:unknown){if(x!==null)num(x);}
+function series(x:unknown){const s=obj(x);text(s.series_id);text(s.metric);text(s.unit);text(s.geography_name);obj(s.classification);
+  let last='';const ids=new Set<string>();arr(s.observations).forEach(v=>{const p=obj(v);const id=text(p.observation_id);if(ids.has(id))throw Error('Duplicate observation');ids.add(id);
+    const start=text(p.period_start),end=text(p.period_end);if(!/^\d{4}-\d{2}-\d{2}$/.test(start)||start<=last||end<start||p.status!=='OBSERVED'||p.unit!==s.unit||num(p.value)<0||s.unit==='percent'&&num(p.value)>100||typeof p.partial!=='boolean')throw Error('Invalid observed history');last=start;ev(p.evidence);text(p.source_id);text(p.source_version);text(p.publication_version);obj(p.identity);});
+  arr(s.source_ids).forEach(text);arr(s.missing_periods).forEach(text);
+}
+function gate(x:unknown){const g=obj(x);text(g.status);num(g.horizon);arr(g.reason_codes).forEach(text);if(arr(g.checks).length<8)throw Error('Missing readiness checks');arr(g.checks).forEach(v=>{const c=obj(v);text(c.code);if(typeof c.passed!=='boolean')throw Error('Invalid check');});}
+function base(x:unknown){const r=obj(x);text(r.version);text(r.status);num(r.total);arr(r.sources).forEach(v=>{const s=obj(v);text(s.source_id);text(s.publisher);text(s.url);});return r;}
+export function decodeTrends(x:unknown):Response<Trend>{const r=base(x);arr(r.items).forEach(v=>{const a=obj(v);series(a.series);gate(a.readiness);arr(a.changes).forEach(v=>{const c=obj(v);nullable(c.absolute_change);nullable(c.growth_percent);if(!['DERIVED','UNAVAILABLE'].includes(String(c.status))||c.status==='UNAVAILABLE'&&(c.absolute_change!==null||c.growth_percent!==null))throw Error('Unsupported derived value');arr(c.evidence).forEach(ev);});});return r as unknown as Response<Trend>;}
+export function decodeForecast(x:unknown):Response<Forecast>{const r=base(x);arr(r.items).forEach(v=>{const f=obj(v);series(f.series);gate(f.readiness);const g=obj(f.readiness),b=obj(f.backtest);nullable(b.mae);nullable(b.rmse);nullable(b.bias);
+  if(b.status==='AVAILABLE'){if(num(b.mae)<0||num(b.rmse)<0||arr(b.folds).length<3)throw Error('Invalid backtest');num(b.bias);arr(b.folds).forEach(v=>{const fold=obj(v);num(fold.observed);num(fold.predicted);num(fold.error);if(arr(fold.training_ids).length<4||arr(fold.training_ids).includes(fold.target_id))throw Error('Backtest leakage');});}
+  else if(b.status!=='UNAVAILABLE'||b.mae!==null||b.rmse!==null||b.bias!==null||arr(b.folds).length)throw Error('Invalid unavailable backtest');
+  const projections=arr(f.forecasts);if(f.status==='UNAVAILABLE'&&(projections.length||f.generated_at!==null))throw Error('Unavailable forecast contains values');
+  if(f.status==='FORECAST'&&(g.status!=='READY'||arr(g.checks).some(v=>!obj(v).passed)||b.status!=='AVAILABLE'||projections.length!==num(f.horizon)||f.horizon!==g.horizon||!f.generated_at||f.quality_status!=='VALID'||arr(b.folds).length<3))throw Error('Ungated forecast');
+  if(!['FORECAST','UNAVAILABLE'].includes(String(f.status)))throw Error('Invalid forecast status');
+  const observed=arr(obj(f.series).observations);let last=observed.length?text(obj(observed[observed.length-1]).period_end):'0000-01-01';
+  projections.forEach(v=>{const p=obj(v),value=num(p.value),start=text(p.period_start),end=text(p.period_end);if(p.status!=='FORECAST'||num(p.lower)>value||num(p.upper)<value||num(p.lower)<0||obj(f.series).unit==='percent'&&num(p.upper)>100||start<=last||end<start)throw Error('Invalid interval');last=end;});arr(f.evidence).forEach(ev);
+});return r as unknown as Response<Forecast>;}
+export function decodeCoverage(x:unknown):Coverage{const r=obj(x);text(r.version);num(r.series_count);num(r.forecast_ready_count);arr(r.families).forEach(v=>{const f=obj(v);text(f.family);arr(f.metrics).forEach(text);arr(f.geographies).forEach(v=>{const g=obj(v);text(g.id);text(g.name);arr(g.metrics).forEach(text);});});return r as unknown as Coverage;}

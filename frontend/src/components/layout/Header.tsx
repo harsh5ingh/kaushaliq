@@ -14,7 +14,7 @@ import { getNavigation } from "../../app/config/navigation";
 import { useIntelligenceData } from "../../features/real-intelligence/dataContext";
 
 const primary = ["/intelligence", "/skills", "/regions", "/occupations", "/industries"];
-const secondary = ["/demand", "/supply", "/skill-gaps", "/forecast", "/spatial", "/reports"];
+const secondary = ["/demand", "/supply", "/skill-gaps", "/forecast", "/early-warning", "/scenarios", "/spatial", "/reports"];
 
 export function AccountMenu() {
   const { t } = useLocale();

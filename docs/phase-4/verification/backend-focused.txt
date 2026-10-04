@@ -1,0 +1,20 @@
+test_api_integrity_failure_never_falls_back (test_trends.TrendTests.test_api_integrity_failure_never_falls_back) ... ok
+test_change_percentage_points_growth_and_direction (test_trends.TrendTests.test_change_percentage_points_growth_and_direction) ... ok
+test_forecast_baseline_horizon_and_uncertainty_no_clipping (test_trends.TrendTests.test_forecast_baseline_horizon_and_uncertainty_no_clipping) ... ok
+test_incompatible_units_populations_versions_classifications (test_trends.TrendTests.test_incompatible_units_populations_versions_classifications) ... ok
+test_insufficient_history_depends_on_horizon (test_trends.TrendTests.test_insufficient_history_depends_on_horizon) ... ok
+test_methodology_boundary_does_not_block_historical_diagnostics (test_trends.TrendTests.test_methodology_boundary_does_not_block_historical_diagnostics) ... ok
+test_missing_periods_not_filled_or_connected (test_trends.TrendTests.test_missing_periods_not_filled_or_connected) ... ok
+test_nonfinite_impossible_values_rejected (test_trends.TrendTests.test_nonfinite_impossible_values_rejected) ... ok
+test_partial_and_quality_restrictions_propagate (test_trends.TrendTests.test_partial_and_quality_restrictions_propagate) ... ok
+test_real_api_filter_traceability_empty_bounded_and_public (test_trends.TrendTests.test_real_api_filter_traceability_empty_bounded_and_public) ... ok
+test_real_inventory_no_forecast_or_quarantine_fallback (test_trends.TrendTests.test_real_inventory_no_forecast_or_quarantine_fallback) ... ok
+test_rolling_origin_no_future_leakage_and_exact_metrics (test_trends.TrendTests.test_rolling_origin_no_future_leakage_and_exact_metrics) ... ok
+test_typed_contract_preserves_observed_original_and_evidence (test_trends.TrendTests.test_typed_contract_preserves_observed_original_and_evidence) ... ok
+test_unknown_geography_point_and_empty_are_unavailable (test_trends.TrendTests.test_unknown_geography_point_and_empty_are_unavailable) ... ok
+test_zero_base_growth_is_unavailable_but_delta_defined (test_trends.TrendTests.test_zero_base_growth_is_unavailable_but_delta_defined) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.763s
+
+OK

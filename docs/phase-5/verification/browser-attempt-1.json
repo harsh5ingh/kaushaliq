@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Verified historical reviews and coverage facts use exact source observations; unavailable skill types remain not ready",
+    "Keyboard warning inspection, exact evidence/checksum and dialog Escape/focus restoration"
+  ],
+  "screenshots": [],
+  "errors": [
+    "locator.click: Error: strict mode violation: locator('.warning-readiness > .phase5-readiness-list > details > summary') resolved to 10 elements:\n    1) <summary>…</summary> aka getByText('Workforce demand accelerationNot ready')\n    2) <summary>…</summary> aka getByText('Workforce supply accelerationNot ready')\n    3) <summary>…</summary> aka getByText('Demand–supply divergenceNot')\n    4) <summary>…</summary> aka getByText('Regional demand anomalyNot')\n    5) <summary>…</summary> aka getByText('Emerging skillNot ready')\n    6) <summary>…</summary> aka getByText('Declining skillNot ready')\n    7) <summary>…</summary> aka getByText('Training pressureNot ready')\n    8) <summary>…</summary> aka getByText('Data coverage noticeUnavailable')\n    9) <summary>…</summary> aka getByText('Historical labour indicator changeInsufficient history')\n    10) <summary>…</summary> aka getByText('Training output growth accelerationReady')\n\nCall log:\n\u001b[2m  - waiting for locator('.warning-readiness > .phase5-readiness-list > details > summary')\u001b[22m\n\n    at D:\\SIH part 2\\KaushalIQ\\frontend\\tests\\phase5.browser.cjs:26:349"
+  ]
+}

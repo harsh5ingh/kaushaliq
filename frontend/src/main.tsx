@@ -26,3 +26,5 @@ import './styles/personal.css';
 import './styles/demand.css';
 import './styles/supply.css';
 import './styles/gaps.css';
+import './styles/forecast.css';
+import './styles/phase5.css';

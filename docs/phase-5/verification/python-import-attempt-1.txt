@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from src.main import app; print('FastAPI import OK; Phase 5 routes:', len([r for r in app.routes if 'early-warning' in r.path or 'scenarios' in r.path]))
+                                                                                                                           ^^^^^^
+AttributeError: '_IncludedRouter' object has no attribute 'path'

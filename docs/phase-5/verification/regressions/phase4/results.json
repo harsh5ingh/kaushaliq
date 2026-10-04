@@ -1,0 +1,39 @@
+{
+  "checks": [
+    "Real observations and derived changes render; historical diagnostics never imply prospective permission",
+    "Genuine-period timeline, chronological table, keyboard point selection and evidence Escape/focus restoration",
+    "Data-aware family/geography/metric/horizon filters; sparse regional history, incompatible classification EMPTY, NCS single stock and quarantined/partial training",
+    "20 real-data screenshots: five widths, light/dark, English/Hindi and no horizontal overflow",
+    "Live English-Hindi-English, persistence, system theme changes and reduced-motion rendering",
+    "Loading uses existing Skeleton/Loader without provisional intelligence",
+    "API failure fails closed and retry restores verified history",
+    "Forged unavailable predictions, null measured backtest errors and mixed publication versions rejected before charting",
+    "Isolated TEST ONLY fixture exercises distinct dashed model output, conditional interval and forecast table",
+    "Unsupported geography EMPTY, reset/refresh, mobile navigation/Escape, visible focus and Phase 3 route/history preservation"
+  ],
+  "screenshots": [
+    "forecast-dark-en-IN-1440.png",
+    "forecast-dark-hi-IN-1440.png",
+    "forecast-light-en-IN-1440.png",
+    "forecast-light-hi-IN-1440.png",
+    "forecast-dark-en-IN-1280.png",
+    "forecast-dark-hi-IN-1280.png",
+    "forecast-light-en-IN-1280.png",
+    "forecast-light-hi-IN-1280.png",
+    "forecast-dark-en-IN-1024.png",
+    "forecast-dark-hi-IN-1024.png",
+    "forecast-light-en-IN-1024.png",
+    "forecast-light-hi-IN-1024.png",
+    "forecast-dark-en-IN-768.png",
+    "forecast-dark-hi-IN-768.png",
+    "forecast-light-en-IN-768.png",
+    "forecast-light-hi-IN-768.png",
+    "forecast-dark-en-IN-390.png",
+    "forecast-dark-hi-IN-390.png",
+    "forecast-light-en-IN-390.png",
+    "forecast-light-hi-IN-390.png",
+    "error-light-en-1440.png",
+    "test-only-model-output-1440.png"
+  ],
+  "errors": []
+}

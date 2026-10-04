@@ -1,0 +1,14 @@
+PASS Verified historical reviews and coverage facts use exact source observations; unavailable skill types remain not ready
+PASS Keyboard warning inspection, exact evidence/checksum and dialog Escape/focus restoration
+PASS Bounded pagination, real geography filters, insufficient regional history and explicit unavailable skill readiness
+PASS Eligible training rules below threshold return an honest EMPTY result with readiness preserved
+PASS Empty filters, reset/refresh and trailing-slash explicit-sample URLs cannot enter legacy intelligence
+PASS Technology adoption preserves explicit assumptions and returns scenario not ready without invented skill effects
+PASS Direct metric sensitivity uses the unchanged observed baseline, exact user assumption and original period with simulation labels
+PASS Changed assumptions invalidate old results; invalid/native-domain assumptions never clip or create fake effects
+PASS Loading Skeleton and API failure/retry never substitute warnings, scenario values or sample intelligence
+PASS Forged derived values, mixed publications and missing simulation disclosures fail closed
+PASS Scenario provider/evaluation failure is explicit, retry restores readiness and no simulated fallback appears
+PASS 40 verified-context screenshots: both pages, five widths, both themes/languages, no page-wide overflow
+PASS Live English-Hindi-English, locale persistence, system appearance and reduced motion
+PASS Mobile menu/Escape/focus, public refresh/history, real-only scenario boundary and Phase 3/4 gates preserved

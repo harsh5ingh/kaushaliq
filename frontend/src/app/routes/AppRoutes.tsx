@@ -62,6 +62,8 @@ export function AppRoutes() {
       <Route path="/demand" element={<Suspense fallback={<div className="route-loading" role="status">{t("workspace.loading")}</div>}><DemandIntelligencePage /></Suspense>} />
       <Route path="/supply" element={null} />
       <Route path="/skill-gaps" element={null} />
+      <Route path="/early-warning" element={null} />
+      <Route path="/scenarios" element={null} />
       <Route path="/forecast" element={<Suspense fallback={<div className="route-loading" role="status">{t("workspace.loading")}</div>}><ForecastIntelligencePage /></Suspense>} />
       <Route path="/spatial" element={SpatialIntelligencePage ? <Suspense fallback={<div className="route-loading" role="status">{t("workspace.loading")}</div>}><SpatialIntelligencePage /></Suspense> : null} />
       <Route path="/reports" element={<Suspense fallback={<div className="route-loading" role="status">{t("workspace.loading")}</div>}><IntelligenceReportsPage /></Suspense>} />

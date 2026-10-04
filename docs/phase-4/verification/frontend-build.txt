@@ -1,0 +1,35 @@
+
+> kaushaliq-frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 2635 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                       0.91 kB │ gzip:   0.48 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2   48.25 kB
+dist/assets/india-workforce-dark-CPU_0a7w.webp      129.69 kB
+dist/assets/india-workforce-light-DPSytvo5.webp     134.85 kB
+dist/assets/kaushaliq-logo-CNBUfQ_h.png             564.46 kB
+dist/assets/kaushaliq-mark-DxAi6WTp.png             908.29 kB
+dist/assets/index-DzpHC8G6.css                      126.56 kB │ gzip:  22.64 kB
+dist/assets/config-D7w4QWYP.js                        0.22 kB │ gzip:   0.20 kB
+dist/assets/usePersonalProfile-3ytrrFCS.js            0.44 kB │ gzip:   0.30 kB
+dist/assets/OnboardingPage-BeHWuKAw.js                2.13 kB │ gzip:   0.91 kB
+dist/assets/PersonalProfilePage-Cw0KHrn3.js           2.63 kB │ gzip:   1.02 kB
+dist/assets/MyIntelligencePage-TAwCu4C-.js            5.46 kB │ gzip:   1.79 kB
+dist/assets/States-Cqjhnwro.js                        6.42 kB │ gzip:   2.76 kB
+dist/assets/PersonalSettingsPage--WWaauYs.js         10.17 kB │ gzip:   2.99 kB
+dist/assets/ResumeManager-DWtUApa5.js                11.35 kB │ gzip:   2.91 kB
+dist/assets/ForecastIntelligence-RvcZTfrf.js         43.03 kB │ gzip:  12.84 kB
+dist/assets/Buttons-eSGi9c9l.js                      50.09 kB │ gzip:  17.82 kB
+dist/assets/RealIntelligencePage-w0vyEdTm.js        423.20 kB │ gzip: 118.11 kB
+dist/assets/index-BCZsgz50.js                       557.44 kB │ gzip: 152.34 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 820ms

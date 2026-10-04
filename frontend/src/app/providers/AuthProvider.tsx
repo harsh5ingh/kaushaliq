@@ -49,7 +49,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => { active = false; };
   }, []);
   useEffect(() => {
-    const invalid = () => { setUser(null); setExpiresAt(null); setExpired(true); };
+    const invalid = () => { setUser(null); setExpiresAt(null); setCsrf(''); setExpired(true); };
     window.addEventListener('kaushaliq:session-invalid', invalid);
     return () => window.removeEventListener('kaushaliq:session-invalid', invalid);
   }, []);

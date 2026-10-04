@@ -1,0 +1,32 @@
+
+> kaushaliq-frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 2666 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                       0.76 kB │ gzip:   0.44 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2   48.26 kB
+dist/assets/india-workforce-dark-CPU_0a7w.webp      129.69 kB
+dist/assets/india-workforce-light-DPSytvo5.webp     134.85 kB
+dist/assets/kaushaliq-logo-CNBUfQ_h.png             564.46 kB
+dist/assets/kaushaliq-mark-DxAi6WTp.png             908.29 kB
+dist/assets/index-mIzRvAPQ.css                      127.25 kB │ gzip:  22.56 kB
+dist/assets/config-B7tWNQ7M.js                        0.23 kB │ gzip:   0.20 kB
+dist/assets/usePersonalProfile-r0ubjvCn.js            0.38 kB │ gzip:   0.27 kB
+dist/assets/OnboardingPage-x_EVSKC6.js                1.98 kB │ gzip:   0.87 kB
+dist/assets/PersonalProfilePage-BdtcSfsd.js           2.46 kB │ gzip:   0.98 kB
+dist/assets/MyIntelligencePage-3IV_zgNX.js            5.15 kB │ gzip:   1.74 kB
+dist/assets/PersonalSettingsPage-DiBzyiiV.js          9.62 kB │ gzip:   3.01 kB
+dist/assets/ResumeManager-tw0p2OFR.js                10.85 kB │ gzip:   2.90 kB
+dist/assets/ForecastIntelligence-DSC4GrYb.js         43.24 kB │ gzip:  13.09 kB
+dist/assets/RealIntelligencePage-CazzmbC2.js        428.67 kB │ gzip: 123.19 kB
+dist/assets/index-Cjb4hgAU.js                       615.57 kB │ gzip: 173.59 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 8.11s

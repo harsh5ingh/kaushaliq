@@ -1,0 +1,9 @@
+backend/src/main.py
+frontend/src/app/i18n/locales/en-IN.ts
+frontend/src/app/i18n/locales/hi-IN.ts
+frontend/src/components/layout/AppShell.tsx
+frontend/src/features/real-intelligence/DataProvider.tsx
+frontend/src/features/real-intelligence/RealIntelligencePage.tsx
+frontend/src/main.tsx
+frontend/src/styles/home-hero.css
+frontend/tests/run-auth-regressions.cjs

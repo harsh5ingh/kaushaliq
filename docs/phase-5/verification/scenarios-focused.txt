@@ -1,0 +1,24 @@
+test_api_public_post_and_unavailable_without_account_mutation (test_scenarios.ScenarioTests.test_api_public_post_and_unavailable_without_account_mutation) ... ok
+test_api_validation_and_safe_failure (test_scenarios.ScenarioTests.test_api_validation_and_safe_failure) ... ok
+test_baseline_and_original_values_immutable (test_scenarios.ScenarioTests.test_baseline_and_original_values_immutable) ... ok
+test_deterministic_result_identity_no_timestamp_guess (test_scenarios.ScenarioTests.test_deterministic_result_identity_no_timestamp_guess) ... ok
+test_direct_sensitivity_arithmetic_and_explicit_simulation (test_scenarios.ScenarioTests.test_direct_sensitivity_arithmetic_and_explicit_simulation) ... ok
+test_domain_exceedance_not_clipped (test_scenarios.ScenarioTests.test_domain_exceedance_not_clipped) ... ok
+test_method_boundary_duplicate_and_native_unit_gates (test_scenarios.ScenarioTests.test_method_boundary_duplicate_and_native_unit_gates) ... ok
+test_missing_and_unmapped_baseline_never_zero (test_scenarios.ScenarioTests.test_missing_and_unmapped_baseline_never_zero) ... ok
+test_partial_and_quarantine_excluded_with_source_period_preserved (test_scenarios.ScenarioTests.test_partial_and_quarantine_excluded_with_source_period_preserved) ... ok
+test_provenance_and_source_metadata_preserved (test_scenarios.ScenarioTests.test_provenance_and_source_metadata_preserved) ... ok
+test_real_coverage_bounded_and_missing_geography_explicit (test_scenarios.ScenarioTests.test_real_coverage_bounded_and_missing_geography_explicit) ... ok
+test_real_skill_shock_never_propagates_skill_or_forecast_values (test_scenarios.ScenarioTests.test_real_skill_shock_never_propagates_skill_or_forecast_values) ... ok
+test_relationship_foundation_cannot_invent_authority (test_scenarios.ScenarioTests.test_relationship_foundation_cannot_invent_authority) ... ok
+test_result_contract_rejects_forged_unavailable_output_and_lineage (test_scenarios.ScenarioTests.test_result_contract_rejects_forged_unavailable_output_and_lineage) ... ok
+test_shock_assumption_retained_without_fake_effects (test_scenarios.ScenarioTests.test_shock_assumption_retained_without_fake_effects) ... ok
+test_source_and_native_identity_cannot_be_relabelled (test_scenarios.ScenarioTests.test_source_and_native_identity_cannot_be_relabelled) ... ok
+test_validation_refuses_formulas_ids_ranges_and_nonfinite (test_scenarios.ScenarioTests.test_validation_refuses_formulas_ids_ranges_and_nonfinite) ... ok
+test_verified_relationship_requires_its_declared_source (test_scenarios.ScenarioTests.test_verified_relationship_requires_its_declared_source) ... ok
+test_zero_and_negative_assumption_edge_cases (test_scenarios.ScenarioTests.test_zero_and_negative_assumption_edge_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.662s
+
+OK

@@ -1,6 +1,10 @@
 import { gapEn } from './gaps';
+import { forecastEn } from './forecast';
+import { phase5En } from './phase5';
 import { authSecurityEn } from './auth-security';
 export const en = {
+  ...phase5En,
+  ...forecastEn,
   ...authSecurityEn,
   ...gapEn,
   ...personalEn,

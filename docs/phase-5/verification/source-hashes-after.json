@@ -1,0 +1,17 @@
+[
+  {
+    "Path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\labour-market.json",
+    "Hash": "C85D2E9E26D103803D2419B7F2F95110130A3063636CCEAF03C5D81211841EAE",
+    "unchanged": true
+  },
+  {
+    "Path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\demand\\snapshot.json",
+    "Hash": "16458F1B959FA7621655333DE6FAA381EDB31564C54E32D8171149A5A0C41E45",
+    "unchanged": true
+  },
+  {
+    "Path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\supply\\snapshot.json",
+    "Hash": "877493D40BAD13DDAEA80EB2B0E7851C9BE2DBCF0A7386F7701B9D9AD99B86D4",
+    "unchanged": true
+  }
+]

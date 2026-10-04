@@ -19,7 +19,7 @@ export function ConnectedAccounts() {
   useEffect(()=>{let active=true;accountRequest<{items:NonNullable<typeof items>}>('/v1/me/connected-accounts',csrf).then(r=>{if(active)setItems(r.items);}).catch(e=>{if(active)setError(e instanceof AccountError?e.key:'personal.error');});return()=>{active=false;};},[csrf]);
   async function connect(provider:OAuthProvider){
     if(inFlight.current)return;inFlight.current=true;setPending(provider);setError(null);
-    try {const result=await accountRequest<{authorizationUrl:string}>('/v1/me/connected-accounts/'+provider,csrf,'POST');window.location.assign(result.authorizationUrl);}
+    try {const result=await accountRequest<{authorizationUrl:string}>('/auth/oauth/'+provider+'/link',csrf,'POST');window.location.assign(result.authorizationUrl);}
     catch(e){setError(e instanceof AccountError?e.key:'oauth.failed');setPending(null);inFlight.current=false;}
   }
   return <section className="personal-section"><h2>{t('personal.connected')}</h2>

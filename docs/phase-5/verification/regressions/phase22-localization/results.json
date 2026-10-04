@@ -1,0 +1,135 @@
+{
+  "checks": [
+    "English/Hindi key and interpolation parity",
+    "English → Hindi → English updates content without reload; Hindi survives refresh",
+    "Hero verified evidence is keyboard accessible and restores focus",
+    "All public and workspace routes have Hindi content, direct loads and refresh",
+    "Auth fields/errors react to language without resetting values; Hindi command search and history",
+    "Compact footer and public layout in both languages/themes at 1440, 768, 390; no overflow",
+    "Only configured GitHub shown, official icon rendered, keyboard opens safe external destination",
+    "Hindi workspace five widths, mobile language keyboard, focus trap/restoration, System OS updates and reduced motion"
+  ],
+  "errors": [],
+  "dimensions": [
+    {
+      "locale": "hi",
+      "mode": "dark",
+      "width": 1440,
+      "height": 364.84375
+    },
+    {
+      "locale": "hi",
+      "mode": "dark",
+      "width": 1280,
+      "height": 364.84375
+    },
+    {
+      "locale": "hi",
+      "mode": "dark",
+      "width": 1024,
+      "height": 500.734375
+    },
+    {
+      "locale": "hi",
+      "mode": "dark",
+      "width": 768,
+      "height": 500.734375
+    },
+    {
+      "locale": "hi",
+      "mode": "dark",
+      "width": 390,
+      "height": 569.578125
+    },
+    {
+      "locale": "hi",
+      "mode": "light",
+      "width": 1440,
+      "height": 364.84375
+    },
+    {
+      "locale": "hi",
+      "mode": "light",
+      "width": 1280,
+      "height": 364.84375
+    },
+    {
+      "locale": "hi",
+      "mode": "light",
+      "width": 1024,
+      "height": 500.734375
+    },
+    {
+      "locale": "hi",
+      "mode": "light",
+      "width": 768,
+      "height": 500.734375
+    },
+    {
+      "locale": "hi",
+      "mode": "light",
+      "width": 390,
+      "height": 569.578125
+    },
+    {
+      "locale": "en",
+      "mode": "dark",
+      "width": 1440,
+      "height": 362.890625
+    },
+    {
+      "locale": "en",
+      "mode": "dark",
+      "width": 1280,
+      "height": 362.890625
+    },
+    {
+      "locale": "en",
+      "mode": "dark",
+      "width": 1024,
+      "height": 498.78125
+    },
+    {
+      "locale": "en",
+      "mode": "dark",
+      "width": 768,
+      "height": 498.78125
+    },
+    {
+      "locale": "en",
+      "mode": "dark",
+      "width": 390,
+      "height": 565.671875
+    },
+    {
+      "locale": "en",
+      "mode": "light",
+      "width": 1440,
+      "height": 362.890625
+    },
+    {
+      "locale": "en",
+      "mode": "light",
+      "width": 1280,
+      "height": 362.890625
+    },
+    {
+      "locale": "en",
+      "mode": "light",
+      "width": 1024,
+      "height": 498.78125
+    },
+    {
+      "locale": "en",
+      "mode": "light",
+      "width": 768,
+      "height": 498.78125
+    },
+    {
+      "locale": "en",
+      "mode": "light",
+      "width": 390,
+      "height": 565.671875
+    }
+  ]
+}

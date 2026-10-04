@@ -8,7 +8,7 @@ import { decodeCatalog, type Catalog } from "./contracts";
 export function DataProvider({ children }: { children: ReactNode }) {
   const location = useLocation();
   const [result, setResult] = useState<{ key: string; catalog: Catalog | null; error: boolean } | null>(null); const [attempt, setAttempt] = useState(0);
-  const mode = !['/supply', '/skill-gaps'].includes(location.pathname) && import.meta.env.DEV && new URLSearchParams(location.search).get("data") === "sample" ? "sample" : "real";
+  const mode = !['/supply', '/skill-gaps', '/early-warning', '/scenarios'].includes(location.pathname.replace(/\/$/, '')) && import.meta.env.DEV && new URLSearchParams(location.search).get("data") === "sample" ? "sample" : "real";
   const key = `${mode}:${attempt}`;
   const catalog = result?.key === key ? result.catalog : null; const error = result?.key === key ? result.error : false;
   useEffect(() => {

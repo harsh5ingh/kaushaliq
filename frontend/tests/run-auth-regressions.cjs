@@ -1,7 +1,7 @@
 // Preserve historical test assertions and artifacts; redirect only output directories in memory.
 const fs=require('node:fs'),path=require('node:path'),Module=require('node:module');
 const {spawn}=require('node:child_process');
-const suites=['phase1','phase15','phase22','phase22-localization','phase231','phase24','phase25','phase26','phase27','phase271','phase28','phase29','phase291','hero-countup'];
+const suites=['phase1','phase15','phase22','phase22-localization','phase231','phase24','phase25','phase26','phase27','phase271','phase28','phase29','phase291','hero-countup','phase3','phase4','auth-hardening'];
 const output=process.env.KAUSHALIQ_REGRESSION_OUTPUT || path.resolve(__dirname,'../../docs/phase-2.9.1.1/verification/regressions');fs.mkdirSync(output,{recursive:true});
 if(process.argv[2]==='--one'){
   const suite=process.argv[3];if(!suites.includes(suite))throw new Error('Unknown regression suite');

@@ -1,0 +1,18 @@
+{
+  "backendTests": 175,
+  "targetedTests": 35,
+  "targetedSubtests": 4,
+  "browserRegressionSuites": 17,
+  "authChecks": 8,
+  "phase5Checks": 14,
+  "focusedScreenshots": 53,
+  "canonicalFilesUnchanged": 6,
+  "typeBuild": "PASS",
+  "lint": "PASS",
+  "compileImportOpenApi": "PASS",
+  "pytestWarnings": 0,
+  "buildAdvisory": "Existing >500 kB chunk advisory",
+  "liveOAuthVerification": "Not repeated - isolated provider fixtures only",
+  "dependenciesAdded": 0,
+  "commitPushPerformed": false
+}

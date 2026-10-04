@@ -195,16 +195,20 @@ def connections(session=Depends(current_session)):
 
 @router.delete('/connected-accounts/{provider}')
 def connect_provider(provider:str,request:Request,session=Depends(current_session)):
-    user,_=session; mutate(request,user,'provider')
-    if provider not in {'google','github'}: raise HTTPException(404,'not_found')
+    user,_=session
+    mutate(request,user,'provider')
+    if provider not in {'google','github'}:
+        raise HTTPException(404,'not_found')
     raise HTTPException(503,'oauth_not_configured')
 
 
 @router.post('/connected-accounts/{provider}')
-def link_provider(provider:str,request:Request,response:Response,session=Depends(current_session)):
-    from src.accounts.oauth import begin_flow
-    user,_=session; mutate(request,user,'provider')
-    return begin_flow(provider,response,'/settings',user)
+def link_provider(provider: str, request: Request, response: Response, session=Depends(current_session)):
+    user, _ = session
+    mutate(request, user, 'provider')
+    if provider not in {'google', 'github'}:
+        raise HTTPException(404, 'not_found')
+    raise HTTPException(503, 'oauth_account_linking_unavailable')
 
 
 @router.get('/watchlist')

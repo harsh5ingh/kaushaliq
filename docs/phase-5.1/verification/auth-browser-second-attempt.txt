@@ -1,0 +1,14 @@
+PASS Confirmation, Cancel/Escape/backdrop, initial focus, Tab containment and restoration make no revocation request
+PASS Backend failure remains an error and does not fabricate signout success
+PASS Keep-current action refreshes the list, rejects old browser credentials, remains authenticated and is idempotent
+PASS Six inspected dialog viewports cover five widths, both themes/languages, system preference and reduced motion without overflow
+PASS Signout-everywhere revokes current and other sessions, clears auth immediately and protects private routes
+PASS Revoked session at the OAuth link endpoint immediately clears stale frontend authentication
+page.waitForURL: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "http://127.0.0.1:52125/intelligence" until "load"
+============================================================
+    at D:\SIH part 2\KaushalIQ\frontend\tests\auth-hardening.browser.cjs:60:117 {
+  log: [],
+  name: 'TimeoutError'
+}

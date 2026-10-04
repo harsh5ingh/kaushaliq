@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Verified historical reviews and coverage facts use exact source observations; unavailable skill types remain not ready",
+    "Keyboard warning inspection, exact evidence/checksum and dialog Escape/focus restoration"
+  ],
+  "screenshots": [],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n25 !== 8\n\n    at D:\\SIH part 2\\KaushalIQ\\frontend\\tests\\phase5.browser.cjs:29:215"
+  ]
+}

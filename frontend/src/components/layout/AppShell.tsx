@@ -25,9 +25,10 @@ const missingPage = getMissingPage(t);
   const previousPath = useRef(location.pathname);
   const accountRoute = location.pathname === "/profile" ? "profile" : location.pathname === "/settings" ? "settings" : location.pathname === "/help" ? "help" : null;
   const existingPage = navigation.find((item) => item.path === location.pathname.replace(/\/$/, "") || (item.path === "/" && location.pathname === "/")) ?? (accountRoute ? { ...missingPage, label: t(`account.${accountRoute}` as "account.profile" | "account.settings" | "account.help"), title: t(`account.${accountRoute}` as "account.profile" | "account.settings" | "account.help"), description: t(`account.${accountRoute}Description` as "account.profileDescription" | "account.settingsDescription" | "account.helpDescription") } : missingPage);
-  const isIntelligence = navigation.some(item => item.path === location.pathname);
+  const routePath = location.pathname.replace(/\/$/, '') || '/';
+  const isIntelligence = navigation.some(item => item.path === routePath);
   const personalRoute = location.pathname === "/my-intelligence" || location.pathname === "/onboarding";
-  const page = personalRoute ? { ...missingPage, label:t("personal.title"), title:t(location.pathname === "/onboarding" ? "personal.onboard" : "personal.title"), description:t("personal.intro") } : mode === "real" && isIntelligence ? { ...existingPage, description: t("real.bannerDetail") } : existingPage;
+  const page = personalRoute ? { ...missingPage, label:t("personal.title"), title:t(location.pathname === "/onboarding" ? "personal.onboard" : "personal.title"), description:t("personal.intro") } : mode === "real" && isIntelligence ? { ...existingPage, title:routePath === '/forecast' ? t('forecast.shellTitle') : existingPage.title, description: routePath === '/early-warning' || routePath === '/scenarios' ? existingPage.description : t("real.bannerDetail") } : existingPage;
   useEffect(() => {
     document.title = `${page.label} · KaushalIQ`;
     if (previousPath.current !== location.pathname) {

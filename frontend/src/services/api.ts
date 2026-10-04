@@ -7,6 +7,12 @@ export const api = {
     const value: unknown = await response.json();
     return decode(value);
   },
+  async post<T>(path: string, body: unknown, decode: (value: unknown) => T, signal?: AbortSignal): Promise<T> {
+    const response = await fetch(`${baseUrl}${path}`, { method: "POST", signal, headers: { Accept: "application/json", "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (!response.ok) throw new Error(`API request failed (${response.status})`);
+    const value: unknown = await response.json();
+    return decode(value);
+  },
 };
 export interface HealthResponse { status: string; app: string; version: string }
 export function decodeHealth(value: unknown): HealthResponse {

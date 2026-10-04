@@ -1,0 +1,10 @@
+ backend/src/main.py                                            |  2 ++
+ frontend/src/app/i18n/locales/en-IN.ts                         |  2 ++
+ frontend/src/app/i18n/locales/hi-IN.ts                         |  2 ++
+ frontend/src/components/layout/AppShell.tsx                    |  5 +++--
+ frontend/src/features/real-intelligence/DataProvider.tsx       |  2 +-
+ .../src/features/real-intelligence/RealIntelligencePage.tsx    | 10 ++++++----
+ frontend/src/main.tsx                                          |  1 +
+ frontend/src/styles/home-hero.css                              |  2 +-
+ frontend/tests/run-auth-regressions.cjs                        |  2 +-
+ 9 files changed, 19 insertions(+), 9 deletions(-)

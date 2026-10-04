@@ -1,0 +1,8 @@
+PASS Confirmation, Cancel/Escape/backdrop, initial focus, Tab containment and restoration make no revocation request
+PASS Backend failure remains an error and does not fabricate signout success
+PASS Keep-current action refreshes the list, rejects old browser credentials, remains authenticated and is idempotent
+PASS Six inspected dialog viewports cover five widths, both themes/languages, system preference and reduced motion without overflow
+PASS Signout-everywhere revokes current and other sessions, clears auth immediately and protects private routes
+PASS Revoked session at the OAuth link endpoint immediately clears stale frontend authentication
+PASS Direct connected-account mutations stay unavailable with configured providers; Settings uses the authenticated OAuth link route; callbacks preserve the current session and linked GitHub login/logout works
+PASS Cancellation, invalid state, missing verified email and provider failure never create sessions; safe errors are bilingual

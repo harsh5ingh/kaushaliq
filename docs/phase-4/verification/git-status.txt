@@ -1,0 +1,17 @@
+ M backend/src/main.py
+ M frontend/src/app/i18n/locales/en-IN.ts
+ M frontend/src/app/i18n/locales/hi-IN.ts
+ M frontend/src/components/layout/AppShell.tsx
+ M frontend/src/features/real-intelligence/DataProvider.tsx
+ M frontend/src/features/real-intelligence/RealIntelligencePage.tsx
+ M frontend/src/main.tsx
+ M frontend/src/styles/home-hero.css
+ M frontend/tests/run-auth-regressions.cjs
+?? backend/src/routes/trends.py
+?? backend/src/trends/
+?? backend/tests/test_trends.py
+?? docs/phase-4/
+?? frontend/src/app/i18n/locales/forecast.ts
+?? frontend/src/features/forecast/
+?? frontend/src/styles/forecast.css
+?? frontend/tests/phase4.browser.cjs

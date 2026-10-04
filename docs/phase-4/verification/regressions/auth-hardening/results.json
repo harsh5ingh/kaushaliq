@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "Confirmation, Cancel/Escape/backdrop, initial focus, Tab containment and restoration make no revocation request",
+    "Backend failure remains an error and does not fabricate signout success",
+    "Keep-current action refreshes the list, rejects old browser credentials, remains authenticated and is idempotent",
+    "Six inspected dialog viewports cover five widths, both themes/languages, system preference and reduced motion without overflow",
+    "Signout-everywhere revokes current and other sessions, clears auth immediately and protects private routes",
+    "Isolated provider callbacks create normal sessions; explicit account linking preserves current session; GitHub login reaches the linked account and normal logout revokes it",
+    "Cancellation, invalid state, missing verified email and provider failure never create sessions; safe errors are bilingual"
+  ],
+  "screenshots": [
+    "session-confirmation-dark-en-IN-1440.png",
+    "session-confirmation-light-hi-IN-1280.png",
+    "session-confirmation-dark-hi-IN-1024.png",
+    "session-confirmation-light-en-IN-768.png",
+    "session-confirmation-dark-hi-IN-390.png",
+    "session-confirmation-light-en-IN-390.png",
+    "provider-controls-dark-en-1440.png",
+    "connected-accounts-dark-en-1440.png",
+    "oauth-error-light-hi-390.png"
+  ],
+  "errors": [],
+  "providerVerification": "MOCK PROVIDERS ONLY — no live provider success claimed"
+}

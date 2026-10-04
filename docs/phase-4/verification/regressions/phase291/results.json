@@ -1,0 +1,43 @@
+{
+  "checks": [
+    "Skeleton loading is theme-aware, accessible and contains no substituted metric",
+    "National vacancy stock, matched geographies and record count match the verified APIs with both dates and historical context",
+    "Shared evidence, provenance hash, keyboard containment, Escape and focus restoration work on the public hero",
+    "CTA destinations and browser history reuse existing public intelligence routes; source marquee can be paused",
+    "English-Hindi-English updates the hero immediately and persists on refresh",
+    "20 screenshots cover five widths, both themes/languages; images load, metrics and CTAs fit without page overflow",
+    "System appearance selects the matching image; reduced motion uses a static wrapped source row",
+    "Provider/API and network failures are explicit, remove numbers and source claims, and support retry without simulation",
+    "Unavailable observations, inconsistent coverage, mixed publication versions and unbound provenance fail closed, never zero/sample",
+    "Only API-confirmed connected sources appear; production hero contains no hardcoded measurements or sample import; no browser exceptions",
+    "Light mobile loading uses the existing warm-paper skeleton tokens and recovers to verified observations"
+  ],
+  "screenshots": [
+    "loading-dark-en-1440.png",
+    "evidence-dark-en-1440.png",
+    "hero-dark-en-IN-1440.png",
+    "hero-dark-hi-IN-1440.png",
+    "hero-light-en-IN-1440.png",
+    "hero-light-hi-IN-1440.png",
+    "hero-dark-en-IN-1280.png",
+    "hero-dark-hi-IN-1280.png",
+    "hero-light-en-IN-1280.png",
+    "hero-light-hi-IN-1280.png",
+    "hero-dark-en-IN-1024.png",
+    "hero-dark-hi-IN-1024.png",
+    "hero-light-en-IN-1024.png",
+    "hero-light-hi-IN-1024.png",
+    "hero-dark-en-IN-768.png",
+    "hero-dark-hi-IN-768.png",
+    "hero-light-en-IN-768.png",
+    "hero-light-hi-IN-768.png",
+    "hero-dark-en-IN-390.png",
+    "hero-dark-hi-IN-390.png",
+    "hero-light-en-IN-390.png",
+    "hero-light-hi-IN-390.png",
+    "api-error-dark-en-390.png",
+    "unavailable-dark-en-390.png",
+    "loading-light-en-390.png"
+  ],
+  "errors": []
+}

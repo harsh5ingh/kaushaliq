@@ -1,0 +1,335 @@
+{
+  "count": 44,
+  "matrix": {
+    "routes": [
+      "early-warning",
+      "scenarios"
+    ],
+    "widths": [
+      1440,
+      1280,
+      1024,
+      768,
+      390
+    ],
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "matrix_count": 40
+  },
+  "screenshots": [
+    {
+      "file": "verification/browser/skill-shock-not-ready-dark-en-1440.png",
+      "width": 1440,
+      "height": 2461,
+      "sha256": "ef3afa02d8aa08c63a47252685da9f1674c52e8de5b88e9213e2e6d079f955bf",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/direct-sensitivity-dark-en-1440.png",
+      "width": 1440,
+      "height": 2409,
+      "sha256": "0e9966f9a3eb934c434b6cfdee2c5e94b7842fea49a74cbd286faa66cc4af368",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/warning-loading-dark-en-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "f20443f7cb28873ca172c882ae5f2530b2178fc99fbdb091b5ee477e9a3cb567",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/warning-error-dark-en-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "95625aa326ff52020bfe2622af12ccb3ef2d92502a9c993fb37eda22bb269be5",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-en-IN-1440.png",
+      "width": 1440,
+      "height": 5280,
+      "sha256": "bc64a9897809234485a7e328550a64b4b74e626bcd2f51f3421f4123a780435b",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/scenarios-dark-en-IN-1440.png",
+      "width": 1440,
+      "height": 1397,
+      "sha256": "f2a37cc88631a60293b82076d6338e12d0b054f300e0249e2ada26cc49186bd3",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-hi-IN-1440.png",
+      "width": 1440,
+      "height": 5260,
+      "sha256": "763fae51971f655732f9d909965e54e98c942e109d746d5772dd41d2c9f32072",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-hi-IN-1440.png",
+      "width": 1440,
+      "height": 1349,
+      "sha256": "b35c184b1293cfe98659e22c8e7a49dfe6f3fddc77852c2e594931c5790c8bf2",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-en-IN-1440.png",
+      "width": 1440,
+      "height": 5280,
+      "sha256": "ca5c87aaabc769d015d196f48f37d3bdbfb0e4d16f4093afbec2435c84244edb",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-en-IN-1440.png",
+      "width": 1440,
+      "height": 1397,
+      "sha256": "61847a13669ce69484c5240fe0a8b5d0b4a0230d276f986cb5864304b684e464",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-hi-IN-1440.png",
+      "width": 1440,
+      "height": 5260,
+      "sha256": "cb5e66e8eec2991320378f3b249d2c47e8f0207dc19420498c1200a3f569d02a",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-hi-IN-1440.png",
+      "width": 1440,
+      "height": 1349,
+      "sha256": "537291fa91b476389f1673dc55863e49fb5f71b4f833985a37b22a5ba2bdefe7",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-en-IN-1280.png",
+      "width": 1280,
+      "height": 5280,
+      "sha256": "1fc735118f869cbb7112c209bd195513dde41a65a2964777a8e04c3cc8608c80",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-en-IN-1280.png",
+      "width": 1280,
+      "height": 1397,
+      "sha256": "4be73a09669463831a9c58861413b020cfe3a016ab9af61ff9ebee38f0d1930f",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-hi-IN-1280.png",
+      "width": 1280,
+      "height": 5260,
+      "sha256": "f116488f9e5da9198e8137ac96c706be1714a813f287cf812c93c5a8e0a9a703",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-hi-IN-1280.png",
+      "width": 1280,
+      "height": 1349,
+      "sha256": "d7b05681cbe0cdcc4379e006365ba476d9aa5caba166281b1acc15d666fb5ee9",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-en-IN-1280.png",
+      "width": 1280,
+      "height": 5280,
+      "sha256": "bba2d345327a58b6633683d850900fc2df1c83909a94746716a95c7b79d4849d",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/scenarios-light-en-IN-1280.png",
+      "width": 1280,
+      "height": 1397,
+      "sha256": "fbf52f468f8c696d82eef9c5dad34c5b1534b2998c282bdd1d26acb1675bac4d",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-hi-IN-1280.png",
+      "width": 1280,
+      "height": 5260,
+      "sha256": "9a9af2d8771695aacc3cbb6983bd5bf3f0fb3ed465c6cf3aec289c0893e44fa8",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-hi-IN-1280.png",
+      "width": 1280,
+      "height": 1349,
+      "sha256": "2a47e15ccd6953e9f7390083b9f3b03fd1f32b37cb37c36c54492becc13b3660",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-en-IN-1024.png",
+      "width": 1024,
+      "height": 5749,
+      "sha256": "5f0859b490d4b3dd4b925b8447bafdfad9a9e8abb7d68c7b7bdb37af13a9cb7e",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-en-IN-1024.png",
+      "width": 1024,
+      "height": 1439,
+      "sha256": "99c638a3770583444a9e8ee4a1f0156db64a4906a16bf5974ee1074f7bc562a3",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-hi-IN-1024.png",
+      "width": 1024,
+      "height": 5415,
+      "sha256": "4d58e3dfda103f19dacb83fe280cc379630d587fb22866337a22f89e7273f1c0",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-hi-IN-1024.png",
+      "width": 1024,
+      "height": 1395,
+      "sha256": "c434bb3b450e242ac2430e0d448003c33cc94f2921725277d2a798c189f6cdc0",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/early-warning-light-en-IN-1024.png",
+      "width": 1024,
+      "height": 5749,
+      "sha256": "0554905b9e086bf545f7c2afcfa0b44478127aba3400c6ea8f9db2dee3c894c7",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-en-IN-1024.png",
+      "width": 1024,
+      "height": 1439,
+      "sha256": "3e2172bb5d2f0b44087a67575849f46be7f84f78bd6c47b46411df03bd27d70b",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-hi-IN-1024.png",
+      "width": 1024,
+      "height": 5415,
+      "sha256": "8ed7389930d3dde184d5638a84ca857f5a141ec174b584afb0a47eeecba2d993",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-hi-IN-1024.png",
+      "width": 1024,
+      "height": 1395,
+      "sha256": "c4333aac23432e7641477b8f104f54b6f9c1f489ef4fee553a42af2a523b296d",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-en-IN-768.png",
+      "width": 768,
+      "height": 6619,
+      "sha256": "c2214c90fcfe0222e3649b4d4ae7014b55bb4e0c53b877a3f36e1904717967bb",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-en-IN-768.png",
+      "width": 768,
+      "height": 1869,
+      "sha256": "68079d781b21d6c293ebbad2473fa9a57be8b6e607767622eec2e87f4469f828",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-hi-IN-768.png",
+      "width": 768,
+      "height": 5740,
+      "sha256": "e135c6b0a3bdfa48e3cd31cab24691f5b229f0b608ba9024edf88d7fa46f0470",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-hi-IN-768.png",
+      "width": 768,
+      "height": 1751,
+      "sha256": "e9d730278545af1f3ca88f77edaafead25b38bfa8b9010a8e335ac5baf60b851",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-en-IN-768.png",
+      "width": 768,
+      "height": 6619,
+      "sha256": "d32aca5725a8c7e9e67dabcf6a1c45f73e589c8a761b1e536a74a3387cd6b072",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-en-IN-768.png",
+      "width": 768,
+      "height": 1869,
+      "sha256": "3f4d53b1b657b070129d2d0774db7041a3f9429e978b01674f9fcb56964fa9b3",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-hi-IN-768.png",
+      "width": 768,
+      "height": 5740,
+      "sha256": "74abcb25b2a9b2bfaaa7de60a428f081471365310297aecddf7eadbdc3d95b4f",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/scenarios-light-hi-IN-768.png",
+      "width": 768,
+      "height": 1751,
+      "sha256": "9a3d2e20d9ccd68398b74dfb4adec52fa77de49c86f54eed1f1230c0f7971d61",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-en-IN-390.png",
+      "width": 390,
+      "height": 7049,
+      "sha256": "c910a0d38e73e3c7ad5b3635f6ad61fb7520ad27c79669bd35592141aacf69a4",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-dark-en-IN-390.png",
+      "width": 390,
+      "height": 2267,
+      "sha256": "73c9174cbe54d5d19efc50567bdd2922e232b38618a4dc22d732e63fc4ca3951",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-dark-hi-IN-390.png",
+      "width": 390,
+      "height": 6183,
+      "sha256": "8ceb79ecda132b8547bfe0b3871b22ecf0bdc3860e932ac95799f8034fc85524",
+      "manually_inspected": true
+    },
+    {
+      "file": "verification/browser/scenarios-dark-hi-IN-390.png",
+      "width": 390,
+      "height": 2179,
+      "sha256": "1a308458f10ed8d5c44d45a4d8a2766e8d678cdc60b85da8a7a8891e5c2f1c3a",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-en-IN-390.png",
+      "width": 390,
+      "height": 7049,
+      "sha256": "8fda9b5a8146580daf0f2ede8d97fc842de4bf9d6d787448493b193583311192",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-en-IN-390.png",
+      "width": 390,
+      "height": 2267,
+      "sha256": "d5277814da8e6452807493390511de49070f23afcb818ba41b874ca50e71f0f8",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/early-warning-light-hi-IN-390.png",
+      "width": 390,
+      "height": 6183,
+      "sha256": "15aa51307ff3d7904e3aa5ca037477ff2fdf21bc97751b9e08a9b12bada14c74",
+      "manually_inspected": false
+    },
+    {
+      "file": "verification/browser/scenarios-light-hi-IN-390.png",
+      "width": 390,
+      "height": 2179,
+      "sha256": "f16b0a98d4ffd23c6d38d0de940233cfd7b1e332178a9d4033f2e0fcfeb72b46",
+      "manually_inspected": true
+    }
+  ]
+}

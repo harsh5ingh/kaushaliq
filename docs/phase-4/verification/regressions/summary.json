@@ -1,0 +1,58 @@
+[
+  {
+    "suite": "phase1",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase15",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase22",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase22-localization",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase231",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase25",
+    "exitCode": 1
+  },
+  {
+    "suite": "phase24",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase27",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase26",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase28",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase271",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase29",
+    "exitCode": 0
+  },
+  {
+    "suite": "hero-countup",
+    "exitCode": 0
+  },
+  {
+    "suite": "phase291",
+    "exitCode": 0
+  }
+]

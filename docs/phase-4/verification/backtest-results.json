@@ -1,0 +1,4214 @@
+[
+  {
+    "series_id": "2bade9ac5b1e20079fd49094d49e929f",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:urban:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 22.1,
+          "predicted": 21.7,
+          "error": 0.4
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:female:15+",
+            "plfs:LFPR:2021-22:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:urban:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 24.0,
+          "predicted": 22.1,
+          "error": 1.9
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:female:15+",
+            "plfs:LFPR:2021-22:in:CWS:urban:female:15+",
+            "plfs:LFPR:2022-23:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:urban:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 26.1,
+          "predicted": 24.0,
+          "error": 2.1
+        }
+      ],
+      "mae": 1.4666666666666668,
+      "rmse": 1.6512621435334447,
+      "bias": 1.4666666666666668,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "3540378d033dbc978a5f47d0b6062666",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:urban:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 74.2,
+          "predicted": 73.8,
+          "error": 0.4
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:male:15+",
+            "plfs:LFPR:2021-22:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:urban:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 73.9,
+          "predicted": 74.2,
+          "error": -0.3
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:male:15+",
+            "plfs:LFPR:2021-22:in:CWS:urban:male:15+",
+            "plfs:LFPR:2022-23:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:urban:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 75.0,
+          "predicted": 73.9,
+          "error": 1.1
+        }
+      ],
+      "mae": 0.6,
+      "rmse": 0.6976149845485451,
+      "bias": 0.4000000000000001,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "47a7cc655e792a88c4a8d41a5e4388d0",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:male:15+",
+            "plfs:LFPR:2018-19:in:US:rural:male:15+",
+            "plfs:LFPR:2019-20:in:US:rural:male:15+",
+            "plfs:LFPR:2020-21:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:rural:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 78.2,
+          "predicted": 78.1,
+          "error": 0.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:male:15+",
+            "plfs:LFPR:2018-19:in:US:rural:male:15+",
+            "plfs:LFPR:2019-20:in:US:rural:male:15+",
+            "plfs:LFPR:2020-21:in:US:rural:male:15+",
+            "plfs:LFPR:2021-22:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:rural:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 80.2,
+          "predicted": 78.2,
+          "error": 2.0
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:male:15+",
+            "plfs:LFPR:2018-19:in:US:rural:male:15+",
+            "plfs:LFPR:2019-20:in:US:rural:male:15+",
+            "plfs:LFPR:2020-21:in:US:rural:male:15+",
+            "plfs:LFPR:2021-22:in:US:rural:male:15+",
+            "plfs:LFPR:2022-23:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:rural:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 80.2,
+          "predicted": 80.2,
+          "error": 0.0
+        }
+      ],
+      "mae": 0.7000000000000001,
+      "rmse": 1.1561430130683084,
+      "bias": 0.7000000000000001,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "495af6500dc945621d88172ad6e08334",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:persons:15+",
+            "plfs:LFPR:2018-19:in:US:combined:persons:15+",
+            "plfs:LFPR:2019-20:in:US:combined:persons:15+",
+            "plfs:LFPR:2020-21:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:combined:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 55.2,
+          "predicted": 54.9,
+          "error": 0.3
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:persons:15+",
+            "plfs:LFPR:2018-19:in:US:combined:persons:15+",
+            "plfs:LFPR:2019-20:in:US:combined:persons:15+",
+            "plfs:LFPR:2020-21:in:US:combined:persons:15+",
+            "plfs:LFPR:2021-22:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:combined:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 57.9,
+          "predicted": 55.2,
+          "error": 2.7
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:persons:15+",
+            "plfs:LFPR:2018-19:in:US:combined:persons:15+",
+            "plfs:LFPR:2019-20:in:US:combined:persons:15+",
+            "plfs:LFPR:2020-21:in:US:combined:persons:15+",
+            "plfs:LFPR:2021-22:in:US:combined:persons:15+",
+            "plfs:LFPR:2022-23:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:combined:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 60.1,
+          "predicted": 57.9,
+          "error": 2.2
+        }
+      ],
+      "mae": 1.7333333333333334,
+      "rmse": 2.018250067096081,
+      "bias": 1.7333333333333334,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "4e212b2354237f0c55bcf7256519842a",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:female:15+",
+            "plfs:LFPR:2018-19:in:US:urban:female:15+",
+            "plfs:LFPR:2019-20:in:US:urban:female:15+",
+            "plfs:LFPR:2020-21:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:urban:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 23.8,
+          "predicted": 23.2,
+          "error": 0.6
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:female:15+",
+            "plfs:LFPR:2018-19:in:US:urban:female:15+",
+            "plfs:LFPR:2019-20:in:US:urban:female:15+",
+            "plfs:LFPR:2020-21:in:US:urban:female:15+",
+            "plfs:LFPR:2021-22:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:urban:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 25.4,
+          "predicted": 23.8,
+          "error": 1.6
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:female:15+",
+            "plfs:LFPR:2018-19:in:US:urban:female:15+",
+            "plfs:LFPR:2019-20:in:US:urban:female:15+",
+            "plfs:LFPR:2020-21:in:US:urban:female:15+",
+            "plfs:LFPR:2021-22:in:US:urban:female:15+",
+            "plfs:LFPR:2022-23:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:urban:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 28.0,
+          "predicted": 25.4,
+          "error": 2.6
+        }
+      ],
+      "mae": 1.5999999999999999,
+      "rmse": 1.7962924780409975,
+      "bias": 1.5999999999999999,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "7f5647e2235660425d203c3f61af1090",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:male:15+",
+            "plfs:LFPR:2018-19:in:US:urban:male:15+",
+            "plfs:LFPR:2019-20:in:US:urban:male:15+",
+            "plfs:LFPR:2020-21:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:urban:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 74.7,
+          "predicted": 74.6,
+          "error": 0.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:male:15+",
+            "plfs:LFPR:2018-19:in:US:urban:male:15+",
+            "plfs:LFPR:2019-20:in:US:urban:male:15+",
+            "plfs:LFPR:2020-21:in:US:urban:male:15+",
+            "plfs:LFPR:2021-22:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:urban:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 74.5,
+          "predicted": 74.7,
+          "error": -0.2
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:male:15+",
+            "plfs:LFPR:2018-19:in:US:urban:male:15+",
+            "plfs:LFPR:2019-20:in:US:urban:male:15+",
+            "plfs:LFPR:2020-21:in:US:urban:male:15+",
+            "plfs:LFPR:2021-22:in:US:urban:male:15+",
+            "plfs:LFPR:2022-23:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:urban:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 75.6,
+          "predicted": 74.5,
+          "error": 1.1
+        }
+      ],
+      "mae": 0.46666666666666673,
+      "rmse": 0.6480740698407861,
+      "bias": 0.3333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "84fa3c93e3e0bcea3640fe29f75fceb8",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:combined:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 51.7,
+          "predicted": 51.8,
+          "error": -0.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2021-22:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:combined:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 54.6,
+          "predicted": 51.7,
+          "error": 2.9
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2021-22:in:CWS:combined:persons:15+",
+            "plfs:LFPR:2022-23:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:combined:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 56.4,
+          "predicted": 54.6,
+          "error": 1.8
+        }
+      ],
+      "mae": 1.5999999999999999,
+      "rmse": 1.9714630776828326,
+      "bias": 1.5333333333333332,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "85f8936c8c324de4fdb6ca7cd2fb214e",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:combined:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 75.9,
+          "predicted": 75.8,
+          "error": 0.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:male:15+",
+            "plfs:LFPR:2021-22:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:combined:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 77.4,
+          "predicted": 75.9,
+          "error": 1.5
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:male:15+",
+            "plfs:LFPR:2021-22:in:CWS:combined:male:15+",
+            "plfs:LFPR:2022-23:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:combined:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 77.5,
+          "predicted": 77.4,
+          "error": 0.1
+        }
+      ],
+      "mae": 0.5666666666666667,
+      "rmse": 0.8698658900466593,
+      "bias": 0.5666666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "973ba7b18afac0daebe0084ca4802c67",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:male:15+",
+            "plfs:LFPR:2018-19:in:US:combined:male:15+",
+            "plfs:LFPR:2019-20:in:US:combined:male:15+",
+            "plfs:LFPR:2020-21:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:combined:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 77.2,
+          "predicted": 77.0,
+          "error": 0.2
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:male:15+",
+            "plfs:LFPR:2018-19:in:US:combined:male:15+",
+            "plfs:LFPR:2019-20:in:US:combined:male:15+",
+            "plfs:LFPR:2020-21:in:US:combined:male:15+",
+            "plfs:LFPR:2021-22:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:combined:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 78.5,
+          "predicted": 77.2,
+          "error": 1.3
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:male:15+",
+            "plfs:LFPR:2018-19:in:US:combined:male:15+",
+            "plfs:LFPR:2019-20:in:US:combined:male:15+",
+            "plfs:LFPR:2020-21:in:US:combined:male:15+",
+            "plfs:LFPR:2021-22:in:US:combined:male:15+",
+            "plfs:LFPR:2022-23:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:combined:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 78.8,
+          "predicted": 78.5,
+          "error": 0.3
+        }
+      ],
+      "mae": 0.6,
+      "rmse": 0.7788880963698616,
+      "bias": 0.6,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "bced07fc734036907cd62ffd2ec4d0f7",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:urban:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 48.6,
+          "predicted": 48.0,
+          "error": 0.6
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2021-22:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:urban:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 49.4,
+          "predicted": 48.6,
+          "error": 0.8
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2021-22:in:CWS:urban:persons:15+",
+            "plfs:LFPR:2022-23:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:urban:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 50.8,
+          "predicted": 49.4,
+          "error": 1.4
+        }
+      ],
+      "mae": 0.9333333333333332,
+      "rmse": 0.993310961716756,
+      "bias": 0.9333333333333332,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "c9b7ba5d2fb93b3e6fd4dc89da6de105",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:rural:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 29.2,
+          "predicted": 30.0,
+          "error": -0.8
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:female:15+",
+            "plfs:LFPR:2021-22:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:rural:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 34.6,
+          "predicted": 29.2,
+          "error": 5.4
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:female:15+",
+            "plfs:LFPR:2021-22:in:CWS:rural:female:15+",
+            "plfs:LFPR:2022-23:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:rural:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 39.7,
+          "predicted": 34.6,
+          "error": 5.1
+        }
+      ],
+      "mae": 3.766666666666667,
+      "rmse": 4.313158162336889,
+      "bias": 3.233333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "cd6bc448c3191361712c163f28638455",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:rural:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 53.0,
+          "predicted": 53.4,
+          "error": -0.4
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2021-22:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:rural:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 56.7,
+          "predicted": 53.0,
+          "error": 3.7
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2021-22:in:CWS:rural:persons:15+",
+            "plfs:LFPR:2022-23:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:rural:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 58.9,
+          "predicted": 56.7,
+          "error": 2.2
+        }
+      ],
+      "mae": 2.1,
+      "rmse": 2.495996794869737,
+      "bias": 1.8333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "d6fbf8f00b2aae6ef8587b77799d0693",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:combined:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 27.2,
+          "predicted": 27.5,
+          "error": -0.3
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:female:15+",
+            "plfs:LFPR:2021-22:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:combined:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 31.6,
+          "predicted": 27.2,
+          "error": 4.4
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:combined:female:15+",
+            "plfs:LFPR:2018-19:in:CWS:combined:female:15+",
+            "plfs:LFPR:2019-20:in:CWS:combined:female:15+",
+            "plfs:LFPR:2020-21:in:CWS:combined:female:15+",
+            "plfs:LFPR:2021-22:in:CWS:combined:female:15+",
+            "plfs:LFPR:2022-23:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:combined:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 35.6,
+          "predicted": 31.6,
+          "error": 4.0
+        }
+      ],
+      "mae": 2.9000000000000004,
+      "rmse": 3.4375378785791826,
+      "bias": 2.6999999999999997,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "db056e5dbbcb2e29365ef28757ceaa95",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:persons:15+",
+            "plfs:LFPR:2018-19:in:US:rural:persons:15+",
+            "plfs:LFPR:2019-20:in:US:rural:persons:15+",
+            "plfs:LFPR:2020-21:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:rural:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 57.5,
+          "predicted": 57.4,
+          "error": 0.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:persons:15+",
+            "plfs:LFPR:2018-19:in:US:rural:persons:15+",
+            "plfs:LFPR:2019-20:in:US:rural:persons:15+",
+            "plfs:LFPR:2020-21:in:US:rural:persons:15+",
+            "plfs:LFPR:2021-22:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:rural:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 60.8,
+          "predicted": 57.5,
+          "error": 3.3
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:persons:15+",
+            "plfs:LFPR:2018-19:in:US:rural:persons:15+",
+            "plfs:LFPR:2019-20:in:US:rural:persons:15+",
+            "plfs:LFPR:2020-21:in:US:rural:persons:15+",
+            "plfs:LFPR:2021-22:in:US:rural:persons:15+",
+            "plfs:LFPR:2022-23:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:rural:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 63.7,
+          "predicted": 60.8,
+          "error": 2.9
+        }
+      ],
+      "mae": 2.1,
+      "rmse": 2.5370586644117368,
+      "bias": 2.1,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "e1afc7a67ad6ef07d2c1203104a5995c",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:CWS:rural:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 76.7,
+          "predicted": 76.7,
+          "error": 0.0
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:male:15+",
+            "plfs:LFPR:2021-22:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:CWS:rural:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 78.8,
+          "predicted": 76.7,
+          "error": 2.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:CWS:rural:male:15+",
+            "plfs:LFPR:2018-19:in:CWS:rural:male:15+",
+            "plfs:LFPR:2019-20:in:CWS:rural:male:15+",
+            "plfs:LFPR:2020-21:in:CWS:rural:male:15+",
+            "plfs:LFPR:2021-22:in:CWS:rural:male:15+",
+            "plfs:LFPR:2022-23:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:CWS:rural:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 78.7,
+          "predicted": 78.8,
+          "error": -0.1
+        }
+      ],
+      "mae": 0.7333333333333334,
+      "rmse": 1.2138094304022082,
+      "bias": 0.6666666666666666,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "e4366676a819286efbe99bf74ddeb4d9",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:female:15+",
+            "plfs:LFPR:2018-19:in:US:rural:female:15+",
+            "plfs:LFPR:2019-20:in:US:rural:female:15+",
+            "plfs:LFPR:2020-21:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:rural:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 36.6,
+          "predicted": 36.5,
+          "error": 0.1
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:female:15+",
+            "plfs:LFPR:2018-19:in:US:rural:female:15+",
+            "plfs:LFPR:2019-20:in:US:rural:female:15+",
+            "plfs:LFPR:2020-21:in:US:rural:female:15+",
+            "plfs:LFPR:2021-22:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:rural:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 41.5,
+          "predicted": 36.6,
+          "error": 4.9
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:rural:female:15+",
+            "plfs:LFPR:2018-19:in:US:rural:female:15+",
+            "plfs:LFPR:2019-20:in:US:rural:female:15+",
+            "plfs:LFPR:2020-21:in:US:rural:female:15+",
+            "plfs:LFPR:2021-22:in:US:rural:female:15+",
+            "plfs:LFPR:2022-23:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:rural:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 47.6,
+          "predicted": 41.5,
+          "error": 6.1
+        }
+      ],
+      "mae": 3.6999999999999997,
+      "rmse": 4.517742799230607,
+      "bias": 3.6999999999999997,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "eb80b6e6b0e97973ea5c2bc28085d1a4",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:female:15+",
+            "plfs:LFPR:2018-19:in:US:combined:female:15+",
+            "plfs:LFPR:2019-20:in:US:combined:female:15+",
+            "plfs:LFPR:2020-21:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:combined:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 32.8,
+          "predicted": 32.5,
+          "error": 0.3
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:female:15+",
+            "plfs:LFPR:2018-19:in:US:combined:female:15+",
+            "plfs:LFPR:2019-20:in:US:combined:female:15+",
+            "plfs:LFPR:2020-21:in:US:combined:female:15+",
+            "plfs:LFPR:2021-22:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:combined:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 37.0,
+          "predicted": 32.8,
+          "error": 4.2
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:combined:female:15+",
+            "plfs:LFPR:2018-19:in:US:combined:female:15+",
+            "plfs:LFPR:2019-20:in:US:combined:female:15+",
+            "plfs:LFPR:2020-21:in:US:combined:female:15+",
+            "plfs:LFPR:2021-22:in:US:combined:female:15+",
+            "plfs:LFPR:2022-23:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:combined:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 41.7,
+          "predicted": 37.0,
+          "error": 4.7
+        }
+      ],
+      "mae": 3.066666666666667,
+      "rmse": 3.6432586146653567,
+      "bias": 3.066666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "f6f4cf7f7b754af7ba85efe98fe884e3",
+    "metric": "LFPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:persons:15+",
+            "plfs:LFPR:2018-19:in:US:urban:persons:15+",
+            "plfs:LFPR:2019-20:in:US:urban:persons:15+",
+            "plfs:LFPR:2020-21:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2021-22:in:US:urban:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 49.7,
+          "predicted": 49.1,
+          "error": 0.6
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:persons:15+",
+            "plfs:LFPR:2018-19:in:US:urban:persons:15+",
+            "plfs:LFPR:2019-20:in:US:urban:persons:15+",
+            "plfs:LFPR:2020-21:in:US:urban:persons:15+",
+            "plfs:LFPR:2021-22:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2022-23:in:US:urban:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 50.4,
+          "predicted": 49.7,
+          "error": 0.7
+        },
+        {
+          "training_ids": [
+            "plfs:LFPR:2017-18:in:US:urban:persons:15+",
+            "plfs:LFPR:2018-19:in:US:urban:persons:15+",
+            "plfs:LFPR:2019-20:in:US:urban:persons:15+",
+            "plfs:LFPR:2020-21:in:US:urban:persons:15+",
+            "plfs:LFPR:2021-22:in:US:urban:persons:15+",
+            "plfs:LFPR:2022-23:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:LFPR:2023-24:in:US:urban:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 52.0,
+          "predicted": 50.4,
+          "error": 1.6
+        }
+      ],
+      "mae": 0.9666666666666667,
+      "rmse": 1.0661457061146318,
+      "bias": 0.9666666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "03005b64a7f50675acb515eee097d1f0",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:male:15+",
+            "plfs:UR:2018-19:in:CWS:rural:male:15+",
+            "plfs:UR:2019-20:in:CWS:rural:male:15+",
+            "plfs:UR:2020-21:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:rural:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 6.5,
+          "predicted": 7.1,
+          "error": -0.6
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:male:15+",
+            "plfs:UR:2018-19:in:CWS:rural:male:15+",
+            "plfs:UR:2019-20:in:CWS:rural:male:15+",
+            "plfs:UR:2020-21:in:CWS:rural:male:15+",
+            "plfs:UR:2021-22:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:rural:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 4.6,
+          "predicted": 6.5,
+          "error": -1.9
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:male:15+",
+            "plfs:UR:2018-19:in:CWS:rural:male:15+",
+            "plfs:UR:2019-20:in:CWS:rural:male:15+",
+            "plfs:UR:2020-21:in:CWS:rural:male:15+",
+            "plfs:UR:2021-22:in:CWS:rural:male:15+",
+            "plfs:UR:2022-23:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:rural:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 4.4,
+          "predicted": 4.6,
+          "error": -0.2
+        }
+      ],
+      "mae": 0.8999999999999999,
+      "rmse": 1.1561430130683084,
+      "bias": -0.8999999999999999,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "07089ada3931bd53633b8ba051f481de",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:persons:15+",
+            "plfs:UR:2018-19:in:US:urban:persons:15+",
+            "plfs:UR:2019-20:in:US:urban:persons:15+",
+            "plfs:UR:2020-21:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:urban:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 6.3,
+          "predicted": 6.7,
+          "error": -0.4
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:persons:15+",
+            "plfs:UR:2018-19:in:US:urban:persons:15+",
+            "plfs:UR:2019-20:in:US:urban:persons:15+",
+            "plfs:UR:2020-21:in:US:urban:persons:15+",
+            "plfs:UR:2021-22:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:urban:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 5.4,
+          "predicted": 6.3,
+          "error": -0.9
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:persons:15+",
+            "plfs:UR:2018-19:in:US:urban:persons:15+",
+            "plfs:UR:2019-20:in:US:urban:persons:15+",
+            "plfs:UR:2020-21:in:US:urban:persons:15+",
+            "plfs:UR:2021-22:in:US:urban:persons:15+",
+            "plfs:UR:2022-23:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:urban:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 5.1,
+          "predicted": 5.4,
+          "error": -0.3
+        }
+      ],
+      "mae": 0.5333333333333333,
+      "rmse": 0.594418483337567,
+      "bias": -0.5333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "0d25be749fa466425aaeb1e9d916ca9f",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:UR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:UR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:UR:2020-21:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:urban:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 8.3,
+          "predicted": 10.1,
+          "error": -1.8
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:UR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:UR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:UR:2020-21:in:CWS:urban:persons:15+",
+            "plfs:UR:2021-22:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:urban:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 7.0,
+          "predicted": 8.3,
+          "error": -1.3
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:UR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:UR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:UR:2020-21:in:CWS:urban:persons:15+",
+            "plfs:UR:2021-22:in:CWS:urban:persons:15+",
+            "plfs:UR:2022-23:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:urban:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 6.7,
+          "predicted": 7.0,
+          "error": -0.3
+        }
+      ],
+      "mae": 1.1333333333333333,
+      "rmse": 1.2935738607954836,
+      "bias": -1.1333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "1ab000905a1b5e94ae45a43e54d12fa6",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:female:15+",
+            "plfs:UR:2018-19:in:US:combined:female:15+",
+            "plfs:UR:2019-20:in:US:combined:female:15+",
+            "plfs:UR:2020-21:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:combined:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 3.3,
+          "predicted": 3.5,
+          "error": -0.2
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:female:15+",
+            "plfs:UR:2018-19:in:US:combined:female:15+",
+            "plfs:UR:2019-20:in:US:combined:female:15+",
+            "plfs:UR:2020-21:in:US:combined:female:15+",
+            "plfs:UR:2021-22:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:combined:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 2.9,
+          "predicted": 3.3,
+          "error": -0.4
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:female:15+",
+            "plfs:UR:2018-19:in:US:combined:female:15+",
+            "plfs:UR:2019-20:in:US:combined:female:15+",
+            "plfs:UR:2020-21:in:US:combined:female:15+",
+            "plfs:UR:2021-22:in:US:combined:female:15+",
+            "plfs:UR:2022-23:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:combined:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 3.2,
+          "predicted": 2.9,
+          "error": 0.3
+        }
+      ],
+      "mae": 0.3,
+      "rmse": 0.3109126351029605,
+      "bias": -0.10000000000000002,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "2a4295d1bfc3e59510af8a562b9d23f8",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:UR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:UR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:UR:2020-21:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:combined:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 6.6,
+          "predicted": 7.5,
+          "error": -0.9
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:UR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:UR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:UR:2020-21:in:CWS:combined:persons:15+",
+            "plfs:UR:2021-22:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:combined:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 5.1,
+          "predicted": 6.6,
+          "error": -1.5
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:UR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:UR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:UR:2020-21:in:CWS:combined:persons:15+",
+            "plfs:UR:2021-22:in:CWS:combined:persons:15+",
+            "plfs:UR:2022-23:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:combined:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 4.9,
+          "predicted": 5.1,
+          "error": -0.2
+        }
+      ],
+      "mae": 0.8666666666666667,
+      "rmse": 1.0165300454651272,
+      "bias": -0.8666666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "35c4b7417eb116a36b74236b80da34ad",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:male:15+",
+            "plfs:UR:2018-19:in:US:combined:male:15+",
+            "plfs:UR:2019-20:in:US:combined:male:15+",
+            "plfs:UR:2020-21:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:combined:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 4.4,
+          "predicted": 4.5,
+          "error": -0.1
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:male:15+",
+            "plfs:UR:2018-19:in:US:combined:male:15+",
+            "plfs:UR:2019-20:in:US:combined:male:15+",
+            "plfs:UR:2020-21:in:US:combined:male:15+",
+            "plfs:UR:2021-22:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:combined:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 3.3,
+          "predicted": 4.4,
+          "error": -1.1
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:male:15+",
+            "plfs:UR:2018-19:in:US:combined:male:15+",
+            "plfs:UR:2019-20:in:US:combined:male:15+",
+            "plfs:UR:2020-21:in:US:combined:male:15+",
+            "plfs:UR:2021-22:in:US:combined:male:15+",
+            "plfs:UR:2022-23:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:combined:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 3.2,
+          "predicted": 3.3,
+          "error": -0.1
+        }
+      ],
+      "mae": 0.43333333333333335,
+      "rmse": 0.6403124237432849,
+      "bias": -0.43333333333333335,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "3ae3b27e119b6a7e7a7bdb6fb7e03491",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:female:15+",
+            "plfs:UR:2018-19:in:CWS:rural:female:15+",
+            "plfs:UR:2019-20:in:CWS:rural:female:15+",
+            "plfs:UR:2020-21:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:rural:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 4.5,
+          "predicted": 4.8,
+          "error": -0.3
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:female:15+",
+            "plfs:UR:2018-19:in:CWS:rural:female:15+",
+            "plfs:UR:2019-20:in:CWS:rural:female:15+",
+            "plfs:UR:2020-21:in:CWS:rural:female:15+",
+            "plfs:UR:2021-22:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:rural:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 4.0,
+          "predicted": 4.5,
+          "error": -0.5
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:female:15+",
+            "plfs:UR:2018-19:in:CWS:rural:female:15+",
+            "plfs:UR:2019-20:in:CWS:rural:female:15+",
+            "plfs:UR:2020-21:in:CWS:rural:female:15+",
+            "plfs:UR:2021-22:in:CWS:rural:female:15+",
+            "plfs:UR:2022-23:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:rural:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 3.9,
+          "predicted": 4.0,
+          "error": -0.1
+        }
+      ],
+      "mae": 0.3,
+      "rmse": 0.3415650255319866,
+      "bias": -0.3,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "5876e78115a7122db694f1802c137888",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:male:15+",
+            "plfs:UR:2018-19:in:CWS:combined:male:15+",
+            "plfs:UR:2019-20:in:CWS:combined:male:15+",
+            "plfs:UR:2020-21:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:combined:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 6.9,
+          "predicted": 7.8,
+          "error": -0.9
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:male:15+",
+            "plfs:UR:2018-19:in:CWS:combined:male:15+",
+            "plfs:UR:2019-20:in:CWS:combined:male:15+",
+            "plfs:UR:2020-21:in:CWS:combined:male:15+",
+            "plfs:UR:2021-22:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:combined:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 5.1,
+          "predicted": 6.9,
+          "error": -1.8
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:male:15+",
+            "plfs:UR:2018-19:in:CWS:combined:male:15+",
+            "plfs:UR:2019-20:in:CWS:combined:male:15+",
+            "plfs:UR:2020-21:in:CWS:combined:male:15+",
+            "plfs:UR:2021-22:in:CWS:combined:male:15+",
+            "plfs:UR:2022-23:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:combined:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 4.8,
+          "predicted": 5.1,
+          "error": -0.3
+        }
+      ],
+      "mae": 1.0,
+      "rmse": 1.174734012447073,
+      "bias": -1.0,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "58a1f5515e454193c51e574776319cfc",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:female:15+",
+            "plfs:UR:2018-19:in:CWS:combined:female:15+",
+            "plfs:UR:2019-20:in:CWS:combined:female:15+",
+            "plfs:UR:2020-21:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:combined:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 5.8,
+          "predicted": 6.6,
+          "error": -0.8
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:female:15+",
+            "plfs:UR:2018-19:in:CWS:combined:female:15+",
+            "plfs:UR:2019-20:in:CWS:combined:female:15+",
+            "plfs:UR:2020-21:in:CWS:combined:female:15+",
+            "plfs:UR:2021-22:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:combined:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 5.1,
+          "predicted": 5.8,
+          "error": -0.7
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:combined:female:15+",
+            "plfs:UR:2018-19:in:CWS:combined:female:15+",
+            "plfs:UR:2019-20:in:CWS:combined:female:15+",
+            "plfs:UR:2020-21:in:CWS:combined:female:15+",
+            "plfs:UR:2021-22:in:CWS:combined:female:15+",
+            "plfs:UR:2022-23:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:combined:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 5.0,
+          "predicted": 5.1,
+          "error": -0.1
+        }
+      ],
+      "mae": 0.5333333333333333,
+      "rmse": 0.6164414002968976,
+      "bias": -0.5333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "5ef3dae154f4a1bd13ceb4270928676b",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:male:15+",
+            "plfs:UR:2018-19:in:US:rural:male:15+",
+            "plfs:UR:2019-20:in:US:rural:male:15+",
+            "plfs:UR:2020-21:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:rural:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 3.8,
+          "predicted": 3.8,
+          "error": 0.0
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:male:15+",
+            "plfs:UR:2018-19:in:US:rural:male:15+",
+            "plfs:UR:2019-20:in:US:rural:male:15+",
+            "plfs:UR:2020-21:in:US:rural:male:15+",
+            "plfs:UR:2021-22:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:rural:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 2.7,
+          "predicted": 3.8,
+          "error": -1.1
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:male:15+",
+            "plfs:UR:2018-19:in:US:rural:male:15+",
+            "plfs:UR:2019-20:in:US:rural:male:15+",
+            "plfs:UR:2020-21:in:US:rural:male:15+",
+            "plfs:UR:2021-22:in:US:rural:male:15+",
+            "plfs:UR:2022-23:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:rural:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 2.7,
+          "predicted": 2.7,
+          "error": 0.0
+        }
+      ],
+      "mae": 0.3666666666666667,
+      "rmse": 0.6350852961085883,
+      "bias": -0.3666666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "7062dafdfbb1ed2229ff51851080441c",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:male:15+",
+            "plfs:UR:2018-19:in:US:urban:male:15+",
+            "plfs:UR:2019-20:in:US:urban:male:15+",
+            "plfs:UR:2020-21:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:urban:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 5.8,
+          "predicted": 6.1,
+          "error": -0.3
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:male:15+",
+            "plfs:UR:2018-19:in:US:urban:male:15+",
+            "plfs:UR:2019-20:in:US:urban:male:15+",
+            "plfs:UR:2020-21:in:US:urban:male:15+",
+            "plfs:UR:2021-22:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:urban:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 4.7,
+          "predicted": 5.8,
+          "error": -1.1
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:male:15+",
+            "plfs:UR:2018-19:in:US:urban:male:15+",
+            "plfs:UR:2019-20:in:US:urban:male:15+",
+            "plfs:UR:2020-21:in:US:urban:male:15+",
+            "plfs:UR:2021-22:in:US:urban:male:15+",
+            "plfs:UR:2022-23:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:urban:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 4.4,
+          "predicted": 4.7,
+          "error": -0.3
+        }
+      ],
+      "mae": 0.5666666666666668,
+      "rmse": 0.6806859285554046,
+      "bias": -0.5666666666666668,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "954d2890b26adc29a1760d5943158611",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:female:15+",
+            "plfs:UR:2018-19:in:US:urban:female:15+",
+            "plfs:UR:2019-20:in:US:urban:female:15+",
+            "plfs:UR:2020-21:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:urban:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 7.9,
+          "predicted": 8.6,
+          "error": -0.7
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:female:15+",
+            "plfs:UR:2018-19:in:US:urban:female:15+",
+            "plfs:UR:2019-20:in:US:urban:female:15+",
+            "plfs:UR:2020-21:in:US:urban:female:15+",
+            "plfs:UR:2021-22:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:urban:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 7.5,
+          "predicted": 7.9,
+          "error": -0.4
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:urban:female:15+",
+            "plfs:UR:2018-19:in:US:urban:female:15+",
+            "plfs:UR:2019-20:in:US:urban:female:15+",
+            "plfs:UR:2020-21:in:US:urban:female:15+",
+            "plfs:UR:2021-22:in:US:urban:female:15+",
+            "plfs:UR:2022-23:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:urban:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 7.1,
+          "predicted": 7.5,
+          "error": -0.4
+        }
+      ],
+      "mae": 0.5,
+      "rmse": 0.5196152422706632,
+      "bias": -0.5,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "c816c08a692748b656e808f61b0f5510",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:UR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:UR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:UR:2020-21:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:rural:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 6.0,
+          "predicted": 6.5,
+          "error": -0.5
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:UR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:UR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:UR:2020-21:in:CWS:rural:persons:15+",
+            "plfs:UR:2021-22:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:rural:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 4.4,
+          "predicted": 6.0,
+          "error": -1.6
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:UR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:UR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:UR:2020-21:in:CWS:rural:persons:15+",
+            "plfs:UR:2021-22:in:CWS:rural:persons:15+",
+            "plfs:UR:2022-23:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:rural:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 4.2,
+          "predicted": 4.4,
+          "error": -0.2
+        }
+      ],
+      "mae": 0.7666666666666667,
+      "rmse": 0.9746794344808964,
+      "bias": -0.7666666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "c934d92e0c55bb278fe33709e6071d4f",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:female:15+",
+            "plfs:UR:2018-19:in:CWS:urban:female:15+",
+            "plfs:UR:2019-20:in:CWS:urban:female:15+",
+            "plfs:UR:2020-21:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:urban:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 9.9,
+          "predicted": 12.2,
+          "error": -2.3
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:female:15+",
+            "plfs:UR:2018-19:in:CWS:urban:female:15+",
+            "plfs:UR:2019-20:in:CWS:urban:female:15+",
+            "plfs:UR:2020-21:in:CWS:urban:female:15+",
+            "plfs:UR:2021-22:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:urban:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 9.1,
+          "predicted": 9.9,
+          "error": -0.8
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:female:15+",
+            "plfs:UR:2018-19:in:CWS:urban:female:15+",
+            "plfs:UR:2019-20:in:CWS:urban:female:15+",
+            "plfs:UR:2020-21:in:CWS:urban:female:15+",
+            "plfs:UR:2021-22:in:CWS:urban:female:15+",
+            "plfs:UR:2022-23:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:urban:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 8.7,
+          "predicted": 9.1,
+          "error": -0.4
+        }
+      ],
+      "mae": 1.1666666666666667,
+      "rmse": 1.4247806848775006,
+      "bias": -1.1666666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "e9a6e2f80c36bd82548ca7c296dbfaf0",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:persons:15+",
+            "plfs:UR:2018-19:in:US:combined:persons:15+",
+            "plfs:UR:2019-20:in:US:combined:persons:15+",
+            "plfs:UR:2020-21:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:combined:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 4.1,
+          "predicted": 4.2,
+          "error": -0.1
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:persons:15+",
+            "plfs:UR:2018-19:in:US:combined:persons:15+",
+            "plfs:UR:2019-20:in:US:combined:persons:15+",
+            "plfs:UR:2020-21:in:US:combined:persons:15+",
+            "plfs:UR:2021-22:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:combined:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 3.2,
+          "predicted": 4.1,
+          "error": -0.9
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:combined:persons:15+",
+            "plfs:UR:2018-19:in:US:combined:persons:15+",
+            "plfs:UR:2019-20:in:US:combined:persons:15+",
+            "plfs:UR:2020-21:in:US:combined:persons:15+",
+            "plfs:UR:2021-22:in:US:combined:persons:15+",
+            "plfs:UR:2022-23:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:combined:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 3.2,
+          "predicted": 3.2,
+          "error": 0.0
+        }
+      ],
+      "mae": 0.3333333333333333,
+      "rmse": 0.5228129047119374,
+      "bias": -0.3333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "ede8b3988e5e26dd8c1a50aca90e8164",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:persons:15+",
+            "plfs:UR:2018-19:in:US:rural:persons:15+",
+            "plfs:UR:2019-20:in:US:rural:persons:15+",
+            "plfs:UR:2020-21:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:rural:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 3.2,
+          "predicted": 3.3,
+          "error": -0.1
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:persons:15+",
+            "plfs:UR:2018-19:in:US:rural:persons:15+",
+            "plfs:UR:2019-20:in:US:rural:persons:15+",
+            "plfs:UR:2020-21:in:US:rural:persons:15+",
+            "plfs:UR:2021-22:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:rural:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 2.4,
+          "predicted": 3.2,
+          "error": -0.8
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:persons:15+",
+            "plfs:UR:2018-19:in:US:rural:persons:15+",
+            "plfs:UR:2019-20:in:US:rural:persons:15+",
+            "plfs:UR:2020-21:in:US:rural:persons:15+",
+            "plfs:UR:2021-22:in:US:rural:persons:15+",
+            "plfs:UR:2022-23:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:rural:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 2.5,
+          "predicted": 2.4,
+          "error": 0.1
+        }
+      ],
+      "mae": 0.3333333333333333,
+      "rmse": 0.46904157598234303,
+      "bias": -0.26666666666666666,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "f6ed3b20f344a2d386a7881b2181ae90",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:male:15+",
+            "plfs:UR:2018-19:in:CWS:urban:male:15+",
+            "plfs:UR:2019-20:in:CWS:urban:male:15+",
+            "plfs:UR:2020-21:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:CWS:urban:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 7.8,
+          "predicted": 9.4,
+          "error": -1.6
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:male:15+",
+            "plfs:UR:2018-19:in:CWS:urban:male:15+",
+            "plfs:UR:2019-20:in:CWS:urban:male:15+",
+            "plfs:UR:2020-21:in:CWS:urban:male:15+",
+            "plfs:UR:2021-22:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:CWS:urban:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 6.3,
+          "predicted": 7.8,
+          "error": -1.5
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:CWS:urban:male:15+",
+            "plfs:UR:2018-19:in:CWS:urban:male:15+",
+            "plfs:UR:2019-20:in:CWS:urban:male:15+",
+            "plfs:UR:2020-21:in:CWS:urban:male:15+",
+            "plfs:UR:2021-22:in:CWS:urban:male:15+",
+            "plfs:UR:2022-23:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:CWS:urban:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 6.0,
+          "predicted": 6.3,
+          "error": -0.3
+        }
+      ],
+      "mae": 1.1333333333333333,
+      "rmse": 1.2780193008453877,
+      "bias": -1.1333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "f95bb568e4c10daa5dc53ef5ce004b52",
+    "metric": "UR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "labour force aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:female:15+",
+            "plfs:UR:2018-19:in:US:rural:female:15+",
+            "plfs:UR:2019-20:in:US:rural:female:15+",
+            "plfs:UR:2020-21:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:UR:2021-22:in:US:rural:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 2.1,
+          "predicted": 2.1,
+          "error": 0.0
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:female:15+",
+            "plfs:UR:2018-19:in:US:rural:female:15+",
+            "plfs:UR:2019-20:in:US:rural:female:15+",
+            "plfs:UR:2020-21:in:US:rural:female:15+",
+            "plfs:UR:2021-22:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:UR:2022-23:in:US:rural:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 1.8,
+          "predicted": 2.1,
+          "error": -0.3
+        },
+        {
+          "training_ids": [
+            "plfs:UR:2017-18:in:US:rural:female:15+",
+            "plfs:UR:2018-19:in:US:rural:female:15+",
+            "plfs:UR:2019-20:in:US:rural:female:15+",
+            "plfs:UR:2020-21:in:US:rural:female:15+",
+            "plfs:UR:2021-22:in:US:rural:female:15+",
+            "plfs:UR:2022-23:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:UR:2023-24:in:US:rural:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 2.1,
+          "predicted": 1.8,
+          "error": 0.3
+        }
+      ],
+      "mae": 0.19999999999999998,
+      "rmse": 0.2449489742783178,
+      "bias": 0.0,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "05cd78da6423b3067f60084ede7141cc",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:rural:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 49.9,
+          "predicted": 50.0,
+          "error": -0.1
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:persons:15+",
+            "plfs:WPR:2021-22:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:rural:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 54.2,
+          "predicted": 49.9,
+          "error": 4.3
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:persons:15+",
+            "plfs:WPR:2021-22:in:CWS:rural:persons:15+",
+            "plfs:WPR:2022-23:in:CWS:rural:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:rural:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 56.5,
+          "predicted": 54.2,
+          "error": 2.3
+        }
+      ],
+      "mae": 2.233333333333333,
+      "rmse": 2.8160255680657444,
+      "bias": 2.1666666666666665,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "0ac43791d64f2db737ebbc641a2ea825",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:female:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:female:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:female:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:rural:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 27.9,
+          "predicted": 28.6,
+          "error": -0.7
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:female:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:female:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:female:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:female:15+",
+            "plfs:WPR:2021-22:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:rural:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 33.2,
+          "predicted": 27.9,
+          "error": 5.3
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:female:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:female:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:female:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:female:15+",
+            "plfs:WPR:2021-22:in:CWS:rural:female:15+",
+            "plfs:WPR:2022-23:in:CWS:rural:female:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:rural:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 38.1,
+          "predicted": 33.2,
+          "error": 4.9
+        }
+      ],
+      "mae": 3.6333333333333333,
+      "rmse": 4.186884283091665,
+      "bias": 3.1666666666666665,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "1dffa53e9faa463d187c8e253b7e7b95",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:male:15+",
+            "plfs:WPR:2018-19:in:US:combined:male:15+",
+            "plfs:WPR:2019-20:in:US:combined:male:15+",
+            "plfs:WPR:2020-21:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:combined:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 73.8,
+          "predicted": 73.5,
+          "error": 0.3
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:male:15+",
+            "plfs:WPR:2018-19:in:US:combined:male:15+",
+            "plfs:WPR:2019-20:in:US:combined:male:15+",
+            "plfs:WPR:2020-21:in:US:combined:male:15+",
+            "plfs:WPR:2021-22:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:combined:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 76.0,
+          "predicted": 73.8,
+          "error": 2.2
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:male:15+",
+            "plfs:WPR:2018-19:in:US:combined:male:15+",
+            "plfs:WPR:2019-20:in:US:combined:male:15+",
+            "plfs:WPR:2020-21:in:US:combined:male:15+",
+            "plfs:WPR:2021-22:in:US:combined:male:15+",
+            "plfs:WPR:2022-23:in:US:combined:male:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:combined:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 76.3,
+          "predicted": 76.0,
+          "error": 0.3
+        }
+      ],
+      "mae": 0.9333333333333335,
+      "rmse": 1.2935738607954836,
+      "bias": 0.9333333333333335,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "1f8da05209647013d87dc0c11c7262b5",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:female:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:female:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:female:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:combined:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 25.6,
+          "predicted": 25.7,
+          "error": -0.1
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:female:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:female:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:female:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:female:15+",
+            "plfs:WPR:2021-22:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:combined:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 30.0,
+          "predicted": 25.6,
+          "error": 4.4
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:female:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:female:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:female:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:female:15+",
+            "plfs:WPR:2021-22:in:CWS:combined:female:15+",
+            "plfs:WPR:2022-23:in:CWS:combined:female:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:combined:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 33.8,
+          "predicted": 30.0,
+          "error": 3.8
+        }
+      ],
+      "mae": 2.766666666666667,
+      "rmse": 3.357082066318904,
+      "bias": 2.6999999999999997,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "2480014c212486d37d293c8714d1cdcd",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:urban:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 44.6,
+          "predicted": 43.1,
+          "error": 1.5
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:persons:15+",
+            "plfs:WPR:2021-22:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:urban:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 46.0,
+          "predicted": 44.6,
+          "error": 1.4
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:persons:15+",
+            "plfs:WPR:2021-22:in:CWS:urban:persons:15+",
+            "plfs:WPR:2022-23:in:CWS:urban:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:urban:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 47.4,
+          "predicted": 46.0,
+          "error": 1.4
+        }
+      ],
+      "mae": 1.4333333333333333,
+      "rmse": 1.4341083176199303,
+      "bias": 1.4333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "2fd99832e04be476d764fcd8b528839b",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:persons:15+",
+            "plfs:WPR:2018-19:in:US:rural:persons:15+",
+            "plfs:WPR:2019-20:in:US:rural:persons:15+",
+            "plfs:WPR:2020-21:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:rural:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 55.6,
+          "predicted": 55.5,
+          "error": 0.1
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:persons:15+",
+            "plfs:WPR:2018-19:in:US:rural:persons:15+",
+            "plfs:WPR:2019-20:in:US:rural:persons:15+",
+            "plfs:WPR:2020-21:in:US:rural:persons:15+",
+            "plfs:WPR:2021-22:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:rural:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 59.4,
+          "predicted": 55.6,
+          "error": 3.8
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:persons:15+",
+            "plfs:WPR:2018-19:in:US:rural:persons:15+",
+            "plfs:WPR:2019-20:in:US:rural:persons:15+",
+            "plfs:WPR:2020-21:in:US:rural:persons:15+",
+            "plfs:WPR:2021-22:in:US:rural:persons:15+",
+            "plfs:WPR:2022-23:in:US:rural:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:rural:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 62.1,
+          "predicted": 59.4,
+          "error": 2.7
+        }
+      ],
+      "mae": 2.1999999999999997,
+      "rmse": 2.691963347942662,
+      "bias": 2.1999999999999997,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "39d4ca17e701c15857e044e76be68e2f",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:female:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:female:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:female:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:urban:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 19.9,
+          "predicted": 19.0,
+          "error": 0.9
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:female:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:female:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:female:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:female:15+",
+            "plfs:WPR:2021-22:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:urban:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 21.8,
+          "predicted": 19.9,
+          "error": 1.9
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:female:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:female:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:female:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:female:15+",
+            "plfs:WPR:2021-22:in:CWS:urban:female:15+",
+            "plfs:WPR:2022-23:in:CWS:urban:female:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:urban:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 23.9,
+          "predicted": 21.8,
+          "error": 2.1
+        }
+      ],
+      "mae": 1.6333333333333335,
+      "rmse": 1.7156145643277028,
+      "bias": 1.6333333333333335,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "4de21079e47886efeaa1b6eeac6efe95",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:female:15+",
+            "plfs:WPR:2018-19:in:US:rural:female:15+",
+            "plfs:WPR:2019-20:in:US:rural:female:15+",
+            "plfs:WPR:2020-21:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:rural:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 35.8,
+          "predicted": 35.8,
+          "error": 0.0
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:female:15+",
+            "plfs:WPR:2018-19:in:US:rural:female:15+",
+            "plfs:WPR:2019-20:in:US:rural:female:15+",
+            "plfs:WPR:2020-21:in:US:rural:female:15+",
+            "plfs:WPR:2021-22:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:rural:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 40.7,
+          "predicted": 35.8,
+          "error": 4.9
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:female:15+",
+            "plfs:WPR:2018-19:in:US:rural:female:15+",
+            "plfs:WPR:2019-20:in:US:rural:female:15+",
+            "plfs:WPR:2020-21:in:US:rural:female:15+",
+            "plfs:WPR:2021-22:in:US:rural:female:15+",
+            "plfs:WPR:2022-23:in:US:rural:female:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:rural:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 46.5,
+          "predicted": 40.7,
+          "error": 5.8
+        }
+      ],
+      "mae": 3.5666666666666664,
+      "rmse": 4.383681861935999,
+      "bias": 3.5666666666666664,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "6d88748656de1f92d9818fea3746a5e3",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:female:15+",
+            "plfs:WPR:2018-19:in:US:urban:female:15+",
+            "plfs:WPR:2019-20:in:US:urban:female:15+",
+            "plfs:WPR:2020-21:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:urban:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 21.9,
+          "predicted": 21.2,
+          "error": 0.7
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:female:15+",
+            "plfs:WPR:2018-19:in:US:urban:female:15+",
+            "plfs:WPR:2019-20:in:US:urban:female:15+",
+            "plfs:WPR:2020-21:in:US:urban:female:15+",
+            "plfs:WPR:2021-22:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:urban:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 23.5,
+          "predicted": 21.9,
+          "error": 1.6
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:female:15+",
+            "plfs:WPR:2018-19:in:US:urban:female:15+",
+            "plfs:WPR:2019-20:in:US:urban:female:15+",
+            "plfs:WPR:2020-21:in:US:urban:female:15+",
+            "plfs:WPR:2021-22:in:US:urban:female:15+",
+            "plfs:WPR:2022-23:in:US:urban:female:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:urban:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 26.0,
+          "predicted": 23.5,
+          "error": 2.5
+        }
+      ],
+      "mae": 1.5999999999999999,
+      "rmse": 1.760681686165901,
+      "bias": 1.5999999999999999,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "7044e3dadec5922f245a616777ded6bd",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:male:15+",
+            "plfs:WPR:2018-19:in:US:urban:male:15+",
+            "plfs:WPR:2019-20:in:US:urban:male:15+",
+            "plfs:WPR:2020-21:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:urban:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 70.4,
+          "predicted": 70.0,
+          "error": 0.4
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:male:15+",
+            "plfs:WPR:2018-19:in:US:urban:male:15+",
+            "plfs:WPR:2019-20:in:US:urban:male:15+",
+            "plfs:WPR:2020-21:in:US:urban:male:15+",
+            "plfs:WPR:2021-22:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:urban:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 71.0,
+          "predicted": 70.4,
+          "error": 0.6
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:male:15+",
+            "plfs:WPR:2018-19:in:US:urban:male:15+",
+            "plfs:WPR:2019-20:in:US:urban:male:15+",
+            "plfs:WPR:2020-21:in:US:urban:male:15+",
+            "plfs:WPR:2021-22:in:US:urban:male:15+",
+            "plfs:WPR:2022-23:in:US:urban:male:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:urban:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 72.3,
+          "predicted": 71.0,
+          "error": 1.3
+        }
+      ],
+      "mae": 0.7666666666666666,
+      "rmse": 0.8582928793055822,
+      "bias": 0.7666666666666666,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "76f4d3bebf02469b6dc00d7c1dafb8d3",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "urban",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:male:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:male:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:male:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:urban:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 68.4,
+          "predicted": 66.8,
+          "error": 1.6
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:male:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:male:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:male:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:male:15+",
+            "plfs:WPR:2021-22:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:urban:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 69.3,
+          "predicted": 68.4,
+          "error": 0.9
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:urban:male:15+",
+            "plfs:WPR:2018-19:in:CWS:urban:male:15+",
+            "plfs:WPR:2019-20:in:CWS:urban:male:15+",
+            "plfs:WPR:2020-21:in:CWS:urban:male:15+",
+            "plfs:WPR:2021-22:in:CWS:urban:male:15+",
+            "plfs:WPR:2022-23:in:CWS:urban:male:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:urban:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 70.5,
+          "predicted": 69.3,
+          "error": 1.2
+        }
+      ],
+      "mae": 1.2333333333333334,
+      "rmse": 1.2662279942148387,
+      "bias": 1.2333333333333334,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "7c65faf7cbc886ee0347a8055b4f53ff",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "rural",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:male:15+",
+            "plfs:WPR:2018-19:in:US:rural:male:15+",
+            "plfs:WPR:2019-20:in:US:rural:male:15+",
+            "plfs:WPR:2020-21:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:rural:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 75.3,
+          "predicted": 75.1,
+          "error": 0.2
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:male:15+",
+            "plfs:WPR:2018-19:in:US:rural:male:15+",
+            "plfs:WPR:2019-20:in:US:rural:male:15+",
+            "plfs:WPR:2020-21:in:US:rural:male:15+",
+            "plfs:WPR:2021-22:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:rural:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 78.0,
+          "predicted": 75.3,
+          "error": 2.7
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:rural:male:15+",
+            "plfs:WPR:2018-19:in:US:rural:male:15+",
+            "plfs:WPR:2019-20:in:US:rural:male:15+",
+            "plfs:WPR:2020-21:in:US:rural:male:15+",
+            "plfs:WPR:2021-22:in:US:rural:male:15+",
+            "plfs:WPR:2022-23:in:US:rural:male:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:rural:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 78.1,
+          "predicted": 78.0,
+          "error": 0.1
+        }
+      ],
+      "mae": 1.0,
+      "rmse": 1.5641824275533422,
+      "bias": 1.0,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "a74e393014e1d1f42f77b4d9a73f48e3",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "female",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:female:15+",
+            "plfs:WPR:2018-19:in:US:combined:female:15+",
+            "plfs:WPR:2019-20:in:US:combined:female:15+",
+            "plfs:WPR:2020-21:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:combined:female:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 31.7,
+          "predicted": 31.4,
+          "error": 0.3
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:female:15+",
+            "plfs:WPR:2018-19:in:US:combined:female:15+",
+            "plfs:WPR:2019-20:in:US:combined:female:15+",
+            "plfs:WPR:2020-21:in:US:combined:female:15+",
+            "plfs:WPR:2021-22:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:combined:female:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 35.9,
+          "predicted": 31.7,
+          "error": 4.2
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:female:15+",
+            "plfs:WPR:2018-19:in:US:combined:female:15+",
+            "plfs:WPR:2019-20:in:US:combined:female:15+",
+            "plfs:WPR:2020-21:in:US:combined:female:15+",
+            "plfs:WPR:2021-22:in:US:combined:female:15+",
+            "plfs:WPR:2022-23:in:US:combined:female:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:combined:female:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 40.3,
+          "predicted": 35.9,
+          "error": 4.4
+        }
+      ],
+      "mae": 2.966666666666667,
+      "rmse": 3.5161532010612584,
+      "bias": 2.966666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "c086cb3df21e3188cb3abe91ab374795",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:male:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:male:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:male:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:combined:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 70.7,
+          "predicted": 69.9,
+          "error": 0.8
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:male:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:male:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:male:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:male:15+",
+            "plfs:WPR:2021-22:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:combined:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 73.5,
+          "predicted": 70.7,
+          "error": 2.8
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:male:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:male:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:male:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:male:15+",
+            "plfs:WPR:2021-22:in:CWS:combined:male:15+",
+            "plfs:WPR:2022-23:in:CWS:combined:male:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:combined:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 73.8,
+          "predicted": 73.5,
+          "error": 0.3
+        }
+      ],
+      "mae": 1.3,
+      "rmse": 1.6901676445449623,
+      "bias": 1.3,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "cb625f051734a70f17a6205233717923",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "urban",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:persons:15+",
+            "plfs:WPR:2018-19:in:US:urban:persons:15+",
+            "plfs:WPR:2019-20:in:US:urban:persons:15+",
+            "plfs:WPR:2020-21:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:urban:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 46.6,
+          "predicted": 45.8,
+          "error": 0.8
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:persons:15+",
+            "plfs:WPR:2018-19:in:US:urban:persons:15+",
+            "plfs:WPR:2019-20:in:US:urban:persons:15+",
+            "plfs:WPR:2020-21:in:US:urban:persons:15+",
+            "plfs:WPR:2021-22:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:urban:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 47.7,
+          "predicted": 46.6,
+          "error": 1.1
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:urban:persons:15+",
+            "plfs:WPR:2018-19:in:US:urban:persons:15+",
+            "plfs:WPR:2019-20:in:US:urban:persons:15+",
+            "plfs:WPR:2020-21:in:US:urban:persons:15+",
+            "plfs:WPR:2021-22:in:US:urban:persons:15+",
+            "plfs:WPR:2022-23:in:US:urban:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:urban:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 49.4,
+          "predicted": 47.7,
+          "error": 1.7
+        }
+      ],
+      "mae": 1.2,
+      "rmse": 1.2569805089976536,
+      "bias": 1.2,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "cd2fc5ffa9a4c1f75bdc47f930d0cb4a",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "male",
+      "sector": "rural",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:male:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:male:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:male:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:rural:male:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 71.7,
+          "predicted": 71.2,
+          "error": 0.5
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:male:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:male:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:male:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:male:15+",
+            "plfs:WPR:2021-22:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:rural:male:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 75.2,
+          "predicted": 71.7,
+          "error": 3.5
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:rural:male:15+",
+            "plfs:WPR:2018-19:in:CWS:rural:male:15+",
+            "plfs:WPR:2019-20:in:CWS:rural:male:15+",
+            "plfs:WPR:2020-21:in:CWS:rural:male:15+",
+            "plfs:WPR:2021-22:in:CWS:rural:male:15+",
+            "plfs:WPR:2022-23:in:CWS:rural:male:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:rural:male:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 75.3,
+          "predicted": 75.2,
+          "error": 0.1
+        }
+      ],
+      "mae": 1.3666666666666665,
+      "rmse": 2.0420577856662137,
+      "bias": 1.3666666666666665,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "dc4cba5cf36b8cfd76f4fa98b5ed1e17",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "combined",
+      "activity_status": "US",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:persons:15+",
+            "plfs:WPR:2018-19:in:US:combined:persons:15+",
+            "plfs:WPR:2019-20:in:US:combined:persons:15+",
+            "plfs:WPR:2020-21:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:US:combined:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 52.9,
+          "predicted": 52.6,
+          "error": 0.3
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:persons:15+",
+            "plfs:WPR:2018-19:in:US:combined:persons:15+",
+            "plfs:WPR:2019-20:in:US:combined:persons:15+",
+            "plfs:WPR:2020-21:in:US:combined:persons:15+",
+            "plfs:WPR:2021-22:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:US:combined:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 56.0,
+          "predicted": 52.9,
+          "error": 3.1
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:US:combined:persons:15+",
+            "plfs:WPR:2018-19:in:US:combined:persons:15+",
+            "plfs:WPR:2019-20:in:US:combined:persons:15+",
+            "plfs:WPR:2020-21:in:US:combined:persons:15+",
+            "plfs:WPR:2021-22:in:US:combined:persons:15+",
+            "plfs:WPR:2022-23:in:US:combined:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:US:combined:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 58.2,
+          "predicted": 56.0,
+          "error": 2.2
+        }
+      ],
+      "mae": 1.866666666666667,
+      "rmse": 2.201514630127783,
+      "bias": 1.866666666666667,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  },
+  {
+    "series_id": "e5611e56c4a7f9dd220ff750944a0d4e",
+    "metric": "WPR",
+    "geography": "in",
+    "classification": {
+      "sex": "persons",
+      "sector": "combined",
+      "activity_status": "CWS",
+      "age_group": "15+",
+      "denominator": "population aged 15+"
+    },
+    "historical_window": [
+      "2017-18",
+      "2023-24"
+    ],
+    "backtest": {
+      "status": "AVAILABLE",
+      "model_name": "Last observation baseline",
+      "model_version": "naive-1.0",
+      "methodology": "Expanding-window rolling origin, minimum 4 training observations; predict the requested horizon using the last training observation. Error = observed - predicted. MAE/RMSE/bias in source units. No future values used in training.",
+      "folds": [
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2021-22:in:CWS:combined:persons:15+",
+          "target_period": "2021-22",
+          "horizon": 1,
+          "observed": 48.3,
+          "predicted": 47.9,
+          "error": 0.4
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:persons:15+",
+            "plfs:WPR:2021-22:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2022-23:in:CWS:combined:persons:15+",
+          "target_period": "2022-23",
+          "horizon": 1,
+          "observed": 51.8,
+          "predicted": 48.3,
+          "error": 3.5
+        },
+        {
+          "training_ids": [
+            "plfs:WPR:2017-18:in:CWS:combined:persons:15+",
+            "plfs:WPR:2018-19:in:CWS:combined:persons:15+",
+            "plfs:WPR:2019-20:in:CWS:combined:persons:15+",
+            "plfs:WPR:2020-21:in:CWS:combined:persons:15+",
+            "plfs:WPR:2021-22:in:CWS:combined:persons:15+",
+            "plfs:WPR:2022-23:in:CWS:combined:persons:15+"
+          ],
+          "target_id": "plfs:WPR:2023-24:in:CWS:combined:persons:15+",
+          "target_period": "2023-24",
+          "horizon": 1,
+          "observed": 53.7,
+          "predicted": 51.8,
+          "error": 1.9
+        }
+      ],
+      "mae": 1.9333333333333333,
+      "rmse": 2.3108440016582685,
+      "bias": 1.9333333333333333,
+      "unit": "percent",
+      "reason_codes": []
+    },
+    "prospective_forecast_status": "UNAVAILABLE",
+    "reason_codes": [
+      "METHODOLOGY_BOUNDARY"
+    ]
+  }
+]

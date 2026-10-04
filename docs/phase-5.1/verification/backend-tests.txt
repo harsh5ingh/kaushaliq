@@ -1,0 +1,18 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\SIH part 2\KaushalIQ\backend
+plugins: anyio-4.15.1
+collected 175 items
+
+tests\test_accounts.py ...................                               [ 10%]
+tests\test_auth_verification.py ..........                               [ 16%]
+tests\test_demand.py ...............                                     [ 25%]
+tests\test_early_warning.py ..................................           [ 44%]
+tests\test_gaps.py ...............                                       [ 53%]
+tests\test_oauth_sessions.py ................                            [ 62%]
+tests\test_real_data.py ..........                                       [ 68%]
+tests\test_scenarios.py .....................                            [ 80%]
+tests\test_supply.py ..................                                  [ 90%]
+tests\test_trends.py .................                                   [100%]
+
+======================= 175 passed in 62.01s (0:01:02) ========================

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\labour-market.json",
+    "sha256": "C85D2E9E26D103803D2419B7F2F95110130A3063636CCEAF03C5D81211841EAE"
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\manifest.json",
+    "sha256": "B5EED7D855203A4EFCB723BA927682B86258C1CFB7FD37A5178296402E18A1D5"
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\demand\\manifest.json",
+    "sha256": "8BE7A0AB0E13E6D45809B91E9028C5B87BDC61E90EE65F92992B46F47304624E"
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\demand\\snapshot.json",
+    "sha256": "16458F1B959FA7621655333DE6FAA381EDB31564C54E32D8171149A5A0C41E45"
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\supply\\manifest.json",
+    "sha256": "4C794774CDDAD8C10AA377F4ACDEF9E420DA6060FED17D7EA3378468EBA03993"
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\supply\\snapshot.json",
+    "sha256": "877493D40BAD13DDAEA80EB2B0E7851C9BE2DBCF0A7386F7701B9D9AD99B86D4"
+  }
+]

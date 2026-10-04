@@ -8,6 +8,9 @@ from src.routes.intelligence import router as intelligence_router
 from src.routes.demand import router as demand_router
 from src.routes.supply import router as supply_router
 from src.routes.gaps import router as gaps_router
+from src.routes.trends import router as trends_router
+from src.routes.scenarios import router as scenarios_router
+from src.routes.early_warning import router as early_warning_router
 from src.routes.accounts import router as accounts_router
 from src.accounts.verification import router as verification_router
 from src.routes.oauth import router as oauth_router
@@ -32,6 +35,9 @@ app.include_router(intelligence_router)
 app.include_router(demand_router)
 app.include_router(supply_router)
 app.include_router(gaps_router)
+app.include_router(trends_router)
+app.include_router(scenarios_router)
+app.include_router(early_warning_router)
 app.include_router(accounts_router)
 app.include_router(verification_router)
 app.include_router(oauth_router)

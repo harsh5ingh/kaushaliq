@@ -1,0 +1,60 @@
+ M backend/.env.example
+ M backend/requirements.txt
+ M backend/src/main.py
+ M backend/src/routes/accounts.py
+ M backend/src/routes/oauth.py
+ M backend/tests/test_oauth_sessions.py
+ M data/canonical/labour-market.json
+ M data/canonical/manifest.json
+ M data/canonical/supply/manifest.json
+ M data/canonical/supply/snapshot.json
+ M data/metadata/quality_report.json
+ M data/metadata/supply_coverage.json
+ M data/metadata/supply_quality.json
+ M data/processed/supply/validated.json
+ M data/processed/validated.json
+ M data/staging/extracted.json
+ M data/staging/supply/extracted.json
+ M frontend/package-lock.json
+ M frontend/package.json
+ M frontend/src/app/config/navigation.ts
+ M frontend/src/app/i18n/locales/en-IN.ts
+ M frontend/src/app/i18n/locales/hi-IN.ts
+ M frontend/src/app/providers/AuthProvider.tsx
+ M frontend/src/app/routes/AppRoutes.tsx
+ M frontend/src/components/layout/AppShell.tsx
+ M frontend/src/components/layout/Header.tsx
+ M frontend/src/features/account/ConnectedAccounts.tsx
+ M frontend/src/features/account/api.ts
+ M frontend/src/features/real-intelligence/DataProvider.tsx
+ M frontend/src/features/real-intelligence/RealIntelligencePage.tsx
+ M frontend/src/main.tsx
+ M frontend/src/services/api.ts
+ M frontend/src/styles/components.css
+ M frontend/src/styles/home-hero.css
+ M frontend/tests/auth-hardening.browser.cjs
+ M frontend/tests/phase231.browser.cjs
+ M frontend/tests/run-auth-regressions.cjs
+?? backend/src/early_warning/
+?? backend/src/routes/early_warning.py
+?? backend/src/routes/scenarios.py
+?? backend/src/routes/trends.py
+?? backend/src/scenarios/
+?? backend/src/trends/
+?? backend/tests/test_early_warning.py
+?? backend/tests/test_scenarios.py
+?? backend/tests/test_trends.py
+?? docs/phase-4/
+?? docs/phase-5.1/
+?? docs/phase-5/
+?? frontend/package-lock.vite8-backup.json
+?? frontend/src/app/i18n/locales/forecast.ts
+?? frontend/src/app/i18n/locales/phase5.ts
+?? frontend/src/features/early-warning/
+?? frontend/src/features/forecast/
+?? frontend/src/features/phase5/
+?? frontend/src/features/scenarios/
+?? frontend/src/styles/forecast.css
+?? frontend/src/styles/phase5.css
+?? frontend/tests/phase4.browser.cjs
+?? frontend/tests/phase5.browser.cjs

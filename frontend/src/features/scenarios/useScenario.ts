@@ -1,0 +1,10 @@
+import {useEffect,useRef,useState} from 'react';
+import {api} from '../../services/api';
+import {decodeScenario,decodeScenarioCoverage,type ScenarioCoverage,type ScenarioRequest,type ScenarioResult} from './contracts';
+export function useScenario(query:string){const [attempt,setAttempt]=useState(0),key=`${query}:${attempt}`,[meta,setMeta]=useState<{key:string;coverage?:ScenarioCoverage;failed?:true}>(),[run,setRun]=useState<{key:string;inputKey:string;pending?:true;result?:ScenarioResult;failed?:true}>();const active=useRef<AbortController|null>(null);
+  useEffect(()=>{const c=new AbortController();active.current?.abort();api.get(`/v1/intelligence/scenarios/coverage?${query}`,decodeScenarioCoverage,c.signal).then(coverage=>{if(!c.signal.aborted)setMeta({key,coverage});}).catch(()=>{if(!c.signal.aborted)setMeta({key,failed:true});});return()=>{c.abort();active.current?.abort();};},[query,key]);
+  const current=meta?.key===key?meta:undefined,coverage=current?.coverage,currentRun=run?.key===key?run:undefined;
+  function clear(){active.current?.abort();setRun(undefined);}
+  async function execute(input:ScenarioRequest){if(!coverage)return;active.current?.abort();const controller=new AbortController();active.current=controller;const inputKey=JSON.stringify(input);setRun({key,inputKey,pending:true});try{const result=await api.post('/v1/intelligence/scenarios/skill-shock',input,decodeScenario,controller.signal);if(result.version!==coverage.version||result.scenario_type!==input.scenario_type||JSON.stringify(result.assumptions[0])!==JSON.stringify(input.assumption)||result.series&&result.series.series_id!==input.series_id)throw Error('Mismatched scenario evidence');if(!controller.signal.aborted)setRun({key,inputKey,result});}catch{if(!controller.signal.aborted)setRun({key,inputKey,failed:true});}}
+  return{coverage,failed:!!current?.failed,pending:!!currentRun?.pending,result:currentRun?.result,runFailed:!!currentRun?.failed,clear,execute,retry:()=>{clear();setAttempt(n=>n+1);}};
+}

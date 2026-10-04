@@ -1,0 +1,38 @@
+[
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\labour-market.json",
+    "before": "C85D2E9E26D103803D2419B7F2F95110130A3063636CCEAF03C5D81211841EAE",
+    "after": "C85D2E9E26D103803D2419B7F2F95110130A3063636CCEAF03C5D81211841EAE",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\manifest.json",
+    "before": "B5EED7D855203A4EFCB723BA927682B86258C1CFB7FD37A5178296402E18A1D5",
+    "after": "B5EED7D855203A4EFCB723BA927682B86258C1CFB7FD37A5178296402E18A1D5",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\demand\\manifest.json",
+    "before": "8BE7A0AB0E13E6D45809B91E9028C5B87BDC61E90EE65F92992B46F47304624E",
+    "after": "8BE7A0AB0E13E6D45809B91E9028C5B87BDC61E90EE65F92992B46F47304624E",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\demand\\snapshot.json",
+    "before": "16458F1B959FA7621655333DE6FAA381EDB31564C54E32D8171149A5A0C41E45",
+    "after": "16458F1B959FA7621655333DE6FAA381EDB31564C54E32D8171149A5A0C41E45",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\supply\\manifest.json",
+    "before": "4C794774CDDAD8C10AA377F4ACDEF9E420DA6060FED17D7EA3378468EBA03993",
+    "after": "4C794774CDDAD8C10AA377F4ACDEF9E420DA6060FED17D7EA3378468EBA03993",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\supply\\snapshot.json",
+    "before": "877493D40BAD13DDAEA80EB2B0E7851C9BE2DBCF0A7386F7701B9D9AD99B86D4",
+    "after": "877493D40BAD13DDAEA80EB2B0E7851C9BE2DBCF0A7386F7701B9D9AD99B86D4",
+    "unchanged": true
+  }
+]

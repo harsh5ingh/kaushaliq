@@ -1,0 +1,1113 @@
+{
+  "version": "5e1256957263218621c6ec58944025740fb71e0cbd10eabaecbef7758b87d107",
+  "publication_versions": {
+    "base": "c85d2e9e26d103803d2419b7f2f95110130a3063636cceaf03c5d81211841eae",
+    "demand": "16458f1b959fa7621655333de6faa381edb31564c54e32d8171149a5a0c41e45",
+    "supply": "877493d40bad13ddaea80eb2b0e7851c9be2dbcf0a7386f7701b9d9ad99b86d4"
+  },
+  "series_count": 1162,
+  "observations": 1701,
+  "historical_series_count": 125,
+  "forecast_ready_count": 0,
+  "readiness_counts": {
+    "INSUFFICIENT_HISTORY": 70,
+    "QUALITY_RESTRICTION": 75,
+    "INCOMPATIBLE_SERIES": 1017
+  },
+  "families": [
+    {
+      "family": "labour",
+      "metrics": [
+        "LFPR",
+        "UR",
+        "WPR"
+      ],
+      "geographies": [
+        {
+          "id": "in",
+          "name": "India",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-andaman-and-nicobar-islands",
+          "name": "Andaman And Nicobar Islands",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-andhra-pradesh",
+          "name": "Andhra Pradesh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-arunachal-pradesh",
+          "name": "Arunachal Pradesh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-assam",
+          "name": "Assam",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-bihar",
+          "name": "Bihar",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-chandigarh",
+          "name": "Chandigarh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-chhattisgarh",
+          "name": "Chhattisgarh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-dadra-and-nagar-haveli-and-daman-and-diu",
+          "name": "Dadra And Nagar Haveli And Daman And Diu",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-delhi",
+          "name": "Delhi",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-goa",
+          "name": "Goa",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-gujarat",
+          "name": "Gujarat",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-haryana",
+          "name": "Haryana",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-himachal-pradesh",
+          "name": "Himachal Pradesh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-jammu-and-kashmir",
+          "name": "Jammu And Kashmir",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-jharkhand",
+          "name": "Jharkhand",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-karnataka",
+          "name": "Karnataka",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-kerala",
+          "name": "Kerala",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-ladakh",
+          "name": "Ladakh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-lakshadweep",
+          "name": "Lakshadweep",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-madhya-pradesh",
+          "name": "Madhya Pradesh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-maharashtra",
+          "name": "Maharashtra",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-manipur",
+          "name": "Manipur",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-meghalaya",
+          "name": "Meghalaya",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-mizoram",
+          "name": "Mizoram",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-nagaland",
+          "name": "Nagaland",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-odisha",
+          "name": "Odisha",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-puducherry",
+          "name": "Puducherry",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-punjab",
+          "name": "Punjab",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-rajasthan",
+          "name": "Rajasthan",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-sikkim",
+          "name": "Sikkim",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-tamil-nadu",
+          "name": "Tamil Nadu",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-telangana",
+          "name": "Telangana",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-tripura",
+          "name": "Tripura",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-uttar-pradesh",
+          "name": "Uttar Pradesh",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-uttarakhand",
+          "name": "Uttarakhand",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        },
+        {
+          "id": "in-west-bengal",
+          "name": "West Bengal",
+          "metrics": [
+            "LFPR",
+            "UR",
+            "WPR"
+          ]
+        }
+      ],
+      "observations": 1341
+    },
+    {
+      "family": "demand",
+      "metrics": [
+        "active_vacancies"
+      ],
+      "geographies": [
+        {
+          "id": "in",
+          "name": "India",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-andhra-pradesh",
+          "name": "Andhra Pradesh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-arunachal-pradesh",
+          "name": "Arunachal Pradesh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-assam",
+          "name": "Assam",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-bihar",
+          "name": "Bihar",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-chandigarh",
+          "name": "Chandigarh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-chhattisgarh",
+          "name": "Chhattisgarh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-delhi",
+          "name": "Delhi",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-goa",
+          "name": "Goa",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-gujarat",
+          "name": "Gujarat",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-haryana",
+          "name": "Haryana",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-himachal-pradesh",
+          "name": "Himachal Pradesh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-jammu-and-kashmir",
+          "name": "Jammu And Kashmir",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-jharkhand",
+          "name": "Jharkhand",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-karnataka",
+          "name": "Karnataka",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-kerala",
+          "name": "Kerala",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-lakshadweep",
+          "name": "Lakshadweep",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-madhya-pradesh",
+          "name": "Madhya Pradesh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-maharashtra",
+          "name": "Maharashtra",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-manipur",
+          "name": "Manipur",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-meghalaya",
+          "name": "Meghalaya",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-mizoram",
+          "name": "Mizoram",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-nagaland",
+          "name": "Nagaland",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-odisha",
+          "name": "Odisha",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-puducherry",
+          "name": "Puducherry",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-punjab",
+          "name": "Punjab",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-rajasthan",
+          "name": "Rajasthan",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-sikkim",
+          "name": "Sikkim",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-tamil-nadu",
+          "name": "Tamil Nadu",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-telangana",
+          "name": "Telangana",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-tripura",
+          "name": "Tripura",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-uttar-pradesh",
+          "name": "Uttar Pradesh",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-uttarakhand",
+          "name": "Uttarakhand",
+          "metrics": [
+            "active_vacancies"
+          ]
+        },
+        {
+          "id": "in-west-bengal",
+          "name": "West Bengal",
+          "metrics": [
+            "active_vacancies"
+          ]
+        }
+      ],
+      "observations": 37
+    },
+    {
+      "family": "supply",
+      "metrics": [
+        "CERTIFIED",
+        "TRAINED",
+        "TRAINING_CENTRES"
+      ],
+      "geographies": [
+        {
+          "id": "in",
+          "name": "India",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED"
+          ]
+        },
+        {
+          "id": "in-andaman-and-nicobar-islands",
+          "name": "Andaman And Nicobar Islands",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-andhra-pradesh",
+          "name": "Andhra Pradesh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-arunachal-pradesh",
+          "name": "Arunachal Pradesh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-assam",
+          "name": "Assam",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-bihar",
+          "name": "Bihar",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-chandigarh",
+          "name": "Chandigarh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-chhattisgarh",
+          "name": "Chhattisgarh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-dadra-and-nagar-haveli-and-daman-and-diu",
+          "name": "Dadra And Nagar Haveli And Daman And Diu",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-delhi",
+          "name": "Delhi",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-goa",
+          "name": "Goa",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-gujarat",
+          "name": "Gujarat",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-haryana",
+          "name": "Haryana",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-himachal-pradesh",
+          "name": "Himachal Pradesh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-jammu-and-kashmir",
+          "name": "Jammu And Kashmir",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-jharkhand",
+          "name": "Jharkhand",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-karnataka",
+          "name": "Karnataka",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-kerala",
+          "name": "Kerala",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-ladakh",
+          "name": "Ladakh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-lakshadweep",
+          "name": "Lakshadweep",
+          "metrics": [
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-madhya-pradesh",
+          "name": "Madhya Pradesh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-maharashtra",
+          "name": "Maharashtra",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-manipur",
+          "name": "Manipur",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-meghalaya",
+          "name": "Meghalaya",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-mizoram",
+          "name": "Mizoram",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-nagaland",
+          "name": "Nagaland",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-odisha",
+          "name": "Odisha",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-puducherry",
+          "name": "Puducherry",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-punjab",
+          "name": "Punjab",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-rajasthan",
+          "name": "Rajasthan",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-sikkim",
+          "name": "Sikkim",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-tamil-nadu",
+          "name": "Tamil Nadu",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-telangana",
+          "name": "Telangana",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-tripura",
+          "name": "Tripura",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-uttar-pradesh",
+          "name": "Uttar Pradesh",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-uttarakhand",
+          "name": "Uttarakhand",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        },
+        {
+          "id": "in-west-bengal",
+          "name": "West Bengal",
+          "metrics": [
+            "CERTIFIED",
+            "TRAINED",
+            "TRAINING_CENTRES"
+          ]
+        }
+      ],
+      "observations": 323
+    }
+  ],
+  "unsupported_dimensions": [
+    "district",
+    "occupation",
+    "skill",
+    "industry"
+  ],
+  "quality": {
+    "status": "VALIDATED_WITH_RESTRICTIONS",
+    "no_interpolation": true,
+    "quarantined": [
+      {
+        "difference": 120,
+        "indicator": "trained",
+        "period": "2024-25",
+        "published_total": 2038319,
+        "reason": "Published total does not reconcile; omitted from canonical observations, raw retained",
+        "region_id": "in",
+        "source_id": "pmkvy-pib-2026",
+        "state_sum": 2038199
+      }
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "plfs-pib-2024",
+      "publisher": "MoSPI / NSO, disseminated by PIB",
+      "dataset_name": "PLFS annual 2023-24 release: Tables 1–6",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2057970&lang=2&reg=48",
+      "license": "PIB attribution/reproduction policy",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "23 September 2024",
+      "geography": "India",
+      "granularity": "Year × sector × sex × ages 15+ × US/CWS",
+      "methodology": "Weighted published survey estimates; US/CWS kept separate",
+      "notes": "Historical pre-2025 series, not latest. No job demand, counts or confidence intervals.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-02T20:12:53.025179+00:00",
+      "sha256": "023ec02a2b8b383584d536e87dab723424cf39193d720792a38f72ba1fa1f9d8",
+      "connected": true,
+      "publication_date": null,
+      "observation_period": "July 2017–June 2024",
+      "classification_system": null,
+      "source_kind": null
+    },
+    {
+      "source_id": "plfs-annual-2023-24",
+      "publisher": "MoSPI / NSO",
+      "dataset_name": "Annual Report PLFS 2023-24",
+      "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf",
+      "license": "MoSPI Category A open-access statistical publication; attribution, no blanket CC/GODL assumed",
+      "license_url": "https://mospi.gov.in/faq",
+      "version": "July2023–June2024",
+      "geography": "India / State / UT",
+      "granularity": "State × sector × sex × age × status",
+      "methodology": "Stratified multi-stage household survey. Import state tables16/17/18 ages15+ US only",
+      "notes": "No district/city estimates; missing/NA cells not zero. Other report dimensions not connected.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-02T20:13:03.791869+00:00",
+      "sha256": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39",
+      "connected": true,
+      "publication_date": null,
+      "observation_period": "2023-07-01/2024-06-30",
+      "classification_system": null,
+      "source_kind": null
+    },
+    {
+      "source_id": "nic-2008",
+      "publisher": "MoSPI",
+      "dataset_name": "NIC2008 Codes & Descriptions, Sixth Economic Census reference",
+      "url": "https://mospi.gov.in/sites/default/files/6ec_dirEst/ec6_nic_2008_code.html",
+      "license": "Public official classification, MoSPI open-access terms with attribution; no blanket CC/GODL",
+      "license_url": "https://mospi.gov.in/faq",
+      "version": "NIC-2008",
+      "geography": "India",
+      "granularity": "Section/division/group",
+      "methodology": "Preserve official codes as strings and source hierarchy",
+      "notes": "Partial Sixth Economic Census listing: 19 sections, 82 divisions, 231 groups; Division02 absent; no classes/subclasses. Historical PLFS alignment; NIC2025 exists. Taxonomy is not demand. No invented crosswalk.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-02T20:13:04.394526+00:00",
+      "sha256": "ad419dcbc3dc5ee4695a92827e688d3566227ae858765982dea6df8ea2bb619a",
+      "connected": true,
+      "publication_date": null,
+      "observation_period": null,
+      "classification_system": null,
+      "source_kind": null
+    },
+    {
+      "source_id": "pmkvy-pib-2026",
+      "publisher": "MSDE, disseminated by PIB",
+      "dataset_name": "Redesigning PMKVY Courses — Annexure I",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297203&lang=1&reg=3",
+      "license": "PIB attribution/reproduction policy",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "10 August2026",
+      "geography": "Published State/UT rows",
+      "granularity": "State × FY × trained/certified",
+      "methodology": "Administrative counts; certification cohorts/lag differ",
+      "notes": "FY2026-27 partial to30June2026; certifications may concern prior cohorts, not a conversion rate. Lakshadweep absent. FY2024-25 national trained total quarantined: published2038319 versus state sum2038199 (difference120). No seats/capacity/placement/demand measures.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-02T20:13:05.578370+00:00",
+      "sha256": "65c46dac2c9db5c24ba4fb6251fa1857516913e4612c29c5c88ec42695134719",
+      "connected": true,
+      "publication_date": "2026-08-10",
+      "observation_period": "FY2023-24–FY2026-27 to30June2026",
+      "classification_system": null,
+      "source_kind": null
+    },
+    {
+      "source_id": "ncs-active-pib-2025",
+      "publisher": "Ministry of Labour & Employment / National Career Service, disseminated by PIB",
+      "dataset_name": "NCS active vacancies: State/UT Annexure, as of 14 July 2025",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147927&reg=48&lang=2",
+      "license": "PIB attribution/reproduction policy; not a blanket GODL/CC licence",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "PIB-2147927 / 2025-07-24",
+      "geography": "India; published State/UT, multiple-state and unspecified buckets",
+      "granularity": "Administrative active-vacancy stock as of 14 July 2025; no occupation/skill/industry breakdown",
+      "methodology": "Published NCS portal active vacancies; stock at a point in time, not annual vacancies mobilised, final hiring, unique jobs or a national census of demand",
+      "notes": "Portal/partner coverage and duplicate/repost treatment not quantified. Historical DNH/Daman&Diu labels remain unassigned; dash is unavailable; multiple states and unspecified location are not distributed. No district or occupation/skill/sector observations. Historical snapshot, not real-time.",
+      "access_method": "Explicit HTTPS download of public PIB Annexure HTML",
+      "update_frequency": "Ad-hoc parliamentary release; no guaranteed feed",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-03T10:00:43.247567+00:00",
+      "sha256": "2947d1e2d741a85f1b237966e47a01270b35a582188c93352139752686b6a4f3",
+      "connected": true,
+      "publication_date": "2025-07-24",
+      "observation_period": "2025-07-14",
+      "classification_system": null,
+      "source_kind": "demand_publication"
+    },
+    {
+      "source_id": "pmkvy-centres-pib-2026",
+      "publisher": "MSDE, disseminated by PIB",
+      "dataset_name": "Skilling for Space and Geospatial Sectors — Annexure II PMKVY training centres",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289890&lang=1&reg=3",
+      "license": "PIB attribution/reproduction policy",
+      "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+      "version": "27 July 2026",
+      "geography": "36 published State/UT rows; no national total",
+      "granularity": "State/UT × PMKVY training centres",
+      "methodology": "Published administrative training-centre stock as of 30 June 2026; no seats or throughput inferred",
+      "notes": "Infrastructure count, not current capacity or available workers. Andhra Pradesh 527 includes 6 in Konaseema per source footnote. NAPS establishments and sector trainees not ingested. No district allocation or national total.",
+      "access_method": "Explicit HTTPS snapshot download; offline parsing",
+      "update_frequency": "Fixed version snapshot; source releases may be annual or irregular",
+      "access_status": "approved_public_download",
+      "retrieved_at": "2026-10-03T12:04:39.713825+00:00",
+      "sha256": "d6063f7a3075ec43c0e4350b158684d3dfd157b4fe4a7b8c03929d0987a471d2",
+      "connected": true,
+      "publication_date": "2026-07-27",
+      "observation_period": "2026-06-30",
+      "classification_system": null,
+      "source_kind": "training_infrastructure"
+    }
+  ]
+}

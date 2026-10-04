@@ -1,0 +1,189 @@
+{
+  "phase": "4",
+  "status": "IMPLEMENTED_WITH_NO_PROSPECTIVE_FORECASTS",
+  "observed_records": 1701,
+  "historical_series": 1162,
+  "comparable_change_series": 125,
+  "historical_backtest_series": 54,
+  "forecast_ready_series": 0,
+  "prospective_forecasts": 0,
+  "backend": {
+    "status": "PASS",
+    "tests": 119,
+    "new_test_methods": 17,
+    "log": "docs/phase-4/verification/backend-tests.txt",
+    "compile_import": "PASS"
+  },
+  "frontend": {
+    "build": "PASS",
+    "typescript": "PASS (tsc -b through build)",
+    "lint": "PASS",
+    "dependencies_added": 0
+  },
+  "browser": {
+    "existing_suites": 16,
+    "regressions": [
+      {
+        "suite": "phase1",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase1.log",
+        "assertion_groups": null
+      },
+      {
+        "suite": "phase15",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase15/results.json",
+        "assertion_groups": 6
+      },
+      {
+        "suite": "phase22",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase22/results.json",
+        "assertion_groups": 11
+      },
+      {
+        "suite": "phase22-localization",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase22-localization/results.json",
+        "assertion_groups": 8
+      },
+      {
+        "suite": "phase231",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase231/results.json",
+        "assertion_groups": 8
+      },
+      {
+        "suite": "phase25",
+        "final_status": "PASS",
+        "initial_exit_code": 1,
+        "retry": true,
+        "artifact": "docs/phase-4/verification/regressions/phase25/results.json",
+        "assertion_groups": 11
+      },
+      {
+        "suite": "phase24",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase24/results.json",
+        "assertion_groups": 9
+      },
+      {
+        "suite": "phase27",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase27/results.json",
+        "assertion_groups": 11
+      },
+      {
+        "suite": "phase26",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase26/results.json",
+        "assertion_groups": 10
+      },
+      {
+        "suite": "phase28",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase28/results.json",
+        "assertion_groups": 11
+      },
+      {
+        "suite": "phase271",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase271/results.json",
+        "assertion_groups": 7
+      },
+      {
+        "suite": "phase29",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase29/results.json",
+        "assertion_groups": 11
+      },
+      {
+        "suite": "hero-countup",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/hero-countup/results.json",
+        "assertion_groups": 7
+      },
+      {
+        "suite": "phase291",
+        "final_status": "PASS",
+        "initial_exit_code": 0,
+        "retry": false,
+        "artifact": "docs/phase-4/verification/regressions/phase291/results.json",
+        "assertion_groups": 11
+      },
+      {
+        "suite": "phase3",
+        "final_status": "PASS",
+        "artifact": "docs/phase-4/verification/regressions/phase3/results.json",
+        "assertion_groups": 10
+      },
+      {
+        "suite": "auth-hardening",
+        "final_status": "PASS",
+        "artifact": "docs/phase-4/verification/regressions/auth-hardening/results.json",
+        "assertion_groups": 7
+      }
+    ],
+    "phase4": {
+      "status": "PASS",
+      "assertion_groups": 10,
+      "artifact": "docs/phase-4/verification/browser/results.json"
+    }
+  },
+  "canonical_snapshots": [
+    {
+      "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\labour-market.json",
+      "sha256": "C85D2E9E26D103803D2419B7F2F95110130A3063636CCEAF03C5D81211841EAE",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\demand\\snapshot.json",
+      "sha256": "16458F1B959FA7621655333DE6FAA381EDB31564C54E32D8171149A5A0C41E45",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\SIH part 2\\KaushalIQ\\data\\canonical\\supply\\snapshot.json",
+      "sha256": "877493D40BAD13DDAEA80EB2B0E7851C9BE2DBCF0A7386F7701B9D9AD99B86D4",
+      "unchanged": true
+    }
+  ],
+  "screenshot_manifest": "docs/phase-4/verification/screenshot-manifest.json",
+  "bundle_kb": {
+    "forecast_lazy": 43.03,
+    "forecast_lazy_gzip": 12.84,
+    "real_intelligence": 423.2,
+    "real_intelligence_gzip": 118.11,
+    "main": 557.44,
+    "main_gzip": 152.34,
+    "css": 126.56,
+    "css_gzip": 22.64,
+    "existing_main_chunk_advisory": true
+  },
+  "preserved_unrelated_file": "frontend/src/styles/home-hero.css",
+  "commit_push_reset_performed": false,
+  "phase5_started": false
+}

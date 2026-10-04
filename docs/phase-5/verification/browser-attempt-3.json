@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Verified historical reviews and coverage facts use exact source observations; unavailable skill types remain not ready",
+    "Keyboard warning inspection, exact evidence/checksum and dialog Escape/focus restoration",
+    "Bounded pagination, real geography filters, insufficient regional history and explicit unavailable skill readiness",
+    "Empty filters, reset/refresh and trailing-slash explicit-sample URLs cannot enter legacy intelligence",
+    "Technology adoption preserves explicit assumptions and returns scenario not ready without invented skill effects",
+    "Direct metric sensitivity uses the unchanged observed baseline, exact user assumption and original period with simulation labels",
+    "Changed assumptions invalidate old results; invalid/native-domain assumptions never clip or create fake effects"
+  ],
+  "screenshots": [
+    "direct-sensitivity-dark-en-1440.png"
+  ],
+  "errors": [
+    "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.skeleton').first() to be visible\u001b[22m\n\u001b[2m    58 × locator resolved to hidden <span class=\"skeleton \" aria-hidden=\"true\"></span>\u001b[22m\n\n    at D:\\SIH part 2\\KaushalIQ\\frontend\\tests\\phase5.browser.cjs:47:239"
+  ]
+}

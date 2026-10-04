@@ -1,0 +1,138 @@
+[
+  {
+    "suite": "phase1",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 29,
+    "report": "verification/regressions/phase1/browser-results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase15",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 6,
+    "report": "verification/regressions/phase15/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase22",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 11,
+    "report": "verification/regressions/phase22/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase231",
+    "original_exit_code": 1,
+    "final_status": "PASS",
+    "check_groups": 8,
+    "report": "verification/regression-retries/phase231/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase22-localization",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 8,
+    "report": "verification/regressions/phase22-localization/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase24",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 9,
+    "report": "verification/regressions/phase24/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase25",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 11,
+    "report": "verification/regressions/phase25/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase26",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 10,
+    "report": "verification/regressions/phase26/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase271",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 7,
+    "report": "verification/regressions/phase271/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase28",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 11,
+    "report": "verification/regressions/phase28/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase29",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 11,
+    "report": "verification/regressions/phase29/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase27",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 11,
+    "report": "verification/regressions/phase27/results.json",
+    "errors": []
+  },
+  {
+    "suite": "hero-countup",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 7,
+    "report": "verification/regressions/hero-countup/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase291",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 11,
+    "report": "verification/regressions/phase291/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase3",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 10,
+    "report": "verification/regressions/phase3/results.json",
+    "errors": []
+  },
+  {
+    "suite": "phase4",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 10,
+    "report": "verification/regressions/phase4/results.json",
+    "errors": []
+  },
+  {
+    "suite": "auth-hardening",
+    "original_exit_code": 0,
+    "final_status": "PASS",
+    "check_groups": 7,
+    "report": "verification/regressions/auth-hardening/results.json",
+    "errors": []
+  }
+]

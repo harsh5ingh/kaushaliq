@@ -1,5 +1,7 @@
 import type { MessageKey } from "./en-IN";
 import { gapHi } from './gaps';
+import { forecastHi } from './forecast';
+import { phase5Hi } from './phase5';
 import { authSecurityHi } from './auth-security';
 import { realHi } from "./real-data";
 import { vizHi } from "./visualization";
@@ -7,6 +9,8 @@ import { personalHi } from "./personal";
 import { demandHi } from "./demand";
 import { supplyHi } from "./supply";
 export const hi: Record<MessageKey, string> = {
+  ...phase5Hi,
+  ...forecastHi,
   ...authSecurityHi,
   ...gapHi,
   ...personalHi,

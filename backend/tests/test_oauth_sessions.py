@@ -58,7 +58,7 @@ class OAuthSessionTests(unittest.TestCase):
 
     def begin(self, provider='google', client=None, destination='/intelligence', link=False):
         client=client or Client(); client.request('GET','/api/auth/csrf')
-        path='/api/v1/me/connected-accounts/'+provider if link else '/api/auth/oauth/'+provider+'/start'
+        path='/api/auth/oauth/'+provider+('/link' if link else '/start')
         status, result=client.request('POST',path,None if link else {'return_to':destination})
         self.assertEqual(status,200,result)
         params=parse_qs(urlsplit(result['authorizationUrl']).query)
@@ -195,10 +195,43 @@ class OAuthSessionTests(unittest.TestCase):
         self.assertIn('oauth_link_session_expired',self.callback(a,'google',p))
         a=self.login()
         with auth.connect() as db: db.execute('UPDATE sessions SET expires_at=? WHERE jti=?',((auth.now()+timedelta(hours=7)).isoformat(),auth.session_user(a.cookies[auth.COOKIE_NAME])[0]['jti']))
-        self.assertEqual(a.request('POST','/api/v1/me/connected-accounts/google')[0],403)
+        self.assertEqual(a.request('POST','/api/auth/oauth/google/link')[0],403)
         c,p,_=self.begin();self.callback(c,'google',p)
         a=self.login();a,p,_=self.begin(client=a,link=True)
         self.assertIn('oauth_account_conflict',self.callback(a,'google',p))
+
+    def test_explicit_link_route_is_separate_authenticated_and_csrf_protected(self):
+        anonymous=Client();anonymous.request('GET','/api/auth/csrf')
+        self.assertEqual(anonymous.request('POST','/api/auth/oauth/google/link')[0],401)
+        uid=self.user();other_id=self.user('other@example.in');a=self.login()
+        current=a.cookies[auth.COOKIE_NAME]
+        self.assertEqual(a.request('POST','/api/auth/oauth/google/link',headers={'x-csrf-token':''})[0],403)
+        self.assertEqual(a.request('POST','/api/auth/oauth/google/link',headers={'origin':'https://evil.example'})[0],403)
+        self.assertEqual(a.request('POST','/api/auth/oauth/unknown/link')[0],404)
+        for provider in ['google','github']:
+            with self.subTest(provider=provider):
+                # Provider configuration does not enable direct identity mutations.
+                self.assertEqual(oauth.availability(provider),'CONFIGURED')
+                status,result=a.request('POST','/api/v1/me/connected-accounts/'+provider)
+                self.assertEqual(status,503);self.assertEqual(result['detail'],'oauth_account_linking_unavailable')
+                self.assertEqual(a.request('DELETE','/api/v1/me/connected-accounts/'+provider)[0],503)
+                self.assertNotIn(oauth.cookie_name(provider),a.cookies)
+                status,result=a.request('POST','/api/auth/oauth/'+provider+'/link',{
+                    'user_id':other_id,'current_session_id':'untrusted','return_to':'https://evil.example'})
+                self.assertEqual(status,200)
+                params=parse_qs(urlsplit(result['authorizationUrl']).query)
+                with auth.connect() as db:
+                    flow=db.execute('SELECT * FROM oauth_flows WHERE digest=?',(oauth.digest(params['state'][0]),)).fetchone()
+                    self.assertEqual(flow['user_id'],uid)
+                    self.assertEqual(flow['session_jti'],auth.session_user(current)[0]['jti'])
+                    self.assertEqual(flow['return_to'],'/settings')
+                    self.assertEqual(db.execute('SELECT COUNT(*) FROM oauth_identities').fetchone()[0],0)
+                self.assertEqual(a.cookies[auth.COOKIE_NAME],current)
+        self.assertTrue(all(not row['connected'] for row in a.request('GET','/api/v1/me/connected-accounts')[1]['items']))
+        settings.google_client_secret=''
+        self.assertEqual(a.request('POST','/api/auth/oauth/google/link')[0],503)
+        with auth.connect() as db:
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM oauth_flows').fetchone()[0],2)
 
     def signed_google(self, flow, **changes):
         claims={'sub':'google-subject','iss':'https://accounts.google.com','aud':'test-client','iat':auth.now().timestamp(),'exp':(auth.now()+timedelta(minutes=5)).timestamp(),'nonce':flow['nonce'],'email':'verified@example.in','email_verified':True,'name':'Test'}

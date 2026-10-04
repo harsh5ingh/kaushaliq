@@ -1,0 +1,12 @@
+{
+  "backend_tests": 174,
+  "new_backend_tests": 55,
+  "regression_suites": 17,
+  "regression_check_groups": 177,
+  "phase5_check_groups": 14,
+  "screenshots": 44,
+  "modified_sources": 14,
+  "added_sources": 26,
+  "canonical_hashes_unchanged": true,
+  "new_dependencies": 0
+}

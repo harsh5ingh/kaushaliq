@@ -1,0 +1,43 @@
+{
+  "checks": [
+    "Real public gap page respects NOT_READY, with no subtraction, zero substitute or sample fallback",
+    "Thirteen checks, safe source evidence, keyboard focus, modal Escape and focus restoration",
+    "Source-aware geography filtering, district empty state, reset, refresh and exclusion of legacy simulation",
+    "20 real-data screenshots: five widths × two themes × two languages, no page overflow",
+    "Live English-Hindi-English, persisted locale, system appearance changes and reduced motion",
+    "Pending API displays the existing Skeleton/Loader, never a provisional gap value",
+    "API error state, honest failure and successful retry",
+    "Isolated fixtures exercise READY arithmetic, PARTIAL/no arithmetic, UNAVAILABLE and EMPTY presentation",
+    "Forged non-ready values and mixed publication versions fail closed",
+    "Mobile navigation/Escape, visible focus, expanded assessment and browser history"
+  ],
+  "screenshots": [
+    "gaps-dark-en-IN-1440.png",
+    "gaps-dark-hi-IN-1440.png",
+    "gaps-light-en-IN-1440.png",
+    "gaps-light-hi-IN-1440.png",
+    "gaps-dark-en-IN-1280.png",
+    "gaps-dark-hi-IN-1280.png",
+    "gaps-light-en-IN-1280.png",
+    "gaps-light-hi-IN-1280.png",
+    "gaps-dark-en-IN-1024.png",
+    "gaps-dark-hi-IN-1024.png",
+    "gaps-light-en-IN-1024.png",
+    "gaps-light-hi-IN-1024.png",
+    "gaps-dark-en-IN-768.png",
+    "gaps-dark-hi-IN-768.png",
+    "gaps-light-en-IN-768.png",
+    "gaps-light-hi-IN-768.png",
+    "gaps-dark-en-IN-390.png",
+    "gaps-dark-hi-IN-390.png",
+    "gaps-light-en-IN-390.png",
+    "gaps-light-hi-IN-390.png",
+    "error-light-en-1440.png",
+    "test-only-ready-1440.png",
+    "test-only-partial-1440.png",
+    "test-only-unavailable-1440.png",
+    "test-only-empty-1440.png",
+    "assessment-expanded-light-en-390.png"
+  ],
+  "errors": []
+}

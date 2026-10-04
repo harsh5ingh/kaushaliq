@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Protected private account routes send unauthenticated visitors to sign-in with the original route retained",
+    "Signup applies server-side validation, BCrypt-12 stores only a password hash, and an HttpOnly session cookie authenticates the user",
+    "All existing intelligence routes and new account routes render through the top application shell",
+    "Profile menu supports Escape/focus restoration and Profile/Settings/Help; theme and Hindi preference persist through refresh"
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n13 !== 11\n"
+  ]
+}

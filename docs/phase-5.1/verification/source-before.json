@@ -1,0 +1,42 @@
+[
+  {
+    "path": "backend/src/routes/accounts.py",
+    "sha256": "9323FD161FA7B0095D5639FEB20ACD11DC975B8671CE5808FDC766271128FBF0"
+  },
+  {
+    "path": "backend/src/routes/oauth.py",
+    "sha256": "D5BC6A3DEC09EE2B17D79583BA430C0A1572FA40514C6C3E279082405148169E"
+  },
+  {
+    "path": "backend/src/accounts/oauth.py",
+    "sha256": "A6BC6190B92213FC992F3B4637AA269B88935A5CB6FF9F2AED3F774070630CA7"
+  },
+  {
+    "path": "backend/tests/test_oauth_sessions.py",
+    "sha256": "B0254FDB33A8B796B2DC08628ECB8D475DD7FF8706ECFF53AC014393AAF324E2"
+  },
+  {
+    "path": "backend/tests/test_accounts.py",
+    "sha256": "046D72995CC2FBFE0F62B98A123FFCA38F5FE78E0CF46E9ED1487D5BC55ACA41"
+  },
+  {
+    "path": "backend/tests/test_scenarios.py",
+    "sha256": "0841E1AE95E02645032194F889E97D3348964A14049C0E6851875FF476373013"
+  },
+  {
+    "path": "frontend/src/features/account/ConnectedAccounts.tsx",
+    "sha256": "E15646487A3E5B99656F1B3875634E0646870097196CC94E0496AD695C420104"
+  },
+  {
+    "path": "frontend/src/features/account/api.ts",
+    "sha256": "6BA3A775042F864DE7FB5D0FDE2F1F1456A04C4781375C997706D91F420FB639"
+  },
+  {
+    "path": "frontend/tests/auth-hardening.browser.cjs",
+    "sha256": "8DEFDFA06A9873616B27ED0798A6A6A77175B6B4F9A8840F6AAF0D7168342B03"
+  },
+  {
+    "path": "frontend/src/app/providers/AuthProvider.tsx",
+    "sha256": "106AA80896B2B9C086E90E14FE9CD463B8A701E2E2457DD3D7E3508D51826D65"
+  }
+]

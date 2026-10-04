@@ -1,0 +1,1 @@
+"""Read-only deterministic historical review signals."""

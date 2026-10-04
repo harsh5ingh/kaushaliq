@@ -1,10 +1,10 @@
-from fastapi import APIRouter, HTTPException, Request, Response
+from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, ConfigDict, Field
 from urllib.parse import urlencode
 from src.accounts import oauth
 from src.config import settings
-from src.routes.auth import issue_session, rate_limit, validate_csrf
+from src.routes.auth import current_session, issue_session, rate_limit, validate_csrf
 
 router = APIRouter(prefix='/api/auth/oauth', tags=['authentication'])
 
@@ -19,6 +19,17 @@ def start(provider: str, body: Start, request: Request, response: Response):
     validate_csrf(request)
     rate_limit(request, 'oauth-start:' + provider)
     return oauth.begin_flow(provider, response, body.return_to)
+
+
+@router.post('/{provider}/link')
+def link(provider: str, request: Request, response: Response, session=Depends(current_session)):
+    # Explicit provider consent belongs to OAuth, not direct connected-account mutation.
+    user, _ = session
+    validate_csrf(request)
+    rate_limit(request, user['id'] + ':provider')
+    if provider not in oauth.PROVIDERS:
+        raise HTTPException(404, 'not_found')
+    return oauth.begin_flow(provider, response, '/settings', user)
 
 
 @router.get('/{provider}/callback')
