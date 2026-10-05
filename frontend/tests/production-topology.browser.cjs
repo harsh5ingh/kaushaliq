@@ -47,10 +47,18 @@ async function login(context) {
 }
 (async () => {
   try {
-    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(frontend, 'vercel.json'), 'utf8')), {
-      rewrites: [{ source: '/api/:path*', destination: 'https://kaushaliq.onrender.com/api/:path*' }],
+    const vercelConfig = JSON.parse(fs.readFileSync(path.join(frontend, 'vercel.json'), 'utf8'));
+    assert.deepEqual(vercelConfig, {
+      rewrites: [
+        { source: '/api/:path*', destination: 'https://kaushaliq.onrender.com/api/:path*' },
+        { source: '/((?!api(?:/|$)).*)', destination: '/index.html' },
+      ],
     });
-    pass('Single Vercel config rewrites the complete API path to Render');
+    const spaFallback = new RegExp('^/((?!api(?:/|$)).*)$');
+    assert.equal(spaFallback.test('/settings'), true);
+    assert.equal(spaFallback.test('/api/auth/oauth/google/callback'), false);
+    assert.equal(spaFallback.test('/api/auth/oauth/github/callback'), false);
+    pass('Vercel keeps the API rewrite and applies a non-API SPA fallback');
     const apiPort = await port(), target = 'http://127.0.0.1:' + apiPort;
     const fixture = path.join(temporary, 'server.py');
     fs.writeFileSync(fixture, `import os, sys
@@ -125,6 +133,13 @@ uvicorn.run(app, host='127.0.0.1', port=int(sys.argv[1]), log_level='error', acc
     const a = await context(), b = await context();
     const page = await login(a), second = await login(b);
     assert.equal((await api(page, '/auth/session')).value.authenticated, true);
+    for (const provider of ['github', 'google']) {
+      const direct = await page.goto(origin + '/settings?oauth_connected=' + provider);
+      assert.equal(direct.status(), 200);
+      assert.equal(page.url(), origin + '/settings?oauth_connected=' + provider);
+      await page.locator('.connected-provider-list').waitFor();
+    }
+    pass('Direct /settings and OAuth success-query URLs load the SPA and retain their query string');
     const cookies = await a.cookies(origin);
     const session = cookies.find(cookie => cookie.name === '__Host-kaushaliq_session');
     const csrf = cookies.find(cookie => cookie.name === 'kaushaliq_csrf');
