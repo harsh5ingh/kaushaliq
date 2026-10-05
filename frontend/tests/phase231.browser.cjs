@@ -32,8 +32,8 @@ const noOverflow = async (page, width) => { const ok = await page.evaluate(() =>
     await page.getByRole("button", { name: "Continue with Google" }).waitFor();
     assert.equal(await page.getByRole("button", { name: "Continue with Google" }).isDisabled(), true);
     assert.equal(await page.getByRole("button", { name: "Continue with GitHub" }).isDisabled(), true);
-    assert.equal(await page.getByRole("button", { name: "Continue with Facebook" }).isDisabled(), true);
-    assert.equal(await page.locator(".social-auth svg").count(), 3);
+    assert.equal(await page.getByRole("button", { name: /Facebook/i }).count(), 0);
+    assert.equal(await page.locator(".social-auth svg").count(), 2);
     await page.getByLabel("Name", { exact: true }).fill("SIH Test Analyst");
     await page.getByLabel("Email", { exact: true }).fill("sih-test@example.in");
     await page.getByLabel("Password", { exact: true }).fill("weak");

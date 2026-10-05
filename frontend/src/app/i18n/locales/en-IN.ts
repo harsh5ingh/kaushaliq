@@ -193,7 +193,6 @@ export const en = {
   "auth.back": "Back to the form",
   "auth.google": "Continue with Google",
   "auth.github": "Continue with GitHub",
-  "auth.facebook": "Continue with Facebook",
   "auth.providerStatus": "Provider sign-in is not configured yet.",
   "auth.accountLabel": "Secure account access",
   "auth.formScroll": "Account form",

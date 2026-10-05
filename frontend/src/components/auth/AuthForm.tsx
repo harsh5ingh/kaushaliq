@@ -3,7 +3,7 @@ import { useLocale } from "../../hooks/usePreferences";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebook, FaGithub } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import { AuthField } from "./AuthField";
 import type { AuthMode } from "./authNavigation";
 import { PrimaryButton, SecondaryButton } from "../ui/Buttons";
@@ -78,7 +78,6 @@ export function AuthForm({ mode, onMode }: { mode: AuthMode; onMode: (mode: Auth
     <div className="social-auth" aria-describedby="oauth-availability">
       <SecondaryButton type="button" disabled={!providers?.oauth.google || auth.loading || status==='pending' || provider!==null} aria-busy={provider==='google'} onClick={() => void openProvider('google')}><FcGoogle size={18} aria-hidden="true" />{t("auth.google")}</SecondaryButton>
       <SecondaryButton type="button" disabled={!providers?.oauth.github || auth.loading || status==='pending' || provider!==null} aria-busy={provider==='github'} onClick={() => void openProvider('github')}><FaGithub size={17} aria-hidden="true" />{t("auth.github")}</SecondaryButton>
-      <SecondaryButton type="button" disabled><FaFacebook size={17} aria-hidden="true" />{t("auth.facebook")}</SecondaryButton>
     </div>
     <p id="oauth-availability" className="provider-availability">{t(providers?.oauth.google || providers?.oauth.github?'oauth.available':'auth.providerStatus')}</p>
     {provider&&<p className="progress-label" role="status"><Loader/>{t('oauth.pending')}</p>}

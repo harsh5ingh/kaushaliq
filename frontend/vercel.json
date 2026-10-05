@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://kaushaliq.onrender.com/api/:path*"
+    }
+  ]
+}

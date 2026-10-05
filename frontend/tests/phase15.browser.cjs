@@ -45,8 +45,9 @@ const pass = text => { checks.push(text); console.log("PASS " + text); };
 
     await page.goto(stack.base + "/auth/signup");
     await page.getByRole("button", { name: "Continue with Google" }).waitFor();
-    for (const provider of ["Google", "GitHub", "Facebook"]) assert.equal(await page.getByRole("button", { name: `Continue with ${provider}` }).isDisabled(), true);
-    assert.equal(await page.locator(".social-auth svg").count(), 3);
+    for (const provider of ["Google", "GitHub"]) assert.equal(await page.getByRole("button", { name: `Continue with ${provider}` }).isDisabled(), true);
+    assert.equal(await page.getByRole("button", { name: /Facebook/i }).count(), 0);
+    assert.equal(await page.locator(".social-auth svg").count(), 2);
     await page.getByLabel("Name", { exact: true }).fill("Preview User"); await page.getByLabel("Email", { exact: true }).fill("phase15@example.in");
     await page.getByLabel("Password", { exact: true }).fill("weak"); await page.getByRole("button", { name: "Create account", exact: true }).click();
     await page.getByText("Use 8+ characters with uppercase, lowercase, a number and a special character.", { exact: true }).waitFor();

@@ -187,7 +187,7 @@ def get_csrf(response: Response):
 def providers():
     from src.accounts.oauth import availability
     states = {provider: availability(provider) for provider in ("google", "github")}
-    return {"email": True, "oauth": {**{p: state == "CONFIGURED" for p, state in states.items()}, "facebook": False}, "states": states}
+    return {"email": True, "oauth": {p: state == "CONFIGURED" for p, state in states.items()}, "states": states}
 
 
 @router.post("/register", status_code=201)

@@ -198,7 +198,6 @@ export const hi: Record<MessageKey, string> = {
   "auth.back": "फ़ॉर्म पर वापस जाएँ",
   "auth.google": "Google के साथ जारी रखें",
   "auth.github": "GitHub के साथ जारी रखें",
-  "auth.facebook": "Facebook के साथ जारी रखें",
   "auth.providerStatus": "प्रदाता से साइन-इन अभी कॉन्फ़िगर नहीं है।",
   "auth.accountLabel": "सुरक्षित खाता प्रवेश",
   "auth.formScroll": "खाता फ़ॉर्म",
